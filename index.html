@@ -1,1 +1,372 @@
-<h1>Hello, 채연</h1>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>채연 — Developer Portfolio</title>
+  <meta name="description" content="영문학에서 출발해 소프트웨어 아키텍처를 향하는 개발자 채연의 포트폴리오.">
+  <meta property="og:title" content="채연 — Developer Portfolio">
+  <meta property="og:description" content="문장의 구조를 읽던 눈으로 시스템의 구조를 설계합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amyshindev.github.io/">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='serif'%3E채%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --surface: #efefec;
+      --ink: #111111;
+      --ink-2: #4a4a4a;
+      --ink-3: #8a8a8a;
+      --line: #d9d9d5;
+      --invert-bg: #111111;
+      --invert-ink: #f7f7f5;
+      --serif: "Noto Serif KR", "Times New Roman", serif;
+      --sans: "Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+      --max: 1080px;
+      --gutter: clamp(20px, 5vw, 48px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0e0e0e; --surface: #181818; --ink: #ededeb; --ink-2: #b4b4b0;
+        --ink-3: #7a7a77; --line: #2c2c2a; --invert-bg: #ededeb; --invert-ink: #0e0e0e;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0e0e0e; --surface: #181818; --ink: #ededeb; --ink-2: #b4b4b0;
+      --ink-3: #7a7a77; --line: #2c2c2a; --invert-bg: #ededeb; --invert-ink: #0e0e0e;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--ink); font-family: var(--sans);
+      font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word;
+      -webkit-font-smoothing: antialiased; transition: background .3s, color .3s;
+    }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--ink); color: var(--bg); }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    .label {
+      font-family: var(--mono); font-size: 12px; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--ink-3);
+    }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+    }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .brand { font-family: var(--serif); font-weight: 700; font-size: 18px; }
+    .nav-links { display: flex; gap: clamp(14px, 3vw, 28px); align-items: center; }
+    .nav-links a { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+    .nav-links a:hover { color: var(--ink); }
+    .theme-btn {
+      width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 50%; background: none;
+      color: var(--ink); cursor: pointer; display: grid; place-items: center;
+    }
+    .theme-btn:hover { border-color: var(--ink); }
+    .theme-btn svg { width: 14px; height: 14px; }
+
+    /* Hero */
+    .hero { padding: clamp(72px, 14vh, 140px) 0 clamp(56px, 10vh, 96px); border-bottom: 1px solid var(--line); }
+    .hero h1 {
+      font-family: var(--serif); font-weight: 600; font-size: clamp(34px, 6.2vw, 68px);
+      line-height: 1.28; letter-spacing: -0.02em; margin: 20px 0 32px;
+    }
+    .hero h1 em { font-style: normal; border-bottom: 3px solid var(--ink); }
+    .hero p.lede { max-width: 620px; font-size: clamp(16px, 1.8vw, 18px); color: var(--ink-2); }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 40px; }
+    .hero-meta span { font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
+    .hero-meta span::before { content: "— "; color: var(--ink-3); }
+
+    /* Section */
+    section { padding: clamp(64px, 10vh, 104px) 0; border-bottom: 1px solid var(--line); }
+    .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 40px; }
+    .sec-head h2 { font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 3.6vw, 36px); letter-spacing: -0.01em; }
+
+    /* Projects */
+    .projects { list-style: none; border-top: 1px solid var(--ink); }
+    .project {
+      display: grid; grid-template-columns: 72px 1fr; gap: 0 24px; padding: 36px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .project .num { font-family: var(--mono); font-size: 13px; color: var(--ink-3); padding-top: 10px; }
+    .p-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
+    .project h3 { font-family: var(--serif); font-weight: 700; font-size: clamp(22px, 2.8vw, 28px); letter-spacing: -0.01em; }
+    .project h3 small { font-family: var(--sans); font-weight: 400; font-size: 15px; color: var(--ink-3); margin-left: 10px; letter-spacing: 0; }
+    .role { font-family: var(--mono); font-size: 12px; color: var(--ink-2); border: 1px solid var(--line); padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+    .summary { margin-top: 10px; font-size: 17px; max-width: 720px; }
+    .badge {
+      display: inline-block; margin-top: 12px; font-family: var(--mono); font-size: 12px;
+      background: var(--invert-bg); color: var(--invert-ink); padding: 3px 10px;
+    }
+    .epigraph { margin-top: 16px; font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink-3); }
+    .points { list-style: none; margin-top: 18px; max-width: 760px; }
+    .points li { position: relative; padding-left: 18px; color: var(--ink-2); font-size: 15px; margin-top: 6px; }
+    .points li::before { content: ""; position: absolute; left: 0; top: .78em; width: 8px; height: 1px; background: var(--ink-3); }
+    .points strong { color: var(--ink); font-weight: 600; }
+    .p-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; }
+    .stack { display: flex; flex-wrap: wrap; gap: 6px; }
+    .stack span { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); background: var(--surface); padding: 3px 8px; }
+    .link {
+      display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 13px;
+      border-bottom: 1px solid var(--ink); padding-bottom: 2px; transition: gap .2s;
+    }
+    .link:hover { gap: 12px; }
+    .link svg { width: 12px; height: 12px; }
+
+    /* About */
+    .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 6vw, 80px); }
+    .about-text p { font-size: 17px; color: var(--ink-2); margin-bottom: 18px; }
+    .about-text p:first-child { font-family: var(--serif); font-size: clamp(19px, 2.2vw, 22px); color: var(--ink); line-height: 1.65; }
+    dl.facts { border-top: 1px solid var(--ink); }
+    .facts div { display: grid; grid-template-columns: 104px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .facts dt { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+    .facts dd { font-size: 15px; }
+    .facts dd span { display: block; color: var(--ink-3); font-size: 13.5px; }
+
+    /* Contact */
+    .contact { background: var(--invert-bg); color: var(--invert-ink); border-bottom: none; }
+    .contact .label { color: color-mix(in srgb, var(--invert-ink) 55%, transparent); }
+    .contact h2 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 5vw, 52px); line-height: 1.3; margin: 18px 0 36px; letter-spacing: -0.02em; }
+    .contact .link { border-color: var(--invert-ink); font-size: 15px; }
+    footer { background: var(--invert-bg); color: color-mix(in srgb, var(--invert-ink) 50%, transparent); }
+    footer .wrap { display: flex; justify-content: space-between; gap: 12px; padding-top: 20px; padding-bottom: 28px; border-top: 1px solid color-mix(in srgb, var(--invert-ink) 18%, transparent); font-family: var(--mono); font-size: 12px; }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+    @media (max-width: 760px) {
+      .project { grid-template-columns: 1fr; }
+      .project .num { padding-top: 0; margin-bottom: 8px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .nav-links a.hide-sm { display: none; }
+      .project h3 small { display: block; margin: 2px 0 0; }
+      .facts div { grid-template-columns: 84px 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">채연</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="hide-sm">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="밝은/어두운 테마 전환">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16V0z"/><circle cx="8" cy="8" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="wrap">
+      <p class="label reveal">Software Developer · Seoul</p>
+      <h1 class="reveal">문장의 구조를 읽던 눈으로<br><em>시스템의 구조</em>를 설계합니다.</h1>
+      <p class="lede reveal">
+        셰익스피어의 텍스트에서 드러나지 않은 구조를 찾던 영문학도가, 이제는 도메인을 읽고 아키텍처를 그립니다.
+        Hexagonal Architecture와 DDD로 모델을 갈아 끼워도 흔들리지 않는 시스템을 만드는 것, 그리고 그 설계를 숫자로 검증하는 것을 좋아합니다.
+      </p>
+      <div class="hero-meta reveal">
+        <span>이화여대 영어영문 · 일본언어문화</span>
+        <span>K-Digital Training 해커톤 고용노동부장관상</span>
+        <span>목표: Software Architect</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Projects</h2>
+        <span class="label">05 selected works</span>
+      </div>
+
+      <ol class="projects">
+        <!-- 01 Shylock -->
+        <li class="project reveal">
+          <div class="num">01</div>
+          <div>
+            <div class="p-top">
+              <h3>샤일록의 법정<small>Shylock</small></h3>
+              <span class="role">개인 · 기획부터 배포까지</span>
+            </div>
+            <p class="summary">『베니스의 상인』의 재판을 선택지로 다시 치르는 내러티브 게임. 샤일록을 재해석한 학부 졸업논문에서 출발했습니다.</p>
+            <p class="epigraph">“The quality of mercy is not strain’d.” — The Merchant of Venice, IV.i</p>
+            <ul class="points">
+              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 15)로 모델링 — 사실은 DB가, 문장화는 LLM이 맡도록 분리</li>
+              <li>그래프 유무 ablation 평가(조건별 n=42)에서 멀티홉 관계 질문 정답률 <strong>21% → 100%</strong> (Fisher p=3.6×10⁻¹⁵)</li>
+              <li>개발 중 API 비용이 $200까지 오르자 로컬 모델(Ollama Gemma)로 전환 — Hexagonal 구조 덕에 도메인 코드는 그대로</li>
+              <li>중립 판사 ‘공작’을 LLM judge로 두어 재판의 승패와 점수를 판정</li>
+            </ul>
+            <div class="p-foot">
+              <div class="stack"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span></div>
+              <a class="link" href="https://shylock-trial.xyz" target="_blank" rel="noopener">shylock-trial.xyz <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 02 SoundBridge -->
+        <li class="project reveal">
+          <div class="num">02</div>
+          <div>
+            <div class="p-top">
+              <h3>SoundBridge<small>사운드브릿지</small></h3>
+              <span class="role">3인 팀 · 팀장 / 백엔드</span>
+            </div>
+            <p class="summary">취향을 입력하면 어울리는 국악을 찾아주는 추천 서비스. 문화체육관광부 공모전 출품작입니다.</p>
+            <ul class="points">
+              <li>Cohere embed-v4 임베딩과 pgvector HNSW 인덱스로 의미 기반 곡 검색</li>
+              <li>EXAONE(FriendliAI) 연속 호출 타임아웃을 튜닝해 추천 설명 생성 안정화</li>
+              <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
+            </ul>
+            <div class="p-foot">
+              <div class="stack"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>Cohere embed-v4</span><span>pgvector HNSW</span><span>Cloudflare R2</span></div>
+              <a class="link" href="https://soundbridge.site" target="_blank" rel="noopener">soundbridge.site <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 03 Life Tutorial -->
+        <li class="project reveal">
+          <div class="num">03</div>
+          <div>
+            <div class="p-top">
+              <h3>라이프 튜토리얼<small>Life Tutorial</small></h3>
+              <span class="role">팀 BeyondFacade · 풀스택</span>
+            </div>
+            <p class="summary">청소년이 첫 아르바이트에서 마주할 부당한 상황을 게임으로 미리 겪어 보는 노동권 교육 서비스.</p>
+            <span class="badge">K-Digital Training 해커톤 고용노동부장관상</span>
+            <ul class="points">
+              <li><strong>방어전</strong> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈</li>
+              <li><strong>가드</strong> — 근로계약서를 OCR로 읽고 규칙 기반으로 위법 조항을 판정, 상담 리포트와 상담 기관 연결</li>
+              <li>실제 근로계약서라는 개인정보를 다루기 때문에 로컬 추론 · 폐쇄망 배포를 전제로 설계</li>
+              <li>LLM 어댑터를 Port 계층으로 격리해 EXAONE ↔ Gemma 교체 가능</li>
+            </ul>
+            <div class="p-foot">
+              <div class="stack"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Phaser 4</span><span>PaddleOCR</span><span>EXAONE</span><span>Gemma</span></div>
+              <a class="link" href="https://life-tutorial.com" target="_blank" rel="noopener">life-tutorial.com <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 04 Metabole -->
+        <li class="project reveal">
+          <div class="num">04</div>
+          <div>
+            <div class="p-top">
+              <h3>Metabole<small>메타볼</small></h3>
+              <span class="role">팀 BeyondFacade · 진행 중</span>
+            </div>
+            <p class="summary">상권 데이터를 바탕으로 창업 입지와 업종을 분석해 주는 AI 에이전트.</p>
+            <ul class="points">
+              <li>상권 변수를 수집·시각화하고, 종합 분석과 랭킹으로 창업 후보지를 비교</li>
+              <li>설계와 진행 과정을 문서 사이트로 공개</li>
+            </ul>
+            <div class="p-foot">
+              <div class="stack"><span>AI Agent</span><span>Data Visualization</span></div>
+              <a class="link" href="https://metabole.beyondfacade.cloud" target="_blank" rel="noopener">metabole.beyondfacade.cloud <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 05 REMAKE DAY -->
+        <li class="project reveal">
+          <div class="num">05</div>
+          <div>
+            <div class="p-top">
+              <h3>REMAKE DAY<small>리메이크데이</small></h3>
+              <span class="role">팀 · 백엔드 / AI</span>
+            </div>
+            <p class="summary">사람과 AI가 어떻게 상호작용하는지 관찰하기 위한 실험형 게임.</p>
+            <ul class="points">
+              <li>백엔드와 AI 파트를 맡아 게임 속 AI의 응답과 실험 데이터 흐름을 설계</li>
+            </ul>
+            <div class="p-foot">
+              <div class="stack"><span>Backend</span><span>LLM</span><span>HCI Research</span></div>
+              <a class="link" href="https://research.remakeday.com" target="_blank" rel="noopener">research.remakeday.com <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>About</h2>
+        <span class="label">tool added, not career abandoned</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>문학을 버리고 개발로 온 게 아니라, 문학을 읽던 방법에 도구 하나를 더했다고 생각합니다.</p>
+          <p>텍스트의 표면 아래 숨은 구조를 꺼내는 클로즈 리딩은 요구사항에서 도메인 모델을 끌어내는 일과 닮아 있습니다. 샤일록을 다시 읽은 졸업논문이 그대로 한 편의 풀스택 서비스가 된 것도 그래서입니다.</p>
+          <p>API 모델과 로컬 모델을 도메인 코드 수정 없이 바꿔 끼운 경험에서 설계의 힘을 배웠고, 그 경험을 쌓아 소프트웨어 아키텍트가 되는 것이 목표입니다.</p>
+        </div>
+        <dl class="facts reveal">
+          <div><dt>Education</dt><dd>이화여자대학교<span>영어영문학 · 일본언어문화학 복수전공</span></dd></div>
+          <div><dt>Abroad</dt><dd>University College London<span>심리학 1년 수학</span></dd></div>
+          <div><dt>Training</dt><dd>IBM · Red Hat Digital Academy<span>K-Digital Training 6개월 과정</span></dd></div>
+          <div><dt>Award</dt><dd>고용노동부장관상<span>K-Digital Training 해커톤 · 라이프 튜토리얼</span></dd></div>
+          <div><dt>Languages</dt><dd>한국어 · English · 日本語 · 中文</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2>함께 구조를 고민할<br>기회를 기다립니다.</h2>
+      <a class="link" href="https://github.com/amyshindev" target="_blank" rel="noopener">github.com/amyshindev <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M4 3h5v5"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 채연</span>
+    <span>amyshindev.github.io</span>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle (remembered per browser when storage is available)
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('themeBtn');
+    try { var saved = localStorage.getItem('theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
+    btn.addEventListener('click', function () {
+      var current = root.dataset.theme ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+
+  // Scroll reveal
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
