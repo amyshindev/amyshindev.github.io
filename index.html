@@ -185,6 +185,16 @@
     .bar.full i::after { background: var(--ink); }
     .bar em { font-style: normal; font-weight: 700; color: var(--ink); text-align: right; }
     .metric p { font-size: 12.5px; color: var(--ink-3); }
+    .feature-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+    .shot { flex: 1 1 auto; min-height: 220px; border-radius: 12px; overflow: hidden; background: #1a1714; border: 1px solid var(--line); position: relative; }
+    .shot picture, .shot img { display: block; width: 100%; height: 100%; }
+    .shot img { object-fit: cover; object-position: 50% 35%; transition: transform .6s ease; }
+    .card:hover .shot img { transform: scale(1.03); }
+    .metric.compact { flex: 0 0 auto; gap: 14px; padding: 20px 24px; }
+    .metric.compact .metric-num { font-size: clamp(30px, 2.6vw, 40px); }
+    .metric.compact .bars { gap: 8px; }
+    .metric.compact .bar i { height: 8px; }
+    .metric.compact p { font-size: 12px; line-height: 1.6; }
 
 
     footer { border-top: 1px solid var(--line); }
@@ -205,6 +215,9 @@
       .art { max-width: 640px; margin: 24px auto 32px; width: 100%; }
       .closer .wrap { grid-template-columns: 1fr 1fr 1fr; }
       .closer .intro { grid-column: 1 / -1; }
+      .card.feature { grid-template-columns: 1fr; }
+      .feature-side { display: contents; }
+      .shot { order: -1; aspect-ratio: 1400 / 878; flex: none; min-height: 0; }
       .step h3 { margin-top: 20px; }
     }
     @media (max-width: 760px) {
@@ -335,14 +348,22 @@
                 <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
             </div>
           </div>
-          <div class="metric">
-            <span class="eyebrow">Graph ablation · n=42</span>
-            <div class="metric-num"><span>21%→</span>100%</div>
-            <div class="bars">
-              <div class="bar"><span>그래프 없음</span><i style="--w:21%"></i><em>21%</em></div>
-              <div class="bar full"><span>그래프 있음</span><i style="--w:100%"></i><em>100%</em></div>
+          <div class="feature-side">
+            <figure class="shot">
+              <picture>
+                <source type="image/webp" srcset="assets/shylock-800.webp 800w, assets/shylock-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 88vw, 480px">
+                <img src="assets/shylock-1400.jpg" alt="샤일록의 법정 플레이 화면 — 샤일록과 포샤가 법정에서 맞서고, 존엄·기력·논리 게이지와 아이템·스킬 패널, 포샤의 대사 창이 보인다" width="1400" height="878" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <div class="metric compact">
+              <span class="eyebrow">Graph ablation · n=42</span>
+              <div class="metric-num"><span>21%→</span>100%</div>
+              <div class="bars">
+                <div class="bar"><span>그래프 없음</span><i style="--w:21%"></i><em>21%</em></div>
+                <div class="bar full"><span>그래프 있음</span><i style="--w:100%"></i><em>100%</em></div>
+              </div>
+              <p>멀티홉 관계 질문 정답률 · Fisher p=3.6×10⁻¹⁵<br>단일 사실 질문에서는 차이 없음을 함께 확인</p>
             </div>
-            <p>멀티홉 관계 질문 정답률 · Fisher p=3.6×10⁻¹⁵<br>단일 사실 질문에서는 차이 없음을 함께 확인</p>
           </div>
         </article>
 
