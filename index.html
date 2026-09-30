@@ -130,7 +130,6 @@
     .f1 { left: -3%; top: 11%; }
     .f2 { right: -3%; bottom: 3%; animation-delay: -2s; }
     .f3 { left: -3%; bottom: 3%; animation-delay: -4s; }
-    .art-cap { position: absolute; right: 4%; bottom: -30px; font-size: 12px; color: var(--ink-3); }
     @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
     /* ---------- Closer look ---------- */
@@ -186,11 +185,10 @@
     .bar em { font-style: normal; font-weight: 700; color: var(--ink); text-align: right; }
     .metric p { font-size: 12.5px; color: var(--ink-3); }
     .feature-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
-    .shot { flex: 1 1 auto; min-height: 220px; border-radius: 12px; overflow: hidden; background: #1a1714; border: 1px solid var(--line); position: relative; }
+    .shot { flex: none; aspect-ratio: 1400 / 878; border-radius: 12px; overflow: hidden; background: #1a1714; border: 1px solid var(--line); position: relative; }
     .shot picture, .shot img { display: block; width: 100%; height: 100%; }
-    .shot img { object-fit: cover; object-position: 50% 35%; transition: transform .6s ease; }
-    .card:hover .shot img { transform: scale(1.03); }
-    .metric.compact { flex: 0 0 auto; gap: 14px; padding: 20px 24px; }
+    .shot img { object-fit: contain; }
+    .metric.compact { flex: 1 1 auto; justify-content: center; gap: 14px; padding: 20px 24px; }
     .metric.compact .metric-num { font-size: clamp(30px, 2.6vw, 40px); }
     .metric.compact .bars { gap: 8px; }
     .metric.compact .bar i { height: 8px; }
@@ -217,7 +215,7 @@
       .closer .intro { grid-column: 1 / -1; }
       .card.feature { grid-template-columns: 1fr; }
       .feature-side { display: contents; }
-      .shot { order: -1; aspect-ratio: 1400 / 878; flex: none; min-height: 0; }
+      .shot { order: -1; }
       .step h3 { margin-top: 20px; }
     }
     @media (max-width: 760px) {
@@ -235,7 +233,7 @@
       .f1 { left: 0; top: 6%; }
       .f2 { right: 0; bottom: -2%; }
       .f3 { left: 0; bottom: -2%; }
-      .art-top, .art-cap { display: none; }
+      .art-top { display: none; }
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
       .btn { gap: 24px; padding: 18px 22px; }
@@ -307,7 +305,6 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></svg>
           <div><b>기준으로 검증하다</b><small>정답률 21% → 100%</small></div>
         </div>
-        <p class="art-cap">AI를 가운데 두고 그 둘레에 기준과 검증을 두른 개념 모형입니다.</p>
       </div>
     </div>
   </section>
