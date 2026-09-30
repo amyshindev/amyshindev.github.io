@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>채연 — Developer Portfolio</title>
-  <meta name="description" content="텍스트를 읽던 눈으로 시스템의 구조를 설계하는 개발자 채연의 포트폴리오.">
-  <meta property="og:title" content="채연 — Developer Portfolio">
-  <meta property="og:description" content="텍스트를 읽던 눈으로, 시스템의 구조를 설계하다.">
+  <title>신채연 — Developer Portfolio</title>
+  <meta name="description" content="LLM 서비스를 설계하고 배포하며, 결정은 측정으로 내리는 개발자 신채연의 포트폴리오.">
+  <meta property="og:title" content="신채연 — Developer Portfolio">
+  <meta property="og:description" content="LLM 서비스를 설계하고, 배포하고, 측정합니다.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amyshindev.github.io/">
   <meta name="color-scheme" content="light dark">
@@ -184,7 +184,6 @@
     .bar.full i::after { background: var(--ink); }
     .bar em { font-style: normal; font-weight: 700; color: var(--ink); text-align: right; }
     .metric p { font-size: 12.5px; color: var(--ink-3); }
-    .quote { margin-top: 20px; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 14px; color: var(--ink-3); }
 
 
     footer { border-top: 1px solid var(--line); }
@@ -241,6 +240,7 @@
     <nav class="nav">
       <a class="plain" href="#projects">프로젝트</a>
       <a class="plain" href="#approach">소개</a>
+      <a class="plain" href="mailto:amysoo02@gmail.com">연락</a>
       <button class="theme-btn" id="themeBtn" type="button">다크</button>
       <a class="ext" href="https://github.com/amyshindev" target="_blank" rel="noopener">GitHub
         <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
@@ -253,9 +253,9 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="eyebrow dot rv">Literature to Architecture</span>
-        <h1 class="rv"><span class="ln">텍스트를 읽던 눈으로,</span><span class="ln">시스템의</span><span class="ln strong">구조를 설계하다.</span></h1>
-        <p class="lede rv">셰익스피어의 문장 아래 숨은 구조를 읽던 영문학도가, 이제 도메인을 읽고 아키텍처를 세웁니다.</p>
+        <span class="eyebrow dot rv">Measure, then decide</span>
+        <h1 class="rv"><span class="ln">LLM 서비스를</span><span class="ln">설계하고, 배포하고,</span><span class="ln strong">숫자로 검증합니다.</span></h1>
+        <p class="lede rv">인증부터 RAG, 로컬 LLM 서빙, 프로덕션 배포까지 서비스 하나를 끝까지 만듭니다. 모델과 인프라를 바꿀 때는 벤치마크와 평가셋으로 근거를 남깁니다.</p>
 
         <p class="ask rv">어떤 기술을 쓴 프로젝트가 궁금하세요?</p>
         <form class="search rv" id="searchForm" role="search">
@@ -276,15 +276,15 @@
           <a class="text-link" href="#approach">어떻게 일하나요?
             <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 4v12M5 11l5 5 5-5"/></svg></a>
         </div>
-        <p class="tagline rv">문장의 구조부터, 시스템의 구조까지.</p>
+        <p class="tagline rv">바꾸기 전에 재고, 재고 나서 바꿉니다.</p>
       </div>
 
       <div class="art rv">
-        <p class="art-top">From close reading<br>to system design</p>
-        <img src="assets/hero.svg" alt="육각형 받침 위에 책 더미와 서버 타워가 점선으로 이어진 흑백 아이소메트릭 모형" width="900" height="760">
+        <p class="art-top">From design<br>to deployment</p>
+        <img src="assets/hero.svg" alt="육각형 받침 위에 놓인 흑백 아이소메트릭 시스템 모형" width="900" height="760">
         <div class="float f1">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 5.5C5.5 4 8.5 4 12 6c3.5-2 6.5-2 9-.5V19c-2.5-1.5-5.5-1.5-9 .5-3.5-2-6.5-2-9-.5z"/><path d="M12 6v13.5"/></svg>
-          <div><b>텍스트를 읽다</b><small>영문학 · 셰익스피어</small></div>
+          <div><b>교체할 수 있게</b><small>LLM 어댑터 · API 폴백</small></div>
         </div>
         <div class="float f2">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M12 8l3.5 2v4L12 16l-3.5-2v-4z"/></svg>
@@ -294,7 +294,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></svg>
           <div><b>숫자로 검증하다</b><small>정답률 21% → 100%</small></div>
         </div>
-        <p class="art-cap">책과 서버를 하나의 육각형 위에 올린 개념 모형입니다.</p>
+        <p class="art-cap">도메인을 가운데 두고 인프라를 바깥에 둔 개념 모형입니다.</p>
       </div>
     </div>
   </section>
@@ -306,12 +306,12 @@
     <div class="wrap">
       <div class="intro rv">
         <span class="eyebrow">A closer look</span>
-        <h2 class="sec">익숙한 문장을,<br>새로운 구조로.</h2>
+        <h2 class="sec">추측 대신,<br>측정으로.</h2>
       </div>
       <div class="step rv">
-        <span class="eyebrow">01 / Read</span>
-        <h3>텍스트에서 도메인으로</h3>
-        <p>클로즈 리딩으로 문장 아래의 구조를 꺼내듯, 요구사항 속에 숨은 도메인 모델을 찾습니다.</p>
+        <span class="eyebrow">01 / Measure</span>
+        <h3>바꾸기 전에 잰다</h3>
+        <p>모델, 인덱스, 서빙 위치를 바꾸기 전에 비교 스크립트와 평가셋을 먼저 만들고, 병목은 부하 테스트로 찾습니다.</p>
       </div>
       <div class="step rv">
         <span class="eyebrow">02 / Design</span>
@@ -321,7 +321,7 @@
       <div class="step rv">
         <span class="eyebrow">03 / Verify</span>
         <h3>설계를 숫자로 증명하기</h3>
-        <p>ablation 평가처럼 구조가 만든 차이를 직접 측정하고 근거로 남깁니다.</p>
+        <p>표본을 늘려 결과가 뒤집히면 그 결과를 채택하고, 효과가 확인되지 않은 기능은 이유를 남기고 되돌립니다.</p>
       </div>
     </div>
   </section>
@@ -332,7 +332,7 @@
       <div class="proj-head">
         <div class="rv">
           <span class="eyebrow">Selected works</span>
-          <h2 class="sec">구조로 풀어낸<br>다섯 개의 이야기.</h2>
+          <h2 class="sec">설계하고 배포한<br>다섯 개의 프로젝트.</h2>
         </div>
         <div class="filter-state" id="filterState" aria-live="polite">
           <span id="filterLabel"></span>
@@ -346,15 +346,17 @@
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
-            <p class="summary">『베니스의 상인』의 재판을 선택지로 다시 치르는 내러티브 게임. 샤일록을 재해석한 학부 졸업논문에서 출발했습니다.</p>
+            <p class="summary">플레이어의 선택에 LLM 캐릭터들이 실시간으로 반응하는 법정 추리 웹 게임. 인증 서버, RAG, 로컬 LLM 서빙, 프로덕션 배포까지 혼자 구축했습니다.</p>
             <ul>
               <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 15)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리</li>
               <li>개발 중 API 비용이 $200까지 오르자 로컬 모델(Ollama Gemma)로 전환 — Hexagonal 구조 덕에 도메인 코드는 그대로</li>
               <li>중립 판사 ‘공작’을 LLM judge로 두어 재판의 승패와 점수를 판정</li>
+              <li>임베딩 로컬 서빙 지연을 실측해(EC2 CPU 평균 7.5s → Apple Silicon 13ms) 서빙 위치를 결정, 장애 시 API로 자동 폴백</li>
+              <li>k6 부하 테스트(30 VU, 에러 0%)로 병목이 API가 아니라 LLM 서빙 직렬화에 있음을 확인</li>
+              <li>Google OAuth + RS256 JWT 인증 서버, nginx · Let’s Encrypt · Docker Compose로 배포</li>
             </ul>
-            <p class="quote">“The quality of mercy is not strain’d.” — The Merchant of Venice, IV.i</p>
             <div class="card-foot">
-              <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span></div>
+              <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>k6</span></div>
               <a class="go" href="https://shylock-trial.xyz" target="_blank" rel="noopener">shylock-trial.xyz
                 <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
             </div>
@@ -374,7 +376,7 @@
         <article class="card rv" data-tags="FastAPI Next.js EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장">
           <div class="card-top"><span class="num">02</span><span class="role">3인 팀 · 팀장 / 백엔드</span></div>
           <h3>SoundBridge<small>사운드브릿지</small></h3>
-          <p class="summary">취향을 입력하면 어울리는 국악을 찾아주는 추천 서비스. 문화체육관광부 공모전 출품작입니다.</p>
+          <p class="summary">“비 오는 날 아이유 듣는 기분”처럼 자연어로 취향을 말하면 국립국악원 공공 음원 500곡 중 가장 가까운 3곡을 추천 이유와 함께 찾아주는 서비스. 문화체육관광부 공모전 출품작입니다.</p>
           <ul>
             <li>Cohere embed-v4 임베딩과 <b>pgvector HNSW</b> 인덱스로 의미 기반 곡 검색</li>
             <li>EXAONE(FriendliAI) 연속 호출 타임아웃을 튜닝해 추천 설명 생성을 안정화</li>
@@ -396,7 +398,8 @@
           <ul>
             <li><b>방어전</b> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈</li>
             <li><b>가드</b> — 근로계약서를 OCR로 읽고 규칙 기반으로 위법 조항을 판정, 상담 기관까지 연결</li>
-            <li>실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
+            <li>법령 11개를 1,593개 청크로 나눠 두 개의 벡터 공간에 색인한 법령 원문 RAG</li>
+            <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>PaddleOCR</span><span>EXAONE</span><span>Gemma</span></div>
@@ -443,8 +446,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="f-brand"><b>채연</b><span>문장의 구조, 시스템의 구조.</span></div>
-    <span class="mid">LITERATURE TO ARCHITECTURE</span>
+    <div class="f-brand"><b>신채연</b><a href="mailto:amysoo02@gmail.com">amysoo02@gmail.com</a></div>
+    <span class="mid">MEASURE · DESIGN · SHIP</span>
     <a href="#top">맨 위로 <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 16V4M5 9l5-5 5 5"/></svg></a>
   </div>
 </footer>
