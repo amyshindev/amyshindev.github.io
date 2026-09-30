@@ -173,7 +173,7 @@
     .go:hover .arrow, .go:focus-visible .arrow,
     .nav .ext:hover .arrow, .nav .ext:focus-visible .arrow { transform: translate(3px, -3px); }
     .gos { display: flex; flex-wrap: wrap; gap: 12px 24px; }
-    .award { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 12.5px; font-weight: 700; background: var(--ink); color: var(--bg); border-radius: 6px; padding: 5px 11px; }
+    .award { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; font-size: 12.5px; font-weight: 700; background: var(--ink); color: var(--bg); border-radius: 6px; padding: 5px 11px; }
 
     .metric { background: var(--bg); border-radius: 12px; padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
     .metric .eyebrow { font-size: 11px; letter-spacing: .16em; color: var(--ink-2); }
@@ -187,10 +187,11 @@
     .bar em { font-style: normal; font-weight: 700; color: var(--ink); text-align: right; }
     .metric p { font-size: 12.5px; color: var(--ink-3); }
     .feature-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
-    .shot { flex: none; aspect-ratio: 1400 / 878; border-radius: 12px; overflow: hidden; background: #1a1714; border: 1px solid var(--line); position: relative; }
+    .shot { flex: none; aspect-ratio: 1400 / 878; border-radius: 12px; overflow: hidden; background: transparent; border: 1px solid var(--line); position: relative; }
     .shot picture, .shot img { display: block; width: 100%; height: 100%; }
-    .shot img { object-fit: contain; }
+    .shot img { object-fit: cover; }
     .card-shot { margin-bottom: 26px; }
+    .award + h3 { margin-top: 12px; }
     .metric.compact { flex: 1 1 auto; justify-content: center; gap: 14px; padding: 20px 24px; }
     .metric.compact .metric-num { font-size: clamp(30px, 2.6vw, 40px); }
     .metric.compact .bars { gap: 8px; }
@@ -380,9 +381,9 @@
             </picture>
           </figure>
           <div class="card-top"><span class="num">02</span><span class="role">팀 BeyondFacade · 풀스택</span></div>
+          <span class="award"><svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5l2.3 4.8 5.2.7-3.8 3.6.9 5.2L10 14.3l-4.6 2.5.9-5.2-3.8-3.6 5.2-.7z"/></svg>K-디지털 트레이닝 해커톤 고용노동부 장관상 수상작</span>
           <h3>라이프 튜토리얼<small>Life Tutorial</small></h3>
           <p class="summary">청소년이 첫 아르바이트에서 마주할 부당한 상황을 게임으로 미리 겪어 보는 노동권 교육 서비스.</p>
-          <span class="award"><svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5l2.3 4.8 5.2.7-3.8 3.6.9 5.2L10 14.3l-4.6 2.5.9-5.2-3.8-3.6 5.2-.7z"/></svg>K-디지털 트레이닝 해커톤 고용노동부 장관상 수상작</span>
           <ul>
             <li><b>방어전</b> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈</li>
             <li><b>가드</b> — 근로계약서를 OCR로 읽고 <b>규칙 기반</b>으로 위법 조항을 판정한 뒤, 최종 판단은 <b>상담 기관의 사람</b>에게 연결</li>
