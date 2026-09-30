@@ -300,31 +300,6 @@
 
   <hr class="rule">
 
-  <!-- Closer look -->
-  <section class="closer" id="approach">
-    <div class="wrap">
-      <div class="intro rv">
-        <span class="eyebrow">A closer look</span>
-        <h2 class="sec">구조는 단단하게,<br>판단은 사람이.</h2>
-      </div>
-      <div class="step rv">
-        <span class="eyebrow">01 / Architecture</span>
-        <h3>바뀌어도 흔들리지 않게</h3>
-        <p>Hexagonal · DDD로 비즈니스 로직을 가운데 두고 DB, 외부 API, LLM은 포트와 어댑터 뒤에 둡니다. 클라우드 API를 로컬 모델로 바꿀 때도 도메인 코드는 그대로 두고 어댑터만 추가했습니다.</p>
-      </div>
-      <div class="step rv">
-        <span class="eyebrow">02 / Harness</span>
-        <h3>AI가 일할 틀을 짓는다</h3>
-        <p>사실은 DB가, 문장화는 LLM이 맡게 나누고, 사람이 정답을 정의한 평가셋으로 검증합니다. 모델이 실패하면 외부 API로, 그마저 실패하면 결정론적 규칙이 받아냅니다.</p>
-      </div>
-      <div class="step rv">
-        <span class="eyebrow">03 / Human-in-the-Loop</span>
-        <h3>책임은 사람이 진다</h3>
-        <p>AI 에이전트에게 구현을 맡길 때도 작업의 위험도에 따라 검토 강도를 나누고, 최종 판단과 책임은 사람이 집니다.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Projects -->
   <section class="projects" id="projects">
     <div class="wrap">
@@ -393,7 +368,7 @@
         <article class="card rv" data-tags="FastAPI Next.js EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
           <div class="card-top"><span class="num">03</span><span class="role">팀 BeyondFacade · 팀장 / 백엔드</span></div>
           <h3>SoundBridge<small>사운드브릿지</small></h3>
-          <p class="summary">“비 오는 날 아이유 듣는 기분”처럼 자연어로 취향을 말하면 국립국악원 공공 음원 500곡 중 가장 가까운 3곡을 추천 이유와 함께 찾아주는 서비스. 문화체육관광부 공모전 출품작입니다.</p>
+          <p class="summary">“비 오는 날 아이유 듣는 기분”처럼 자연어로 취향을 말하면 국립국악원 공공 음원 500곡 중 가장 가까운 3곡을 추천 이유와 함께 찾아주는 서비스.</p>
           <ul>
             <li>Cohere embed-v4 임베딩과 <b>pgvector HNSW</b> 인덱스로 의미 기반 곡 검색</li>
             <li>도메인 계층이 FastAPI · SQLAlchemy를 모르도록 <b>Hexagonal · DDD</b>로 설계하고, 영속성은 Repository 계층에 격리</li>
@@ -428,7 +403,7 @@
         <article class="card rv" data-tags="AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
           <div class="card-top"><span class="num">05</span><span class="role">팀 BeyondFacade · 풀스택</span></div>
           <h3>Metabole<small>메타볼레</small></h3>
-          <p class="summary">“역삼동 카페” 한 줄이면 상권 분석부터 손익분기, 받을 수 있는 지원금까지. ‘이 동네에서 이 업종으로 창업해도 되는가’를 공공데이터 근거로 답하는 서울 상권 분석 에이전트. IBM × Red Hat 선도기업아카데미 프로젝트입니다.</p>
+          <p class="summary">“역삼동 카페” 한 줄이면 상권 분석부터 손익분기, 받을 수 있는 지원금까지. ‘이 동네에서 이 업종으로 창업해도 되는가’를 공공데이터 근거로 답하는 서울 상권 분석 에이전트.</p>
           <ul>
             <li>서울 427개 행정동 × 10개 업종을 인허가 · 개폐업 · 추정매출 · 유동인구 · 임대료 · 금리로 구조화 — 36개 테이블 · 약 1,107만 행</li>
             <li><b>Hexagonal 모듈러 모놀리스(17개 Bounded Context)</b>에서 백엔드 BC와 프론트 feature를 구현하고, 데이터 수집과 RAG 평가셋 검수를 담당</li>
@@ -442,6 +417,33 @@
           </div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- Closer look -->
+  <section class="closer" id="approach">
+    <div class="wrap">
+      <div class="intro rv">
+        <span class="eyebrow">A closer look</span>
+        <h2 class="sec">구조는 단단하게,<br>판단은 사람이.</h2>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">01 / Architecture</span>
+        <h3>바뀌어도 흔들리지 않게</h3>
+        <p>Hexagonal · DDD로 비즈니스 로직을 가운데 두고 DB, 외부 API, LLM은 포트와 어댑터 뒤에 둡니다. 클라우드 API를 로컬 모델로 바꿀 때도 도메인 코드는 그대로 두고 어댑터만 추가했습니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">02 / Harness</span>
+        <h3>AI가 일할 틀을 짓는다</h3>
+        <p>사실은 DB가, 문장화는 LLM이 맡게 나누고, 사람이 정답을 정의한 평가셋으로 검증합니다. 모델이 실패하면 외부 API로, 그마저 실패하면 결정론적 규칙이 받아냅니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">03 / Human-in-the-Loop</span>
+        <h3>책임은 사람이 진다</h3>
+        <p>AI 에이전트에게 구현을 맡길 때도 작업의 위험도에 따라 검토 강도를 나누고, 최종 판단과 책임은 사람이 집니다.</p>
       </div>
     </div>
   </section>
