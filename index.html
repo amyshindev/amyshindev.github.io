@@ -254,7 +254,7 @@
     <div class="wrap">
       <div class="hero-copy">
         <span class="eyebrow dot rv">Human-in-the-Loop</span>
-        <h1 class="rv"><span class="ln">AI에게 일을 맡기고,</span><span class="ln">책임은</span><span class="ln strong">사람이 집니다.</span></h1>
+        <h1 class="rv"><span class="ln">강력한 AI를 위한,</span><span class="ln">더 강력한</span><span class="ln strong">하네스.</span></h1>
         <p class="lede rv">AI가 일하는 틀, 하네스를 설계합니다. 사람이 정한 기준으로 AI의 결과를 검증하고, AI가 실패하면 규칙이 받아내며, 최종 판단은 사람이 내리는 구조를 만듭니다.</p>
 
         <p class="ask rv">어떤 기술을 쓴 프로젝트가 궁금하세요?</p>
@@ -348,7 +348,7 @@
             <h3>샤일록의 법정<small>Shylock</small></h3>
             <p class="summary">플레이어의 선택에 LLM 캐릭터들이 실시간으로 반응하는 법정 추리 웹 게임. 인증 서버, RAG, 로컬 LLM 서빙, 프로덕션 배포까지 혼자 구축했습니다.</p>
             <ul>
-              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 15)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리</li>
+              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리</li>
               <li>판사 ‘공작’은 LLM judge로 판정하되, 모든 LLM 경로가 실패하면 <b>결정론적 규칙</b>이 판정 — 로컬 모델 → 외부 API → 규칙 3단 폴백</li>
               <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙. 도구 호출 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
               <li>1GB EC2에는 백엔드만, 추론은 맥북 Ollama로 분리해 Cloudflare Tunnel + Zero Trust로 연결 — Hexagonal 구조라 도메인 코드는 그대로 두고 어댑터만 추가</li>
