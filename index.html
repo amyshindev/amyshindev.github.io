@@ -223,9 +223,20 @@
     .bar.full i::after { background: var(--accent); }
     .bar em { font-style: normal; font-weight: 700; color: var(--ink); text-align: right; }
     .metric p { font-size: 12.5px; color: var(--ink-3); }
-    .metric p.metric-lede { font-size: 14px; color: var(--ink-2); margin-top: -6px; }
-    .metric p.metric-lede b { color: var(--accent-ink); }
-    .bar.full i::after { min-width: 6px; }
+    .metric.graph { gap: 10px; justify-content: flex-start; }
+    .g-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .g-meta { font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+    .metric.graph p b { color: var(--accent-ink); }
+    .n4 { width: 100%; height: auto; display: block; }
+    .n4-e { fill: none; stroke: var(--accent); stroke-width: 1.5; }
+    .n4-ah { fill: var(--accent); }
+    .n4-l { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; fill: var(--ink-2);
+      paint-order: stroke; stroke: var(--tint); stroke-width: 5px; stroke-linejoin: round; }
+    .n4-n circle { fill: var(--card); stroke: var(--erd-border); stroke-width: 1.6; }
+    .n4-n .ko { font-size: 13px; font-weight: 800; fill: var(--ink); }
+    .n4-n .en { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 8.5px; fill: var(--ink-3); }
+    .n4-n.main circle { fill: var(--btn); stroke: var(--btn); }
+    .n4-n.main .ko, .n4-n.main .en { fill: var(--btn-ink); }
     .feature-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
     .shot { flex: none; aspect-ratio: 1400 / 878; border-radius: 12px; overflow: hidden; background: transparent; border: 1px solid var(--line); position: relative; }
     .shot picture, .shot img { display: block; width: 100%; height: 100%; }
@@ -502,7 +513,7 @@
 
       <div class="grid" id="grid">
         <!-- 01 Shylock -->
-        <article class="card feature rv" data-tags="ERD 임베딩 지연시간 latency Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
+        <article class="card feature rv" data-tags="ERD Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
@@ -524,7 +535,6 @@
             </ul>
             <div class="card-foot">
               <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Neo4j</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>pytest</span><span>k6</span></div>
-              <div class="erd-row">
               <details class="erd" id="sh-erd" data-src="assets/shylock-erd.svg">
               <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 10개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
               <div class="erd-panel" role="region" aria-label="샤일록의 법정 ERD">
@@ -541,23 +551,6 @@
                 <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
               </div>
             </details>
-              <details class="erd" id="sh-neo4j" data-src="assets/shylock-neo4j.svg">
-              <summary><svg class="erd-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5.5" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M8.7 10.6l6.9-3.7M8.7 13.4l6.9 3.7"/></svg>Neo4j 그래프<span class="erd-meta">인물 7 · 관계 17</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
-              <div class="erd-panel" role="region" aria-label="샤일록의 법정 Neo4j 그래프">
-                <div class="erd-head">
-                  <b>Shylock Neo4j 그래프</b>
-                  <div class="erd-tools">
-                    <button type="button" data-zoom="-1" aria-label="축소">−</button>
-                    <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
-                    <button type="button" data-zoom="1" aria-label="확대">+</button>
-                    <a href="assets/shylock-neo4j.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
-                  </div>
-                </div>
-                <p class="erd-legend">Postgres와 같은 인물 관계 데이터를 그래프로 미러링한 대안 게이트웨이 · 설정 하나로 전환 · <b>×2</b> = 대칭 관계를 A→B, B→A 두 방향 엣지로 저장</p>
-                <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
-              </div>
-            </details>
-            </div>
             </div>
           </div>
           <div class="feature-side">
@@ -567,15 +560,10 @@
                 <img src="assets/shylock-1400.jpg?v=2" alt="샤일록의 법정 플레이 화면 — 샤일록과 포샤가 법정에서 맞서고, 존엄·기력·논리 게이지와 아이템·스킬 패널, 포샤의 대사 창이 보인다" width="1400" height="878" loading="lazy" decoding="async">
               </picture>
             </figure>
-            <div class="metric compact">
-              <span class="eyebrow">Local embedding latency</span>
-              <div class="metric-num"><span>7.5s→</span>13ms</div>
-              <p class="metric-lede">추론을 어디서 돌리느냐만 바꿔 <b>약 580배</b> 빠르게</p>
-              <div class="bars">
-                <div class="bar"><span>EC2 직접</span><i style="--w:100%"></i><em>7.5s</em></div>
-                <div class="bar full"><span>맥북 분리</span><i style="--w:1.2%"></i><em>13ms</em></div>
-              </div>
-              <p>같은 임베딩 모델 기준 평균 응답 시간<br>EC2(t3.micro) in-process는 CPU 크레딧 고갈로 p95 29초 — Cohere API보다 20~26배 느림. 맥북(Apple Silicon)에서 돌리고 결과만 네트워크로 받으면 ~13ms</p>
+            <div class="metric compact graph">
+              <div class="g-head"><span class="eyebrow">Neo4j · 인물 관계 그래프</span><span class="g-meta">인물 7 · 관계 17</span></div>
+              <svg class="n4" viewBox="0 0 480 466" role="img" aria-label="Neo4j 인물 관계 그래프 — 인물 7명, 관계 17개"><defs><marker id="n4ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="n4-ah" d="M0,1 L9,5 L0,9 z"/></marker></defs><path class="n4-e" d="M73.4,80.7 Q110.0,110.0 135.6,130.5" marker-start="url(#n4ah)" marker-end="url(#n4ah)"/><text class="n4-l" x="107.3" y="111.3" text-anchor="middle">friend_of ×2</text><path class="n4-e" d="M194.4,121.4 Q224.6,76.2 290.3,66.6" marker-end="url(#n4ah)"/><text class="n4-l" x="233.5" y="88.6" text-anchor="middle">father_of</text><path class="n4-e" d="M213.5,151.7 Q267.4,143.8 304.2,88.6" marker-start="url(#n4ah)"/><text class="n4-l" x="263.1" y="135.5" text-anchor="middle">daughter_of</text><path class="n4-e" d="M347.3,81.6 Q379.0,106.0 412.3,131.7" marker-start="url(#n4ah)" marker-end="url(#n4ah)"/><text class="n4-l" x="379.4" y="109.8" text-anchor="middle">married_to ×2</text><path class="n4-e" d="M132.3,180.7 Q22.0,247.0 139.1,317.4" marker-start="url(#n4ah)"/><text class="n4-l" x="80.1" y="259.8" text-anchor="middle">discriminated_against</text><path class="n4-e" d="M147.8,196.0 Q118.0,247.0 151.8,304.9" marker-end="url(#n4ah)"/><text class="n4-l" x="135.6" y="230.7" text-anchor="middle">creditor_of</text><path class="n4-e" d="M192.2,196.0 Q222.0,247.0 188.2,304.9" marker-start="url(#n4ah)"/><text class="n4-l" x="202.7" y="274.3" text-anchor="middle">debtor_of</text><path class="n4-e" d="M207.4,181.1 Q314.0,247.0 200.6,317.1" marker-start="url(#n4ah)" marker-end="url(#n4ah)"/><text class="n4-l" x="258.6" y="243.4" text-anchor="middle">enemy_of ×2</text><path class="n4-e" d="M206.0,336.0 Q261.0,336.0 318.0,336.0" marker-start="url(#n4ah)" marker-end="url(#n4ah)"/><text class="n4-l" x="261.5" y="339.5" text-anchor="middle">friend_of ×2</text><path class="n4-e" d="M200.7,354.9 Q261.0,392.0 323.0,353.8" marker-end="url(#n4ah)"/><text class="n4-l" x="261.4" y="376.7" text-anchor="middle">guarantor_for</text><path class="n4-e" d="M192.7,363.9 Q261.0,448.0 330.6,362.4" marker-start="url(#n4ah)"/><text class="n4-l" x="261.3" y="409.1" text-anchor="middle">financed_by</text><path class="n4-e" d="M375.2,360.8 Q395.0,382.0 417.5,406.1" marker-start="url(#n4ah)" marker-end="url(#n4ah)"/><text class="n4-l" x="395.7" y="386.2" text-anchor="middle">married_to ×2</text><g class="n4-n main"><circle cx="170" cy="158" r="42"/><text class="ko" x="170" y="157" text-anchor="middle">샤일록</text><text class="en" x="170" y="170" text-anchor="middle">Shylock</text></g><g class="n4-n"><circle cx="50" cy="62" r="28"/><text class="ko" x="50" y="61" text-anchor="middle">투발</text><text class="en" x="50" y="74" text-anchor="middle">Tubal</text></g><g class="n4-n"><circle cx="322" cy="62" r="30"/><text class="ko" x="322" y="61" text-anchor="middle">제시카</text><text class="en" x="322" y="74" text-anchor="middle">Jessica</text></g><g class="n4-n"><circle cx="436" cy="150" r="28"/><text class="ko" x="436" y="149" text-anchor="middle">로렌조</text><text class="en" x="436" y="162" text-anchor="middle">Lorenzo</text></g><g class="n4-n"><circle cx="170" cy="336" r="34"/><text class="ko" x="170" y="335" text-anchor="middle">안토니오</text><text class="en" x="170" y="348" text-anchor="middle">Antonio</text></g><g class="n4-n"><circle cx="352" cy="336" r="32"/><text class="ko" x="352" y="335" text-anchor="middle">바사니오</text><text class="en" x="352" y="348" text-anchor="middle">Bassanio</text></g><g class="n4-n"><circle cx="438" cy="428" r="28"/><text class="ko" x="438" y="427" text-anchor="middle">포샤</text><text class="en" x="438" y="440" text-anchor="middle">Portia</text></g></svg>
+              <p>Postgres와 같은 인물 관계 데이터를 그래프로 미러링한 대안 게이트웨이 — 설정 하나로 전환합니다. <b>×2</b>는 서로 주고받는 관계를 A→B, B→A 두 방향 엣지로 저장했다는 뜻입니다.</p>
             </div>
           </div>
         </article>
