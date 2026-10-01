@@ -485,7 +485,7 @@
 
       <div class="grid" id="grid">
         <!-- 01 Shylock -->
-        <article class="card feature rv" data-tags="Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
+        <article class="card feature rv" data-tags="ERD Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
@@ -498,6 +498,22 @@
               <li>ORM <code>relationship()</code>은 진짜 애그리게이트(Trial–ChoiceHistory) 하나에만 허용하고 나머지 FK는 ID 참조 + 수동 join — AsyncSession에서 로드 안 된 관계를 건드리면 <b>조용한 N+1 대신 즉시 예외</b>가 나는 구조로 DDD 애그리게이트 경계를 지킴</li>
               <li>Google OAuth + RS256 JWT 인증 서버부터 nginx · Docker Compose 배포까지 직접 구축</li>
             </ul>
+            <details class="erd" id="sh-erd" data-src="assets/shylock-erd.svg">
+            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 10개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <div class="erd-panel" role="region" aria-label="샤일록의 법정 ERD">
+              <div class="erd-head">
+                <b>Shylock ERD</b>
+                <div class="erd-tools">
+                  <button type="button" data-zoom="-1" aria-label="축소">−</button>
+                  <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
+                  <button type="button" data-zoom="1" aria-label="확대">+</button>
+                  <a href="assets/shylock-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                </div>
+              </div>
+              <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 실선 = DB 외래 키, 점선 = 원문 줄 번호(ftln) 범위를 가리키는 soft ref · alembic 033 기준</p>
+              <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
+            </div>
+          </details>
             <div class="card-foot">
               <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Neo4j</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>pytest</span><span>k6</span></div>
               <div class="gos">
