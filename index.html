@@ -32,6 +32,8 @@
       --btn-soft: #7cc3b1;
       --shadow: 0 1px 2px rgba(18,70,58,.05), 0 8px 24px rgba(18,70,58,.08);
       --art-filter: none;
+      --erd-cluster: #eef6f3;
+      --erd-border: #b9d9cf;
       --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", sans-serif;
       --max: 1320px;
       --gutter: clamp(16px, 6vw, 96px);
@@ -40,13 +42,13 @@
       :root:not([data-theme="light"]) {
         --bg: #0d1614; --card: #142320; --tint: #1a2e29; --ink: #e4f2ed; --ink-head: #e4f2ed; --ink-2: #a9c2ba; --ink-3: #7f9a92;
         --muted-head: #5f8a7e; --line: #24372f; --chip: #142320; --accent: #5fd0b4; --accent-ink: #6fd8bd; --btn: #5fd0b4; --btn-ink: #08201a; --btn-soft: #2c6b5c;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05);
+        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #11201c; --erd-border: #2f4d44;
       }
     }
     :root[data-theme="dark"] {
       --bg: #0d1614; --card: #142320; --tint: #1a2e29; --ink: #e4f2ed; --ink-head: #e4f2ed; --ink-2: #a9c2ba; --ink-3: #7f9a92;
         --muted-head: #5f8a7e; --line: #24372f; --chip: #142320; --accent: #5fd0b4; --accent-ink: #6fd8bd; --btn: #5fd0b4; --btn-ink: #08201a; --btn-soft: #2c6b5c;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05);
+        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #11201c; --erd-border: #2f4d44;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -181,10 +183,9 @@
       align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 24px;
       font-size: 13px; font-weight: 800; letter-spacing: -0.01em; color: #3b2a04;
       background: linear-gradient(135deg, #ffe08a 0%, #f7c04a 48%, #eaa52c 100%);
-      border: 1px solid #d8961f; border-radius: 8px; padding: 7px 13px 7px 11px;
+      border: 1px solid #d8961f; border-radius: 8px; padding: 7px 13px;
       box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 6px 18px rgba(234,165,44,.35);
     }
-    .award svg { width: 15px; height: 17px; margin: -1px 0; fill: #8a5a06; stroke: #8a5a06; }
 
     .metric { background: var(--tint); border-radius: 12px; padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
     .metric .eyebrow { font-size: 11px; letter-spacing: .16em; color: var(--ink-2); }
@@ -225,33 +226,39 @@
     .erd-meta { font-weight: 500; font-size: 12.5px; color: var(--ink-3); }
     .card:has(.erd[open]) { position: relative; z-index: 15; }
     .erd-panel {
-      position: absolute; top: calc(100% + 10px); left: 0; z-index: 30; width: min(760px, calc(100vw - 48px));
-      max-height: min(70vh, 640px); overflow: auto; overscroll-behavior: contain;
+      position: absolute; top: calc(100% + 10px); left: 0; z-index: 30; width: min(1140px, calc(100vw - 2 * var(--gutter) - 72px));
       background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 20px;
       box-shadow: 0 18px 48px rgba(10, 40, 34, .18), 0 2px 6px rgba(10, 40, 34, .08);
       animation: erdIn .22s ease;
     }
     @keyframes erdIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
-    .erd-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+    .erd-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
     .erd-head b { font-size: 15px; font-weight: 800; letter-spacing: -0.02em; }
-    .erd-head a { font-size: 13px; font-weight: 700; color: var(--accent-ink); }
-    .bc { padding-top: 14px; margin-top: 12px; border-top: 1px solid var(--line); }
-    .bc h4 { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; letter-spacing: -0.02em; }
-    .bc-key { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 600; color: var(--btn-ink); background: var(--btn); border-radius: 5px; padding: 1px 7px; }
-    .rels { margin: 6px 0 10px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; line-height: 1.75; color: var(--ink-2); }
-    .tbls { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
-    .tbl { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--bg); }
-    .tn { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; padding: 7px 10px; background: var(--tint); border-bottom: 1px solid var(--line); color: var(--accent-ink); }
-    .tbl ul { list-style: none; margin: 0; padding: 6px 10px 8px; display: grid; gap: 2px; }
-    .tbl li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; padding: 0; font-size: 12px; line-height: 1.55; color: var(--ink); }
-    .tbl li::before { display: none; }
-    .tbl code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; }
-    .k { font-size: 10.5px; font-weight: 700; border-radius: 4px; padding: 0 5px; line-height: 1.6; }
-    .k.pk { background: var(--btn); color: var(--btn-ink); }
-    .k.fk { background: var(--tint); color: var(--accent-ink); }
-    .k.uq { border: 1px solid var(--line); color: var(--ink-2); }
-    .k.ty { color: var(--ink-3); font-weight: 600; }
-    .tbl .note { margin: 0; padding: 0 10px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: var(--ink-3); }
+    .erd-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+    .erd-tools button { min-width: 32px; height: 30px; padding: 0 10px; border: 1px solid var(--line); background: var(--card); border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .erd-tools button:hover { border-color: var(--accent); }
+    .erd-tools a { font-size: 13px; font-weight: 700; color: var(--accent-ink); margin-left: 6px; }
+    .erd-legend { margin: 8px 0 10px; font-size: 12px; color: var(--ink-3); }
+    .erd-legend .lg { font-family: ui-monospace, Menlo, monospace; font-weight: 700; color: var(--accent-ink); margin: 0 2px 0 6px; }
+    .erd-legend .lg.one { margin-left: 0; }
+    .erd-view { overflow: auto; max-height: min(64vh, 620px); border: 1px solid var(--line); border-radius: 10px; background: var(--bg); overscroll-behavior: contain; }
+    .erd-loading { padding: 24px; font-size: 13px; color: var(--ink-3); }
+    .erd-svg { display: block; height: auto; }
+    .erd-svg text { font-family: "DejaVu Sans Mono", Menlo, "SFMono-Regular", Consolas, monospace; }
+    .erd-svg text[font-family^="Noto"] { font-family: var(--sans); }
+    /* theme the diagram: Graphviz colours are remapped to the site's variables */
+    .erd-svg [fill="#fcfefd"] { fill: var(--card); }
+    .erd-svg [fill="#e3f3ed"] { fill: var(--tint); }
+    .erd-svg [fill="#eef6f3"] { fill: var(--erd-cluster); }
+    .erd-svg [stroke="#d3e6df"] { stroke: var(--line); }
+    .erd-svg [stroke="#b9d9cf"] { stroke: var(--erd-border); }
+    .erd-svg [fill="#12241f"] { fill: var(--ink); }
+    .erd-svg [fill="#14806a"] { fill: var(--accent-ink); }
+    .erd-svg [fill="#61766f"] { fill: var(--ink-3); }
+    .erd-svg [fill="#127663"] { fill: var(--btn); }
+    .erd-svg [fill="#2fa086"] { fill: var(--accent); }
+    .erd-svg [stroke="#5fae99"] { stroke: var(--accent); }
+    .erd-svg [fill="#5fae99"] { fill: var(--accent); }
 
     footer { border-top: 1px solid var(--line); }
     footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 40px; padding-bottom: 48px; font-size: 13px; }
@@ -295,7 +302,8 @@
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
       .btn { gap: 24px; padding: 18px 22px; }
-      .erd-panel { position: static; width: auto; max-height: 60vh; margin-top: 10px; box-shadow: none; animation: none; }
+      .erd-panel { position: static; width: auto; margin-top: 10px; box-shadow: none; animation: none; padding: 14px; }
+      .erd-tools a { margin-left: 0; }
       .erd-meta { display: none; }
       footer .mid { display: none; }
     }
@@ -437,7 +445,7 @@
             </picture>
           </figure>
           <div class="card-top"><span class="num">02</span><span class="role">팀 BeyondFacade · 풀스택</span></div>
-          <span class="award"><svg viewBox="3 2 14 16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.8h8v4.6a4 4 0 0 1-8 0z" stroke-width="1"/><path d="M6 4.3H4.2a.6.6 0 0 0-.6.7c.3 2 1.3 3.2 3 3.6M14 4.3h1.8a.6.6 0 0 1 .6.7c-.3 2-1.3 3.2-3 3.6" fill="none" stroke-width="1.6"/><path d="M10 11.6v2.6" fill="none" stroke-width="1.9"/><path d="M7.6 14.6h4.8l.7 2.6H6.9z" stroke-width="1"/></svg>K-디지털 트레이닝 해커톤 고용노동부 장관상 수상작</span>
+          <span class="award">K-디지털 트레이닝 해커톤 고용노동부 장관상</span>
           <h3>라이프 튜토리얼<small>Life Tutorial</small></h3>
           <p class="summary">청소년이 첫 아르바이트에서 마주할 부당한 상황을 게임으로 미리 겪어 보는 노동권 교육 서비스.</p>
           <ul>
@@ -447,57 +455,20 @@
             <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
           </ul>
           <details class="erd" id="lt-erd">
-            <summary><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="11.5" y="3" width="6" height="5" rx="1"/><rect x="7" y="12" width="6" height="5" rx="1"/><path d="M5.5 8v2h9V8M10 10v2"/></svg>ERD 보기<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <summary><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="11.5" y="3" width="6" height="5" rx="1"/><rect x="7" y="12" width="6" height="5" rx="1"/><path d="M5.5 8v2h9V8M10 10v2"/></svg>ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
-              <div class="erd-head"><b>Life Tutorial ERD</b><a href="https://lifetutorial.beyondfacade.cloud/docs/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a></div>
-              <section class="bc"><h4><span class="bc-key">ontology</span>법령 지식</h4>
-                <p class="rels">laws 1─N law_articles 1─N law_chunks</p>
-                <div class="tbls">
-                  <div class="tbl"><div class="tn">laws</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>mst</code><span class="k uq">UQ</span></li><li><code>name</code></li><li><code>effective_date</code></li><li><code>fetched_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">law_articles</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>law_id</code><span class="k fk">→ laws</span></li><li><code>article_no</code></li><li><code>title</code></li><li><code>content</code></li></ul><p class="note">UQ(law_id, article_no)</p></div>
-                  <div class="tbl"><div class="tn">law_chunks</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>article_id</code><span class="k fk">→ law_articles</span></li><li><code>chunk_no</code></li><li><code>content</code></li><li><code>embedding</code><span class="k ty">vector(1536)</span></li><li><code>model</code></li><li><code>embedded_at</code></li><li><code>embedding_local</code></li><li><code>model_local</code></li><li><code>embedded_local_at</code></li></ul></div>
+              <div class="erd-head">
+                <b>Life Tutorial ERD</b>
+                <div class="erd-tools">
+                  <button type="button" data-zoom="-1" aria-label="축소">−</button>
+                  <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
+                  <button type="button" data-zoom="1" aria-label="확대">+</button>
+                  <a href="assets/lifetutorial-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="https://lifetutorial.beyondfacade.cloud/docs/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a>
                 </div>
-              </section>
-              <section class="bc"><h4><span class="bc-key">auth</span>인증 · 플레이어</h4>
-                <p class="rels">player 1─N player_oauth<br>player 1─N refresh_token</p>
-                <div class="tbls">
-                  <div class="tbl"><div class="tn">player</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>username</code><span class="k uq">UQ</span></li><li><code>password_hash</code></li><li><code>birth_year</code></li><li><code>created_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">player_oauth</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>provider</code></li><li><code>provider_subject</code></li></ul><p class="note">UQ(provider, provider_subject)</p></div>
-                  <div class="tbl"><div class="tn">refresh_token</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>token_hash</code><span class="k uq">UQ</span></li><li><code>expires_at</code></li><li><code>revoked_at</code></li><li><code>created_at</code></li></ul></div>
-                </div>
-              </section>
-              <section class="bc"><h4><span class="bc-key">quest</span>게임</h4>
-                <p class="rels">category 1─N chapter 1─N quest<br>quest 1─N defense_line · 대화 방어전<br>quest 1─N calc_problem · 계산 미니게임<br>player · quest 1─N quest_session 1─N dialogue_turn<br>player 1─N player_stat · learning_event · quest_clear_score</p>
-                <div class="tbls">
-                  <div class="tbl"><div class="tn">category</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>name</code></li></ul></div>
-                  <div class="tbl"><div class="tn">chapter</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>category_id</code><span class="k fk">→ category</span></li><li><code>title</code></li><li><code>display_order</code></li></ul></div>
-                  <div class="tbl"><div class="tn">quest</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>chapter_id</code><span class="k fk">→ chapter</span></li><li><code>title</code></li><li><code>mechanism</code></li><li><code>display_order</code></li><li><code>money_defended</code></li><li><code>clear_reward</code><span class="k ty">JSONB</span></li></ul></div>
-                  <div class="tbl"><div class="tn">defense_line</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>level</code></li><li><code>npc_opening</code></li><li><code>npc_clear</code></li><li><code>ongoing_lines</code><span class="k ty">JSONB</span></li><li><code>hint1</code></li><li><code>hint2</code></li><li><code>keywords_clear</code><span class="k ty">JSONB</span></li><li><code>keywords_ambig</code><span class="k ty">JSONB</span></li><li><code>keywords_ambig_priority</code><span class="k ty">JSONB</span></li><li><code>evidence</code><span class="k ty">JSONB</span></li></ul><p class="note">UQ(quest_id, level)</p></div>
-                  <div class="tbl"><div class="tn">calc_problem</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>code</code></li><li><code>display_order</code></li><li><code>prompt_template</code></li><li><code>given_params</code><span class="k ty">JSONB</span></li><li><code>answer_kind</code></li><li><code>explanation_template</code></li><li><code>is_trap</code></li></ul><p class="note">UQ(quest_id, code)</p></div>
-                  <div class="tbl"><div class="tn">quest_session</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>status</code></li><li><code>checkpoint</code></li><li><code>turn_in_level</code></li><li><code>ongoing_index</code></li><li><code>total_turns</code></li><li><code>hints_used</code></li><li><code>calc_progress</code><span class="k ty">JSONB</span></li><li><code>started_at</code></li><li><code>cleared_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">dialogue_turn</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>session_id</code><span class="k fk">→ quest_session</span></li><li><code>role</code></li><li><code>text</code></li><li><code>defense_level</code></li><li><code>judgement</code></li><li><code>created_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">player_stat</div><ul><li><code>player_id</code><span class="k pk">PK · FK player</span></li><li><code>stat_code</code><span class="k pk">PK</span></li><li><code>value</code></li></ul></div>
-                  <div class="tbl"><div class="tn">quest_clear_score</div><ul><li><code>player_id</code><span class="k pk">PK · FK player</span></li><li><code>quest_id</code><span class="k pk">PK · FK quest</span></li><li><code>clear_count</code></li><li><code>initial_reward</code><span class="k ty">JSONB</span></li><li><code>recent_reward</code><span class="k ty">JSONB</span></li><li><code>updated_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">learning_event</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>event_type</code></li><li><code>payload</code><span class="k ty">JSONB</span></li><li><code>created_at</code></li></ul></div>
-                </div>
-              </section>
-              <section class="bc"><h4><span class="bc-key">guard</span>가드 · 계약서 판정</h4>
-                <p class="rels">player 1─N contract_scan 1─N guard_finding<br>guard_rule 1─N guard_finding</p>
-                <div class="tbls">
-                  <div class="tbl"><div class="tn">contract_scan</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>doc_type</code></li><li><code>status</code></li><li><code>template_matched</code></li><li><code>scanned_at</code></li><li><code>image_purged_at</code></li><li><code>fields_purged_at</code></li><li><code>confirmed_fields</code><span class="k ty">JSONB</span></li></ul></div>
-                  <div class="tbl"><div class="tn">guard_rule</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>code</code></li><li><code>version</code></li><li><code>doc_type</code></li><li><code>violation_type_code</code></li><li><code>severity</code></li><li><code>condition_spec</code><span class="k ty">JSONB</span></li><li><code>verified_by</code></li><li><code>verified_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">guard_finding</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>scan_id</code><span class="k fk">→ contract_scan</span></li><li><code>rule_id</code><span class="k fk">→ guard_rule</span></li><li><code>rule_version</code></li><li><code>created_at</code></li></ul></div>
-                </div>
-              </section>
-              <section class="bc"><h4><span class="bc-key">insight</span>상담 준비 리포트</h4>
-                <p class="rels">insight_pack 1─N insight_pack_item<br>player · insight_pack 1─N report_session 1─N report_slot_value</p>
-                <div class="tbls">
-                  <div class="tbl"><div class="tn">insight_pack</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>category</code><span class="k uq">UQ</span></li><li><code>track</code></li><li><code>secondary_track</code></li><li><code>urgent</code></li><li><code>implemented</code></li><li><code>urgent_notice</code></li><li><code>evidence_notice</code></li><li><code>law_query</code></li></ul></div>
-                  <div class="tbl"><div class="tn">insight_pack_item</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>pack_id</code><span class="k fk">→ insight_pack</span></li><li><code>kind</code><span class="k ty">SLOT · ISSUE · EVIDENCE_TIP · ROUTING</span></li><li><code>slot_id</code></li><li><code>order_no</code></li><li><code>required</code></li><li><code>value_type</code><span class="k ty">TEXT · DATE · MONEY</span></li><li><code>label</code></li><li><code>question</code></li><li><code>text</code></li><li><code>reason</code></li><li><code>contact</code></li><li><code>expert</code></li></ul></div>
-                  <div class="tbl"><div class="tn">report_session</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>pack_id</code><span class="k fk">→ insight_pack</span></li><li><code>status</code><span class="k ty">INTERVIEW · CONFIRM · GENERATED · PURGED</span></li><li><code>narrative</code></li><li><code>current_slot_id</code></li><li><code>reask_used</code></li><li><code>confirmed_at</code></li><li><code>retention_expires_at</code></li><li><code>extension_count</code></li><li><code>created_at</code></li><li><code>purged_at</code></li></ul></div>
-                  <div class="tbl"><div class="tn">report_slot_value</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>session_id</code><span class="k fk">→ report_session</span></li><li><code>slot_id</code></li><li><code>value</code></li><li><code>precision</code><span class="k ty">EXACT · APPROX_MONTH · APPROX_RANGE · HEARSAY · UNKNOWN</span></li><li><code>raw_quote</code></li><li><code>source</code></li></ul></div>
-                </div>
-              </section>
+              </div>
+              <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 각 FK 컬럼에서 부모 테이블의 PK로 연결</p>
+              <div class="erd-view" id="erdView"><p class="erd-loading">불러오는 중…</p></div>
             </div>
           </details>
           <div class="card-foot">
@@ -670,10 +641,37 @@
     document.getElementById('clearFilter').addEventListener('click', function () { input.value = ''; apply(''); });
   })();
 
-  // ERD dropdown: close on outside click or Escape
+  // ERD dropdown: lazy-load the diagram, zoom controls, close on outside click / Escape
   (function () {
-    var erd = document.getElementById('lt-erd');
+    var erd = document.getElementById('lt-erd'), view = document.getElementById('erdView');
     if (!erd) return;
+    var svg = null, natural = 0, zoom = 0;            // zoom 0 = fit to panel width
+    function apply() {
+      if (!svg) return;
+      var fit = view.clientWidth;
+      svg.style.width = (zoom === 0 ? fit : Math.round(natural * zoom)) + 'px';
+    }
+    function load() {
+      if (svg || view.dataset.loading) return;
+      view.dataset.loading = '1';
+      fetch('assets/lifetutorial-erd.svg').then(function (r) { return r.text(); }).then(function (t) {
+        view.innerHTML = t.replace(/^<\?xml[^>]*>\s*/, '');
+        svg = view.querySelector('svg');
+        svg.classList.add('erd-svg');
+        natural = svg.viewBox.baseVal.width * 4 / 3;  // pt -> px
+        zoom = view.clientWidth >= natural * 0.9 ? 1 : 0;
+        apply();
+      }).catch(function () { view.innerHTML = '<p class="erd-loading">ERD를 불러오지 못했어요. 새 탭에서 열어 보세요.</p>'; });
+    }
+    erd.addEventListener('toggle', function () { if (erd.open) { load(); apply(); } });
+    erd.querySelectorAll('[data-zoom]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var d = +b.dataset.zoom, cur = zoom === 0 ? view.clientWidth / natural : zoom;
+        zoom = d === 0 ? 0 : Math.min(2, Math.max(0.3, Math.round((cur + d * 0.2) * 10) / 10));
+        apply();
+      });
+    });
+    window.addEventListener('resize', function () { if (zoom === 0) apply(); });
     document.addEventListener('click', function (e) { if (erd.open && !erd.contains(e.target)) erd.open = false; });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && erd.open) { erd.open = false; erd.querySelector('summary').focus(); } });
   })();
