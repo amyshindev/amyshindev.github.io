@@ -508,7 +508,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
+        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -519,9 +519,11 @@
           <h3>SoundBridge<small>사운드브릿지</small></h3>
           <p class="summary">“비 오는 날 아이유 듣는 기분”처럼 자연어로 취향을 말하면 국립국악원 공공 음원 500곡 중 가장 가까운 3곡을 추천 이유와 함께 찾아주는 서비스.</p>
           <ul>
-            <li>Cohere embed-v4 임베딩과 <b>pgvector HNSW</b> 인덱스로 의미 기반 곡 검색</li>
+            <li>공공 음원 적재 → EXAONE으로 곡 설명 미리 생성 → Cohere 임베딩 → R2 업로드까지 <b>데이터 파이프라인</b>을 직접 만들어 500곡을 검색 가능한 데이터로 구축</li>
+            <li>Cohere embed-v4 임베딩과 <b>pgvector HNSW 부분 인덱스</b>(임베딩이 있는 곡만 색인)로 의미 기반 곡 검색</li>
+            <li>추천 설명은 EXAONE 묶음 요청 → 곡별 동시 요청 → 템플릿 문장의 <b>3단계 대체 흐름</b>으로 생성 — 답이 부실하거나 90초를 넘기면 다음 단계로 넘겨, LLM이 실패해도 추천 결과는 항상 반환</li>
+            <li>같은 입력의 검색 결과를 <b>Redis에 1시간 캐시</b>해 반복 요청의 LLM 호출과 응답 시간을 줄임</li>
             <li>도메인 계층이 FastAPI · SQLAlchemy를 모르도록 <b>Hexagonal · DDD</b>로 설계하고, 영속성은 Repository 계층에 격리</li>
-            <li>EXAONE(FriendliAI) 연속 호출 타임아웃을 튜닝해 추천 설명 생성을 안정화</li>
             <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
           </ul>
           <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg">
@@ -542,7 +544,7 @@
             </div>
           </details>
           <div class="card-foot">
-            <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Cloudflare R2</span></div>
+            <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Redis</span><span>Cloudflare R2</span></div>
             <div class="gos">
               <a class="go" href="https://soundbridge.site" target="_blank" rel="noopener">서비스 바로가기
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
