@@ -180,7 +180,7 @@
       display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s, border-color .25s, opacity .3s;
     }
     .card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--ink-3); }
-    .card.hide { display: none; }
+    .card.hide { display: none !important; }
     .card.feature { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); }
     .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .num { font-size: 12px; font-weight: 700; letter-spacing: .16em; color: var(--accent-ink); }
@@ -413,7 +413,7 @@
 
         <p class="ask rv">어떤 기술을 쓴 프로젝트가 궁금하세요?</p>
         <form class="search rv" id="searchForm" role="search">
-          <input id="q" type="search" placeholder="예: AWS" aria-label="기술이나 키워드로 프로젝트 찾기" autocomplete="off">
+          <input id="q" type="search" placeholder="예: 하네스" aria-label="기술이나 키워드로 프로젝트 찾기" autocomplete="off">
           <button type="submit"><span>찾아보기</span>
             <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 14L14 6M7 6h7v7"/></svg></button>
         </form>
