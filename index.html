@@ -241,7 +241,9 @@
     .erd summary::-webkit-details-marker { display: none; }
     .erd summary:hover, .erd[open] summary { border-color: var(--accent); }
     .erd summary svg { width: 18px; height: 18px; color: var(--accent-ink); flex: none; }
-    .erd summary .erd-ico { width: 22px; height: 22px; }
+    .erd summary .erd-ico { width: auto; height: 20px; flex: none; }
+    :root[data-theme="dark"] .erd-ico { filter: brightness(1.6); }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .erd-ico { filter: brightness(1.6); } }
     .erd summary .chev { width: 16px; height: 16px; color: var(--ink-3); transition: transform .25s; }
     .erd[open] summary .chev { transform: rotate(180deg); }
     .erd-meta { font-weight: 500; font-size: 12.5px; color: var(--ink-3); }
@@ -481,7 +483,7 @@
             <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
           </ul>
           <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg">
-            <summary><svg class="erd-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="7" cy="5.8" rx="4.5" ry="1.8"/><path d="M2.5 5.8v12.4c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8V5.8"/><path d="M2.5 10c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8M2.5 14.1c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8"/><path d="M11.5 12H16M16 6.5v11M16 6.5h2.2M16 17.5h2.2"/><rect x="18.2" y="4.5" width="4" height="4" rx="1"/><rect x="18.2" y="15.5" width="4" height="4" rx="1"/></svg>ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
               <div class="erd-head">
                 <b>Life Tutorial ERD</b>
@@ -528,7 +530,7 @@
             <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
           </ul>
           <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg">
-            <summary><svg class="erd-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="7" cy="5.8" rx="4.5" ry="1.8"/><path d="M2.5 5.8v12.4c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8V5.8"/><path d="M2.5 10c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8M2.5 14.1c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8"/><path d="M11.5 12H16M16 6.5v11M16 6.5h2.2M16 17.5h2.2"/><rect x="18.2" y="4.5" width="4" height="4" rx="1"/><rect x="18.2" y="15.5" width="4" height="4" rx="1"/></svg>ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="SoundBridge ERD">
               <div class="erd-head">
                 <b>SoundBridge ERD</b>
