@@ -712,7 +712,7 @@
           </div>
         </article>
         <!-- 05 Metabole -->
-        <article class="card rv" data-tags="AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
+        <article class="card rv" data-tags="ERD AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/metabole-800.webp 800w, assets/metabole-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -732,6 +732,22 @@
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Hexagonal · DDD</span><span>FastAPI</span><span>Next.js 16</span><span>pgvector · Neo4j</span><span>Hybrid RAG</span><span>TDD</span></div>
+            <details class="erd" id="mb-erd" data-src="assets/metabole-erd.svg">
+            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 47개 · 외래 키 49개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <div class="erd-panel" role="region" aria-label="Metabole ERD">
+              <div class="erd-head">
+                <b>Metabole ERD</b>
+                <div class="erd-tools">
+                  <button type="button" data-zoom="-1" aria-label="축소">−</button>
+                  <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
+                  <button type="button" data-zoom="1" aria-label="확대">+</button>
+                  <a href="assets/metabole-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                </div>
+              </div>
+              <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 실선 = DB 외래 키, 점선 = 애플리케이션 레벨 관계 · 키 컬럼만 표시, 이름 옆 숫자는 실제 적재 행 수(2026-10-01)</p>
+              <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
+            </div>
+          </details>
           </div>
         </article>
 
