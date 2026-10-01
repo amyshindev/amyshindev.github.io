@@ -172,8 +172,8 @@
     .proj-head { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 40px; }
     .filter-state { font-size: 14px; font-weight: 600; color: var(--accent-ink); background: var(--tint); border-radius: 999px; padding: 6px 6px 6px 16px; display: none; align-items: center; gap: 12px; }
     .filter-state.show { display: inline-flex; }
-    .filter-state button { border: 0; background: var(--card); color: var(--ink); border-radius: 999px; padding: 5px 13px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .2s, color .2s; }
-    .filter-state button:hover { background: var(--btn); color: var(--btn-ink); }
+    .filter-state button { border: 0; background: var(--btn); color: var(--btn-ink); border-radius: 999px; padding: 6px 15px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px rgba(18,118,99,.28); transition: transform .2s, box-shadow .2s, filter .2s; }
+    .filter-state button:hover { transform: translateY(-1px); filter: brightness(1.1); box-shadow: 0 4px 12px rgba(18,118,99,.34); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
     .card {
       background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: clamp(24px, 3vw, 36px);
@@ -420,7 +420,7 @@
         <div class="chips rv">
           <button class="chip" type="button" data-q="Hexagonal">Hexagonal · DDD</button>
           <button class="chip" type="button" data-q="GraphRAG">GraphRAG</button>
-          <button class="chip" type="button" data-q="LLM">LLM 서빙</button>
+          <button class="chip" type="button" data-q="Docker">Docker</button>
           <button class="chip" type="button" data-q="pgvector">pgvector</button>
         </div>
 
