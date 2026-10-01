@@ -146,6 +146,26 @@
     .step .eyebrow { font-size: 11.5px; letter-spacing: .16em; margin-top: 12px; }
     .step h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.03em; margin: 34px 0 16px; }
     .step p { max-width: 300px; font-size: 14.5px; color: var(--ink-2); line-height: 1.85; }
+    .closer .intro { grid-row: span 2; }
+    .step p code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; background: var(--tint); color: var(--accent-ink); border-radius: 4px; padding: 1px 5px; }
+    .division { grid-column: 2 / -1; margin-top: 8px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 24px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: clamp(20px, 2.4vw, 30px); }
+    .div-row { display: flex; align-items: center; gap: 14px; }
+    .div-col { flex: 1; min-width: 0; }
+    .div-col .eyebrow { font-size: 12.5px; letter-spacing: .02em; }
+    .div-arrow { width: 34px; height: 18px; flex: none; color: var(--accent); }
+    .chips-s { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .chips-s li { white-space: nowrap; font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+    .chips-s.ai li { background: var(--tint); border-color: transparent; color: var(--accent-ink); }
+    .tiers { display: grid; gap: 10px; border-left: 1px solid var(--line); padding-left: 20px; }
+    .tier { display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: start; font-size: 13.5px; color: var(--ink-2); line-height: 1.6; }
+    .tier strong { color: var(--ink); font-weight: 800; margin-right: 6px; }
+    .tier span { display: block; font-size: 12.5px; color: var(--ink-3); }
+    .tg { width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; font-size: 13px; font-weight: 800; }
+    .tg.a { background: var(--btn); color: var(--btn-ink); }
+    .tg.b { background: var(--tint); color: var(--accent-ink); }
+    .tg.c { border: 1px solid var(--line); color: var(--ink-3); }
+    .tier-note { font-size: 12.5px; color: var(--ink-3); margin-top: 2px; }
 
     /* ---------- Projects ---------- */
     .projects { padding: clamp(40px, 6vh, 72px) 0 clamp(72px, 10vh, 120px); }
@@ -277,7 +297,8 @@
       .hero .wrap { grid-template-columns: 1fr; }
       .art { max-width: 640px; margin: 24px auto 32px; width: 100%; }
       .closer .wrap { grid-template-columns: 1fr 1fr 1fr; }
-      .closer .intro { grid-column: 1 / -1; }
+      .closer .intro { grid-column: 1 / -1; grid-row: auto; }
+      .division { grid-column: 1 / -1; }
       .card.feature { grid-template-columns: 1fr; }
       .feature-side { display: contents; }
       .shot { order: -1; }
@@ -301,6 +322,10 @@
       .art-top { display: none; }
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
+      .division { grid-template-columns: 1fr; }
+      .div-row { flex-direction: column; align-items: stretch; }
+      .div-arrow { transform: rotate(90deg); align-self: center; }
+      .tiers { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
       .btn { gap: 24px; padding: 18px 22px; }
       .erd-panel { position: static; width: auto; margin-top: 10px; box-shadow: none; animation: none; padding: 14px; }
       .erd-tools a { margin-left: 0; }
@@ -605,6 +630,40 @@
         <span class="eyebrow">03 / Human-in-the-Loop</span>
         <h3>책임은 사람이 진다</h3>
         <p>AI 에이전트에게 구현을 맡길 때도 작업의 위험도에 따라 검토 강도를 나누고, 최종 판단과 책임은 사람이 집니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">04 / Fractal</span>
+        <h3>테이블 하나, 파일 열한 개</h3>
+        <p>ERD 테이블 하나마다 router부터 ORM mapper까지 똑같은 11개 파일 세트를 둡니다. 모양이 같으니 AI는 한 컨텍스트 안에서 테이블 하나를 끝내고, 실수해도 그 경계 안에서 멈춥니다. 새 라우터는 비즈니스 로직보다 <code>/myself</code> 엔드포인트로 배선부터 확인합니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">05 / Patterns</span>
+        <h3>분기 대신 패턴으로</h3>
+        <p>타입이나 상태로 갈리는 <code>if/elif</code>는 Strategy·State로, 생성 분기는 Factory로 바꿉니다. 객체가 자기 분기를 알게 하면 기능은 기존 코드를 고치지 않고 더해지고, AI에게는 “Strategy” 한 단어가 열 줄짜리 지시를 대신합니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">06 / Verify</span>
+        <h3>성공 기준부터 테스트로</h3>
+        <p>“검증 추가”는 “잘못된 입력 테스트를 먼저 쓰고 통과시키기”로, “버그 수정”은 “재현 테스트부터”로 바꿔 맡깁니다. Red → Green → Refactor를 지키고, mock은 네트워크·파일·시계 같은 시스템 경계에만 씁니다.</p>
+      </div>
+      <div class="division rv">
+        <div class="div-row">
+          <div class="div-col">
+            <span class="eyebrow">사람이 정한다</span>
+            <ul class="chips-s"><li>Bounded Context</li><li>Port · 인터페이스</li><li>도메인 규칙</li><li>TDD 시나리오</li><li>검토 등급</li></ul>
+          </div>
+          <svg class="div-arrow" viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 10h34M28 3l8 7-8 7"/></svg>
+          <div class="div-col">
+            <span class="eyebrow">AI가 채운다</span>
+            <ul class="chips-s ai"><li>UseCase</li><li>Adapter</li><li>Repository</li><li>DTO · Mapper</li></ul>
+          </div>
+        </div>
+        <div class="tiers">
+          <div class="tier"><b class="tg a">A</b><div><strong>무거움</strong> 비용 · 보안 · 인증 · DB 마이그레이션 · 채점 로직<span>task마다 구현 검토 + 최종 전체 리뷰</span></div></div>
+          <div class="tier"><b class="tg b">B</b><div><strong>보통</strong> 게임 로직 · UI 동작 변경<span>최종 전체 리뷰 1회, 단순 task는 개별 검토 생략</span></div></div>
+          <div class="tier"><b class="tg c">C</b><div><strong>가벼움</strong> 문서 · 시나리오 문장 · 자산 등록 · 테스트 정리<span>diff와 테스트 결과만 확인</span></div></div>
+          <p class="tier-note">리뷰어가 Critical을 내면 자동으로 한 등급 올리고, 내리는 건 사람만 할 수 있습니다.</p>
+        </div>
       </div>
     </div>
   </section>
