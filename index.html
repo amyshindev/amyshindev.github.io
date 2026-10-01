@@ -465,7 +465,7 @@
         </article>
 
         <!-- 02 Life Tutorial -->
-        <article class="card rv" data-tags="ERD PostgreSQL Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤">
+        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/lifetutorial-800.webp?v=2 800w, assets/lifetutorial-1400.webp?v=2 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -477,10 +477,12 @@
           <h3>라이프 튜토리얼<small>Life Tutorial</small></h3>
           <p class="summary">청소년이 첫 아르바이트에서 마주할 부당한 상황을 게임으로 미리 겪어 보는 노동권 교육 서비스.</p>
           <ul>
-            <li><b>방어전</b> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈</li>
+            <li><b>방어전</b> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈. 판정 모델은 벤치마크가 아닌 <b>도메인 실측</b>으로 선택 — Gemini Flash-Lite는 틀린 답을 정답 처리하는 치명 오판정을 냈지만 EXAONE 7.8B는 0건(자연어 75발화에서도 위험 오판정 0)</li>
             <li><b>가드</b> — 근로계약서를 OCR로 읽고 <b>규칙 기반</b>으로 위법 조항을 판정한 뒤, 최종 판단은 <b>상담 기관의 사람</b>에게 연결</li>
-            <li>법령 11개를 1,593개 청크로 나눠 두 개의 벡터 공간에 색인한 법령 원문 RAG</li>
-            <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
+            <li><b>리포트</b> — 인터뷰 답변에서 상담에 필요한 사실을 추출해 기관 전달용 리포트 생성. 156케이스 평가셋으로 3개 모델을 교차 평가해 Gemma3 12B 채택(분류 100% · 값 일치 90.2% · <b>날조 0건</b>)</li>
+            <li>법령 · 고시 · 행정해석 1,593개 청크 RAG — 화면의 법령 문장은 LLM이 쓰지 않고 <b>100% DB 원문</b>을 그대로 보여 줘, 틀린 조문이 구조적으로 나올 수 없게 설계</li>
+            <li>실제 근로계약서(개인정보)를 다루기에 <b>폐쇄망 로컬 추론</b>을 전제로 설계 — 16GB GPU 한 장에 EXAONE과 Gemma를 동시 상주시켜 시연 중 모델 교체를 없애고 OCR은 CPU로 분리. 임베딩 모델이 다르면 벡터가 호환되지 않아 청크마다 온라인 · 오프라인 벡터를 미리 채워 두어, 전환 시 재임베딩 0건</li>
+            <li><b>트러블슈팅</b> — 임베딩 429 지연의 원인이 우리 호출량이 아닌 모델 공용 쿼터임을 실측으로 확인하고, 고정 25초 대기를 지수 백오프로 교체해 방어전 한 턴 <b>28초 → 중앙값 0.4초</b></li>
           </ul>
           <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg">
             <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
@@ -500,7 +502,7 @@
             </div>
           </details>
           <div class="card-foot">
-            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>PaddleOCR</span><span>EXAONE</span><span>Gemma</span></div>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>FastAPI</span><span>PostgreSQL · pgvector</span><span>PaddleOCR</span><span>Ollama</span><span>EXAONE</span><span>Gemma</span><span>Gemini</span></div>
             <div class="gos">
               <a class="go" href="https://life-tutorial.com" target="_blank" rel="noopener">서비스 바로가기
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
