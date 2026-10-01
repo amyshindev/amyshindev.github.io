@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="erd-svg" role="img" aria-label="SoundBridge ERD — jangdan, gugak_tracks, track_emotion_tags, match_logs와 관계"  viewBox="0.00 0.00 1175.20 608.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>text{font-family:"DejaVu Sans Mono",Menlo,"SFMono-Regular",Consolas,monospace}text[font-family^="Noto"]{font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}</style>
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 586.6)">
+<g id="clust1" class="cluster">
+<path fill="#eef6f3" stroke="#d3e6df" d="M20,-8C20,-8 1112,-8 1112,-8 1118,-8 1124,-14 1124,-20 1124,-20 1124,-545 1124,-545 1124,-551 1118,-557 1112,-557 1112,-557 20,-557 20,-557 14,-557 8,-551 8,-545 8,-545 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="start" x="16" y="-542.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">soundbridge · 국악 추천 · PostgreSQL + pgvector</text>
+</g>
+<g id="node1" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M36,-382.5C36,-382.5 233,-382.5 233,-382.5 239,-382.5 245,-388.5 245,-394.5 245,-394.5 245,-433.5 245,-433.5 245,-439.5 239,-445.5 233,-445.5 233,-445.5 36,-445.5 36,-445.5 30,-445.5 24,-439.5 24,-433.5 24,-433.5 24,-394.5 24,-394.5 24,-388.5 30,-382.5 36,-382.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="25.5,-419 25.5,-444 244.5,-444 244.5,-419 25.5,-419"/>
+<text text-anchor="start" x="31.5" y="-429.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">jangdan</text>
+<text text-anchor="start" x="84.5" y="-429.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;장단 마스터 · 3NF</text>
+<text text-anchor="start" x="28.5" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<text text-anchor="start" x="143.5" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="228.5" y="-408.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="28.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_unit_beats   </text>
+<text text-anchor="start" x="143.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="234.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<path fill="none" stroke="#b9d9cf" d="M36,-382.5C36,-382.5 233,-382.5 233,-382.5 239,-382.5 245,-388.5 245,-394.5 245,-394.5 245,-433.5 245,-433.5 245,-439.5 239,-445.5 233,-445.5 233,-445.5 36,-445.5 36,-445.5 30,-445.5 24,-439.5 24,-433.5 24,-433.5 24,-394.5 24,-394.5 24,-388.5 30,-382.5 36,-382.5"/>
+</g>
+<g id="node2" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M336,-24.5C336,-24.5 667,-24.5 667,-24.5 673,-24.5 679,-30.5 679,-36.5 679,-36.5 679,-505.5 679,-505.5 679,-511.5 673,-517.5 667,-517.5 667,-517.5 336,-517.5 336,-517.5 330,-517.5 324,-511.5 324,-505.5 324,-505.5 324,-36.5 324,-36.5 324,-30.5 330,-24.5 336,-24.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="325.5,-491 325.5,-516 678.5,-516 678.5,-491 325.5,-491"/>
+<text text-anchor="start" x="331.5" y="-501.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">gugak_tracks</text>
+<text text-anchor="start" x="422.5" y="-501.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;국악 음원</text>
+<text text-anchor="start" x="328.5" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="519.5" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="662.5" y="-480.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="328.5" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">title   </text>
+<text text-anchor="start" x="519.5" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(200)  </text>
+<text text-anchor="start" x="668.5" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">artist   </text>
+<text text-anchor="start" x="519.5" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(100)  </text>
+<text text-anchor="start" x="668.5" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">instrument   </text>
+<text text-anchor="start" x="519.5" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">jangdan_name   </text>
+<text text-anchor="start" x="519.5" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="662.5" y="-408.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="328.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">bpm   </text>
+<text text-anchor="start" x="519.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="668.5" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-371.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cue_points   </text>
+<text text-anchor="start" x="519.5" y="-371.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="668.5" y="-371.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-353.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">audio_url   </text>
+<text text-anchor="start" x="519.5" y="-353.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="668.5" y="-353.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-335.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">public_license_type   </text>
+<text text-anchor="start" x="519.5" y="-335.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(20)  </text>
+<text text-anchor="start" x="668.5" y="-335.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-317.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">description_ko   </text>
+<text text-anchor="start" x="519.5" y="-317.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="668.5" y="-317.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">description_en   </text>
+<text text-anchor="start" x="519.5" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="668.5" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding   </text>
+<text text-anchor="start" x="519.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1536)  </text>
+<text text-anchor="start" x="668.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="519.5" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="668.5" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-245.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">── TM 메타데이터 ──</text>
+<text text-anchor="start" x="328.5" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source_identifier   </text>
+<text text-anchor="start" x="519.5" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(80)  </text>
+<text text-anchor="start" x="662.5" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="328.5" y="-209.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">classification_code   </text>
+<text text-anchor="start" x="519.5" y="-209.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(20)  </text>
+<text text-anchor="start" x="668.5" y="-209.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-191.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">genre_lclsf   </text>
+<text text-anchor="start" x="519.5" y="-191.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-191.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">genre_mclsf   </text>
+<text text-anchor="start" x="519.5" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">genre_sclsf   </text>
+<text text-anchor="start" x="519.5" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">time_signature   </text>
+<text text-anchor="start" x="519.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(20)  </text>
+<text text-anchor="start" x="668.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">tempo_label   </text>
+<text text-anchor="start" x="519.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(20)  </text>
+<text text-anchor="start" x="668.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">original_track_code   </text>
+<text text-anchor="start" x="519.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">jangdan_raw   </text>
+<text text-anchor="start" x="519.5" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(50)  </text>
+<text text-anchor="start" x="668.5" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">whole_emotions   </text>
+<text text-anchor="start" x="519.5" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="668.5" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">whole_tones   </text>
+<text text-anchor="start" x="519.5" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="668.5" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="328.5" y="-30.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">HNSW(embedding, cosine) · UQ(source_identifier) WHERE NOT NULL    </text>
+<path fill="none" stroke="#b9d9cf" d="M336,-24.5C336,-24.5 667,-24.5 667,-24.5 673,-24.5 679,-30.5 679,-36.5 679,-36.5 679,-505.5 679,-505.5 679,-511.5 673,-517.5 667,-517.5 667,-517.5 336,-517.5 336,-517.5 330,-517.5 324,-511.5 324,-505.5 324,-505.5 324,-36.5 324,-36.5 324,-30.5 330,-24.5 336,-24.5"/>
+</g>
+<g id="edge1" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M253.19,-410C277.13,-410 288.14,-410 309.85,-410"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="245.8,-414 245.8,-406 247.4,-406 247.4,-414 245.8,-414"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="245,-410 249,-410 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="249.8,-414 249.8,-406 251.4,-406 251.4,-414 249.8,-414"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="249,-410 253,-410 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="316.5,-410 324.5,-413.6 320.5,-410 324.5,-410 324.5,-410 324.5,-410 320.5,-410 324.5,-406.4 316.5,-410 316.5,-410"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="313.3" cy="-410" rx="3.2" ry="3.2"/>
+</g>
+<g id="node3" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M770,-231.5C770,-231.5 1096,-231.5 1096,-231.5 1102,-231.5 1108,-237.5 1108,-243.5 1108,-243.5 1108,-334.5 1108,-334.5 1108,-340.5 1102,-346.5 1096,-346.5 1096,-346.5 770,-346.5 770,-346.5 764,-346.5 758,-340.5 758,-334.5 758,-334.5 758,-243.5 758,-243.5 758,-237.5 764,-231.5 770,-231.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="759,-320 759,-345 1107,-345 1107,-320 759,-320"/>
+<text text-anchor="start" x="765" y="-330.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">track_emotion_tags</text>
+<text text-anchor="start" x="901" y="-330.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;트랙 감정 태그 · 1NF</text>
+<text text-anchor="start" x="762" y="-308.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="929" y="-308.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1091" y="-309.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="762" y="-290.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">track_id   </text>
+<text text-anchor="start" x="929" y="-290.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1091" y="-291.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="762" y="-272.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">emotion_tag   </text>
+<text text-anchor="start" x="929" y="-272.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(20)  </text>
+<text text-anchor="start" x="1097" y="-272.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="762" y="-254.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">sort_order   </text>
+<text text-anchor="start" x="929" y="-254.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1097" y="-254.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="762" y="-237.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">track_id ON DELETE CASCADE · idx(track_id) · idx(emotion_tag)    </text>
+<path fill="none" stroke="#b9d9cf" d="M770,-231.5C770,-231.5 1096,-231.5 1096,-231.5 1102,-231.5 1108,-237.5 1108,-243.5 1108,-243.5 1108,-334.5 1108,-334.5 1108,-340.5 1102,-346.5 1096,-346.5 1096,-346.5 770,-346.5 770,-346.5 764,-346.5 758,-340.5 758,-334.5 758,-334.5 758,-243.5 758,-243.5 758,-237.5 764,-231.5 770,-231.5"/>
+</g>
+<g id="edge2" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M687.44,-481.39C758.66,-470.39 681,-314.44 743.54,-294.99"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="680.09,-485.93 679.51,-477.95 681.1,-477.84 681.68,-485.82 680.09,-485.93"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="679,-482 682.99,-481.71 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="684.08,-485.64 683.5,-477.66 685.09,-477.55 685.67,-485.53 684.08,-485.64"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="682.99,-481.71 686.98,-481.42 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="750.07,-294.09 758.49,-296.57 754.04,-293.54 758,-293 758,-293 758,-293 754.04,-293.54 757.51,-289.43 750.07,-294.09 750.07,-294.09"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="746.9" cy="-294.52" rx="3.2" ry="3.2"/>
+</g>
+<g id="node4" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M831.5,-382.5C831.5,-382.5 1034.5,-382.5 1034.5,-382.5 1040.5,-382.5 1046.5,-388.5 1046.5,-394.5 1046.5,-394.5 1046.5,-505.5 1046.5,-505.5 1046.5,-511.5 1040.5,-517.5 1034.5,-517.5 1034.5,-517.5 831.5,-517.5 831.5,-517.5 825.5,-517.5 819.5,-511.5 819.5,-505.5 819.5,-505.5 819.5,-394.5 819.5,-394.5 819.5,-388.5 825.5,-382.5 831.5,-382.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="821,-491 821,-516 1046,-516 1046,-491 821,-491"/>
+<text text-anchor="start" x="827" y="-501.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">match_logs</text>
+<text text-anchor="start" x="903" y="-501.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;매칭 기록</text>
+<text text-anchor="start" x="824" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="945" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1030" y="-480.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="824" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">input_text   </text>
+<text text-anchor="start" x="945" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="1036" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="824" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">lang   </text>
+<text text-anchor="start" x="945" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(5)  </text>
+<text text-anchor="start" x="1036" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="824" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">matched_track_id   </text>
+<text text-anchor="start" x="945" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1030" y="-426.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="824" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">similarity_score   </text>
+<text text-anchor="start" x="945" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">float  </text>
+<text text-anchor="start" x="1036" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="824" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="945" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="1036" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<path fill="none" stroke="#b9d9cf" d="M831.5,-382.5C831.5,-382.5 1034.5,-382.5 1034.5,-382.5 1040.5,-382.5 1046.5,-388.5 1046.5,-394.5 1046.5,-394.5 1046.5,-505.5 1046.5,-505.5 1046.5,-511.5 1040.5,-517.5 1034.5,-517.5 1034.5,-517.5 831.5,-517.5 831.5,-517.5 825.5,-517.5 819.5,-511.5 819.5,-505.5 819.5,-505.5 819.5,-394.5 819.5,-394.5 819.5,-388.5 825.5,-382.5 831.5,-382.5"/>
+</g>
+<g id="edge3" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M687.33,-481.71C742.04,-477.8 754.02,-435.63 805.58,-428.9"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="679.94,-485.97 679.66,-477.97 681.26,-477.92 681.54,-485.91 679.94,-485.97"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="679,-482 683,-481.86 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="683.94,-485.83 683.66,-477.83 685.26,-477.78 685.54,-485.77 683.94,-485.83"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="683,-481.86 687,-481.72 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="812.02,-428.5 820.22,-431.59 816.01,-428.25 820,-428 820,-428 820,-428 816.01,-428.25 819.78,-424.41 812.02,-428.5 812.02,-428.5"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="808.82" cy="-428.7" rx="3.2" ry="3.2"/>
+</g>
+</g>
+</svg>

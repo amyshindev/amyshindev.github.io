@@ -445,7 +445,7 @@
             </picture>
           </figure>
           <div class="card-top"><span class="num">02</span><span class="role">팀 BeyondFacade · 풀스택</span></div>
-          <span class="award">K-디지털 트레이닝 해커톤 고용노동부 장관상</span>
+          <span class="award">K-디지털 트레이닝 해커톤 고용노동부 장관상 수상</span>
           <h3>라이프 튜토리얼<small>Life Tutorial</small></h3>
           <p class="summary">청소년이 첫 아르바이트에서 마주할 부당한 상황을 게임으로 미리 겪어 보는 노동권 교육 서비스.</p>
           <ul>
@@ -454,7 +454,7 @@
             <li>법령 11개를 1,593개 청크로 나눠 두 개의 벡터 공간에 색인한 법령 원문 RAG</li>
             <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
           </ul>
-          <details class="erd" id="lt-erd">
+          <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg">
             <summary><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="11.5" y="3" width="6" height="5" rx="1"/><rect x="7" y="12" width="6" height="5" rx="1"/><path d="M5.5 8v2h9V8M10 10v2"/></svg>ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
               <div class="erd-head">
@@ -468,7 +468,7 @@
                 </div>
               </div>
               <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 각 FK 컬럼에서 부모 테이블의 PK로 연결</p>
-              <div class="erd-view" id="erdView"><p class="erd-loading">불러오는 중…</p></div>
+              <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
             </div>
           </details>
           <div class="card-foot">
@@ -483,7 +483,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
+        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -499,6 +499,23 @@
             <li>EXAONE(FriendliAI) 연속 호출 타임아웃을 튜닝해 추천 설명 생성을 안정화</li>
             <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
           </ul>
+          <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg">
+            <summary><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="11.5" y="3" width="6" height="5" rx="1"/><rect x="7" y="12" width="6" height="5" rx="1"/><path d="M5.5 8v2h9V8M10 10v2"/></svg>ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <div class="erd-panel" role="region" aria-label="SoundBridge ERD">
+              <div class="erd-head">
+                <b>SoundBridge ERD</b>
+                <div class="erd-tools">
+                  <button type="button" data-zoom="-1" aria-label="축소">−</button>
+                  <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
+                  <button type="button" data-zoom="1" aria-label="확대">+</button>
+                  <a href="assets/soundbridge-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="https://soundbridge.beyondfacade.cloud/docs/system/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a>
+                </div>
+              </div>
+              <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · FK 컬럼에서 부모 테이블의 PK로 연결 · ORM 기준</p>
+              <div class="erd-view"><p class="erd-loading">불러오는 중…</p></div>
+            </div>
+          </details>
           <div class="card-foot">
             <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Cloudflare R2</span></div>
             <div class="gos">
@@ -641,29 +658,33 @@
     document.getElementById('clearFilter').addEventListener('click', function () { input.value = ''; apply(''); });
   })();
 
-  // ERD dropdown: lazy-load the diagram, zoom controls, close on outside click / Escape
-  (function () {
-    var erd = document.getElementById('lt-erd'), view = document.getElementById('erdView');
-    if (!erd) return;
-    var svg = null, natural = 0, zoom = 0;            // zoom 0 = fit to panel width
-    function apply() {
-      if (!svg) return;
-      var fit = view.clientWidth;
-      svg.style.width = (zoom === 0 ? fit : Math.round(natural * zoom)) + 'px';
-    }
+  // ERD dropdowns: lazy-load each diagram, zoom controls, close on outside click / Escape
+  document.querySelectorAll('details.erd').forEach(function (erd) {
+    var view = erd.querySelector('.erd-view'), svg = null, natural = 0, zoom = 0;   // zoom 0 = fit to panel width
+    function apply() { if (svg) svg.style.width = (zoom === 0 ? view.clientWidth : Math.round(natural * zoom)) + 'px'; }
     function load() {
       if (svg || view.dataset.loading) return;
       view.dataset.loading = '1';
-      fetch('assets/lifetutorial-erd.svg').then(function (r) { return r.text(); }).then(function (t) {
+      fetch(erd.dataset.src).then(function (r) { return r.text(); }).then(function (t) {
         view.innerHTML = t.replace(/^<\?xml[^>]*>\s*/, '');
         svg = view.querySelector('svg');
         svg.classList.add('erd-svg');
-        natural = svg.viewBox.baseVal.width * 4 / 3;  // pt -> px
+        natural = svg.viewBox.baseVal.width * 4 / 3;   // pt -> px
         zoom = view.clientWidth >= natural * 0.9 ? 1 : 0;
         apply();
       }).catch(function () { view.innerHTML = '<p class="erd-loading">ERD를 불러오지 못했어요. 새 탭에서 열어 보세요.</p>'; });
     }
-    erd.addEventListener('toggle', function () { if (erd.open) { load(); apply(); } });
+    erd.addEventListener('toggle', function () {
+      if (!erd.open) return;
+      document.querySelectorAll('details.erd[open]').forEach(function (o) { if (o !== erd) o.open = false; });
+      var panel = erd.querySelector('.erd-panel');
+      if (getComputedStyle(panel).position === 'absolute') {
+        panel.style.left = '0'; panel.style.right = 'auto';
+        var r = panel.getBoundingClientRect();
+        if (r.right > window.innerWidth - 12) { panel.style.left = 'auto'; panel.style.right = '0'; }
+      }
+      load(); apply();
+    });
     erd.querySelectorAll('[data-zoom]').forEach(function (b) {
       b.addEventListener('click', function () {
         var d = +b.dataset.zoom, cur = zoom === 0 ? view.clientWidth / natural : zoom;
@@ -674,7 +695,7 @@
     window.addEventListener('resize', function () { if (zoom === 0) apply(); });
     document.addEventListener('click', function (e) { if (erd.open && !erd.contains(e.target)) erd.open = false; });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && erd.open) { erd.open = false; erd.querySelector('summary').focus(); } });
-  })();
+  });
 
   // Scroll reveal
   (function () {
