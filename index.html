@@ -240,10 +240,9 @@
     .card > .erd { margin-top: 20px; }
     .erd summary {
       list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700;
-      color: var(--ink); padding: 4px 0; user-select: none; transition: color .2s;
+      color: var(--ink); padding: 4px 0 5px; border-bottom: 1.5px solid var(--accent); user-select: none; transition: color .2s;
     }
     .erd summary::-webkit-details-marker { display: none; }
-    .erd summary:hover, .erd[open] summary { color: var(--accent-ink); }
     .erd summary svg { width: 18px; height: 18px; color: var(--accent-ink); flex: none; }
     .erd summary .erd-ico { width: auto; height: 20px; flex: none; }
     .erd summary svg.erd-ico { width: 20px; height: 20px; }
@@ -252,6 +251,11 @@
     .erd summary .chev { width: 16px; height: 16px; color: var(--ink-3); transition: transform .25s; }
     .erd[open] summary .chev { transform: rotate(180deg); }
     .erd-meta { font-weight: 500; font-size: 12.5px; color: var(--ink-3); }
+    .erd summary:hover, .erd[open] summary,
+    .erd summary:hover .erd-meta, .erd[open] summary .erd-meta,
+    .erd summary:hover .chev, .erd[open] summary .chev { color: var(--accent-ink); }
+    .erd-meta { transition: color .2s; }
+    .erd summary .chev { transition: transform .25s, color .2s; }
     .card:has(.erd[open]) { position: relative; z-index: 15; }
     .erd-panel {
       position: absolute; top: calc(100% + 10px); left: 0; z-index: 30; width: min(1140px, calc(100vw - 2 * var(--gutter) - 72px));
