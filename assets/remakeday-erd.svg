@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="erd-svg" role="img" aria-label="REMAKE DAY ERD — 게임 상태·계정·로그 9개 테이블과 시나리오 시드 6개 테이블, 외래 키 관계(실선)와 코드로만 지키는 관계(점선)"  viewBox="0.00 0.00 1276.20 2010.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>text{font-family:"DejaVu Sans Mono",Menlo,"SFMono-Regular",Consolas,monospace}text[font-family^="Noto"]{font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}</style>
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 1988.6)">
+<g id="clust1" class="cluster">
+<path fill="#eef6f3" stroke="#d3e6df" d="M20,-8C20,-8 581,-8 581,-8 587,-8 593,-14 593,-20 593,-20 593,-599 593,-599 593,-605 587,-611 581,-611 581,-611 20,-611 20,-611 14,-611 8,-605 8,-599 8,-599 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="start" x="16" y="-596.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">시나리오 시드 · 참조 데이터 (외래 키 없음, 매 기동 시 upsert)</text>
+</g>
+<g id="clust2" class="cluster">
+<path fill="#eef6f3" stroke="#d3e6df" d="M26.5,-619C26.5,-619 1213,-619 1213,-619 1219,-619 1225,-625 1225,-631 1225,-631 1225,-1947 1225,-1947 1225,-1953 1219,-1959 1213,-1959 1213,-1959 26.5,-1959 26.5,-1959 20.5,-1959 14.5,-1953 14.5,-1947 14.5,-1947 14.5,-631 14.5,-631 14.5,-625 20.5,-619 26.5,-619"/>
+<text text-anchor="start" x="22.5" y="-1944.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">게임 상태 · 계정 · 로그</text>
+</g>
+<g id="node1" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M45.5,-366.5C45.5,-366.5 224.5,-366.5 224.5,-366.5 230.5,-366.5 236.5,-372.5 236.5,-378.5 236.5,-378.5 236.5,-559.5 236.5,-559.5 236.5,-565.5 230.5,-571.5 224.5,-571.5 224.5,-571.5 45.5,-571.5 45.5,-571.5 39.5,-571.5 33.5,-565.5 33.5,-559.5 33.5,-559.5 33.5,-378.5 33.5,-378.5 33.5,-372.5 39.5,-366.5 45.5,-366.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="35,-545 35,-570 236,-570 236,-545 35,-545"/>
+<text text-anchor="start" x="41" y="-555.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">scenario_characters</text>
+<text text-anchor="start" x="184" y="-555.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;인물</text>
+<text text-anchor="start" x="38" y="-533.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="165" y="-533.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="220" y="-534.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="38" y="-515.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="165" y="-515.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="220" y="-515.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="38" y="-497.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<text text-anchor="start" x="165" y="-497.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="220" y="-497.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="38" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<text text-anchor="start" x="165" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="226" y="-479.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">role   </text>
+<text text-anchor="start" x="165" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="226" y="-461.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">persona   </text>
+<text text-anchor="start" x="165" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="226" y="-443.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">initial_suspicion   </text>
+<text text-anchor="start" x="165" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="226" y="-425.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">initial_trust   </text>
+<text text-anchor="start" x="165" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="226" y="-407.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">lost   </text>
+<text text-anchor="start" x="165" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="226" y="-389.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="38" y="-372.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, code)    </text>
+<path fill="none" stroke="#b9d9cf" d="M45.5,-366.5C45.5,-366.5 224.5,-366.5 224.5,-366.5 230.5,-366.5 236.5,-372.5 236.5,-378.5 236.5,-378.5 236.5,-559.5 236.5,-559.5 236.5,-565.5 230.5,-571.5 224.5,-571.5 224.5,-571.5 45.5,-571.5 45.5,-571.5 39.5,-571.5 33.5,-565.5 33.5,-559.5 33.5,-559.5 33.5,-378.5 33.5,-378.5 33.5,-372.5 39.5,-366.5 45.5,-366.5"/>
+</g>
+<g id="node2" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M373,-393.5C373,-393.5 522,-393.5 522,-393.5 528,-393.5 534,-399.5 534,-405.5 534,-405.5 534,-532.5 534,-532.5 534,-538.5 528,-544.5 522,-544.5 522,-544.5 373,-544.5 373,-544.5 367,-544.5 361,-538.5 361,-532.5 361,-532.5 361,-405.5 361,-405.5 361,-399.5 367,-393.5 373,-393.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="362.5,-518 362.5,-543 533.5,-543 533.5,-518 362.5,-518"/>
+<text text-anchor="start" x="368.5" y="-528.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">scenario_beats</text>
+<text text-anchor="start" x="474.5" y="-528.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;비트</text>
+<text text-anchor="start" x="365.5" y="-506.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="462.5" y="-506.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="517.5" y="-507.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="365.5" y="-488.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="462.5" y="-488.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="517.5" y="-488.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="365.5" y="-470.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">n   </text>
+<text text-anchor="start" x="462.5" y="-470.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="517.5" y="-470.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="365.5" y="-452.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">title   </text>
+<text text-anchor="start" x="462.5" y="-452.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="523.5" y="-452.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="365.5" y="-434.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">narration   </text>
+<text text-anchor="start" x="462.5" y="-434.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="523.5" y="-434.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="365.5" y="-416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">morning_text   </text>
+<text text-anchor="start" x="462.5" y="-416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="523.5" y="-416.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="365.5" y="-399.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, n)    </text>
+<path fill="none" stroke="#b9d9cf" d="M373,-393.5C373,-393.5 522,-393.5 522,-393.5 528,-393.5 534,-399.5 534,-405.5 534,-405.5 534,-532.5 534,-532.5 534,-538.5 528,-544.5 522,-544.5 522,-544.5 373,-544.5 373,-544.5 367,-544.5 361,-538.5 361,-532.5 361,-532.5 361,-405.5 361,-405.5 361,-399.5 367,-393.5 373,-393.5"/>
+</g>
+<g id="node3" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M36,-204.5C36,-204.5 234,-204.5 234,-204.5 240,-204.5 246,-210.5 246,-216.5 246,-216.5 246,-325.5 246,-325.5 246,-331.5 240,-337.5 234,-337.5 234,-337.5 36,-337.5 36,-337.5 30,-337.5 24,-331.5 24,-325.5 24,-325.5 24,-216.5 24,-216.5 24,-210.5 30,-204.5 36,-204.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="25,-311 25,-336 245,-336 245,-311 25,-311"/>
+<text text-anchor="start" x="31" y="-321.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">scenario_truth_claims</text>
+<text text-anchor="start" x="189" y="-321.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;진실 주장</text>
+<text text-anchor="start" x="28" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="137" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="229" y="-300.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="28" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="137" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="229" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="28" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<text text-anchor="start" x="137" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="229" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="28" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cell   </text>
+<text text-anchor="start" x="137" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="235" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="28" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="137" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="235" y="-227.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="28" y="-210.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, code)    </text>
+<path fill="none" stroke="#b9d9cf" d="M36,-204.5C36,-204.5 234,-204.5 234,-204.5 240,-204.5 246,-210.5 246,-216.5 246,-216.5 246,-325.5 246,-325.5 246,-331.5 240,-337.5 234,-337.5 234,-337.5 36,-337.5 36,-337.5 30,-337.5 24,-331.5 24,-325.5 24,-325.5 24,-216.5 24,-216.5 24,-210.5 30,-204.5 36,-204.5"/>
+</g>
+<g id="node4" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M330,-222.5C330,-222.5 565,-222.5 565,-222.5 571,-222.5 577,-228.5 577,-234.5 577,-234.5 577,-325.5 577,-325.5 577,-331.5 571,-337.5 565,-337.5 565,-337.5 330,-337.5 330,-337.5 324,-337.5 318,-331.5 318,-325.5 318,-325.5 318,-234.5 318,-234.5 318,-228.5 324,-222.5 330,-222.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="319.5,-311 319.5,-336 576.5,-336 576.5,-311 319.5,-311"/>
+<text text-anchor="start" x="325.5" y="-321.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">truth_claim_embeddings</text>
+<text text-anchor="start" x="491.5" y="-321.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;임베딩 · 미사용</text>
+<text text-anchor="start" x="322.5" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="425.5" y="-299.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="560.5" y="-300.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="322.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="425.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="560.5" y="-281.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="322.5" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">claim_code   </text>
+<text text-anchor="start" x="425.5" y="-263.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="534.5" y="-264.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="553.5" y="-264.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="560.5" y="-264.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="322.5" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding   </text>
+<text text-anchor="start" x="425.5" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1536)  </text>
+<text text-anchor="start" x="566.5" y="-245.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="322.5" y="-228.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, claim_code)    </text>
+<path fill="none" stroke="#b9d9cf" d="M330,-222.5C330,-222.5 565,-222.5 565,-222.5 571,-222.5 577,-228.5 577,-234.5 577,-234.5 577,-325.5 577,-325.5 577,-331.5 571,-337.5 565,-337.5 565,-337.5 330,-337.5 330,-337.5 324,-337.5 318,-331.5 318,-325.5 318,-325.5 318,-234.5 318,-234.5 318,-228.5 324,-222.5 330,-222.5"/>
+</g>
+<g id="edge11" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M254.13,-266C276.55,-266 286.5,-266 308.08,-266"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="246.8,-270 246.8,-262 248.4,-262 248.4,-270 246.8,-270"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="246,-266 250,-266 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="250.8,-270 250.8,-262 252.4,-262 252.4,-270 250.8,-270"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="250,-266 254,-266 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="317.7,-262 317.7,-270 316.1,-270 316.1,-262 317.7,-262"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="318.5,-266 314.5,-266 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="311.3" cy="-266" rx="3.2" ry="3.2"/>
+</g>
+<g id="node5" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M65.5,-24.5C65.5,-24.5 204.5,-24.5 204.5,-24.5 210.5,-24.5 216.5,-30.5 216.5,-36.5 216.5,-36.5 216.5,-163.5 216.5,-163.5 216.5,-169.5 210.5,-175.5 204.5,-175.5 204.5,-175.5 65.5,-175.5 65.5,-175.5 59.5,-175.5 53.5,-169.5 53.5,-163.5 53.5,-163.5 53.5,-36.5 53.5,-36.5 53.5,-30.5 59.5,-24.5 65.5,-24.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="55,-149 55,-174 216,-174 216,-149 55,-149"/>
+<text text-anchor="start" x="61" y="-159.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">scenario_cookies</text>
+<text text-anchor="start" x="182" y="-159.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;쿠키</text>
+<text text-anchor="start" x="58" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="138" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="200" y="-138.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="58" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="138" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="200" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="58" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text_id   </text>
+<text text-anchor="start" x="138" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="200" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="58" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cell   </text>
+<text text-anchor="start" x="138" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="206" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="58" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">level   </text>
+<text text-anchor="start" x="138" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="206" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="58" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="138" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="206" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="58" y="-30.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, text_id)    </text>
+<path fill="none" stroke="#b9d9cf" d="M65.5,-24.5C65.5,-24.5 204.5,-24.5 204.5,-24.5 210.5,-24.5 216.5,-30.5 216.5,-36.5 216.5,-36.5 216.5,-163.5 216.5,-163.5 216.5,-169.5 210.5,-175.5 204.5,-175.5 204.5,-175.5 65.5,-175.5 65.5,-175.5 59.5,-175.5 53.5,-169.5 53.5,-163.5 53.5,-163.5 53.5,-36.5 53.5,-36.5 53.5,-30.5 59.5,-24.5 65.5,-24.5"/>
+</g>
+<g id="node6" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M370.5,-33.5C370.5,-33.5 524.5,-33.5 524.5,-33.5 530.5,-33.5 536.5,-39.5 536.5,-45.5 536.5,-45.5 536.5,-154.5 536.5,-154.5 536.5,-160.5 530.5,-166.5 524.5,-166.5 524.5,-166.5 370.5,-166.5 370.5,-166.5 364.5,-166.5 358.5,-160.5 358.5,-154.5 358.5,-154.5 358.5,-45.5 358.5,-45.5 358.5,-39.5 364.5,-33.5 370.5,-33.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="359.5,-140 359.5,-165 535.5,-165 535.5,-140 359.5,-140"/>
+<text text-anchor="start" x="365.5" y="-150.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">scenario_fragments</text>
+<text text-anchor="start" x="501.5" y="-150.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;조각</text>
+<text text-anchor="start" x="362.5" y="-128.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="449.5" y="-128.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="519.5" y="-129.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="362.5" y="-110.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scenario   </text>
+<text text-anchor="start" x="449.5" y="-110.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="519.5" y="-110.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="362.5" y="-92.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<text text-anchor="start" x="449.5" y="-92.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="519.5" y="-92.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="362.5" y="-74.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_n   </text>
+<text text-anchor="start" x="449.5" y="-74.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="525.5" y="-74.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="362.5" y="-56.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="449.5" y="-56.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="525.5" y="-56.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="362.5" y="-39.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(scenario, code)    </text>
+<path fill="none" stroke="#b9d9cf" d="M370.5,-33.5C370.5,-33.5 524.5,-33.5 524.5,-33.5 530.5,-33.5 536.5,-39.5 536.5,-45.5 536.5,-45.5 536.5,-154.5 536.5,-154.5 536.5,-160.5 530.5,-166.5 524.5,-166.5 524.5,-166.5 370.5,-166.5 370.5,-166.5 364.5,-166.5 358.5,-160.5 358.5,-154.5 358.5,-154.5 358.5,-45.5 358.5,-45.5 358.5,-39.5 364.5,-33.5 370.5,-33.5"/>
+</g>
+<g id="node7" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M42.5,-753.5C42.5,-753.5 227.5,-753.5 227.5,-753.5 233.5,-753.5 239.5,-759.5 239.5,-765.5 239.5,-765.5 239.5,-894.5 239.5,-894.5 239.5,-900.5 233.5,-906.5 227.5,-906.5 227.5,-906.5 42.5,-906.5 42.5,-906.5 36.5,-906.5 30.5,-900.5 30.5,-894.5 30.5,-894.5 30.5,-765.5 30.5,-765.5 30.5,-759.5 36.5,-753.5 42.5,-753.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="32,-880 32,-905 239,-905 239,-880 32,-880"/>
+<text text-anchor="start" x="38" y="-890.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">users</text>
+<text text-anchor="start" x="76" y="-890.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;계정</text>
+<text text-anchor="start" x="35" y="-868.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="138" y="-868.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="223" y="-869.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="35" y="-850.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">google_sub   </text>
+<text text-anchor="start" x="138" y="-850.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="223" y="-850.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="35" y="-832.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">email   </text>
+<text text-anchor="start" x="138" y="-832.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="229" y="-832.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="35" y="-814.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<text text-anchor="start" x="138" y="-814.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="229" y="-814.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="35" y="-796.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">picture   </text>
+<text text-anchor="start" x="138" y="-796.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="229" y="-796.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="35" y="-778.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="138" y="-778.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="229" y="-778.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="35" y="-760.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">last_login_at   </text>
+<text text-anchor="start" x="138" y="-760.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="229" y="-760.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<path fill="none" stroke="#b9d9cf" d="M42.5,-753.5C42.5,-753.5 227.5,-753.5 227.5,-753.5 233.5,-753.5 239.5,-759.5 239.5,-765.5 239.5,-765.5 239.5,-894.5 239.5,-894.5 239.5,-900.5 233.5,-906.5 227.5,-906.5 227.5,-906.5 42.5,-906.5 42.5,-906.5 36.5,-906.5 30.5,-900.5 30.5,-894.5 30.5,-894.5 30.5,-765.5 30.5,-765.5 30.5,-759.5 36.5,-753.5 42.5,-753.5"/>
+</g>
+<g id="node8" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M337,-920.5C337,-920.5 558,-920.5 558,-920.5 564,-920.5 570,-926.5 570,-932.5 570,-932.5 570,-1115.5 570,-1115.5 570,-1121.5 564,-1127.5 558,-1127.5 558,-1127.5 337,-1127.5 337,-1127.5 331,-1127.5 325,-1121.5 325,-1115.5 325,-1115.5 325,-932.5 325,-932.5 325,-926.5 331,-920.5 337,-920.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="326.5,-1101 326.5,-1126 569.5,-1126 569.5,-1101 326.5,-1101"/>
+<text text-anchor="start" x="332.5" y="-1111.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">attempts</text>
+<text text-anchor="start" x="393.5" y="-1111.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;판</text>
+<text text-anchor="start" x="329.5" y="-1089.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="462.5" y="-1089.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="553.5" y="-1090.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="329.5" y="-1071.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_n   </text>
+<text text-anchor="start" x="462.5" y="-1071.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="559.5" y="-1071.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-1053.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">prior_attempt_id   </text>
+<text text-anchor="start" x="462.5" y="-1053.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="547.5" y="-1054.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="329.5" y="-1035.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">status   </text>
+<text text-anchor="start" x="462.5" y="-1035.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="559.5" y="-1035.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-1017.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">closed_by   </text>
+<text text-anchor="start" x="462.5" y="-1017.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="559.5" y="-1017.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-999.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">prior_cell_results   </text>
+<text text-anchor="start" x="462.5" y="-999.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="559.5" y="-999.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cookies_seen   </text>
+<text text-anchor="start" x="462.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="559.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">paw_offered_count   </text>
+<text text-anchor="start" x="462.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="559.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="329.5" y="-945.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">user_id   </text>
+<text text-anchor="start" x="462.5" y="-945.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="547.5" y="-946.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="329.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="462.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="559.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<path fill="none" stroke="#b9d9cf" d="M337,-920.5C337,-920.5 558,-920.5 558,-920.5 564,-920.5 570,-926.5 570,-932.5 570,-932.5 570,-1115.5 570,-1115.5 570,-1121.5 564,-1127.5 558,-1127.5 558,-1127.5 337,-1127.5 337,-1127.5 331,-1127.5 325,-1121.5 325,-1115.5 325,-1115.5 325,-932.5 325,-932.5 325,-926.5 331,-920.5 337,-920.5"/>
+</g>
+<g id="edge1" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M250.81,-872.34C284.46,-881.36 280.17,-933.42 311.13,-945.5"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="240.3,-875.07 241.28,-867.13 242.87,-867.32 241.89,-875.26 240.3,-875.07"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="240,-871 243.97,-871.49 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="247.15" cy="-871.88" rx="3.2" ry="3.2"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="317.62,-946.63 324.88,-951.55 321.56,-947.31 325.5,-948 325.5,-948 325.5,-948 321.56,-947.31 326.12,-944.45 317.62,-946.63 317.62,-946.63"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="314.47" cy="-946.08" rx="3.2" ry="3.2"/>
+</g>
+<g id="node14" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M685,-634.5C685,-634.5 878,-634.5 878,-634.5 884,-634.5 890,-640.5 890,-646.5 890,-646.5 890,-845.5 890,-845.5 890,-851.5 884,-857.5 878,-857.5 878,-857.5 685,-857.5 685,-857.5 679,-857.5 673,-851.5 673,-845.5 673,-845.5 673,-646.5 673,-646.5 673,-640.5 679,-634.5 685,-634.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="674.5,-831 674.5,-856 889.5,-856 889.5,-831 674.5,-831"/>
+<text text-anchor="start" x="680.5" y="-841.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">survey_votes</text>
+<text text-anchor="start" x="771.5" y="-841.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;설문</text>
+<text text-anchor="start" x="677.5" y="-819.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="762.5" y="-819.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="873.5" y="-820.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="677.5" y="-801.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_id   </text>
+<text text-anchor="start" x="762.5" y="-801.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="847.5" y="-802.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="866.5" y="-802.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="873.5" y="-802.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="677.5" y="-783.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">user_id   </text>
+<text text-anchor="start" x="762.5" y="-783.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="867.5" y="-784.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="677.5" y="-765.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">skipped   </text>
+<text text-anchor="start" x="762.5" y="-765.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="879.5" y="-765.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-747.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">fun   </text>
+<text text-anchor="start" x="762.5" y="-747.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">smallint  </text>
+<text text-anchor="start" x="879.5" y="-747.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-729.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">novelty   </text>
+<text text-anchor="start" x="762.5" y="-729.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">smallint  </text>
+<text text-anchor="start" x="879.5" y="-729.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-711.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ai_agency   </text>
+<text text-anchor="start" x="762.5" y="-711.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">smallint  </text>
+<text text-anchor="start" x="879.5" y="-711.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-693.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">polish   </text>
+<text text-anchor="start" x="762.5" y="-693.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">smallint  </text>
+<text text-anchor="start" x="879.5" y="-693.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-675.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">recommend   </text>
+<text text-anchor="start" x="762.5" y="-675.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">smallint  </text>
+<text text-anchor="start" x="879.5" y="-675.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-657.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="762.5" y="-657.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="879.5" y="-657.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="677.5" y="-640.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">CHECK 점수 1~5 · 건너뛰기 일관성    </text>
+<path fill="none" stroke="#b9d9cf" d="M685,-634.5C685,-634.5 878,-634.5 878,-634.5 884,-634.5 890,-640.5 890,-646.5 890,-646.5 890,-845.5 890,-845.5 890,-851.5 884,-857.5 878,-857.5 878,-857.5 685,-857.5 685,-857.5 679,-857.5 673,-851.5 673,-845.5 673,-845.5 673,-646.5 673,-646.5 673,-640.5 679,-634.5 685,-634.5"/>
+</g>
+<g id="edge2" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M250.49,-870.92C433.1,-868.03 478.44,-790.11 659.1,-786.16"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="240.83,-874.99 240.77,-866.99 242.37,-866.98 242.43,-874.98 240.83,-874.99"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="240,-871 244,-870.97 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="247.2" cy="-870.94" rx="3.2" ry="3.2"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="665.5,-786.09 673.54,-789.6 669.5,-786.04 673.5,-786 673.5,-786 673.5,-786 669.5,-786.04 673.46,-782.4 665.5,-786.09 665.5,-786.09"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="662.3" cy="-786.12" rx="3.2" ry="3.2"/>
+</g>
+<g id="edge3" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M578.7,-1097.31C647.16,-1137.8 639.32,-1156.5 448,-1156.5 259.8,-1156.5 249.14,-1106.37 314.02,-1063.61"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="568.19,-1095.86 572.19,-1088.94 573.58,-1089.74 569.58,-1096.66 568.19,-1095.86"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="569.5,-1092 572.96,-1094 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="575.73" cy="-1095.6" rx="3.2" ry="3.2"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="319.67,-1060.16 328.37,-1059.07 323.08,-1058.08 326.5,-1056 326.5,-1056 326.5,-1056 323.08,-1058.08 324.63,-1052.93 319.67,-1060.16 319.67,-1060.16"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="316.94" cy="-1061.83" rx="3.2" ry="3.2"/>
+</g>
+<g id="node9" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M661,-1552.5C661,-1552.5 902,-1552.5 902,-1552.5 908,-1552.5 914,-1558.5 914,-1564.5 914,-1564.5 914,-1907.5 914,-1907.5 914,-1913.5 908,-1919.5 902,-1919.5 902,-1919.5 661,-1919.5 661,-1919.5 655,-1919.5 649,-1913.5 649,-1907.5 649,-1907.5 649,-1564.5 649,-1564.5 649,-1558.5 655,-1552.5 661,-1552.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="650.5,-1893 650.5,-1918 913.5,-1918 913.5,-1893 650.5,-1893"/>
+<text text-anchor="start" x="656.5" y="-1903.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">loops</text>
+<text text-anchor="start" x="694.5" y="-1903.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;하루 · 회차</text>
+<text text-anchor="start" x="653.5" y="-1881.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="792.5" y="-1881.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="897.5" y="-1882.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="653.5" y="-1863.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_id   </text>
+<text text-anchor="start" x="792.5" y="-1863.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="877.5" y="-1864.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="890.5" y="-1864.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="897.5" y="-1864.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="653.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_n   </text>
+<text text-anchor="start" x="792.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="897.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="653.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">beat   </text>
+<text text-anchor="start" x="792.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">budget_left   </text>
+<text text-anchor="start" x="792.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ask_budget_left   </text>
+<text text-anchor="start" x="792.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">manager_budget_left   </text>
+<text text-anchor="start" x="792.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">state   </text>
+<text text-anchor="start" x="792.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="903.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">damage_level   </text>
+<text text-anchor="start" x="792.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">morning_shifted   </text>
+<text text-anchor="start" x="792.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="903.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">score   </text>
+<text text-anchor="start" x="792.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">float  </text>
+<text text-anchor="start" x="903.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">world_outcome   </text>
+<text text-anchor="start" x="792.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="903.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">anomaly_count   </text>
+<text text-anchor="start" x="792.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">rumor_index   </text>
+<text text-anchor="start" x="792.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="903.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cause_chain   </text>
+<text text-anchor="start" x="792.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="903.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">side_effect_claims   </text>
+<text text-anchor="start" x="792.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="903.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">pending_paw   </text>
+<text text-anchor="start" x="792.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="903.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1575.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="792.5" y="-1575.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="903.5" y="-1575.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="653.5" y="-1558.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(attempt_id, loop_n)    </text>
+<path fill="none" stroke="#b9d9cf" d="M661,-1552.5C661,-1552.5 902,-1552.5 902,-1552.5 908,-1552.5 914,-1558.5 914,-1564.5 914,-1564.5 914,-1907.5 914,-1907.5 914,-1913.5 908,-1919.5 902,-1919.5 902,-1919.5 661,-1919.5 661,-1919.5 655,-1919.5 649,-1913.5 649,-1907.5 649,-1907.5 649,-1564.5 649,-1564.5 649,-1558.5 655,-1552.5 661,-1552.5"/>
+</g>
+<g id="edge4" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M578.75,-1092.63C729.94,-1116.73 494.55,-1821.34 635.2,-1863.98"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="570.99,-1096.05 571.6,-1088.07 573.2,-1088.2 572.59,-1096.17 570.99,-1096.05"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="570.5,-1092 574.49,-1092.31 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="574.98,-1096.36 575.59,-1088.38 577.19,-1088.5 576.58,-1096.48 574.98,-1096.36"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="574.49,-1092.31 578.48,-1092.61 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="641.58,-1864.88 649,-1869.56 645.54,-1865.44 649.5,-1866 649.5,-1866 649.5,-1866 645.54,-1865.44 650,-1862.44 641.58,-1864.88 641.58,-1864.88"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="638.41" cy="-1864.44" rx="3.2" ry="3.2"/>
+</g>
+<g id="node12" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M703,-1084.5C703,-1084.5 860,-1084.5 860,-1084.5 866,-1084.5 872,-1090.5 872,-1096.5 872,-1096.5 872,-1223.5 872,-1223.5 872,-1229.5 866,-1235.5 860,-1235.5 860,-1235.5 703,-1235.5 703,-1235.5 697,-1235.5 691,-1229.5 691,-1223.5 691,-1223.5 691,-1096.5 691,-1096.5 691,-1090.5 697,-1084.5 703,-1084.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="692.5,-1209 692.5,-1234 871.5,-1234 871.5,-1209 692.5,-1209"/>
+<text text-anchor="start" x="698.5" y="-1219.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">notes</text>
+<text text-anchor="start" x="736.5" y="-1219.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;메모</text>
+<text text-anchor="start" x="695.5" y="-1197.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="780.5" y="-1197.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="855.5" y="-1198.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="695.5" y="-1179.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_id   </text>
+<text text-anchor="start" x="780.5" y="-1179.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="835.5" y="-1180.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="848.5" y="-1180.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="855.5" y="-1180.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="695.5" y="-1161.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">kind   </text>
+<text text-anchor="start" x="780.5" y="-1161.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="861.5" y="-1161.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="695.5" y="-1143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="780.5" y="-1143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="861.5" y="-1143.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="695.5" y="-1125.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_n   </text>
+<text text-anchor="start" x="780.5" y="-1125.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="861.5" y="-1125.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="695.5" y="-1107.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source_key   </text>
+<text text-anchor="start" x="780.5" y="-1107.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="855.5" y="-1107.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="695.5" y="-1090.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(attempt_id, source_key)    </text>
+<path fill="none" stroke="#b9d9cf" d="M703,-1084.5C703,-1084.5 860,-1084.5 860,-1084.5 866,-1084.5 872,-1090.5 872,-1096.5 872,-1096.5 872,-1223.5 872,-1223.5 872,-1229.5 866,-1235.5 860,-1235.5 860,-1235.5 703,-1235.5 703,-1235.5 697,-1235.5 691,-1229.5 691,-1223.5 691,-1223.5 691,-1096.5 691,-1096.5 691,-1090.5 697,-1084.5 703,-1084.5"/>
+</g>
+<g id="edge5" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M578.71,-1092.48C631.8,-1098.99 628.41,-1168.98 677.12,-1180.42"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="571.06,-1096.04 571.53,-1088.05 573.13,-1088.15 572.66,-1096.13 571.06,-1096.04"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="570.5,-1092 574.49,-1092.24 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="575.06,-1096.28 575.53,-1088.29 577.12,-1088.38 576.65,-1096.37 575.06,-1096.28"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="574.49,-1092.24 578.49,-1092.47 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="683.55,-1181.13 691.11,-1185.58 687.52,-1181.56 691.5,-1182 691.5,-1182 691.5,-1182 687.52,-1181.56 691.89,-1178.42 683.55,-1181.13 683.55,-1181.13"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="680.37" cy="-1180.78" rx="3.2" ry="3.2"/>
+</g>
+<g id="node13" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M679,-1264.5C679,-1264.5 884,-1264.5 884,-1264.5 890,-1264.5 896,-1270.5 896,-1276.5 896,-1276.5 896,-1511.5 896,-1511.5 896,-1517.5 890,-1523.5 884,-1523.5 884,-1523.5 679,-1523.5 679,-1523.5 673,-1523.5 667,-1517.5 667,-1511.5 667,-1511.5 667,-1276.5 667,-1276.5 667,-1270.5 673,-1264.5 679,-1264.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="668.5,-1497 668.5,-1522 895.5,-1522 895.5,-1497 668.5,-1497"/>
+<text text-anchor="start" x="674.5" y="-1507.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">rules</text>
+<text text-anchor="start" x="712.5" y="-1507.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;규칙</text>
+<text text-anchor="start" x="671.5" y="-1485.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="804.5" y="-1485.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="879.5" y="-1486.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="671.5" y="-1467.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_id   </text>
+<text text-anchor="start" x="804.5" y="-1467.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="859.5" y="-1468.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="872.5" y="-1468.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="879.5" y="-1468.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="671.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">rule_id   </text>
+<text text-anchor="start" x="804.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="879.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="671.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source   </text>
+<text text-anchor="start" x="804.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="885.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">target   </text>
+<text text-anchor="start" x="804.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="885.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">when_beat   </text>
+<text text-anchor="start" x="804.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="885.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">effect   </text>
+<text text-anchor="start" x="804.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="885.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">action   </text>
+<text text-anchor="start" x="804.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="885.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">shown_reason   </text>
+<text text-anchor="start" x="804.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="885.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">hidden_side_effect   </text>
+<text text-anchor="start" x="804.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="885.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_loop   </text>
+<text text-anchor="start" x="804.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="885.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1287.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">conflict   </text>
+<text text-anchor="start" x="804.5" y="-1287.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="885.5" y="-1287.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="671.5" y="-1270.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(attempt_id, rule_id)    </text>
+<path fill="none" stroke="#b9d9cf" d="M679,-1264.5C679,-1264.5 884,-1264.5 884,-1264.5 890,-1264.5 896,-1270.5 896,-1276.5 896,-1276.5 896,-1511.5 896,-1511.5 896,-1517.5 890,-1523.5 884,-1523.5 884,-1523.5 679,-1523.5 679,-1523.5 673,-1523.5 667,-1517.5 667,-1511.5 667,-1511.5 667,-1276.5 667,-1276.5 667,-1270.5 673,-1264.5 679,-1264.5"/>
+</g>
+<g id="edge6" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M578.79,-1092.31C731.01,-1104.08 511.03,-1448.19 653.11,-1469.01"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="571.15,-1096.03 571.45,-1088.03 573.05,-1088.09 572.75,-1096.09 571.15,-1096.03"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="570.5,-1092 574.5,-1092.15 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="575.15,-1096.18 575.45,-1088.18 577.04,-1088.24 576.75,-1096.24 575.15,-1096.18"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="574.5,-1092.15 578.49,-1092.3 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="659.52,-1469.45 667.25,-1473.59 663.51,-1469.73 667.5,-1470 667.5,-1470 667.5,-1470 663.51,-1469.73 667.75,-1466.41 659.52,-1469.45 659.52,-1469.45"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="656.33" cy="-1469.23" rx="3.2" ry="3.2"/>
+</g>
+<g id="edge7" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M578.85,-1091.61C695.91,-1080.09 549.25,-819.41 662.89,-804.65"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="571.49,-1095.96 571.11,-1087.97 572.71,-1087.89 573.09,-1095.88 571.49,-1095.96"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="570.5,-1092 574.5,-1091.81 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="575.48,-1095.77 575.11,-1087.78 576.7,-1087.7 577.08,-1095.69 575.48,-1095.77"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="574.5,-1091.81 578.49,-1091.62 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="672.46,-800.06 672.95,-808.04 671.35,-808.14 670.86,-800.15 672.46,-800.06"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="673.5,-804 669.51,-804.25 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="666.31" cy="-804.44" rx="3.2" ry="3.2"/>
+</g>
+<g id="node15" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M676.5,-886.5C676.5,-886.5 886.5,-886.5 886.5,-886.5 892.5,-886.5 898.5,-892.5 898.5,-898.5 898.5,-898.5 898.5,-1043.5 898.5,-1043.5 898.5,-1049.5 892.5,-1055.5 886.5,-1055.5 886.5,-1055.5 676.5,-1055.5 676.5,-1055.5 670.5,-1055.5 664.5,-1049.5 664.5,-1043.5 664.5,-1043.5 664.5,-898.5 664.5,-898.5 664.5,-892.5 670.5,-886.5 676.5,-886.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="665.5,-1029 665.5,-1054 897.5,-1054 897.5,-1029 665.5,-1029"/>
+<text text-anchor="start" x="671.5" y="-1039.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">events</text>
+<text text-anchor="start" x="717.5" y="-1039.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;이벤트 로그</text>
+<text text-anchor="start" x="668.5" y="-1017.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="771.5" y="-1017.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bigint  </text>
+<text text-anchor="start" x="881.5" y="-1018.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="668.5" y="-999.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">session_id   </text>
+<text text-anchor="start" x="771.5" y="-999.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="875.5" y="-1000.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
+<text text-anchor="start" x="668.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">attempt_n   </text>
+<text text-anchor="start" x="771.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="887.5" y="-981.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="668.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_n   </text>
+<text text-anchor="start" x="771.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="887.5" y="-963.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="668.5" y="-945.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">type   </text>
+<text text-anchor="start" x="771.5" y="-945.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="887.5" y="-945.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="668.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">payload   </text>
+<text text-anchor="start" x="771.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="887.5" y="-927.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="668.5" y="-909.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="771.5" y="-909.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="887.5" y="-909.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="668.5" y="-892.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">idx(session_id) · idx(session_id, type)    </text>
+<path fill="none" stroke="#b9d9cf" d="M676.5,-886.5C676.5,-886.5 886.5,-886.5 886.5,-886.5 892.5,-886.5 898.5,-892.5 898.5,-898.5 898.5,-898.5 898.5,-1043.5 898.5,-1043.5 898.5,-1049.5 892.5,-1055.5 886.5,-1055.5 886.5,-1055.5 676.5,-1055.5 676.5,-1055.5 670.5,-1055.5 664.5,-1049.5 664.5,-1043.5 664.5,-1043.5 664.5,-898.5 664.5,-898.5 664.5,-892.5 670.5,-886.5 676.5,-886.5"/>
+</g>
+<g id="edge8" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M581.02,-1090.86C621.26,-1081.5 612.99,-1017.23 650.06,-1004.27"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="571.73,-1095.89 570.87,-1087.94 572.46,-1087.77 573.32,-1095.72 571.73,-1095.89"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="570.5,-1092 574.48,-1091.57 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="577.66" cy="-1091.23" rx="3.2" ry="3.2"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="656.6,-1003.24 665.06,-1005.56 660.55,-1002.62 664.5,-1002 664.5,-1002 664.5,-1002 660.55,-1002.62 663.94,-998.44 656.6,-1003.24 656.6,-1003.24"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="653.44" cy="-1003.74" rx="3.2" ry="3.2"/>
+</g>
+<g id="node10" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M1001,-1282.5C1001,-1282.5 1194,-1282.5 1194,-1282.5 1200,-1282.5 1206,-1288.5 1206,-1294.5 1206,-1294.5 1206,-1529.5 1206,-1529.5 1206,-1535.5 1200,-1541.5 1194,-1541.5 1194,-1541.5 1001,-1541.5 1001,-1541.5 995,-1541.5 989,-1535.5 989,-1529.5 989,-1529.5 989,-1294.5 989,-1294.5 989,-1288.5 995,-1282.5 1001,-1282.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="990.5,-1515 990.5,-1540 1205.5,-1540 1205.5,-1515 990.5,-1515"/>
+<text text-anchor="start" x="996.5" y="-1525.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">npc_states</text>
+<text text-anchor="start" x="1072.5" y="-1525.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;NPC 상태</text>
+<text text-anchor="start" x="993.5" y="-1503.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="1114.5" y="-1503.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1189.5" y="-1504.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="993.5" y="-1485.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_id   </text>
+<text text-anchor="start" x="1114.5" y="-1485.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1169.5" y="-1486.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="1182.5" y="-1486.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="1189.5" y="-1486.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="993.5" y="-1467.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<text text-anchor="start" x="1114.5" y="-1467.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="1189.5" y="-1467.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="993.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<text text-anchor="start" x="1114.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="1195.5" y="-1449.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">suspicion   </text>
+<text text-anchor="start" x="1114.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1195.5" y="-1431.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">trust   </text>
+<text text-anchor="start" x="1114.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1195.5" y="-1413.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">opposite_mode   </text>
+<text text-anchor="start" x="1114.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1195.5" y="-1395.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">flagged_abnormal   </text>
+<text text-anchor="start" x="1114.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1195.5" y="-1377.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">mood   </text>
+<text text-anchor="start" x="1114.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">string  </text>
+<text text-anchor="start" x="1195.5" y="-1359.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">uttered_beat   </text>
+<text text-anchor="start" x="1114.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1195.5" y="-1341.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">memory   </text>
+<text text-anchor="start" x="1114.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1195.5" y="-1323.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">plan   </text>
+<text text-anchor="start" x="1114.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1195.5" y="-1305.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="993.5" y="-1288.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(loop_id, code)    </text>
+<path fill="none" stroke="#b9d9cf" d="M1001,-1282.5C1001,-1282.5 1194,-1282.5 1194,-1282.5 1200,-1282.5 1206,-1288.5 1206,-1294.5 1206,-1294.5 1206,-1529.5 1206,-1529.5 1206,-1535.5 1200,-1541.5 1194,-1541.5 1194,-1541.5 1001,-1541.5 1001,-1541.5 995,-1541.5 989,-1535.5 989,-1529.5 989,-1529.5 989,-1294.5 989,-1294.5 989,-1288.5 995,-1282.5 1001,-1282.5"/>
+</g>
+<g id="edge9" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M922.06,-1883.71C1079.69,-1872.07 828.65,-1510.16 975.13,-1488.97"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="914.94,-1887.97 914.66,-1879.97 916.26,-1879.92 916.54,-1887.91 914.94,-1887.97"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="914,-1884 918,-1883.86 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="918.94,-1887.83 918.65,-1879.83 920.25,-1879.77 920.54,-1887.77 918.94,-1887.83"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="918,-1883.86 921.99,-1883.72 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="981.52,-1488.54 989.74,-1491.59 985.51,-1488.27 989.5,-1488 989.5,-1488 989.5,-1488 985.51,-1488.27 989.26,-1484.41 981.52,-1488.54 981.52,-1488.54"/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="978.33" cy="-1488.75" rx="3.2" ry="3.2"/>
+</g>
+<g id="node11" class="node">
+<path fill="#fcfefd" stroke="transparent" d="M998,-1570.5C998,-1570.5 1197,-1570.5 1197,-1570.5 1203,-1570.5 1209,-1576.5 1209,-1582.5 1209,-1582.5 1209,-1907.5 1209,-1907.5 1209,-1913.5 1203,-1919.5 1197,-1919.5 1197,-1919.5 998,-1919.5 998,-1919.5 992,-1919.5 986,-1913.5 986,-1907.5 986,-1907.5 986,-1582.5 986,-1582.5 986,-1576.5 992,-1570.5 998,-1570.5"/>
+<polygon fill="#e3f3ed" stroke="transparent" points="987.5,-1893 987.5,-1918 1208.5,-1918 1208.5,-1893 987.5,-1893"/>
+<text text-anchor="start" x="993.5" y="-1903.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">nights</text>
+<text text-anchor="start" x="1039.5" y="-1903.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;밤 · 채점</text>
+<text text-anchor="start" x="990.5" y="-1881.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
+<text text-anchor="start" x="1123.5" y="-1881.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1192.5" y="-1882.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="990.5" y="-1863.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">loop_id   </text>
+<text text-anchor="start" x="1123.5" y="-1863.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
+<text text-anchor="start" x="1172.5" y="-1864.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
+<text text-anchor="start" x="1185.5" y="-1864.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="1192.5" y="-1864.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
+<text text-anchor="start" x="990.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">tapped_note_ids   </text>
+<text text-anchor="start" x="1123.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1845.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">free_text   </text>
+<text text-anchor="start" x="1123.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="1198.5" y="-1827.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">claims   </text>
+<text text-anchor="start" x="1123.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1809.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">fabricated_dropped   </text>
+<text text-anchor="start" x="1123.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1791.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">user_edited   </text>
+<text text-anchor="start" x="1123.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1198.5" y="-1773.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">edit_count   </text>
+<text text-anchor="start" x="1123.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1198.5" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">submitted   </text>
+<text text-anchor="start" x="1123.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1198.5" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">per_truth_claim   </text>
+<text text-anchor="start" x="1123.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cell_scores   </text>
+<text text-anchor="start" x="1123.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">total   </text>
+<text text-anchor="start" x="1123.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">float  </text>
+<text text-anchor="start" x="1198.5" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">passed   </text>
+<text text-anchor="start" x="1123.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1198.5" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">questions_left   </text>
+<text text-anchor="start" x="1123.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="1198.5" y="-1647.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">questions   </text>
+<text text-anchor="start" x="1123.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1629.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">options   </text>
+<text text-anchor="start" x="1123.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb  </text>
+<text text-anchor="start" x="1198.5" y="-1611.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">rule_chosen   </text>
+<text text-anchor="start" x="1123.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="1198.5" y="-1593.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
+<text text-anchor="start" x="990.5" y="-1576.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">루프당 밤 1개    </text>
+<path fill="none" stroke="#b9d9cf" d="M998,-1570.5C998,-1570.5 1197,-1570.5 1197,-1570.5 1203,-1570.5 1209,-1576.5 1209,-1582.5 1209,-1582.5 1209,-1907.5 1209,-1907.5 1209,-1913.5 1203,-1919.5 1197,-1919.5 1197,-1919.5 998,-1919.5 998,-1919.5 992,-1919.5 986,-1913.5 986,-1907.5 986,-1907.5 986,-1582.5 986,-1582.5 986,-1576.5 992,-1570.5 998,-1570.5"/>
+</g>
+<g id="edge10" class="edge">
+<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M921.99,-1883.62C945.14,-1881.36 953.93,-1869.57 976.1,-1866.65"/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="914.99,-1887.96 914.61,-1879.97 916.21,-1879.89 916.59,-1887.88 914.99,-1887.96"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="914,-1884 918,-1883.81 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="918.98,-1887.77 918.61,-1879.78 920.2,-1879.7 920.58,-1887.69 918.98,-1887.77"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="918,-1883.81 921.99,-1883.62 "/>
+<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="985.45,-1862.06 985.95,-1870.04 984.35,-1870.14 983.85,-1862.16 985.45,-1862.06"/>
+<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="986.5,-1866 982.51,-1866.25 "/>
+<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="979.31" cy="-1866.45" rx="3.2" ry="3.2"/>
+</g>
+</g>
+</svg>
