@@ -210,6 +210,49 @@
     .metric.compact p { font-size: 12px; line-height: 1.6; }
 
 
+    /* ---------- ERD dropdown ---------- */
+    .erd { position: relative; margin-top: 22px; }
+    .erd summary {
+      list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700;
+      border: 1px solid var(--line); background: var(--tint); color: var(--ink); border-radius: 10px; padding: 9px 14px; user-select: none;
+      transition: border-color .2s, background .2s;
+    }
+    .erd summary::-webkit-details-marker { display: none; }
+    .erd summary:hover, .erd[open] summary { border-color: var(--accent); }
+    .erd summary svg { width: 18px; height: 18px; color: var(--accent-ink); flex: none; }
+    .erd summary .chev { width: 16px; height: 16px; color: var(--ink-3); transition: transform .25s; }
+    .erd[open] summary .chev { transform: rotate(180deg); }
+    .erd-meta { font-weight: 500; font-size: 12.5px; color: var(--ink-3); }
+    .card:has(.erd[open]) { position: relative; z-index: 15; }
+    .erd-panel {
+      position: absolute; top: calc(100% + 10px); left: 0; z-index: 30; width: min(760px, calc(100vw - 48px));
+      max-height: min(70vh, 640px); overflow: auto; overscroll-behavior: contain;
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 20px;
+      box-shadow: 0 18px 48px rgba(10, 40, 34, .18), 0 2px 6px rgba(10, 40, 34, .08);
+      animation: erdIn .22s ease;
+    }
+    @keyframes erdIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+    .erd-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+    .erd-head b { font-size: 15px; font-weight: 800; letter-spacing: -0.02em; }
+    .erd-head a { font-size: 13px; font-weight: 700; color: var(--accent-ink); }
+    .bc { padding-top: 14px; margin-top: 12px; border-top: 1px solid var(--line); }
+    .bc h4 { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; letter-spacing: -0.02em; }
+    .bc-key { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 600; color: var(--btn-ink); background: var(--btn); border-radius: 5px; padding: 1px 7px; }
+    .rels { margin: 6px 0 10px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; line-height: 1.75; color: var(--ink-2); }
+    .tbls { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+    .tbl { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--bg); }
+    .tn { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; padding: 7px 10px; background: var(--tint); border-bottom: 1px solid var(--line); color: var(--accent-ink); }
+    .tbl ul { list-style: none; margin: 0; padding: 6px 10px 8px; display: grid; gap: 2px; }
+    .tbl li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; padding: 0; font-size: 12px; line-height: 1.55; color: var(--ink); }
+    .tbl li::before { display: none; }
+    .tbl code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; }
+    .k { font-size: 10.5px; font-weight: 700; border-radius: 4px; padding: 0 5px; line-height: 1.6; }
+    .k.pk { background: var(--btn); color: var(--btn-ink); }
+    .k.fk { background: var(--tint); color: var(--accent-ink); }
+    .k.uq { border: 1px solid var(--line); color: var(--ink-2); }
+    .k.ty { color: var(--ink-3); font-weight: 600; }
+    .tbl .note { margin: 0; padding: 0 10px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: var(--ink-3); }
+
     footer { border-top: 1px solid var(--line); }
     footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 40px; padding-bottom: 48px; font-size: 13px; }
     footer .f-brand { display: flex; align-items: baseline; gap: 16px; }
@@ -252,6 +295,8 @@
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
       .btn { gap: 24px; padding: 18px 22px; }
+      .erd-panel { position: static; width: auto; max-height: 60vh; margin-top: 10px; box-shadow: none; animation: none; }
+      .erd-meta { display: none; }
       footer .mid { display: none; }
     }
   </style>
@@ -384,7 +429,7 @@
         </article>
 
         <!-- 02 Life Tutorial -->
-        <article class="card rv" data-tags="Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤">
+        <article class="card rv" data-tags="ERD PostgreSQL Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/lifetutorial-800.webp?v=2 800w, assets/lifetutorial-1400.webp?v=2 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -401,6 +446,60 @@
             <li>법령 11개를 1,593개 청크로 나눠 두 개의 벡터 공간에 색인한 법령 원문 RAG</li>
             <li>온라인은 Gemini, 폐쇄망은 EXAONE으로 LLM을 이중화 — 실제 근로계약서라는 개인정보를 다루기에 로컬 추론 · 폐쇄망 배포를 전제로 설계하고, LLM 어댑터를 Port 계층으로 격리</li>
           </ul>
+          <details class="erd" id="lt-erd">
+            <summary><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="6" height="5" rx="1"/><rect x="11.5" y="3" width="6" height="5" rx="1"/><rect x="7" y="12" width="6" height="5" rx="1"/><path d="M5.5 8v2h9V8M10 10v2"/></svg>ERD 보기<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
+              <div class="erd-head"><b>Life Tutorial ERD</b><a href="https://lifetutorial.beyondfacade.cloud/docs/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a></div>
+              <section class="bc"><h4><span class="bc-key">ontology</span>법령 지식</h4>
+                <p class="rels">laws 1─N law_articles 1─N law_chunks</p>
+                <div class="tbls">
+                  <div class="tbl"><div class="tn">laws</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>mst</code><span class="k uq">UQ</span></li><li><code>name</code></li><li><code>effective_date</code></li><li><code>fetched_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">law_articles</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>law_id</code><span class="k fk">→ laws</span></li><li><code>article_no</code></li><li><code>title</code></li><li><code>content</code></li></ul><p class="note">UQ(law_id, article_no)</p></div>
+                  <div class="tbl"><div class="tn">law_chunks</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>article_id</code><span class="k fk">→ law_articles</span></li><li><code>chunk_no</code></li><li><code>content</code></li><li><code>embedding</code><span class="k ty">vector(1536)</span></li><li><code>model</code></li><li><code>embedded_at</code></li><li><code>embedding_local</code></li><li><code>model_local</code></li><li><code>embedded_local_at</code></li></ul></div>
+                </div>
+              </section>
+              <section class="bc"><h4><span class="bc-key">auth</span>인증 · 플레이어</h4>
+                <p class="rels">player 1─N player_oauth<br>player 1─N refresh_token</p>
+                <div class="tbls">
+                  <div class="tbl"><div class="tn">player</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>username</code><span class="k uq">UQ</span></li><li><code>password_hash</code></li><li><code>birth_year</code></li><li><code>created_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">player_oauth</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>provider</code></li><li><code>provider_subject</code></li></ul><p class="note">UQ(provider, provider_subject)</p></div>
+                  <div class="tbl"><div class="tn">refresh_token</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>token_hash</code><span class="k uq">UQ</span></li><li><code>expires_at</code></li><li><code>revoked_at</code></li><li><code>created_at</code></li></ul></div>
+                </div>
+              </section>
+              <section class="bc"><h4><span class="bc-key">quest</span>게임</h4>
+                <p class="rels">category 1─N chapter 1─N quest<br>quest 1─N defense_line · 대화 방어전<br>quest 1─N calc_problem · 계산 미니게임<br>player · quest 1─N quest_session 1─N dialogue_turn<br>player 1─N player_stat · learning_event · quest_clear_score</p>
+                <div class="tbls">
+                  <div class="tbl"><div class="tn">category</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>name</code></li></ul></div>
+                  <div class="tbl"><div class="tn">chapter</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>category_id</code><span class="k fk">→ category</span></li><li><code>title</code></li><li><code>display_order</code></li></ul></div>
+                  <div class="tbl"><div class="tn">quest</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>chapter_id</code><span class="k fk">→ chapter</span></li><li><code>title</code></li><li><code>mechanism</code></li><li><code>display_order</code></li><li><code>money_defended</code></li><li><code>clear_reward</code><span class="k ty">JSONB</span></li></ul></div>
+                  <div class="tbl"><div class="tn">defense_line</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>level</code></li><li><code>npc_opening</code></li><li><code>npc_clear</code></li><li><code>ongoing_lines</code><span class="k ty">JSONB</span></li><li><code>hint1</code></li><li><code>hint2</code></li><li><code>keywords_clear</code><span class="k ty">JSONB</span></li><li><code>keywords_ambig</code><span class="k ty">JSONB</span></li><li><code>keywords_ambig_priority</code><span class="k ty">JSONB</span></li><li><code>evidence</code><span class="k ty">JSONB</span></li></ul><p class="note">UQ(quest_id, level)</p></div>
+                  <div class="tbl"><div class="tn">calc_problem</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>code</code></li><li><code>display_order</code></li><li><code>prompt_template</code></li><li><code>given_params</code><span class="k ty">JSONB</span></li><li><code>answer_kind</code></li><li><code>explanation_template</code></li><li><code>is_trap</code></li></ul><p class="note">UQ(quest_id, code)</p></div>
+                  <div class="tbl"><div class="tn">quest_session</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>quest_id</code><span class="k fk">→ quest</span></li><li><code>status</code></li><li><code>checkpoint</code></li><li><code>turn_in_level</code></li><li><code>ongoing_index</code></li><li><code>total_turns</code></li><li><code>hints_used</code></li><li><code>calc_progress</code><span class="k ty">JSONB</span></li><li><code>started_at</code></li><li><code>cleared_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">dialogue_turn</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>session_id</code><span class="k fk">→ quest_session</span></li><li><code>role</code></li><li><code>text</code></li><li><code>defense_level</code></li><li><code>judgement</code></li><li><code>created_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">player_stat</div><ul><li><code>player_id</code><span class="k pk">PK · FK player</span></li><li><code>stat_code</code><span class="k pk">PK</span></li><li><code>value</code></li></ul></div>
+                  <div class="tbl"><div class="tn">quest_clear_score</div><ul><li><code>player_id</code><span class="k pk">PK · FK player</span></li><li><code>quest_id</code><span class="k pk">PK · FK quest</span></li><li><code>clear_count</code></li><li><code>initial_reward</code><span class="k ty">JSONB</span></li><li><code>recent_reward</code><span class="k ty">JSONB</span></li><li><code>updated_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">learning_event</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>event_type</code></li><li><code>payload</code><span class="k ty">JSONB</span></li><li><code>created_at</code></li></ul></div>
+                </div>
+              </section>
+              <section class="bc"><h4><span class="bc-key">guard</span>가드 · 계약서 판정</h4>
+                <p class="rels">player 1─N contract_scan 1─N guard_finding<br>guard_rule 1─N guard_finding</p>
+                <div class="tbls">
+                  <div class="tbl"><div class="tn">contract_scan</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>doc_type</code></li><li><code>status</code></li><li><code>template_matched</code></li><li><code>scanned_at</code></li><li><code>image_purged_at</code></li><li><code>fields_purged_at</code></li><li><code>confirmed_fields</code><span class="k ty">JSONB</span></li></ul></div>
+                  <div class="tbl"><div class="tn">guard_rule</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>code</code></li><li><code>version</code></li><li><code>doc_type</code></li><li><code>violation_type_code</code></li><li><code>severity</code></li><li><code>condition_spec</code><span class="k ty">JSONB</span></li><li><code>verified_by</code></li><li><code>verified_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">guard_finding</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>scan_id</code><span class="k fk">→ contract_scan</span></li><li><code>rule_id</code><span class="k fk">→ guard_rule</span></li><li><code>rule_version</code></li><li><code>created_at</code></li></ul></div>
+                </div>
+              </section>
+              <section class="bc"><h4><span class="bc-key">insight</span>상담 준비 리포트</h4>
+                <p class="rels">insight_pack 1─N insight_pack_item<br>player · insight_pack 1─N report_session 1─N report_slot_value</p>
+                <div class="tbls">
+                  <div class="tbl"><div class="tn">insight_pack</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>category</code><span class="k uq">UQ</span></li><li><code>track</code></li><li><code>secondary_track</code></li><li><code>urgent</code></li><li><code>implemented</code></li><li><code>urgent_notice</code></li><li><code>evidence_notice</code></li><li><code>law_query</code></li></ul></div>
+                  <div class="tbl"><div class="tn">insight_pack_item</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>pack_id</code><span class="k fk">→ insight_pack</span></li><li><code>kind</code><span class="k ty">SLOT · ISSUE · EVIDENCE_TIP · ROUTING</span></li><li><code>slot_id</code></li><li><code>order_no</code></li><li><code>required</code></li><li><code>value_type</code><span class="k ty">TEXT · DATE · MONEY</span></li><li><code>label</code></li><li><code>question</code></li><li><code>text</code></li><li><code>reason</code></li><li><code>contact</code></li><li><code>expert</code></li></ul></div>
+                  <div class="tbl"><div class="tn">report_session</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>player_id</code><span class="k fk">→ player</span></li><li><code>pack_id</code><span class="k fk">→ insight_pack</span></li><li><code>status</code><span class="k ty">INTERVIEW · CONFIRM · GENERATED · PURGED</span></li><li><code>narrative</code></li><li><code>current_slot_id</code></li><li><code>reask_used</code></li><li><code>confirmed_at</code></li><li><code>retention_expires_at</code></li><li><code>extension_count</code></li><li><code>created_at</code></li><li><code>purged_at</code></li></ul></div>
+                  <div class="tbl"><div class="tn">report_slot_value</div><ul><li><code>id</code><span class="k pk">PK</span></li><li><code>session_id</code><span class="k fk">→ report_session</span></li><li><code>slot_id</code></li><li><code>value</code></li><li><code>precision</code><span class="k ty">EXACT · APPROX_MONTH · APPROX_RANGE · HEARSAY · UNKNOWN</span></li><li><code>raw_quote</code></li><li><code>source</code></li></ul></div>
+                </div>
+              </section>
+            </div>
+          </details>
           <div class="card-foot">
             <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>PaddleOCR</span><span>EXAONE</span><span>Gemma</span></div>
             <div class="gos">
@@ -569,6 +668,14 @@
     document.getElementById('searchForm').addEventListener('submit', function (e) { e.preventDefault(); go(input.value); });
     chips.forEach(function (ch) { ch.addEventListener('click', function () { go(ch.dataset.q); }); });
     document.getElementById('clearFilter').addEventListener('click', function () { input.value = ''; apply(''); });
+  })();
+
+  // ERD dropdown: close on outside click or Escape
+  (function () {
+    var erd = document.getElementById('lt-erd');
+    if (!erd) return;
+    document.addEventListener('click', function (e) { if (erd.open && !erd.contains(e.target)) erd.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && erd.open) { erd.open = false; erd.querySelector('summary').focus(); } });
   })();
 
   // Scroll reveal
