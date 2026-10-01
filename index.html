@@ -469,7 +469,7 @@
       <div class="step rv">
         <span class="eyebrow">02 / Harness</span>
         <h3>AI가 일할 틀을 짓는다</h3>
-        <p>사실 확인은 데이터베이스가, 말로 풀어내는 일은 AI가 맡도록 역할을 나눕니다. AI가 실패해도 다른 모델과 규칙이 차례로 받아 주니 서비스가 멈추지 않습니다.</p>
+        <p>사실 확인은 데이터베이스가, 말로 풀어내는 일은 AI가 맡도록 역할을 나눕니다. AI가 실패해도 다른 모델과 규칙이 차례로 받아 주니 서비스가 멈추지 않습니다. 개발할 때도 마찬가지로, 규칙 · 역할 · 검증 기준을 <code>CLAUDE.md</code>에 적어 두고 AI가 그 안에서 코드를 쓰게 합니다.</p>
       </div>
       <div class="step rv">
         <span class="eyebrow">03 / Human-in-the-Loop</span>
@@ -531,7 +531,7 @@
 
       <div class="grid" id="grid">
         <!-- 01 Shylock -->
-        <article class="card feature rv" data-tags="ERD Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임 하네스">
+        <article class="card feature rv" data-tags="ERD Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임 하네스 Clean-Architecture 클린아키텍처 Function-Calling Tool-Use 도구호출 failure-recovery 장애복구">
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
@@ -546,7 +546,7 @@
               <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리 — 관계 저장소는 환경변수 스위치로 Postgres(재귀 CTE) ↔ Neo4j 교체 가능</li>
               <li>그래프 유무 ablation(조건별 n=42)에서 멀티홉 관계 질문 정답률 <b>21% → 100%</b>(Fisher p=3.6×10⁻¹⁵) — 단일 사실 질문에서는 차이 없음을 함께 확인</li>
               <li>판사 ‘공작’은 LLM judge로 판정하되, 모든 LLM 경로가 실패하면 <b>결정론적 규칙</b>이 판정 — 로컬 모델 → 외부 API → 규칙 3단 폴백</li>
-              <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙하되, 기능별 환경변수 스위치로 <b>문제가 생긴 기능만 즉시 Claude · Cohere로 복귀</b>할 수 있게 설계. 도구 호출 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
+              <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙하되, 기능별 환경변수 스위치로 <b>문제가 생긴 기능만 즉시 Claude · Cohere로 복귀</b>할 수 있게 설계. 도구 호출(Function Calling) 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
               <li>1GB EC2에는 백엔드만, 추론은 맥북 Ollama로 분리해 Cloudflare Tunnel + Zero Trust로 연결 — <b>Hexagonal · DDD · Vertical Slice</b> 구조라 도메인 코드는 그대로 두고 어댑터만 추가</li>
               <li>같은 임베딩 모델도 EC2(t3.micro)에서 직접 돌리면 CPU 크레딧 고갈로 평균 7.5초(p95 29초) — 맥북(Apple Silicon)에서 돌리고 결과만 네트워크로 받으면 약 13ms로, 추론 위치만 바꿔 <b>약 580배</b> 단축</li>
               <li>ORM <code>relationship()</code>은 진짜 애그리게이트(Trial–ChoiceHistory) 하나에만 허용하고 나머지 FK는 ID 참조 + 수동 join — AsyncSession에서 로드 안 된 관계를 건드리면 <b>조용한 N+1 대신 즉시 예외</b>가 나는 구조로 DDD 애그리게이트 경계를 지킴</li>
@@ -588,7 +588,7 @@
         </article>
 
         <!-- 02 Life Tutorial -->
-        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅 Docker 하네스">
+        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅 Docker 하네스 Clean-Architecture 클린아키텍처">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/lifetutorial-800.webp?v=2 800w, assets/lifetutorial-1400.webp?v=2 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -636,7 +636,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 PostgreSQL pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade Docker 하네스">
+        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 PostgreSQL pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처 failure-recovery 장애복구">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -683,7 +683,7 @@
         </article>
 
         <!-- 04 REMAKE DAY -->
-        <article class="card rv" data-tags="ERD PostgreSQL LLM AI 백엔드 게임 연구 HCI 실험 BeyondBob Hexagonal 하네스 Human-in-the-Loop Claude Gemma Gemini Kanana 채점 모델 선정 평가 Docker">
+        <article class="card rv" data-tags="ERD PostgreSQL LLM AI 백엔드 게임 연구 HCI 실험 BeyondBob Hexagonal 하네스 Human-in-the-Loop Claude Gemma Gemini Kanana 채점 모델 선정 평가 Docker Clean-Architecture 클린아키텍처 failure-recovery 장애복구">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/remakeday-800.webp 800w, assets/remakeday-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -728,7 +728,7 @@
           </div>
         </article>
         <!-- 05 Metabole -->
-        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React PostgreSQL pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade Docker 하네스">
+        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React PostgreSQL pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/metabole-800.webp 800w, assets/metabole-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
