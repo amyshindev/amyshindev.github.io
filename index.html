@@ -177,7 +177,14 @@
     .go:hover .arrow, .go:focus-visible .arrow,
     .nav .ext:hover .arrow, .nav .ext:focus-visible .arrow { transform: translate(3px, -3px); }
     .gos { display: flex; flex-wrap: wrap; gap: 12px 24px; }
-    .award { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; font-size: 12.5px; font-weight: 700; background: var(--btn); color: var(--btn-ink); border-radius: 6px; padding: 5px 11px; }
+    .award {
+      align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 24px;
+      font-size: 13px; font-weight: 800; letter-spacing: -0.01em; color: #3b2a04;
+      background: linear-gradient(135deg, #ffe08a 0%, #f7c04a 48%, #eaa52c 100%);
+      border: 1px solid #d8961f; border-radius: 8px; padding: 7px 13px 7px 11px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 6px 18px rgba(234,165,44,.35);
+    }
+    .award svg { width: 15px; height: 15px; fill: #8a5a06; stroke: #8a5a06; }
 
     .metric { background: var(--tint); border-radius: 12px; padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
     .metric .eyebrow { font-size: 11px; letter-spacing: .16em; color: var(--ink-2); }
@@ -406,7 +413,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="FastAPI Next.js EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
+        <article class="card rv" data-tags="FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -461,7 +468,7 @@
           </div>
         </article>
         <!-- 05 Metabole -->
-        <article class="card rv" data-tags="AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
+        <article class="card rv" data-tags="AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/metabole-800.webp 800w, assets/metabole-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
