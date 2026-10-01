@@ -314,6 +314,16 @@
     .erd-svg [stroke="#5fae99"] { stroke: var(--accent); }
     .erd-svg [fill="#5fae99"] { fill: var(--accent); }
 
+    /* ---------- Profile ---------- */
+    .profile { padding: clamp(56px, 8vh, 88px) 0 clamp(64px, 9vh, 104px); }
+    .profile .wrap { display: grid; grid-template-columns: 1.15fr 3fr; gap: clamp(24px, 3vw, 48px); align-items: start; }
+    .spec { border-top: 1px solid var(--line); margin-top: 6px; }
+    .spec-row { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .spec dt { font-size: 13px; font-weight: 700; letter-spacing: .04em; color: var(--accent-ink); padding-top: 2px; }
+    .spec dd p { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-size: 16px; color: var(--ink); line-height: 1.6; }
+    .spec dd p + p { margin-top: 8px; }
+    .spec time { flex: none; font-size: 14px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
     footer { border-top: 1px solid var(--line); }
     footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 40px; padding-bottom: 48px; font-size: 13px; }
     footer .f-brand { display: flex; align-items: baseline; gap: 16px; }
@@ -332,6 +342,7 @@
       .art { max-width: 640px; margin: 24px auto 32px; width: 100%; }
       .closer .wrap { grid-template-columns: 1fr 1fr 1fr; }
       .closer .intro { grid-column: 1 / -1; grid-row: auto; }
+      .profile .wrap { grid-template-columns: 1fr; }
       .division { grid-column: 1 / -1; }
       .card.feature { grid-template-columns: 1fr; }
       .feature-side { display: contents; }
@@ -356,6 +367,9 @@
       .art-top { display: none; }
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
+      .profile .wrap { grid-template-columns: 1fr; }
+      .spec-row { grid-template-columns: 1fr; gap: 6px; }
+      .spec dd p { font-size: 15px; }
       .division { grid-template-columns: 1fr; }
       .div-row { flex-direction: column; align-items: stretch; }
       .div-arrow { transform: rotate(90deg); align-self: center; }
@@ -753,6 +767,39 @@
         </article>
 
       </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- Profile -->
+  <section class="profile" id="profile">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">Profile</span>
+        <h2 class="sec">학력 · 수상 · 어학.</h2>
+      </div>
+      <dl class="spec rv">
+        <div class="spec-row">
+          <dt>학력</dt>
+          <dd>
+            <p><span>University College London BSc Psychology (중퇴)</span></p>
+            <p><span>이화여자대학교 영어영문학부 (졸업)</span><time>2026.02</time></p>
+          </dd>
+        </div>
+        <div class="spec-row">
+          <dt>수상</dt>
+          <dd>
+            <p><span>제8회 K-디지털 트레이닝 해커톤 고용노동부 장관상 (우수상)</span><time>2026.09</time></p>
+          </dd>
+        </div>
+        <div class="spec-row">
+          <dt>어학</dt>
+          <dd>
+            <p><span>OPIc 영어 AL · OPIc 일본어 AL · JLPT N1 · OPIc 중국어 IM2</span></p>
+          </dd>
+        </div>
+      </dl>
     </div>
   </section>
 
