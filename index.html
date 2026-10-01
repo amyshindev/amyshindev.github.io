@@ -191,6 +191,7 @@
     .card li { position: relative; padding-left: 18px; font-size: 14.5px; color: var(--ink-2); line-height: 1.7; }
     .card li::before { content: ""; position: absolute; left: 0; top: .75em; width: 6px; height: 6px; border-radius: 50%; border: 1.5px solid var(--accent); }
     .card li b { color: var(--ink); font-weight: 700; }
+    .card li code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; background: var(--tint); color: var(--accent-ink); border-radius: 4px; padding: 1px 5px; }
     .card-foot { margin-top: auto; padding-top: 26px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tags span { font-size: 12px; font-weight: 500; color: var(--ink-2); background: var(--tint); border-radius: 6px; padding: 4px 9px; }
@@ -484,20 +485,21 @@
 
       <div class="grid" id="grid">
         <!-- 01 Shylock -->
-        <article class="card feature rv" data-tags="Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
+        <article class="card feature rv" data-tags="Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임">
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
             <p class="summary">플레이어의 선택에 LLM 캐릭터들이 실시간으로 반응하는 법정 추리 웹 게임. 인증 서버, RAG, 로컬 LLM 서빙, 프로덕션 배포까지 혼자 구축했습니다.</p>
             <ul>
-              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리</li>
+              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리 — 관계 저장소는 설정 하나로 Postgres(재귀 CTE) ↔ Neo4j 교체 가능</li>
               <li>판사 ‘공작’은 LLM judge로 판정하되, 모든 LLM 경로가 실패하면 <b>결정론적 규칙</b>이 판정 — 로컬 모델 → 외부 API → 규칙 3단 폴백</li>
-              <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙. 도구 호출 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
+              <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙하되, 기능별 환경변수 스위치로 <b>문제가 생긴 기능만 즉시 Claude · Cohere로 복귀</b>할 수 있게 설계. 도구 호출 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
               <li>1GB EC2에는 백엔드만, 추론은 맥북 Ollama로 분리해 Cloudflare Tunnel + Zero Trust로 연결 — <b>Hexagonal · DDD · Vertical Slice</b> 구조라 도메인 코드는 그대로 두고 어댑터만 추가</li>
+              <li>ORM <code>relationship()</code>은 진짜 애그리게이트(Trial–ChoiceHistory) 하나에만 허용하고 나머지 FK는 ID 참조 + 수동 join — AsyncSession에서 로드 안 된 관계를 건드리면 <b>조용한 N+1 대신 즉시 예외</b>가 나는 구조로 DDD 애그리게이트 경계를 지킴</li>
               <li>Google OAuth + RS256 JWT 인증 서버부터 nginx · Docker Compose 배포까지 직접 구축</li>
             </ul>
             <div class="card-foot">
-              <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>k6</span></div>
+              <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Neo4j</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>pytest</span><span>k6</span></div>
               <div class="gos">
                 <a class="go" href="https://shylock-trial.xyz" target="_blank" rel="noopener">서비스 바로가기
                 <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
