@@ -413,15 +413,16 @@
 
         <p class="ask rv">어떤 기술을 쓴 프로젝트가 궁금하세요?</p>
         <form class="search rv" id="searchForm" role="search">
-          <input id="q" type="search" placeholder="예: AWS, GraphRAG, 로컬 LLM" aria-label="기술이나 키워드로 프로젝트 찾기" autocomplete="off">
+          <input id="q" type="search" placeholder="예: AWS" aria-label="기술이나 키워드로 프로젝트 찾기" autocomplete="off">
           <button type="submit"><span>찾아보기</span>
             <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 14L14 6M7 6h7v7"/></svg></button>
         </form>
         <div class="chips rv">
           <button class="chip" type="button" data-q="Hexagonal">Hexagonal · DDD</button>
-          <button class="chip" type="button" data-q="GraphRAG">GraphRAG</button>
+          <button class="chip" type="button" data-q="Neo4j">Neo4j</button>
+          <button class="chip" type="button" data-q="PostgreSQL">PostgreSQL</button>
+          <button class="chip" type="button" data-q="AWS">AWS</button>
           <button class="chip" type="button" data-q="Docker">Docker</button>
-          <button class="chip" type="button" data-q="pgvector">pgvector</button>
         </div>
 
         <div class="cta-row rv">
@@ -587,7 +588,7 @@
         </article>
 
         <!-- 02 Life Tutorial -->
-        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅">
+        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅 Docker">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/lifetutorial-800.webp?v=2 800w, assets/lifetutorial-1400.webp?v=2 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -613,7 +614,7 @@
             <li><b>트러블슈팅</b> — 임베딩 429 지연의 원인이 우리 호출량이 아닌 모델 공용 쿼터임을 실측으로 확인하고, 고정 25초 대기를 지수 백오프로 교체해 방어전 한 턴 <b>28초 → 중앙값 0.4초</b></li>
           </ul>
           <div class="card-foot">
-            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>FastAPI</span><span>PostgreSQL · pgvector</span><span>PaddleOCR</span><span>Ollama</span><span>EXAONE</span><span>Gemma</span><span>Gemini</span></div>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>FastAPI</span><span>PostgreSQL · pgvector</span><span>PaddleOCR</span><span>Ollama</span><span>EXAONE</span><span>Gemma</span><span>Gemini</span><span>Docker</span></div>
             <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg">
             <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
@@ -635,7 +636,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade">
+        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 PostgreSQL pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade Docker">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -660,7 +661,7 @@
             <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
           </ul>
           <div class="card-foot">
-            <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Redis</span><span>Cloudflare R2</span></div>
+            <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Redis</span><span>Cloudflare R2</span><span>Docker</span></div>
             <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg">
             <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="SoundBridge ERD">
@@ -682,7 +683,7 @@
         </article>
 
         <!-- 04 REMAKE DAY -->
-        <article class="card rv" data-tags="ERD PostgreSQL LLM AI 백엔드 게임 연구 HCI 실험 BeyondBob Hexagonal 하네스 Human-in-the-Loop Claude Gemma Gemini Kanana 채점 모델 선정 평가">
+        <article class="card rv" data-tags="ERD PostgreSQL LLM AI 백엔드 게임 연구 HCI 실험 BeyondBob Hexagonal 하네스 Human-in-the-Loop Claude Gemma Gemini Kanana 채점 모델 선정 평가 Docker">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/remakeday-800.webp 800w, assets/remakeday-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -707,7 +708,7 @@
             <li><b>채점 불안정성 공개</b> — 같은 답이 67.9점과 53.3점으로 갈리고, md5까지 같은 제출이 temperature 0.0에서도 판정이 뒤집힘. 단조 잠금을 도입한 뒤 6판에서 4→5회차 점수 하락 0건 — 다만 잠금이 작동한다는 근거일 뿐, 채점기가 안정적이라는 근거는 아님</li>
           </ul>
           <div class="card-foot">
-            <div class="tags"><span>Hexagonal</span><span>Claude Sonnet · Haiku</span><span>Gemma · Gemini</span><span>LLM 채점</span><span>Human-in-the-Loop</span></div>
+            <div class="tags"><span>Hexagonal</span><span>Claude Sonnet · Haiku</span><span>Gemma · Gemini</span><span>LLM 채점</span><span>Human-in-the-Loop</span><span>Docker</span></div>
             <details class="erd" id="rd-erd" data-src="assets/remakeday-erd.svg">
             <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 15개 · 외래 키 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="REMAKE DAY ERD">
@@ -727,7 +728,7 @@
           </div>
         </article>
         <!-- 05 Metabole -->
-        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade">
+        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade Docker">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/metabole-800.webp 800w, assets/metabole-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -747,7 +748,7 @@
             <li>TDD로 백엔드 테스트 1,072건 · 프론트 약 580건, cron 9종(수집 5 · RAG 색인 1 · 운영 2 · 개발일지 1)</li>
           </ul>
           <div class="card-foot">
-            <div class="tags"><span>Hexagonal · DDD</span><span>FastAPI</span><span>Next.js 16</span><span>pgvector · Neo4j</span><span>Hybrid RAG</span><span>TDD</span></div>
+            <div class="tags"><span>Hexagonal · DDD</span><span>FastAPI</span><span>Next.js 16</span><span>pgvector · Neo4j</span><span>Hybrid RAG</span><span>TDD</span><span>Docker</span></div>
             <details class="erd" id="mb-erd" data-src="assets/metabole-erd.svg">
             <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 47개 · 외래 키 49개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="Metabole ERD">
