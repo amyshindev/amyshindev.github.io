@@ -466,29 +466,29 @@
         <p>핵심 로직은 가운데에 두고, DB나 AI 모델은 바깥에 끼워 쓰는 부품처럼 다룹니다. 그래서 비싼 API를 무료 로컬 모델로 바꿀 때도 핵심 코드는 그대로 두었습니다.</p>
       </div>
       <div class="step rv">
-        <span class="eyebrow">02 / Harness</span>
-        <h3>AI가 일할 틀을 짓는다</h3>
-        <p>사실 확인은 DB가, 말로 풀어내는 작업은 AI가 맡도록 나눕니다. AI가 실패하면 다른 모델과 규칙이 이어받아 서비스가 멈추지 않습니다. 개발할 때도 <code>CLAUDE.md</code>에 규칙과 검증 기준을 적어 두고, AI가 그 안에서 코드를 쓰게 합니다.</p>
-      </div>
-      <div class="step rv">
-        <span class="eyebrow">03 / Human-in-the-Loop</span>
-        <h3>책임은 사람이 진다</h3>
-        <p>AI에게 코딩을 맡겨도, 중요한 작업일수록 더 꼼꼼히 검토합니다. 마지막 판단과 책임은 언제나 사람의 몫입니다.</p>
-      </div>
-      <div class="step rv">
-        <span class="eyebrow">04 / Fractal</span>
+        <span class="eyebrow">02 / Fractal</span>
         <h3>모든 기능을 같은 모양으로</h3>
         <p>기능마다 똑같은 구성의 파일 묶음으로 만듭니다. 모양이 같으니 AI가 헷갈리지 않고, 실수해도 그 묶음 안에서만 영향이 납니다.</p>
       </div>
       <div class="step rv">
-        <span class="eyebrow">05 / Patterns</span>
+        <span class="eyebrow">03 / Harness</span>
+        <h3>AI가 일할 틀을 짓는다</h3>
+        <p>사실 확인은 DB가, 말로 풀어내는 작업은 AI가 맡도록 나눕니다. AI가 실패하면 다른 모델과 규칙이 이어받아 서비스가 멈추지 않습니다. 개발할 때도 <code>CLAUDE.md</code>에 규칙과 검증 기준을 적어 두고, AI가 그 안에서 코드를 쓰게 합니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">04 / Patterns</span>
         <h3>if문 대신 GoF 디자인 패턴</h3>
         <p>조건문을 줄줄이 늘어놓는 대신 GoF의 디자인 패턴(Strategy · State · Factory 등)으로 정리합니다. 새 기능을 붙일 때 기존 코드를 덜 건드리고, AI에게도 한 단어로 의도를 전할 수 있습니다.</p>
       </div>
       <div class="step rv">
-        <span class="eyebrow">06 / Verify</span>
+        <span class="eyebrow">05 / Verify</span>
         <h3>완성의 기준부터 정한다</h3>
         <p>무엇이 되면 ‘완성’인지 테스트로 먼저 적고, 그 테스트를 통과시키는 식으로 일합니다. AI 모델도 미리 정한 평가셋을 통과한 모델만 씁니다.</p>
+      </div>
+      <div class="step rv">
+        <span class="eyebrow">06 / Human-in-the-Loop</span>
+        <h3>책임은 사람이 진다</h3>
+        <p>AI에게 코딩을 맡겨도, 중요한 작업일수록 더 꼼꼼히 검토합니다. 마지막 판단과 책임은 언제나 사람의 몫입니다.</p>
       </div>
       <div class="division rv">
         <div class="div-row">
