@@ -123,6 +123,15 @@
     .text-link:hover { color: var(--ink-3); }
 
     .art { position: relative; }
+    .stack { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: clamp(22px, 2.4vw, 32px); box-shadow: var(--shadow); }
+    .stk-title { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+    .stk-sub { margin-top: 6px; font-size: 14px; color: var(--ink-2); }
+    .stk-list { margin-top: 22px; display: grid; gap: 16px; }
+    .stk-row { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; align-items: start; }
+    .stk-row dt { font-size: 13.5px; font-weight: 700; color: var(--ink-2); padding-top: 8px; }
+    .stk-row dd { display: flex; flex-wrap: wrap; gap: 8px; }
+    .stk { border: 0; background: var(--tint); color: var(--ink); border-radius: 10px; padding: 7px 13px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background .2s, color .2s, transform .2s; }
+    .stk:hover, .stk.on { background: var(--btn); color: var(--btn-ink); transform: translateY(-1px); }
     .art-top { position: absolute; top: 0; right: 4%; font-size: 11px; font-weight: 600; letter-spacing: .18em; line-height: 1.6; color: var(--ink-2); text-transform: uppercase; }
     .art img { width: 108%; margin-left: -2%; height: auto; display: block; filter: var(--art-filter); margin-top: 28px; }
     .float {
@@ -366,6 +375,8 @@
       .f2 { right: 0; bottom: -2%; }
       .f3 { left: 0; bottom: -2%; }
       .art-top { display: none; }
+      .stk-row { grid-template-columns: 1fr; gap: 6px; }
+      .stk-row dt { padding-top: 0; }
       .hero h1 { font-size: min(8.6vw, 44px); }
       .closer .wrap, .grid, .card.feature { grid-template-columns: 1fr; }
       .profile .wrap { grid-template-columns: 1fr; }
@@ -434,19 +445,16 @@
       </div>
 
       <div class="art rv">
-        <p class="art-top">AI in the harness,<br>human in the loop</p>
-        <img src="assets/hero.svg?v=4" alt="육각형 받침 가운데 AI 코어를 하네스 울타리가 둘러싸고, 서버·DB·외부 API·폴백 계단이 포트로 연결되며, 앞쪽 게이트에서 사람이 승인하는 민트 포인트가 들어간 점토 질감의 아이소메트릭 모형" width="640" height="663">
-        <div class="float f1">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
-          <div><b>하네스를 짓다</b><small>어댑터 · 폴백 · 규칙</small></div>
-        </div>
-        <div class="float f2">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.5l8.2 4.75v9.5L12 21.5l-8.2-4.75v-9.5z"/><path d="M12 8l3.5 2v4L12 16l-3.5-2v-4z"/></svg>
-          <div><b>구조를 세우다</b><small>Hexagonal · DDD</small></div>
-        </div>
-        <div class="float f3">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/></svg>
-          <div><b>기준으로 검증하다</b><small>정답률 21% → 100%</small></div>
+        <div class="stack">
+          <h2 class="stk-title">기술 스택</h2>
+          <p class="stk-sub">프로젝트에서 직접 쓴 기술만 모았습니다. 누르면 그 기술을 쓴 프로젝트를 보여 줍니다.</p>
+          <dl class="stk-list">
+          <div class="stk-row"><dt>백엔드</dt><dd><button class="stk" type="button" data-q="Python">Python</button><button class="stk" type="button" data-q="FastAPI">FastAPI</button><button class="stk" type="button" data-q="SQLAlchemy">SQLAlchemy</button><button class="stk" type="button" data-q="PostgreSQL">PostgreSQL</button><button class="stk" type="button" data-q="Redis">Redis</button><button class="stk" type="button" data-q="pytest">pytest</button></dd></div>
+          <div class="stk-row"><dt>AI와 검색</dt><dd><button class="stk" type="button" data-q="pgvector">pgvector</button><button class="stk" type="button" data-q="Neo4j">Neo4j</button><button class="stk" type="button" data-q="Ollama">Ollama</button><button class="stk" type="button" data-q="Claude">Claude</button><button class="stk" type="button" data-q="Gemini">Gemini</button><button class="stk" type="button" data-q="Gemma">Gemma</button><button class="stk" type="button" data-q="EXAONE">EXAONE</button><button class="stk" type="button" data-q="Cohere">Cohere</button><button class="stk" type="button" data-q="PaddleOCR">PaddleOCR</button></dd></div>
+          <div class="stk-row"><dt>인프라</dt><dd><button class="stk" type="button" data-q="Docker">Docker</button><button class="stk" type="button" data-q="AWS">AWS EC2</button><button class="stk" type="button" data-q="Cloudflare">Cloudflare</button><button class="stk" type="button" data-q="Vercel">Vercel</button><button class="stk" type="button" data-q="Railway">Railway</button><button class="stk" type="button" data-q="nginx">nginx</button><button class="stk" type="button" data-q="k6">k6</button></dd></div>
+          <div class="stk-row"><dt>프론트</dt><dd><button class="stk" type="button" data-q="Next.js">Next.js</button><button class="stk" type="button" data-q="React">React</button><button class="stk" type="button" data-q="TypeScript">TypeScript</button><button class="stk" type="button" data-q="Phaser">Phaser</button></dd></div>
+          <div class="stk-row"><dt>설계</dt><dd><button class="stk" type="button" data-q="Hexagonal">Hexagonal</button><button class="stk" type="button" data-q="DDD">DDD</button><button class="stk" type="button" data-q="TDD">TDD</button></dd></div>
+          </dl>
         </div>
       </div>
     </div>
@@ -531,7 +539,7 @@
 
       <div class="grid" id="grid">
         <!-- 01 Shylock -->
-        <article class="card feature rv" data-tags="ERD Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임 하네스 Clean-Architecture 클린아키텍처 Function-Calling Tool-Use 도구호출 failure-recovery 장애복구">
+        <article class="card feature rv" data-tags="ERD Neo4j그래프 Cypher Next.js React FastAPI Hexagonal DDD PostgreSQL pgvector Neo4j SQLAlchemy N+1 pytest 테스트 Docker Cloudflare AWS GraphRAG LLM Ollama Gemma 로컬 풀스택 게임 하네스 Clean-Architecture 클린아키텍처 Function-Calling Tool-Use 도구호출 failure-recovery 장애복구 Python">
           <div style="display:flex;flex-direction:column">
             <div class="card-top"><span class="num">01</span><span class="role">개인 · 기획부터 배포까지</span></div>
             <h3>샤일록의 법정<small>Shylock</small></h3>
@@ -588,7 +596,7 @@
         </article>
 
         <!-- 02 Life Tutorial -->
-        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅 Docker 하네스 Clean-Architecture 클린아키텍처">
+        <article class="card rv" data-tags="ERD PostgreSQL pgvector FastAPI SQLAlchemy Ollama Gemini RAG Next.js React TypeScript Phaser PaddleOCR OCR EXAONE Gemma LLM Hexagonal DDD 로컬 폐쇄망 풀스택 게임 교육 해커톤 리포트 평가셋 할루시네이션 트러블슈팅 Docker 하네스 Clean-Architecture 클린아키텍처 Python">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/lifetutorial-800.webp?v=2 800w, assets/lifetutorial-1400.webp?v=2 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -636,7 +644,7 @@
         </article>
 
         <!-- 03 SoundBridge -->
-        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 PostgreSQL pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처 failure-recovery 장애복구">
+        <article class="card rv" data-tags="ERD FastAPI Next.js React EXAONE LLM Cohere 임베딩 PostgreSQL pgvector HNSW Redis 캐시 파이프라인 폴백 fallback Cloudflare R2 Railway Vercel 추천 백엔드 팀장 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처 failure-recovery 장애복구 Python">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/soundbridge-800.webp 800w, assets/soundbridge-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -728,7 +736,7 @@
           </div>
         </article>
         <!-- 05 Metabole -->
-        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React PostgreSQL pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처">
+        <article class="card rv" data-tags="ERD 판정 백테스트 AI Agent 에이전트 LLM 데이터 시각화 상권 지도 창업 Hexagonal DDD 모듈러 모놀리스 FastAPI Next.js React PostgreSQL pgvector Neo4j Redis RAG Gemini Gemma 로컬 TDD 풀스택 BeyondFacade Docker 하네스 Clean-Architecture 클린아키텍처 Python">
           <figure class="shot card-shot">
             <picture>
               <source type="image/webp" srcset="assets/metabole-800.webp 800w, assets/metabole-1400.webp 1400w" sizes="(max-width: 760px) 92vw, (max-width: 1080px) 44vw, 560px">
@@ -835,7 +843,7 @@
   (function () {
     var cards = [].slice.call(document.querySelectorAll('#grid .card'));
     var state = document.getElementById('filterState'), label = document.getElementById('filterLabel');
-    var input = document.getElementById('q'), chips = [].slice.call(document.querySelectorAll('.chip'));
+    var input = document.getElementById('q'), chips = [].slice.call(document.querySelectorAll('.chip, .stk'));
     function apply(q) {
       q = (q || '').trim().toLowerCase();
       var n = 0;
