@@ -543,14 +543,14 @@
                 <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
               </div>
             <ul>
-              <li>인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 모델링해 <b>사실은 DB가, 문장화는 LLM이</b> 맡도록 분리 — 관계 저장소는 환경변수 스위치로 Postgres(재귀 CTE) ↔ Neo4j 교체 가능</li>
-              <li>그래프 유무 ablation(조건별 n=42)에서 멀티홉 관계 질문 정답률 <b>21% → 100%</b>(Fisher p=3.6×10⁻¹⁵) — 단일 사실 질문에서는 차이 없음을 함께 확인</li>
-              <li>판사 ‘공작’은 LLM judge로 판정하되, 모든 LLM 경로가 실패하면 <b>결정론적 규칙</b>이 판정 — 로컬 모델 → 외부 API → 규칙 3단 폴백</li>
-              <li>API 비용 월 $200을 줄이려 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙하되, 기능별 환경변수 스위치로 <b>문제가 생긴 기능만 즉시 Claude · Cohere로 복귀</b>할 수 있게 설계. 도구 호출(Function Calling) 에이전트는 <b>호출하면 안 되는 상황에서 12/12 호출</b>해 기준 미달로 판정하고 API에 남김</li>
-              <li>1GB EC2에는 백엔드만, 추론은 맥북 Ollama로 분리해 Cloudflare Tunnel + Zero Trust로 연결 — <b>Hexagonal · DDD · Vertical Slice</b> 구조라 도메인 코드는 그대로 두고 어댑터만 추가</li>
-              <li>같은 임베딩 모델도 EC2(t3.micro)에서 직접 돌리면 CPU 크레딧 고갈로 평균 7.5초(p95 29초) — 맥북(Apple Silicon)에서 돌리고 결과만 네트워크로 받으면 약 13ms로, 추론 위치만 바꿔 <b>약 580배</b> 단축</li>
-              <li>ORM <code>relationship()</code>은 진짜 애그리게이트(Trial–ChoiceHistory) 하나에만 허용하고 나머지 FK는 ID 참조 + 수동 join — AsyncSession에서 로드 안 된 관계를 건드리면 <b>조용한 N+1 대신 즉시 예외</b>가 나는 구조로 DDD 애그리게이트 경계를 지킴</li>
-              <li>Google OAuth + RS256 JWT 인증 서버부터 nginx · Docker Compose 배포까지 직접 구축</li>
+              <li><b>사실은 DB가, 문장은 LLM이.</b> 인물 관계를 원문 근거가 달린 그래프(노드 7 · 엣지 17)로 저장했습니다. LLM은 관계를 지어내지 않고, DB에서 꺼낸 사실을 문장으로 풀어내기만 합니다. 저장소는 환경변수 스위치로 Postgres(재귀 CTE)와 Neo4j를 바꿔 끼울 수 있습니다.</li>
+              <li><b>그래프가 정말 필요한지 실험으로 확인.</b> 그래프를 넣었을 때와 뺐을 때를 비교하는 ablation(조건별 n=42)을 돌렸습니다. 여러 관계를 건너야 답할 수 있는 멀티홉 질문의 정답률이 21%에서 100%로 올랐습니다(Fisher p=3.6×10⁻¹⁵). 단일 사실 질문에서는 차이가 없다는 것도 함께 확인했습니다.</li>
+              <li><b>LLM이 전부 실패해도 판결은 나온다.</b> 판사 ‘공작’의 판정은 LLM judge가 맡습니다. 로컬 모델이 실패하면 외부 API가, 그것도 실패하면 결정론적 규칙이 판정하는 3단 폴백입니다.</li>
+              <li><b>월 $200 API 비용을 로컬 모델로.</b> 평가 기준을 통과한 26B 오픈소스 모델을 직접 서빙합니다. 기능별 환경변수 스위치가 있어서, 문제가 생긴 기능만 바로 Claude · Cohere로 되돌릴 수 있습니다. 도구 호출(Function Calling) 에이전트는 호출하면 안 되는 12개 상황에서 12번 모두 호출해 기준 미달로 판정했고, 이 기능은 API에 남겼습니다.</li>
+              <li><b>서버는 작게, 추론은 맥북에서.</b> 1GB EC2에는 백엔드만 두고, 추론은 맥북의 Ollama가 맡습니다. 둘은 Cloudflare Tunnel + Zero Trust로 연결했습니다. Hexagonal · DDD · Vertical Slice 구조라 도메인 코드는 그대로 두고 어댑터만 추가했습니다.</li>
+              <li><b>추론 위치만 바꿔 약 580배 빠르게.</b> 같은 임베딩 모델을 EC2(t3.micro)에서 직접 돌리면 CPU 크레딧이 바닥나 평균 7.5초(p95 29초)가 걸렸습니다. 맥북(Apple Silicon)에서 돌리고 결과만 네트워크로 받으니 약 13ms가 됐습니다.</li>
+              <li><b>N+1은 조용히 넘어가지 않게.</b> ORM <code>relationship()</code>은 진짜 애그리게이트(Trial–ChoiceHistory) 하나에만 쓰고, 나머지 FK는 ID 참조와 수동 join으로 처리합니다. AsyncSession에서 로드 안 된 관계를 건드리면 즉시 예외가 나서, N+1 쿼리가 몰래 생기지 않고 DDD 애그리게이트 경계도 지켜집니다.</li>
+              <li><b>인증부터 배포까지 직접.</b> Google OAuth + RS256 JWT 인증 서버, nginx, Docker Compose 배포를 직접 구축했습니다.</li>
             </ul>
             <div class="card-foot">
               <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Neo4j</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS EC2</span><span>Ollama</span><span>pytest</span><span>k6</span></div>
@@ -606,12 +606,12 @@
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
             </div>
           <ul>
-            <li><b>방어전</b> — NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 대화 모듈. 판정 모델은 벤치마크가 아닌 <b>도메인 실측</b>으로 선택 — Gemini Flash-Lite는 틀린 답을 정답 처리하는 치명 오판정을 냈지만 EXAONE 7.8B는 0건(자연어 75발화에서도 위험 오판정 0)</li>
-            <li><b>가드</b> — 근로계약서를 OCR로 읽고 <b>규칙 기반</b>으로 위법 조항을 판정한 뒤, 최종 판단은 <b>상담 기관의 사람</b>에게 연결</li>
-            <li><b>리포트</b> — 인터뷰 답변에서 상담에 필요한 사실을 추출해 기관 전달용 리포트 생성. 156케이스 평가셋으로 3개 모델을 교차 평가해 Gemma3 12B 채택(분류 100% · 값 일치 90.2% · <b>날조 0건</b>)</li>
-            <li>법령 · 고시 · 행정해석 1,593개 청크 RAG — 화면의 법령 문장은 LLM이 쓰지 않고 <b>100% DB 원문</b>을 그대로 보여 줘, 틀린 조문이 구조적으로 나올 수 없게 설계</li>
-            <li>실제 근로계약서(개인정보)를 다루기에 <b>폐쇄망 로컬 추론</b>을 전제로 설계 — 16GB GPU 한 장에 EXAONE과 Gemma를 동시 상주시켜 시연 중 모델 교체를 없애고 OCR은 CPU로 분리. 임베딩 모델이 다르면 벡터가 호환되지 않아 청크마다 온라인 · 오프라인 벡터를 미리 채워 두어, 전환 시 재임베딩 0건</li>
-            <li><b>트러블슈팅</b> — 임베딩 429 지연의 원인이 우리 호출량이 아닌 모델 공용 쿼터임을 실측으로 확인하고, 고정 25초 대기를 지수 백오프로 교체해 방어전 한 턴 <b>28초 → 중앙값 0.4초</b></li>
+            <li><b>방어전 — 사장에게 직접 반박해 보는 대화 연습.</b> NPC ‘나사장’에게 자유 텍스트로 반박하며 대응을 연습하는 모듈입니다. 판정 모델은 벤치마크 점수가 아니라 도메인 실측으로 골랐습니다. Gemini Flash-Lite는 틀린 답을 정답으로 처리하는 치명적인 오판정을 냈지만, EXAONE 7.8B는 0건이었습니다(자연어 75발화에서도 위험 오판정 0).</li>
+            <li><b>가드 — 판정은 규칙이, 마지막 판단은 사람이.</b> 근로계약서를 OCR로 읽고 규칙 기반으로 위법 조항을 판정합니다. 최종 판단은 상담 기관의 사람에게 연결합니다.</li>
+            <li><b>리포트 — 날조 0건.</b> 인터뷰 답변에서 상담에 필요한 사실을 추출해 기관 전달용 리포트를 만듭니다. 156케이스 평가셋으로 3개 모델을 교차 평가해 Gemma3 12B를 채택했습니다(분류 100% · 값 일치 90.2% · 날조 0건).</li>
+            <li><b>법령 문장은 LLM이 쓰지 않는다.</b> 법령 · 고시 · 행정해석을 1,593개 청크로 나눠 RAG를 구성했습니다. 화면의 법령 문장은 100% DB 원문을 그대로 보여 줘서, 틀린 조문이 구조적으로 나올 수 없습니다.</li>
+            <li><b>개인정보는 밖으로 나가지 않게.</b> 실제 근로계약서를 다루기 때문에 폐쇄망 로컬 추론을 전제로 설계했습니다. 16GB GPU 한 장에 EXAONE과 Gemma를 동시에 올려 두어 시연 중 모델 교체를 없앴고, OCR은 CPU로 분리했습니다. 임베딩 모델이 다르면 벡터가 호환되지 않아서, 청크마다 온라인 · 오프라인 벡터를 미리 채워 두었습니다. 전환할 때 재임베딩은 0건입니다.</li>
+            <li><b>트러블슈팅 — 한 턴 28초를 0.4초로.</b> 임베딩 429 지연의 원인이 우리 호출량이 아니라 모델 공용 쿼터라는 것을 실측으로 확인했습니다. 고정 25초 대기를 지수 백오프로 바꿔, 방어전 한 턴이 28초에서 중앙값 0.4초로 줄었습니다.</li>
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>FastAPI</span><span>PostgreSQL · pgvector</span><span>PaddleOCR</span><span>Ollama</span><span>EXAONE</span><span>Gemma</span><span>Gemini</span><span>Docker</span></div>
@@ -653,12 +653,12 @@
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
             </div>
           <ul>
-            <li>공공 음원 적재 → EXAONE으로 곡 설명 미리 생성 → Cohere 임베딩 → R2 업로드까지 <b>데이터 파이프라인</b>을 직접 만들어 500곡을 검색 가능한 데이터로 구축</li>
-            <li>Cohere embed-v4 임베딩과 <b>pgvector HNSW 부분 인덱스</b>(임베딩이 있는 곡만 색인)로 의미 기반 곡 검색</li>
-            <li>추천 설명은 EXAONE 묶음 요청 → 곡별 동시 요청 → 템플릿 문장의 <b>3단계 대체 흐름</b>으로 생성 — 답이 부실하거나 90초를 넘기면 다음 단계로 넘겨, LLM이 실패해도 추천 결과는 항상 반환</li>
-            <li>같은 입력의 검색 결과를 <b>Redis에 1시간 캐시</b>해 반복 요청의 LLM 호출과 응답 시간을 줄임</li>
-            <li>도메인 계층이 FastAPI · SQLAlchemy를 모르도록 <b>Hexagonal · DDD</b>로 설계하고, 영속성은 Repository 계층에 격리</li>
-            <li>FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2로 분리 배포</li>
+            <li><b>500곡을 검색 가능한 데이터로.</b> 공공 음원 적재 → EXAONE으로 곡 설명 미리 생성 → Cohere 임베딩 → R2 업로드로 이어지는 데이터 파이프라인을 직접 만들었습니다.</li>
+            <li><b>뜻으로 찾는 곡 검색.</b> Cohere embed-v4 임베딩과 pgvector HNSW 부분 인덱스로 의미 기반 검색을 합니다. 부분 인덱스라서 임베딩이 있는 곡만 색인합니다.</li>
+            <li><b>LLM이 실패해도 추천은 나온다.</b> 추천 설명은 3단계 대체 흐름으로 만듭니다. EXAONE 묶음 요청 → 곡별 동시 요청 → 템플릿 문장 순서입니다. 답이 부실하거나 90초를 넘기면 다음 단계로 넘어가서, 추천 결과는 항상 반환됩니다.</li>
+            <li><b>같은 질문은 다시 계산하지 않는다.</b> 같은 입력의 검색 결과를 Redis에 1시간 캐시해, 반복 요청의 LLM 호출과 응답 시간을 줄였습니다.</li>
+            <li><b>도메인은 프레임워크를 모른다.</b> Hexagonal · DDD로 설계해 도메인 계층이 FastAPI · SQLAlchemy를 모릅니다. 영속성은 Repository 계층에 격리했습니다.</li>
+            <li><b>역할별로 나눠 배포.</b> FastAPI는 Railway, Next.js는 Vercel, 음원은 Cloudflare R2에 올렸습니다.</li>
           </ul>
           <div class="card-foot">
             <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Redis</span><span>Cloudflare R2</span><span>Docker</span></div>
@@ -700,12 +700,12 @@
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a>
             </div>
           <ul>
-            <li>줄거리 — 매일 멸망하는 대피소의 진짜 정체는 <b>돼지농장</b>. 유저는 끝까지 자기가 사람이라고 믿는다. 멸망할 때마다 규칙을 고쳐 하루를 다시 돌리는 구조가 곧 ‘실패 → 규칙 수정 → 재실행’의 에이전트 운영 루프</li>
-            <li>유저가 규칙을 직접 쓰거나 AI 제안을 골라 세계에 거는 구조로, <b>하네스(AI가 따르는 규칙과 틀)를 고치는 사람의 선택</b>을 기록</li>
-            <li>관찰 결과(사람 플레이 14판) — 적용된 규칙 60건 중 <b>48건(80%)이 AI 제안</b>, ‘원숭이손’ 제안 수락 17/21(81%), 5회차 완주 10/14</li>
-            <li>수치는 코드가, 판단은 LLM이 — 도메인 계층은 LLM 없이 테스트하는 순수 함수, 코어는 시나리오를 모르는 <b>Hexagonal</b> 구조</li>
-            <li>모델은 사전에 정한 게이트로 선정 — 로컬 · 외부 4개 조건 비교 실험 372회 실행, 폴백 실패 0. NPC 모델은 라이선스 문제로 교체하고, 제출용은 Claude, 로컬 롤백은 Gemma 4 · Kanana로 준비</li>
-            <li><b>채점 불안정성 공개</b> — 같은 답이 67.9점과 53.3점으로 갈리고, md5까지 같은 제출이 temperature 0.0에서도 판정이 뒤집힘. 단조 잠금을 도입한 뒤 6판에서 4→5회차 점수 하락 0건 — 다만 잠금이 작동한다는 근거일 뿐, 채점기가 안정적이라는 근거는 아님</li>
+            <li><b>줄거리가 곧 에이전트 운영 루프.</b> 매일 멸망하는 대피소의 진짜 정체는 돼지농장이고, 유저는 끝까지 자기가 사람이라고 믿습니다. 멸망할 때마다 규칙을 고쳐 하루를 다시 돌리는데, 이 구조가 ‘실패 → 규칙 수정 → 재실행’ 루프입니다.</li>
+            <li><b>하네스를 고치는 사람의 선택을 기록.</b> 유저는 규칙을 직접 쓰거나 AI 제안을 골라 세계에 겁니다. 여기서 하네스는 AI가 따르는 규칙과 틀을 말합니다.</li>
+            <li><b>사람은 AI 제안을 얼마나 받아들였나.</b> 사람 플레이 14판을 관찰했습니다. 적용된 규칙 60건 중 48건(80%)이 AI 제안이었고, ‘원숭이손’ 제안은 21건 중 17건(81%)이 수락됐습니다. 5회차까지 완주한 판은 14판 중 10판입니다.</li>
+            <li><b>수치는 코드가, 판단은 LLM이.</b> 도메인 계층은 LLM 없이 테스트할 수 있는 순수 함수입니다. 코어는 시나리오를 모르는 Hexagonal 구조입니다.</li>
+            <li><b>모델은 미리 정한 게이트로 선정.</b> 로컬 · 외부 4개 조건으로 비교 실험을 372회 실행했고, 폴백 실패는 0건이었습니다. NPC 모델은 라이선스 문제로 교체했습니다. 제출용은 Claude, 로컬 롤백용은 Gemma 4 · Kanana로 준비했습니다.</li>
+            <li><b>채점이 불안정하다는 것도 공개.</b> 같은 답이 67.9점과 53.3점으로 갈렸고, md5까지 같은 제출이 temperature 0.0에서도 판정이 뒤집혔습니다. 단조 잠금을 도입한 뒤 6판에서 4→5회차 점수 하락은 0건이었습니다. 다만 이는 잠금이 작동한다는 근거일 뿐, 채점기가 안정적이라는 근거는 아닙니다.</li>
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Hexagonal</span><span>Claude Sonnet · Haiku</span><span>Gemma · Gemini</span><span>LLM 채점</span><span>Human-in-the-Loop</span><span>Docker</span></div>
@@ -741,11 +741,11 @@
           <div class="gos"><a class="go" href="https://metabole.beyondfacade.cloud" target="_blank" rel="noopener">GitHub Pages
               <svg class="arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14L14 6M7 6h7v7"/></svg></a></div>
           <ul>
-            <li>서울 427개 행정동 × 18개 업종을 인허가 · 개폐업 · 추정매출 · 유동인구 · 임대료 · 금리로 구조화 — 47개 테이블 · 약 1,166만 행</li>
-            <li>위험 신호로 동 × 업종을 <b>비추천 · 조건부 · 경고 없음</b>으로 판정하고 과거 개업 데이터로 백테스트 — 비추천 판정의 3년 내 폐업률이 경고 없음의 <b>1.70배</b>(카페 2.01배). 기준(1.10배)에 못 미친 편의점 · 부동산은 판정 대상에서 제외</li>
-            <li><b>Hexagonal 모듈러 모놀리스(21개 Bounded Context)</b>에서 백엔드 BC와 프론트 feature를 구현하고, 데이터 수집과 RAG 평가셋 검수를 담당</li>
-            <li>공고 · 뉴스를 매일 수집하는 Hybrid RAG, Gemini와 로컬 Gemma를 섞어 온프레미스에서도 동작 — <b>Hit@5 1.00 · MRR 0.95</b> (평가 180건)</li>
-            <li>TDD로 백엔드 테스트 1,072건 · 프론트 약 580건, cron 9종(수집 5 · RAG 색인 1 · 운영 2 · 개발일지 1)</li>
+            <li><b>서울 상권을 데이터로 정리.</b> 서울 427개 행정동 × 18개 업종을 인허가 · 개폐업 · 추정매출 · 유동인구 · 임대료 · 금리로 구조화했습니다. 47개 테이블, 약 1,166만 행입니다.</li>
+            <li><b>판정이 맞는지 과거 데이터로 검증.</b> 위험 신호로 동 × 업종을 비추천 · 조건부 · 경고 없음으로 판정하고, 과거 개업 데이터로 백테스트했습니다. 비추천 판정의 3년 내 폐업률은 경고 없음의 1.70배였습니다(카페 2.01배). 기준(1.10배)에 못 미친 편의점 · 부동산은 판정 대상에서 뺐습니다.</li>
+            <li><b>맡은 일.</b> Hexagonal 모듈러 모놀리스(21개 Bounded Context)에서 백엔드 BC와 프론트 feature를 구현했습니다. 데이터 수집과 RAG 평가셋 검수도 맡았습니다.</li>
+            <li><b>매일 새 공고를 읽는 Hybrid RAG.</b> 공고 · 뉴스를 매일 수집합니다. Gemini와 로컬 Gemma를 섞어 온프레미스에서도 동작합니다. 평가 180건에서 Hit@5 1.00 · MRR 0.95입니다.</li>
+            <li><b>테스트와 자동화.</b> TDD로 백엔드 테스트 1,072건, 프론트 약 580건을 작성했습니다. cron은 9종입니다(수집 5 · RAG 색인 1 · 운영 2 · 개발일지 1).</li>
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Hexagonal · DDD</span><span>FastAPI</span><span>Next.js 16</span><span>pgvector · Neo4j</span><span>Hybrid RAG</span><span>TDD</span><span>Docker</span></div>
