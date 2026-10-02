@@ -2,352 +2,352 @@
 <svg class="erd-svg" role="img" aria-label="샤일록의 법정 ERD — 게임·계정, 원문 코퍼스·RAG, 인물 관계 그래프의 10개 테이블과 외래 키(실선), soft ref(점선)"  viewBox="0.00 0.00 1058.20 1238.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>text{font-family:"DejaVu Sans Mono",Menlo,"SFMono-Regular",Consolas,monospace}text[font-family^="Noto"]{font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}</style>
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 1216.6)">
 <g id="clust1" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M42.5,-551C42.5,-551 647.5,-551 647.5,-551 653.5,-551 659.5,-557 659.5,-563 659.5,-563 659.5,-762 659.5,-762 659.5,-768 653.5,-774 647.5,-774 647.5,-774 42.5,-774 42.5,-774 36.5,-774 30.5,-768 30.5,-762 30.5,-762 30.5,-563 30.5,-563 30.5,-557 36.5,-551 42.5,-551"/>
-<text text-anchor="start" x="38.5" y="-759.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">인물 관계 그래프</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M42.5,-551C42.5,-551 647.5,-551 647.5,-551 653.5,-551 659.5,-557 659.5,-563 659.5,-563 659.5,-762 659.5,-762 659.5,-768 653.5,-774 647.5,-774 647.5,-774 42.5,-774 42.5,-774 36.5,-774 30.5,-768 30.5,-762 30.5,-762 30.5,-563 30.5,-563 30.5,-557 36.5,-551 42.5,-551"/>
+<text text-anchor="start" x="38.5" y="-759.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#2272eb">인물 관계 그래프</text>
 </g>
 <g id="clust2" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M20,-8C20,-8 653,-8 653,-8 659,-8 665,-14 665,-20 665,-20 665,-531 665,-531 665,-537 659,-543 653,-543 653,-543 20,-543 20,-543 14,-543 8,-537 8,-531 8,-531 8,-20 8,-20 8,-14 14,-8 20,-8"/>
-<text text-anchor="start" x="16" y="-528.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">원문 코퍼스 · RAG (베니스의 상인)</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M20,-8C20,-8 653,-8 653,-8 659,-8 665,-14 665,-20 665,-20 665,-531 665,-531 665,-537 659,-543 653,-543 653,-543 20,-543 20,-543 14,-543 8,-537 8,-531 8,-531 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="start" x="16" y="-528.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#2272eb">원문 코퍼스 · RAG (베니스의 상인)</text>
 </g>
 <g id="clust3" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M49.5,-782C49.5,-782 995,-782 995,-782 1001,-782 1007,-788 1007,-794 1007,-794 1007,-1175 1007,-1175 1007,-1181 1001,-1187 995,-1187 995,-1187 49.5,-1187 49.5,-1187 43.5,-1187 37.5,-1181 37.5,-1175 37.5,-1175 37.5,-794 37.5,-794 37.5,-788 43.5,-782 49.5,-782"/>
-<text text-anchor="start" x="45.5" y="-1172.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#14806a">게임 · 계정</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M49.5,-782C49.5,-782 995,-782 995,-782 1001,-782 1007,-788 1007,-794 1007,-794 1007,-1175 1007,-1175 1007,-1181 1001,-1187 995,-1187 995,-1187 49.5,-1187 49.5,-1187 43.5,-1187 37.5,-1181 37.5,-1175 37.5,-1175 37.5,-794 37.5,-794 37.5,-788 43.5,-782 49.5,-782"/>
+<text text-anchor="start" x="45.5" y="-1172.8" font-family="Noto Sans CJK JP" font-weight="bold" font-size="14.00" fill="#2272eb">게임 · 계정</text>
 </g>
 <g id="node1" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M58.5,-593.5C58.5,-593.5 263.5,-593.5 263.5,-593.5 269.5,-593.5 275.5,-599.5 275.5,-605.5 275.5,-605.5 275.5,-696.5 275.5,-696.5 275.5,-702.5 269.5,-708.5 263.5,-708.5 263.5,-708.5 58.5,-708.5 58.5,-708.5 52.5,-708.5 46.5,-702.5 46.5,-696.5 46.5,-696.5 46.5,-605.5 46.5,-605.5 46.5,-599.5 52.5,-593.5 58.5,-593.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="48,-682 48,-707 275,-707 275,-682 48,-682"/>
-<text text-anchor="start" x="54" y="-692.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">character_nodes</text>
-<text text-anchor="start" x="167" y="-692.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;인물</text>
-<text text-anchor="start" x="51" y="-670.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">character_id   </text>
-<text text-anchor="start" x="161" y="-670.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
-<text text-anchor="start" x="259" y="-671.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="51" y="-652.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name_ko   </text>
-<text text-anchor="start" x="161" y="-652.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M58.5,-593.5C58.5,-593.5 263.5,-593.5 263.5,-593.5 269.5,-593.5 275.5,-599.5 275.5,-605.5 275.5,-605.5 275.5,-696.5 275.5,-696.5 275.5,-702.5 269.5,-708.5 263.5,-708.5 263.5,-708.5 58.5,-708.5 58.5,-708.5 52.5,-708.5 46.5,-702.5 46.5,-696.5 46.5,-696.5 46.5,-605.5 46.5,-605.5 46.5,-599.5 52.5,-593.5 58.5,-593.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="48,-682 48,-707 275,-707 275,-682 48,-682"/>
+<text text-anchor="start" x="54" y="-692.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">character_nodes</text>
+<text text-anchor="start" x="167" y="-692.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;인물</text>
+<text text-anchor="start" x="51" y="-670.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">character_id   </text>
+<text text-anchor="start" x="161" y="-670.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
+<text text-anchor="start" x="259" y="-671.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="51" y="-652.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">name_ko   </text>
+<text text-anchor="start" x="161" y="-652.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="265" y="-652.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="51" y="-634.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name_en   </text>
-<text text-anchor="start" x="161" y="-634.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<text text-anchor="start" x="51" y="-634.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">name_en   </text>
+<text text-anchor="start" x="161" y="-634.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="265" y="-634.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="51" y="-616.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">description   </text>
-<text text-anchor="start" x="161" y="-616.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="51" y="-616.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">description   </text>
+<text text-anchor="start" x="161" y="-616.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="265" y="-616.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="51" y="-599.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">같은 데이터를 Neo4j 게이트웨이로도 서빙 가능    </text>
-<path fill="none" stroke="#b9d9cf" d="M58.5,-593.5C58.5,-593.5 263.5,-593.5 263.5,-593.5 269.5,-593.5 275.5,-599.5 275.5,-605.5 275.5,-605.5 275.5,-696.5 275.5,-696.5 275.5,-702.5 269.5,-708.5 263.5,-708.5 263.5,-708.5 58.5,-708.5 58.5,-708.5 52.5,-708.5 46.5,-702.5 46.5,-696.5 46.5,-696.5 46.5,-605.5 46.5,-605.5 46.5,-599.5 52.5,-593.5 58.5,-593.5"/>
+<text text-anchor="start" x="51" y="-599.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">같은 데이터를 Neo4j 게이트웨이로도 서빙 가능    </text>
+<path fill="none" stroke="#c5d9f5" d="M58.5,-593.5C58.5,-593.5 263.5,-593.5 263.5,-593.5 269.5,-593.5 275.5,-599.5 275.5,-605.5 275.5,-605.5 275.5,-696.5 275.5,-696.5 275.5,-702.5 269.5,-708.5 263.5,-708.5 263.5,-708.5 58.5,-708.5 58.5,-708.5 52.5,-708.5 46.5,-702.5 46.5,-696.5 46.5,-696.5 46.5,-605.5 46.5,-605.5 46.5,-599.5 52.5,-593.5 58.5,-593.5"/>
 </g>
 <g id="node2" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M396.5,-566.5C396.5,-566.5 631.5,-566.5 631.5,-566.5 637.5,-566.5 643.5,-572.5 643.5,-578.5 643.5,-578.5 643.5,-723.5 643.5,-723.5 643.5,-729.5 637.5,-735.5 631.5,-735.5 631.5,-735.5 396.5,-735.5 396.5,-735.5 390.5,-735.5 384.5,-729.5 384.5,-723.5 384.5,-723.5 384.5,-578.5 384.5,-578.5 384.5,-572.5 390.5,-566.5 396.5,-566.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="386,-709 386,-734 643,-734 643,-709 386,-709"/>
-<text text-anchor="start" x="392" y="-719.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">character_relations</text>
-<text text-anchor="start" x="535" y="-719.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;관계</text>
-<text text-anchor="start" x="389" y="-697.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">relation_id   </text>
-<text text-anchor="start" x="532" y="-697.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="627" y="-698.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="389" y="-679.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">from_character_id   </text>
-<text text-anchor="start" x="532" y="-679.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
-<text text-anchor="start" x="627" y="-680.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="389" y="-661.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">to_character_id   </text>
-<text text-anchor="start" x="532" y="-661.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
-<text text-anchor="start" x="627" y="-662.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="389" y="-643.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">relation_type   </text>
-<text text-anchor="start" x="532" y="-643.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M396.5,-566.5C396.5,-566.5 631.5,-566.5 631.5,-566.5 637.5,-566.5 643.5,-572.5 643.5,-578.5 643.5,-578.5 643.5,-723.5 643.5,-723.5 643.5,-729.5 637.5,-735.5 631.5,-735.5 631.5,-735.5 396.5,-735.5 396.5,-735.5 390.5,-735.5 384.5,-729.5 384.5,-723.5 384.5,-723.5 384.5,-578.5 384.5,-578.5 384.5,-572.5 390.5,-566.5 396.5,-566.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="386,-709 386,-734 643,-734 643,-709 386,-709"/>
+<text text-anchor="start" x="392" y="-719.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">character_relations</text>
+<text text-anchor="start" x="535" y="-719.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;관계</text>
+<text text-anchor="start" x="389" y="-697.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">relation_id   </text>
+<text text-anchor="start" x="532" y="-697.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="627" y="-698.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="389" y="-679.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">from_character_id   </text>
+<text text-anchor="start" x="532" y="-679.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
+<text text-anchor="start" x="627" y="-680.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="389" y="-661.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">to_character_id   </text>
+<text text-anchor="start" x="532" y="-661.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
+<text text-anchor="start" x="627" y="-662.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="389" y="-643.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">relation_type   </text>
+<text text-anchor="start" x="532" y="-643.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="633" y="-643.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="389" y="-625.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">description   </text>
-<text text-anchor="start" x="532" y="-625.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="389" y="-625.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">description   </text>
+<text text-anchor="start" x="532" y="-625.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="633" y="-625.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="389" y="-607.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">evidence_ftln_start   </text>
-<text text-anchor="start" x="532" y="-607.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="621" y="-608.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<text text-anchor="start" x="389" y="-589.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">evidence_ftln_end   </text>
-<text text-anchor="start" x="532" y="-589.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="621" y="-590.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<text text-anchor="start" x="389" y="-572.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">기본 Postgres(재귀 CTE) ↔ Neo4j 설정 하나로 교체    </text>
-<path fill="none" stroke="#b9d9cf" d="M396.5,-566.5C396.5,-566.5 631.5,-566.5 631.5,-566.5 637.5,-566.5 643.5,-572.5 643.5,-578.5 643.5,-578.5 643.5,-723.5 643.5,-723.5 643.5,-729.5 637.5,-735.5 631.5,-735.5 631.5,-735.5 396.5,-735.5 396.5,-735.5 390.5,-735.5 384.5,-729.5 384.5,-723.5 384.5,-723.5 384.5,-578.5 384.5,-578.5 384.5,-572.5 390.5,-566.5 396.5,-566.5"/>
+<text text-anchor="start" x="389" y="-607.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">evidence_ftln_start   </text>
+<text text-anchor="start" x="532" y="-607.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="621" y="-608.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<text text-anchor="start" x="389" y="-589.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">evidence_ftln_end   </text>
+<text text-anchor="start" x="532" y="-589.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="621" y="-590.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<text text-anchor="start" x="389" y="-572.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">기본 Postgres(재귀 CTE) ↔ Neo4j 설정 하나로 교체    </text>
+<path fill="none" stroke="#c5d9f5" d="M396.5,-566.5C396.5,-566.5 631.5,-566.5 631.5,-566.5 637.5,-566.5 643.5,-572.5 643.5,-578.5 643.5,-578.5 643.5,-723.5 643.5,-723.5 643.5,-729.5 637.5,-735.5 631.5,-735.5 631.5,-735.5 396.5,-735.5 396.5,-735.5 390.5,-735.5 384.5,-729.5 384.5,-723.5 384.5,-723.5 384.5,-578.5 384.5,-578.5 384.5,-572.5 390.5,-566.5 396.5,-566.5"/>
 </g>
 <g id="edge5" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M284.18,-673.09C321.2,-673.91 335.77,-680.23 370.16,-681.7"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="276.76,-677.01 276.84,-669.01 278.44,-669.03 278.36,-677.03 276.76,-677.01"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="276,-673 280,-673.04 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="280.76,-677.05 280.84,-669.05 282.44,-669.07 282.36,-677.07 280.76,-677.05"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="280,-673.04 284,-673.09 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="377,-681.84 384.93,-685.6 381,-681.92 385,-682 385,-682 385,-682 381,-681.92 385.07,-678.4 377,-681.84 377,-681.84"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="373.8" cy="-681.77" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M284.18,-673.09C321.2,-673.91 335.77,-680.23 370.16,-681.7"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="276.76,-677.01 276.84,-669.01 278.44,-669.03 278.36,-677.03 276.76,-677.01"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="276,-673 280,-673.04 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="280.76,-677.05 280.84,-669.05 282.44,-669.07 282.36,-677.07 280.76,-677.05"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="280,-673.04 284,-673.09 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="377,-681.84 384.93,-685.6 381,-681.92 385,-682 385,-682 385,-682 381,-681.92 385.07,-678.4 377,-681.84 377,-681.84"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="373.8" cy="-681.77" rx="3.2" ry="3.2"/>
 </g>
 <g id="edge6" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M284.18,-672.91C321.2,-672.09 335.77,-665.77 370.16,-664.3"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="276.84,-676.99 276.76,-668.99 278.36,-668.97 278.44,-676.97 276.84,-676.99"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="276,-673 280,-672.96 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="280.84,-676.95 280.76,-668.95 282.36,-668.93 282.44,-676.93 280.84,-676.95"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="280,-672.96 284,-672.91 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="377,-664.16 385.07,-667.6 381,-664.08 385,-664 385,-664 385,-664 381,-664.08 384.93,-660.4 377,-664.16 377,-664.16"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="373.8" cy="-664.23" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M284.18,-672.91C321.2,-672.09 335.77,-665.77 370.16,-664.3"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="276.84,-676.99 276.76,-668.99 278.36,-668.97 278.44,-676.97 276.84,-676.99"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="276,-673 280,-672.96 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="280.84,-676.95 280.76,-668.95 282.36,-668.93 282.44,-676.93 280.84,-676.95"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="280,-672.96 284,-672.91 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="377,-664.16 385.07,-667.6 381,-664.08 385,-664 385,-664 385,-664 381,-664.08 384.93,-660.4 377,-664.16 377,-664.16"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="373.8" cy="-664.23" rx="3.2" ry="3.2"/>
 </g>
 <g id="node3" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M36,-207.5C36,-207.5 286,-207.5 286,-207.5 292,-207.5 298,-213.5 298,-219.5 298,-219.5 298,-346.5 298,-346.5 298,-352.5 292,-358.5 286,-358.5 286,-358.5 36,-358.5 36,-358.5 30,-358.5 24,-352.5 24,-346.5 24,-346.5 24,-219.5 24,-219.5 24,-213.5 30,-207.5 36,-207.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="25,-332 25,-357 297,-357 297,-332 25,-332"/>
-<text text-anchor="start" x="31" y="-342.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">play_lines</text>
-<text text-anchor="start" x="107" y="-342.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;원문 한 줄</text>
-<text text-anchor="start" x="28" y="-320.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ftln   </text>
-<text text-anchor="start" x="172" y="-320.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="281" y="-321.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="28" y="-302.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">speaker   </text>
-<text text-anchor="start" x="172" y="-302.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(128)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M36,-207.5C36,-207.5 286,-207.5 286,-207.5 292,-207.5 298,-213.5 298,-219.5 298,-219.5 298,-346.5 298,-346.5 298,-352.5 292,-358.5 286,-358.5 286,-358.5 36,-358.5 36,-358.5 30,-358.5 24,-352.5 24,-346.5 24,-346.5 24,-219.5 24,-219.5 24,-213.5 30,-207.5 36,-207.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="25,-332 25,-357 297,-357 297,-332 25,-332"/>
+<text text-anchor="start" x="31" y="-342.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">play_lines</text>
+<text text-anchor="start" x="107" y="-342.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;원문 한 줄</text>
+<text text-anchor="start" x="28" y="-320.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ftln   </text>
+<text text-anchor="start" x="172" y="-320.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="281" y="-321.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="28" y="-302.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">speaker   </text>
+<text text-anchor="start" x="172" y="-302.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(128)  </text>
 <text text-anchor="start" x="287" y="-302.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="28" y="-284.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
-<text text-anchor="start" x="172" y="-284.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="28" y="-284.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">text   </text>
+<text text-anchor="start" x="172" y="-284.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="287" y="-284.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="28" y="-266.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">act_scene   </text>
-<text text-anchor="start" x="172" y="-266.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<text text-anchor="start" x="28" y="-266.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">act_scene   </text>
+<text text-anchor="start" x="172" y="-266.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="287" y="-266.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="28" y="-248.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding   </text>
-<text text-anchor="start" x="172" y="-248.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1536)  </text>
+<text text-anchor="start" x="28" y="-248.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding   </text>
+<text text-anchor="start" x="172" y="-248.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">vector(1536)  </text>
 <text text-anchor="start" x="287" y="-248.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="28" y="-230.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding_e5_1024   </text>
-<text text-anchor="start" x="172" y="-230.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1024)  </text>
+<text text-anchor="start" x="28" y="-230.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding_e5_1024   </text>
+<text text-anchor="start" x="172" y="-230.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">vector(1024)  </text>
 <text text-anchor="start" x="287" y="-230.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="28" y="-213.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">Cohere 1536 · 로컬 e5 1024(아직 미사용) 임베딩 병행    </text>
-<path fill="none" stroke="#b9d9cf" d="M36,-207.5C36,-207.5 286,-207.5 286,-207.5 292,-207.5 298,-213.5 298,-219.5 298,-219.5 298,-346.5 298,-346.5 298,-352.5 292,-358.5 286,-358.5 286,-358.5 36,-358.5 36,-358.5 30,-358.5 24,-352.5 24,-346.5 24,-346.5 24,-219.5 24,-219.5 24,-213.5 30,-207.5 36,-207.5"/>
+<text text-anchor="start" x="28" y="-213.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">Cohere 1536 · 로컬 e5 1024(아직 미사용) 임베딩 병행    </text>
+<path fill="none" stroke="#c5d9f5" d="M36,-207.5C36,-207.5 286,-207.5 286,-207.5 292,-207.5 298,-213.5 298,-219.5 298,-219.5 298,-346.5 298,-346.5 298,-352.5 292,-358.5 286,-358.5 286,-358.5 36,-358.5 36,-358.5 30,-358.5 24,-352.5 24,-346.5 24,-346.5 24,-219.5 24,-219.5 24,-213.5 30,-207.5 36,-207.5"/>
 </g>
 <g id="edge9" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C431.29,-323 251.71,-610 385,-610"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C431.29,-323 251.71,-610 385,-610"/>
 </g>
 <g id="node4" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M391,-116.5C391,-116.5 637,-116.5 637,-116.5 643,-116.5 649,-122.5 649,-128.5 649,-128.5 649,-309.5 649,-309.5 649,-315.5 643,-321.5 637,-321.5 637,-321.5 391,-321.5 391,-321.5 385,-321.5 379,-315.5 379,-309.5 379,-309.5 379,-128.5 379,-128.5 379,-122.5 385,-116.5 391,-116.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="380,-295 380,-320 648,-320 648,-295 380,-295"/>
-<text text-anchor="start" x="386" y="-305.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">play_chunks</text>
-<text text-anchor="start" x="469" y="-305.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;검색 청크</text>
-<text text-anchor="start" x="383" y="-283.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">chunk_id   </text>
-<text text-anchor="start" x="522" y="-283.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="632" y="-284.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="383" y="-265.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ftln_start   </text>
-<text text-anchor="start" x="522" y="-265.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="626" y="-266.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<text text-anchor="start" x="383" y="-247.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ftln_end   </text>
-<text text-anchor="start" x="522" y="-247.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="626" y="-248.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<text text-anchor="start" x="383" y="-229.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">speaker   </text>
-<text text-anchor="start" x="522" y="-229.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(128)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M391,-116.5C391,-116.5 637,-116.5 637,-116.5 643,-116.5 649,-122.5 649,-128.5 649,-128.5 649,-309.5 649,-309.5 649,-315.5 643,-321.5 637,-321.5 637,-321.5 391,-321.5 391,-321.5 385,-321.5 379,-315.5 379,-309.5 379,-309.5 379,-128.5 379,-128.5 379,-122.5 385,-116.5 391,-116.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="380,-295 380,-320 648,-320 648,-295 380,-295"/>
+<text text-anchor="start" x="386" y="-305.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">play_chunks</text>
+<text text-anchor="start" x="469" y="-305.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;검색 청크</text>
+<text text-anchor="start" x="383" y="-283.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">chunk_id   </text>
+<text text-anchor="start" x="522" y="-283.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="632" y="-284.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="383" y="-265.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ftln_start   </text>
+<text text-anchor="start" x="522" y="-265.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="626" y="-266.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<text text-anchor="start" x="383" y="-247.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ftln_end   </text>
+<text text-anchor="start" x="522" y="-247.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="626" y="-248.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<text text-anchor="start" x="383" y="-229.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">speaker   </text>
+<text text-anchor="start" x="522" y="-229.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(128)  </text>
 <text text-anchor="start" x="638" y="-229.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-211.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">act_scene   </text>
-<text text-anchor="start" x="522" y="-211.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<text text-anchor="start" x="383" y="-211.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">act_scene   </text>
+<text text-anchor="start" x="522" y="-211.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="638" y="-211.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-193.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
-<text text-anchor="start" x="522" y="-193.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="383" y="-193.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">text   </text>
+<text text-anchor="start" x="522" y="-193.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="638" y="-193.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-175.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">paraphrase   </text>
-<text text-anchor="start" x="522" y="-175.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="383" y="-175.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">paraphrase   </text>
+<text text-anchor="start" x="522" y="-175.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="638" y="-175.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-157.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding   </text>
-<text text-anchor="start" x="522" y="-157.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1536)  </text>
+<text text-anchor="start" x="383" y="-157.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding   </text>
+<text text-anchor="start" x="522" y="-157.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">vector(1536)  </text>
 <text text-anchor="start" x="638" y="-157.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-139.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding_e5_1024   </text>
-<text text-anchor="start" x="522" y="-139.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1024)  </text>
+<text text-anchor="start" x="383" y="-139.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding_e5_1024   </text>
+<text text-anchor="start" x="522" y="-139.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">vector(1024)  </text>
 <text text-anchor="start" x="638" y="-139.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="383" y="-122.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">검색은 paraphrase(현대 영어) 임베딩 · HNSW cosine    </text>
-<path fill="none" stroke="#b9d9cf" d="M391,-116.5C391,-116.5 637,-116.5 637,-116.5 643,-116.5 649,-122.5 649,-128.5 649,-128.5 649,-309.5 649,-309.5 649,-315.5 643,-321.5 637,-321.5 637,-321.5 391,-321.5 391,-321.5 385,-321.5 379,-315.5 379,-309.5 379,-309.5 379,-128.5 379,-128.5 379,-122.5 385,-116.5 391,-116.5"/>
+<text text-anchor="start" x="383" y="-122.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">검색은 paraphrase(현대 영어) 임베딩 · HNSW cosine    </text>
+<path fill="none" stroke="#c5d9f5" d="M391,-116.5C391,-116.5 637,-116.5 637,-116.5 643,-116.5 649,-122.5 649,-128.5 649,-128.5 649,-309.5 649,-309.5 649,-315.5 643,-321.5 637,-321.5 637,-321.5 391,-321.5 391,-321.5 385,-321.5 379,-315.5 379,-309.5 379,-309.5 379,-128.5 379,-128.5 379,-122.5 385,-116.5 391,-116.5"/>
 </g>
 <g id="edge8" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C341.51,-323 335.49,-268 379,-268"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C341.51,-323 335.49,-268 379,-268"/>
 </g>
 <g id="node5" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M406.5,-350.5C406.5,-350.5 621.5,-350.5 621.5,-350.5 627.5,-350.5 633.5,-356.5 633.5,-362.5 633.5,-362.5 633.5,-491.5 633.5,-491.5 633.5,-497.5 627.5,-503.5 621.5,-503.5 621.5,-503.5 406.5,-503.5 406.5,-503.5 400.5,-503.5 394.5,-497.5 394.5,-491.5 394.5,-491.5 394.5,-362.5 394.5,-362.5 394.5,-356.5 400.5,-350.5 406.5,-350.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="396,-477 396,-502 633,-502 633,-477 396,-477"/>
-<text text-anchor="start" x="402" y="-487.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">evidence</text>
-<text text-anchor="start" x="463" y="-487.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;증거</text>
-<text text-anchor="start" x="399" y="-465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">evidence_id   </text>
-<text text-anchor="start" x="526" y="-465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
-<text text-anchor="start" x="617" y="-466.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="399" y="-447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">quote   </text>
-<text text-anchor="start" x="526" y="-447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<path fill="#fdfeff" stroke="transparent" d="M406.5,-350.5C406.5,-350.5 621.5,-350.5 621.5,-350.5 627.5,-350.5 633.5,-356.5 633.5,-362.5 633.5,-362.5 633.5,-491.5 633.5,-491.5 633.5,-497.5 627.5,-503.5 621.5,-503.5 621.5,-503.5 406.5,-503.5 406.5,-503.5 400.5,-503.5 394.5,-497.5 394.5,-491.5 394.5,-491.5 394.5,-362.5 394.5,-362.5 394.5,-356.5 400.5,-350.5 406.5,-350.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="396,-477 396,-502 633,-502 633,-477 396,-477"/>
+<text text-anchor="start" x="402" y="-487.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">evidence</text>
+<text text-anchor="start" x="463" y="-487.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;증거</text>
+<text text-anchor="start" x="399" y="-465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">evidence_id   </text>
+<text text-anchor="start" x="526" y="-465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
+<text text-anchor="start" x="617" y="-466.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="399" y="-447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">quote   </text>
+<text text-anchor="start" x="526" y="-447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="623" y="-447.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="399" y="-429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">act_scene   </text>
-<text text-anchor="start" x="526" y="-429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<text text-anchor="start" x="399" y="-429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">act_scene   </text>
+<text text-anchor="start" x="526" y="-429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="623" y="-429.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="399" y="-411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">icon   </text>
-<text text-anchor="start" x="526" y="-411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
+<text text-anchor="start" x="399" y="-411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">icon   </text>
+<text text-anchor="start" x="526" y="-411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
 <text text-anchor="start" x="623" y="-411.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="399" y="-393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">description   </text>
-<text text-anchor="start" x="526" y="-393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="399" y="-393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">description   </text>
+<text text-anchor="start" x="526" y="-393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="623" y="-393.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="399" y="-375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source_ftln_start   </text>
-<text text-anchor="start" x="526" y="-375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="611" y="-376.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<text text-anchor="start" x="399" y="-357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source_ftln_end   </text>
-<text text-anchor="start" x="526" y="-357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="611" y="-358.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#61766f">ref</text>
-<path fill="none" stroke="#b9d9cf" d="M406.5,-350.5C406.5,-350.5 621.5,-350.5 621.5,-350.5 627.5,-350.5 633.5,-356.5 633.5,-362.5 633.5,-362.5 633.5,-491.5 633.5,-491.5 633.5,-497.5 627.5,-503.5 621.5,-503.5 621.5,-503.5 406.5,-503.5 406.5,-503.5 400.5,-503.5 394.5,-497.5 394.5,-491.5 394.5,-491.5 394.5,-362.5 394.5,-362.5 394.5,-356.5 400.5,-350.5 406.5,-350.5"/>
+<text text-anchor="start" x="399" y="-375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">source_ftln_start   </text>
+<text text-anchor="start" x="526" y="-375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="611" y="-376.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<text text-anchor="start" x="399" y="-357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">source_ftln_end   </text>
+<text text-anchor="start" x="526" y="-357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="611" y="-358.6" font-family="DejaVu Sans Mono" font-style="italic" font-size="10.50" fill="#6b7684">ref</text>
+<path fill="none" stroke="#c5d9f5" d="M406.5,-350.5C406.5,-350.5 621.5,-350.5 621.5,-350.5 627.5,-350.5 633.5,-356.5 633.5,-362.5 633.5,-362.5 633.5,-491.5 633.5,-491.5 633.5,-497.5 627.5,-503.5 621.5,-503.5 621.5,-503.5 406.5,-503.5 406.5,-503.5 400.5,-503.5 394.5,-497.5 394.5,-491.5 394.5,-491.5 394.5,-362.5 394.5,-362.5 394.5,-356.5 400.5,-350.5 406.5,-350.5"/>
 </g>
 <g id="edge7" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C347.56,-323 345.44,-378 395,-378"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" stroke-dasharray="5,2" d="M298,-323C347.56,-323 345.44,-378 395,-378"/>
 </g>
 <g id="node7" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M426.5,-24.5C426.5,-24.5 601.5,-24.5 601.5,-24.5 607.5,-24.5 613.5,-30.5 613.5,-36.5 613.5,-36.5 613.5,-75.5 613.5,-75.5 613.5,-81.5 607.5,-87.5 601.5,-87.5 601.5,-87.5 426.5,-87.5 426.5,-87.5 420.5,-87.5 414.5,-81.5 414.5,-75.5 414.5,-75.5 414.5,-36.5 414.5,-36.5 414.5,-30.5 420.5,-24.5 426.5,-24.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="416,-61 416,-86 613,-86 613,-61 416,-61"/>
-<text text-anchor="start" x="422" y="-71.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">line_topics</text>
-<text text-anchor="start" x="505" y="-71.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;줄 ↔ 주제</text>
-<text text-anchor="start" x="419" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ftln   </text>
-<text text-anchor="start" x="492" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="577" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<path fill="#fdfeff" stroke="transparent" d="M426.5,-24.5C426.5,-24.5 601.5,-24.5 601.5,-24.5 607.5,-24.5 613.5,-30.5 613.5,-36.5 613.5,-36.5 613.5,-75.5 613.5,-75.5 613.5,-81.5 607.5,-87.5 601.5,-87.5 601.5,-87.5 426.5,-87.5 426.5,-87.5 420.5,-87.5 414.5,-81.5 414.5,-75.5 414.5,-75.5 414.5,-36.5 414.5,-36.5 414.5,-30.5 420.5,-24.5 426.5,-24.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="416,-61 416,-86 613,-86 613,-61 416,-61"/>
+<text text-anchor="start" x="422" y="-71.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">line_topics</text>
+<text text-anchor="start" x="505" y="-71.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;줄 ↔ 주제</text>
+<text text-anchor="start" x="419" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ftln   </text>
+<text text-anchor="start" x="492" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="577" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
 <text text-anchor="start" x="590" y="-50.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="597" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="419" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">topic_id   </text>
-<text text-anchor="start" x="492" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
-<text text-anchor="start" x="577" y="-32.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="597" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="419" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">topic_id   </text>
+<text text-anchor="start" x="492" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
+<text text-anchor="start" x="577" y="-32.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
 <text text-anchor="start" x="590" y="-32.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="597" y="-32.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<path fill="none" stroke="#b9d9cf" d="M426.5,-24.5C426.5,-24.5 601.5,-24.5 601.5,-24.5 607.5,-24.5 613.5,-30.5 613.5,-36.5 613.5,-36.5 613.5,-75.5 613.5,-75.5 613.5,-81.5 607.5,-87.5 601.5,-87.5 601.5,-87.5 426.5,-87.5 426.5,-87.5 420.5,-87.5 414.5,-81.5 414.5,-75.5 414.5,-75.5 414.5,-36.5 414.5,-36.5 414.5,-30.5 420.5,-24.5 426.5,-24.5"/>
+<text text-anchor="start" x="597" y="-32.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<path fill="none" stroke="#c5d9f5" d="M426.5,-24.5C426.5,-24.5 601.5,-24.5 601.5,-24.5 607.5,-24.5 613.5,-30.5 613.5,-36.5 613.5,-36.5 613.5,-75.5 613.5,-75.5 613.5,-81.5 607.5,-87.5 601.5,-87.5 601.5,-87.5 426.5,-87.5 426.5,-87.5 420.5,-87.5 414.5,-81.5 414.5,-75.5 414.5,-75.5 414.5,-36.5 414.5,-36.5 414.5,-30.5 420.5,-24.5 426.5,-24.5"/>
 </g>
 <g id="edge3" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M306.08,-322.63C418.27,-311.94 297.39,-72.87 400.5,-53.27"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="298.98,-326.96 298.62,-318.97 300.21,-318.89 300.58,-326.89 298.98,-326.96"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="298,-323 302,-322.82 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="302.98,-326.78 302.61,-318.78 304.21,-318.71 304.58,-326.7 302.98,-326.78"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="302,-322.82 305.99,-322.63 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="407.03,-52.7 415.32,-55.59 411.02,-52.35 415,-52 415,-52 415,-52 411.02,-52.35 414.68,-48.41 407.03,-52.7 407.03,-52.7"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="403.84" cy="-52.98" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M306.08,-322.63C418.27,-311.94 297.39,-72.87 400.5,-53.27"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="298.98,-326.96 298.62,-318.97 300.21,-318.89 300.58,-326.89 298.98,-326.96"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="298,-323 302,-322.82 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="302.98,-326.78 302.61,-318.78 304.21,-318.71 304.58,-326.7 302.98,-326.78"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="302,-322.82 305.99,-322.63 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="407.03,-52.7 415.32,-55.59 411.02,-52.35 415,-52 415,-52 415,-52 411.02,-52.35 414.68,-48.41 407.03,-52.7 407.03,-52.7"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="403.84" cy="-52.98" rx="3.2" ry="3.2"/>
 </g>
 <g id="node6" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M83.5,-24.5C83.5,-24.5 238.5,-24.5 238.5,-24.5 244.5,-24.5 250.5,-30.5 250.5,-36.5 250.5,-36.5 250.5,-75.5 250.5,-75.5 250.5,-81.5 244.5,-87.5 238.5,-87.5 238.5,-87.5 83.5,-87.5 83.5,-87.5 77.5,-87.5 71.5,-81.5 71.5,-75.5 71.5,-75.5 71.5,-36.5 71.5,-36.5 71.5,-30.5 77.5,-24.5 83.5,-24.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="73,-61 73,-86 250,-86 250,-61 73,-61"/>
-<text text-anchor="start" x="79" y="-71.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">topics</text>
-<text text-anchor="start" x="125" y="-71.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;주제</text>
-<text text-anchor="start" x="76" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">topic_id   </text>
-<text text-anchor="start" x="149" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
-<text text-anchor="start" x="234" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="76" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">label   </text>
-<text text-anchor="start" x="149" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<path fill="#fdfeff" stroke="transparent" d="M83.5,-24.5C83.5,-24.5 238.5,-24.5 238.5,-24.5 244.5,-24.5 250.5,-30.5 250.5,-36.5 250.5,-36.5 250.5,-75.5 250.5,-75.5 250.5,-81.5 244.5,-87.5 238.5,-87.5 238.5,-87.5 83.5,-87.5 83.5,-87.5 77.5,-87.5 71.5,-81.5 71.5,-75.5 71.5,-75.5 71.5,-36.5 71.5,-36.5 71.5,-30.5 77.5,-24.5 83.5,-24.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="73,-61 73,-86 250,-86 250,-61 73,-61"/>
+<text text-anchor="start" x="79" y="-71.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">topics</text>
+<text text-anchor="start" x="125" y="-71.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;주제</text>
+<text text-anchor="start" x="76" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">topic_id   </text>
+<text text-anchor="start" x="149" y="-49.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
+<text text-anchor="start" x="234" y="-50.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="76" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">label   </text>
+<text text-anchor="start" x="149" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="240" y="-31.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M83.5,-24.5C83.5,-24.5 238.5,-24.5 238.5,-24.5 244.5,-24.5 250.5,-30.5 250.5,-36.5 250.5,-36.5 250.5,-75.5 250.5,-75.5 250.5,-81.5 244.5,-87.5 238.5,-87.5 238.5,-87.5 83.5,-87.5 83.5,-87.5 77.5,-87.5 71.5,-81.5 71.5,-75.5 71.5,-75.5 71.5,-36.5 71.5,-36.5 71.5,-30.5 77.5,-24.5 83.5,-24.5"/>
+<path fill="none" stroke="#c5d9f5" d="M83.5,-24.5C83.5,-24.5 238.5,-24.5 238.5,-24.5 244.5,-24.5 250.5,-30.5 250.5,-36.5 250.5,-36.5 250.5,-75.5 250.5,-75.5 250.5,-81.5 244.5,-87.5 238.5,-87.5 238.5,-87.5 83.5,-87.5 83.5,-87.5 77.5,-87.5 71.5,-81.5 71.5,-75.5 71.5,-75.5 71.5,-36.5 71.5,-36.5 71.5,-30.5 77.5,-24.5 83.5,-24.5"/>
 </g>
 <g id="edge4" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M259.34,-51.92C320.97,-50.72 341.58,-36.32 400.5,-34.25"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="251.84,-55.99 251.76,-47.99 253.36,-47.98 253.44,-55.98 251.84,-55.99"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="251,-52 255,-51.96 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="255.84,-55.95 255.76,-47.95 257.36,-47.94 257.44,-55.94 255.84,-55.95"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="255,-51.96 259,-51.92 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="407,-34.14 415.06,-37.6 411,-34.07 415,-34 415,-34 415,-34 411,-34.07 414.94,-30.4 407,-34.14 407,-34.14"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="403.8" cy="-34.19" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M259.34,-51.92C320.97,-50.72 341.58,-36.32 400.5,-34.25"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="251.84,-55.99 251.76,-47.99 253.36,-47.98 253.44,-55.98 251.84,-55.99"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="251,-52 255,-51.96 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="255.84,-55.95 255.76,-47.95 257.36,-47.94 257.44,-55.94 255.84,-55.95"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="255,-51.96 259,-51.92 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="407,-34.14 415.06,-37.6 411,-34.07 415,-34 415,-34 415,-34 411,-34.07 414.94,-30.4 407,-34.14 407,-34.14"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="403.8" cy="-34.19" rx="3.2" ry="3.2"/>
 </g>
 <g id="node8" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M65.5,-978.5C65.5,-978.5 256.5,-978.5 256.5,-978.5 262.5,-978.5 268.5,-984.5 268.5,-990.5 268.5,-990.5 268.5,-1117.5 268.5,-1117.5 268.5,-1123.5 262.5,-1129.5 256.5,-1129.5 256.5,-1129.5 65.5,-1129.5 65.5,-1129.5 59.5,-1129.5 53.5,-1123.5 53.5,-1117.5 53.5,-1117.5 53.5,-990.5 53.5,-990.5 53.5,-984.5 59.5,-978.5 65.5,-978.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="55,-1103 55,-1128 268,-1128 268,-1103 55,-1103"/>
-<text text-anchor="start" x="61" y="-1113.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">users</text>
-<text text-anchor="start" x="99" y="-1113.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;계정</text>
-<text text-anchor="start" x="58" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">user_id   </text>
-<text text-anchor="start" x="161" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
-<text text-anchor="start" x="252" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="58" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">email   </text>
-<text text-anchor="start" x="161" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(255)  </text>
-<text text-anchor="start" x="252" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="58" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">nickname   </text>
-<text text-anchor="start" x="161" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M65.5,-978.5C65.5,-978.5 256.5,-978.5 256.5,-978.5 262.5,-978.5 268.5,-984.5 268.5,-990.5 268.5,-990.5 268.5,-1117.5 268.5,-1117.5 268.5,-1123.5 262.5,-1129.5 256.5,-1129.5 256.5,-1129.5 65.5,-1129.5 65.5,-1129.5 59.5,-1129.5 53.5,-1123.5 53.5,-1117.5 53.5,-1117.5 53.5,-990.5 53.5,-990.5 53.5,-984.5 59.5,-978.5 65.5,-978.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="55,-1103 55,-1128 268,-1128 268,-1103 55,-1103"/>
+<text text-anchor="start" x="61" y="-1113.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">users</text>
+<text text-anchor="start" x="99" y="-1113.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;계정</text>
+<text text-anchor="start" x="58" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">user_id   </text>
+<text text-anchor="start" x="161" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">uuid  </text>
+<text text-anchor="start" x="252" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="58" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">email   </text>
+<text text-anchor="start" x="161" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(255)  </text>
+<text text-anchor="start" x="252" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="58" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">nickname   </text>
+<text text-anchor="start" x="161" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
 <text text-anchor="start" x="258" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="58" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">password_hash   </text>
-<text text-anchor="start" x="161" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="58" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">password_hash   </text>
+<text text-anchor="start" x="161" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="258" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="58" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">google_id   </text>
-<text text-anchor="start" x="161" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
-<text text-anchor="start" x="252" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="58" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
-<text text-anchor="start" x="161" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="58" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">google_id   </text>
+<text text-anchor="start" x="161" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
+<text text-anchor="start" x="252" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="58" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
+<text text-anchor="start" x="161" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">timestamptz  </text>
 <text text-anchor="start" x="258" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="58" y="-984.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">소셜 전용 계정은 password_hash NULL    </text>
-<path fill="none" stroke="#b9d9cf" d="M65.5,-978.5C65.5,-978.5 256.5,-978.5 256.5,-978.5 262.5,-978.5 268.5,-984.5 268.5,-990.5 268.5,-990.5 268.5,-1117.5 268.5,-1117.5 268.5,-1123.5 262.5,-1129.5 256.5,-1129.5 256.5,-1129.5 65.5,-1129.5 65.5,-1129.5 59.5,-1129.5 53.5,-1123.5 53.5,-1117.5 53.5,-1117.5 53.5,-990.5 53.5,-990.5 53.5,-984.5 59.5,-978.5 65.5,-978.5"/>
+<text text-anchor="start" x="58" y="-984.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">소셜 전용 계정은 password_hash NULL    </text>
+<path fill="none" stroke="#c5d9f5" d="M65.5,-978.5C65.5,-978.5 256.5,-978.5 256.5,-978.5 262.5,-978.5 268.5,-984.5 268.5,-990.5 268.5,-990.5 268.5,-1117.5 268.5,-1117.5 268.5,-1123.5 262.5,-1129.5 256.5,-1129.5 256.5,-1129.5 65.5,-1129.5 65.5,-1129.5 59.5,-1129.5 53.5,-1123.5 53.5,-1117.5 53.5,-1117.5 53.5,-990.5 53.5,-990.5 53.5,-984.5 59.5,-978.5 65.5,-978.5"/>
 </g>
 <g id="node9" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M382,-798.5C382,-798.5 646,-798.5 646,-798.5 652,-798.5 658,-804.5 658,-810.5 658,-810.5 658,-1135.5 658,-1135.5 658,-1141.5 652,-1147.5 646,-1147.5 646,-1147.5 382,-1147.5 382,-1147.5 376,-1147.5 370,-1141.5 370,-1135.5 370,-1135.5 370,-810.5 370,-810.5 370,-804.5 376,-798.5 382,-798.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="371,-1121 371,-1146 657,-1146 657,-1121 371,-1121"/>
-<text text-anchor="start" x="377" y="-1131.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">trials</text>
-<text text-anchor="start" x="423" y="-1131.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;재판 한 판</text>
-<text text-anchor="start" x="374" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">trial_id   </text>
-<text text-anchor="start" x="546" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
-<text text-anchor="start" x="641" y="-1110.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="374" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">user_id   </text>
-<text text-anchor="start" x="546" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
-<text text-anchor="start" x="641" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="374" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scene_index   </text>
-<text text-anchor="start" x="546" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<path fill="#fdfeff" stroke="transparent" d="M382,-798.5C382,-798.5 646,-798.5 646,-798.5 652,-798.5 658,-804.5 658,-810.5 658,-810.5 658,-1135.5 658,-1135.5 658,-1141.5 652,-1147.5 646,-1147.5 646,-1147.5 382,-1147.5 382,-1147.5 376,-1147.5 370,-1141.5 370,-1135.5 370,-1135.5 370,-810.5 370,-810.5 370,-804.5 376,-798.5 382,-798.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="371,-1121 371,-1146 657,-1146 657,-1121 371,-1121"/>
+<text text-anchor="start" x="377" y="-1131.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">trials</text>
+<text text-anchor="start" x="423" y="-1131.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;재판 한 판</text>
+<text text-anchor="start" x="374" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">trial_id   </text>
+<text text-anchor="start" x="546" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">uuid  </text>
+<text text-anchor="start" x="641" y="-1110.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="374" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">user_id   </text>
+<text text-anchor="start" x="546" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">uuid  </text>
+<text text-anchor="start" x="641" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="374" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">scene_index   </text>
+<text text-anchor="start" x="546" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
 <text text-anchor="start" x="647" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">dp   </text>
-<text text-anchor="start" x="546" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="374" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">dp   </text>
+<text text-anchor="start" x="546" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
 <text text-anchor="start" x="647" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">hp   </text>
-<text text-anchor="start" x="546" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="374" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">hp   </text>
+<text text-anchor="start" x="546" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
 <text text-anchor="start" x="647" y="-1037.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">portia_hp   </text>
-<text text-anchor="start" x="546" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
+<text text-anchor="start" x="374" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">portia_hp   </text>
+<text text-anchor="start" x="546" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
 <text text-anchor="start" x="647" y="-1019.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">venice_dp_shield   </text>
-<text text-anchor="start" x="546" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="374" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">venice_dp_shield   </text>
+<text text-anchor="start" x="546" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">bool  </text>
 <text text-anchor="start" x="647" y="-1001.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-983.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">venice_paradox_used   </text>
-<text text-anchor="start" x="546" y="-983.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">bool  </text>
+<text text-anchor="start" x="374" y="-983.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">venice_paradox_used   </text>
+<text text-anchor="start" x="546" y="-983.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">bool  </text>
 <text text-anchor="start" x="647" y="-983.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-965.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">phase   </text>
-<text text-anchor="start" x="546" y="-965.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(32)  </text>
+<text text-anchor="start" x="374" y="-965.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">phase   </text>
+<text text-anchor="start" x="546" y="-965.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(32)  </text>
 <text text-anchor="start" x="647" y="-965.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-947.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">narration_text   </text>
-<text text-anchor="start" x="546" y="-947.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-947.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">narration_text   </text>
+<text text-anchor="start" x="546" y="-947.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-947.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-929.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scene_dialogues_json   </text>
-<text text-anchor="start" x="546" y="-929.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-929.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">scene_dialogues_json   </text>
+<text text-anchor="start" x="546" y="-929.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-929.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-911.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">tubal_used_scenes_json   </text>
-<text text-anchor="start" x="546" y="-911.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-911.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">tubal_used_scenes_json   </text>
+<text text-anchor="start" x="546" y="-911.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-911.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-893.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">presented_evidence_json   </text>
-<text text-anchor="start" x="546" y="-893.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-893.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">presented_evidence_json   </text>
+<text text-anchor="start" x="546" y="-893.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-893.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-875.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">tubal_enhanced_choices   </text>
-<text text-anchor="start" x="546" y="-875.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-875.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">tubal_enhanced_choices   </text>
+<text text-anchor="start" x="546" y="-875.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-875.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-857.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">portia_reactions_json   </text>
-<text text-anchor="start" x="546" y="-857.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">text  </text>
+<text text-anchor="start" x="374" y="-857.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">portia_reactions_json   </text>
+<text text-anchor="start" x="546" y="-857.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">text  </text>
 <text text-anchor="start" x="647" y="-857.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-839.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
-<text text-anchor="start" x="546" y="-839.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="374" y="-839.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
+<text text-anchor="start" x="546" y="-839.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">timestamptz  </text>
 <text text-anchor="start" x="647" y="-839.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-821.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">updated_at   </text>
-<text text-anchor="start" x="546" y="-821.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="374" y="-821.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">updated_at   </text>
+<text text-anchor="start" x="546" y="-821.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">timestamptz  </text>
 <text text-anchor="start" x="647" y="-821.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="374" y="-804.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">user_id ON DELETE SET NULL · *_json은 직렬화된 JSON    </text>
-<path fill="none" stroke="#b9d9cf" d="M382,-798.5C382,-798.5 646,-798.5 646,-798.5 652,-798.5 658,-804.5 658,-810.5 658,-810.5 658,-1135.5 658,-1135.5 658,-1141.5 652,-1147.5 646,-1147.5 646,-1147.5 382,-1147.5 382,-1147.5 376,-1147.5 370,-1141.5 370,-1135.5 370,-1135.5 370,-810.5 370,-810.5 370,-804.5 376,-798.5 382,-798.5"/>
+<text text-anchor="start" x="374" y="-804.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">user_id ON DELETE SET NULL · *_json은 직렬화된 JSON    </text>
+<path fill="none" stroke="#c5d9f5" d="M382,-798.5C382,-798.5 646,-798.5 646,-798.5 652,-798.5 658,-804.5 658,-810.5 658,-810.5 658,-1135.5 658,-1135.5 658,-1141.5 652,-1147.5 646,-1147.5 646,-1147.5 382,-1147.5 382,-1147.5 376,-1147.5 370,-1141.5 370,-1135.5 370,-1135.5 370,-810.5 370,-810.5 370,-804.5 376,-798.5 382,-798.5"/>
 </g>
 <g id="edge1" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M277.04,-1094C310.63,-1094 324.39,-1094 355.5,-1094"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="269.8,-1098 269.8,-1090 271.4,-1090 271.4,-1098 269.8,-1098"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="269,-1094 273,-1094 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="273.8,-1098 273.8,-1090 275.4,-1090 275.4,-1098 273.8,-1098"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="273,-1094 277,-1094 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="362,-1094 370,-1097.6 366,-1094 370,-1094 370,-1094 370,-1094 366,-1094 370,-1090.4 362,-1094 362,-1094"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="358.8" cy="-1094" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M277.04,-1094C310.63,-1094 324.39,-1094 355.5,-1094"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="269.8,-1098 269.8,-1090 271.4,-1090 271.4,-1098 269.8,-1098"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="269,-1094 273,-1094 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="273.8,-1098 273.8,-1090 275.4,-1090 275.4,-1098 273.8,-1098"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="273,-1094 277,-1094 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="362,-1094 370,-1097.6 366,-1094 370,-1094 370,-1094 370,-1094 366,-1094 370,-1090.4 362,-1094 362,-1094"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="358.8" cy="-1094" rx="3.2" ry="3.2"/>
 </g>
 <g id="node10" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M742,-1032.5C742,-1032.5 979,-1032.5 979,-1032.5 985,-1032.5 991,-1038.5 991,-1044.5 991,-1044.5 991,-1135.5 991,-1135.5 991,-1141.5 985,-1147.5 979,-1147.5 979,-1147.5 742,-1147.5 742,-1147.5 736,-1147.5 730,-1141.5 730,-1135.5 730,-1135.5 730,-1044.5 730,-1044.5 730,-1038.5 736,-1032.5 742,-1032.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="731.5,-1121 731.5,-1146 990.5,-1146 990.5,-1121 731.5,-1121"/>
-<text text-anchor="start" x="737.5" y="-1131.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">trial_choice_history</text>
-<text text-anchor="start" x="888.5" y="-1131.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f"> &#160;선택 기록</text>
-<text text-anchor="start" x="734.5" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="857.5" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">int  </text>
-<text text-anchor="start" x="974.5" y="-1110.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="734.5" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">trial_id   </text>
-<text text-anchor="start" x="857.5" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">uuid  </text>
-<text text-anchor="start" x="974.5" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="734.5" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">choice_id   </text>
-<text text-anchor="start" x="857.5" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">varchar(64)  </text>
+<path fill="#fdfeff" stroke="transparent" d="M742,-1032.5C742,-1032.5 979,-1032.5 979,-1032.5 985,-1032.5 991,-1038.5 991,-1044.5 991,-1044.5 991,-1135.5 991,-1135.5 991,-1141.5 985,-1147.5 979,-1147.5 979,-1147.5 742,-1147.5 742,-1147.5 736,-1147.5 730,-1141.5 730,-1135.5 730,-1135.5 730,-1044.5 730,-1044.5 730,-1038.5 736,-1032.5 742,-1032.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="731.5,-1121 731.5,-1146 990.5,-1146 990.5,-1121 731.5,-1121"/>
+<text text-anchor="start" x="737.5" y="-1131.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">trial_choice_history</text>
+<text text-anchor="start" x="888.5" y="-1131.4" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684"> &#160;선택 기록</text>
+<text text-anchor="start" x="734.5" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="857.5" y="-1109.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">int  </text>
+<text text-anchor="start" x="974.5" y="-1110.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="734.5" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">trial_id   </text>
+<text text-anchor="start" x="857.5" y="-1091.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">uuid  </text>
+<text text-anchor="start" x="974.5" y="-1092.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="734.5" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">choice_id   </text>
+<text text-anchor="start" x="857.5" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">varchar(64)  </text>
 <text text-anchor="start" x="980.5" y="-1073.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734.5" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">recorded_at   </text>
-<text text-anchor="start" x="857.5" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">timestamptz  </text>
+<text text-anchor="start" x="734.5" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">recorded_at   </text>
+<text text-anchor="start" x="857.5" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">timestamptz  </text>
 <text text-anchor="start" x="980.5" y="-1055.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734.5" y="-1038.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">유일한 ORM relationship() · ON DELETE CASCADE    </text>
-<path fill="none" stroke="#b9d9cf" d="M742,-1032.5C742,-1032.5 979,-1032.5 979,-1032.5 985,-1032.5 991,-1038.5 991,-1044.5 991,-1044.5 991,-1135.5 991,-1135.5 991,-1141.5 985,-1147.5 979,-1147.5 979,-1147.5 742,-1147.5 742,-1147.5 736,-1147.5 730,-1141.5 730,-1135.5 730,-1135.5 730,-1044.5 730,-1044.5 730,-1038.5 736,-1032.5 742,-1032.5"/>
+<text text-anchor="start" x="734.5" y="-1038.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">유일한 ORM relationship() · ON DELETE CASCADE    </text>
+<path fill="none" stroke="#c5d9f5" d="M742,-1032.5C742,-1032.5 979,-1032.5 979,-1032.5 985,-1032.5 991,-1038.5 991,-1044.5 991,-1044.5 991,-1135.5 991,-1135.5 991,-1141.5 985,-1147.5 979,-1147.5 979,-1147.5 742,-1147.5 742,-1147.5 736,-1147.5 730,-1141.5 730,-1135.5 730,-1135.5 730,-1044.5 730,-1044.5 730,-1038.5 736,-1032.5 742,-1032.5"/>
 </g>
 <g id="edge2" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M665.99,-1111.62C687.7,-1109.5 696.78,-1099 716.09,-1095.3"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="658.99,-1115.96 658.61,-1107.97 660.21,-1107.89 660.59,-1115.88 658.99,-1115.96"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="658,-1112 662,-1111.81 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="662.98,-1115.77 662.61,-1107.78 664.2,-1107.7 664.58,-1115.69 662.98,-1115.77"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="662,-1111.81 665.99,-1111.62 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="722.53,-1094.72 730.82,-1097.59 726.52,-1094.36 730.5,-1094 730.5,-1094 730.5,-1094 726.52,-1094.36 730.18,-1090.41 722.53,-1094.72 722.53,-1094.72"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="719.35" cy="-1095" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M665.99,-1111.62C687.7,-1109.5 696.78,-1099 716.09,-1095.3"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="658.99,-1115.96 658.61,-1107.97 660.21,-1107.89 660.59,-1115.88 658.99,-1115.96"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="658,-1112 662,-1111.81 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="662.98,-1115.77 662.61,-1107.78 664.2,-1107.7 664.58,-1115.69 662.98,-1115.77"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="662,-1111.81 665.99,-1111.62 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="722.53,-1094.72 730.82,-1097.59 726.52,-1094.36 730.5,-1094 730.5,-1094 730.5,-1094 726.52,-1094.36 730.18,-1090.41 722.53,-1094.72 722.53,-1094.72"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="719.35" cy="-1095" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>

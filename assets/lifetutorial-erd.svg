@@ -2,702 +2,702 @@
 <svg class="erd-svg" role="img" aria-label="라이프 튜토리얼 ERD — 5개 Bounded Context, 23개 테이블과 관계"  viewBox="0.00 0.00 1174.20 2925.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>text{font-family:"DejaVu Sans Mono",Menlo,"SFMono-Regular",Consolas,monospace}text[font-family^="Noto"]{font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}</style>
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 2903.6)">
 <g id="clust1" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M20,-8C20,-8 637,-8 637,-8 643,-8 649,-14 649,-20 649,-20 649,-254 649,-254 649,-260 643,-266 637,-266 637,-266 20,-266 20,-266 14,-266 8,-260 8,-254 8,-254 8,-20 8,-20 8,-14 14,-8 20,-8"/>
-<text text-anchor="start" x="16" y="-252.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#14806a">ontology · 법령 지식</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M20,-8C20,-8 637,-8 637,-8 643,-8 649,-14 649,-20 649,-20 649,-254 649,-254 649,-260 643,-266 637,-266 637,-266 20,-266 20,-266 14,-266 8,-260 8,-254 8,-254 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="start" x="16" y="-252.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#2272eb">ontology · 법령 지식</text>
 </g>
 <g id="clust2" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M467,-2548C467,-2548 896.5,-2548 896.5,-2548 902.5,-2548 908.5,-2554 908.5,-2560 908.5,-2560 908.5,-2862 908.5,-2862 908.5,-2868 902.5,-2874 896.5,-2874 896.5,-2874 467,-2874 467,-2874 461,-2874 455,-2868 455,-2862 455,-2862 455,-2560 455,-2560 455,-2554 461,-2548 467,-2548"/>
-<text text-anchor="start" x="463" y="-2860.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#14806a">auth · 인증 · 플레이어</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M467,-2548C467,-2548 896.5,-2548 896.5,-2548 902.5,-2548 908.5,-2554 908.5,-2560 908.5,-2560 908.5,-2862 908.5,-2862 908.5,-2868 902.5,-2874 896.5,-2874 896.5,-2874 467,-2874 467,-2874 461,-2874 455,-2868 455,-2862 455,-2862 455,-2560 455,-2560 455,-2554 461,-2548 467,-2548"/>
+<text text-anchor="start" x="463" y="-2860.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#2272eb">auth · 인증 · 플레이어</text>
 </g>
 <g id="clust3" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M47.5,-862C47.5,-862 1102,-862 1102,-862 1108,-862 1114,-868 1114,-874 1114,-874 1114,-2066 1114,-2066 1114,-2072 1108,-2078 1102,-2078 1102,-2078 47.5,-2078 47.5,-2078 41.5,-2078 35.5,-2072 35.5,-2066 35.5,-2066 35.5,-874 35.5,-874 35.5,-868 41.5,-862 47.5,-862"/>
-<text text-anchor="start" x="43.5" y="-2064.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#14806a">quest · 게임</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M47.5,-862C47.5,-862 1102,-862 1102,-862 1108,-862 1114,-868 1114,-874 1114,-874 1114,-2066 1114,-2066 1114,-2072 1108,-2078 1102,-2078 1102,-2078 47.5,-2078 47.5,-2078 41.5,-2078 35.5,-2072 35.5,-2066 35.5,-2066 35.5,-874 35.5,-874 35.5,-868 41.5,-862 47.5,-862"/>
+<text text-anchor="start" x="43.5" y="-2064.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#2272eb">quest · 게임</text>
 </g>
 <g id="clust4" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M710,-2086C710,-2086 1099,-2086 1099,-2086 1105,-2086 1111,-2092 1111,-2098 1111,-2098 1111,-2528 1111,-2528 1111,-2534 1105,-2540 1099,-2540 1099,-2540 710,-2540 710,-2540 704,-2540 698,-2534 698,-2528 698,-2528 698,-2098 698,-2098 698,-2092 704,-2086 710,-2086"/>
-<text text-anchor="start" x="706" y="-2526.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#14806a">guard · 가드 · 계약서 판정</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M710,-2086C710,-2086 1099,-2086 1099,-2086 1105,-2086 1111,-2092 1111,-2098 1111,-2098 1111,-2528 1111,-2528 1111,-2534 1105,-2540 1099,-2540 1099,-2540 710,-2540 710,-2540 704,-2540 698,-2534 698,-2528 698,-2528 698,-2098 698,-2098 698,-2092 704,-2086 710,-2086"/>
+<text text-anchor="start" x="706" y="-2526.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#2272eb">guard · 가드 · 계약서 판정</text>
 </g>
 <g id="clust5" class="cluster">
-<path fill="#eef6f3" stroke="#d3e6df" d="M461,-274C461,-274 1111,-274 1111,-274 1117,-274 1123,-280 1123,-286 1123,-286 1123,-842 1123,-842 1123,-848 1117,-854 1111,-854 1111,-854 461,-854 461,-854 455,-854 449,-848 449,-842 449,-842 449,-286 449,-286 449,-280 455,-274 461,-274"/>
-<text text-anchor="start" x="457" y="-840.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#14806a">insight · 상담 준비 리포트</text>
+<path fill="#f2f7ff" stroke="#dbe7f7" d="M461,-274C461,-274 1111,-274 1111,-274 1117,-274 1123,-280 1123,-286 1123,-286 1123,-842 1123,-842 1123,-848 1117,-854 1111,-854 1111,-854 461,-854 461,-854 455,-854 449,-848 449,-842 449,-842 449,-286 449,-286 449,-280 455,-274 461,-274"/>
+<text text-anchor="start" x="457" y="-840.6" font-family="Noto Sans CJK JP" font-weight="bold" font-size="13.00" fill="#2272eb">insight · 상담 준비 리포트</text>
 </g>
 <g id="node1" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M34,-76.5C34,-76.5 140,-76.5 140,-76.5 146,-76.5 152,-82.5 152,-88.5 152,-88.5 152,-181.5 152,-181.5 152,-187.5 146,-193.5 140,-193.5 140,-193.5 34,-193.5 34,-193.5 28,-193.5 22,-187.5 22,-181.5 22,-181.5 22,-88.5 22,-88.5 22,-82.5 28,-76.5 34,-76.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="23,-167 23,-192 151,-192 151,-167 23,-167"/>
-<text text-anchor="start" x="29" y="-177.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">laws</text>
-<text text-anchor="start" x="26" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="135" y="-156.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="26" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">mst   </text>
-<text text-anchor="start" x="135" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="26" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<path fill="#fdfeff" stroke="transparent" d="M34,-76.5C34,-76.5 140,-76.5 140,-76.5 146,-76.5 152,-82.5 152,-88.5 152,-88.5 152,-181.5 152,-181.5 152,-187.5 146,-193.5 140,-193.5 140,-193.5 34,-193.5 34,-193.5 28,-193.5 22,-187.5 22,-181.5 22,-181.5 22,-88.5 22,-88.5 22,-82.5 28,-76.5 34,-76.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="23,-167 23,-192 151,-192 151,-167 23,-167"/>
+<text text-anchor="start" x="29" y="-177.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">laws</text>
+<text text-anchor="start" x="26" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="135" y="-156.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="26" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">mst   </text>
+<text text-anchor="start" x="135" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="26" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">name   </text>
 <text text-anchor="start" x="141" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="26" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">effective_date   </text>
+<text text-anchor="start" x="26" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">effective_date   </text>
 <text text-anchor="start" x="141" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="26" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">fetched_at   </text>
+<text text-anchor="start" x="26" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">fetched_at   </text>
 <text text-anchor="start" x="141" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M34,-76.5C34,-76.5 140,-76.5 140,-76.5 146,-76.5 152,-82.5 152,-88.5 152,-88.5 152,-181.5 152,-181.5 152,-187.5 146,-193.5 140,-193.5 140,-193.5 34,-193.5 34,-193.5 28,-193.5 22,-187.5 22,-181.5 22,-181.5 22,-88.5 22,-88.5 22,-82.5 28,-76.5 34,-76.5"/>
+<path fill="none" stroke="#c5d9f5" d="M34,-76.5C34,-76.5 140,-76.5 140,-76.5 146,-76.5 152,-82.5 152,-88.5 152,-88.5 152,-181.5 152,-181.5 152,-187.5 146,-193.5 140,-193.5 140,-193.5 34,-193.5 34,-193.5 28,-193.5 22,-187.5 22,-181.5 22,-181.5 22,-88.5 22,-88.5 22,-82.5 28,-76.5 34,-76.5"/>
 </g>
 <g id="node2" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M229,-78.5C229,-78.5 350,-78.5 350,-78.5 356,-78.5 362,-84.5 362,-90.5 362,-90.5 362,-199.5 362,-199.5 362,-205.5 356,-211.5 350,-211.5 350,-211.5 229,-211.5 229,-211.5 223,-211.5 217,-205.5 217,-199.5 217,-199.5 217,-90.5 217,-90.5 217,-84.5 223,-78.5 229,-78.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="218.5,-185 218.5,-210 361.5,-210 361.5,-185 218.5,-185"/>
-<text text-anchor="start" x="224.5" y="-195.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">law_articles</text>
-<text text-anchor="start" x="221.5" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="345.5" y="-174.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="221.5" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">law_id   </text>
-<text text-anchor="start" x="345.5" y="-156.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="221.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">article_no   </text>
+<path fill="#fdfeff" stroke="transparent" d="M229,-78.5C229,-78.5 350,-78.5 350,-78.5 356,-78.5 362,-84.5 362,-90.5 362,-90.5 362,-199.5 362,-199.5 362,-205.5 356,-211.5 350,-211.5 350,-211.5 229,-211.5 229,-211.5 223,-211.5 217,-205.5 217,-199.5 217,-199.5 217,-90.5 217,-90.5 217,-84.5 223,-78.5 229,-78.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="218.5,-185 218.5,-210 361.5,-210 361.5,-185 218.5,-185"/>
+<text text-anchor="start" x="224.5" y="-195.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">law_articles</text>
+<text text-anchor="start" x="221.5" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="345.5" y="-174.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="221.5" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">law_id   </text>
+<text text-anchor="start" x="345.5" y="-156.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="221.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">article_no   </text>
 <text text-anchor="start" x="351.5" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="221.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">title   </text>
+<text text-anchor="start" x="221.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">title   </text>
 <text text-anchor="start" x="351.5" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="221.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">content   </text>
+<text text-anchor="start" x="221.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">content   </text>
 <text text-anchor="start" x="351.5" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="221.5" y="-84.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(law_id, article_no)    </text>
-<path fill="none" stroke="#b9d9cf" d="M229,-78.5C229,-78.5 350,-78.5 350,-78.5 356,-78.5 362,-84.5 362,-90.5 362,-90.5 362,-199.5 362,-199.5 362,-205.5 356,-211.5 350,-211.5 350,-211.5 229,-211.5 229,-211.5 223,-211.5 217,-205.5 217,-199.5 217,-199.5 217,-90.5 217,-90.5 217,-84.5 223,-78.5 229,-78.5"/>
+<text text-anchor="start" x="221.5" y="-84.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">UQ(law_id, article_no)    </text>
+<path fill="none" stroke="#c5d9f5" d="M229,-78.5C229,-78.5 350,-78.5 350,-78.5 356,-78.5 362,-84.5 362,-90.5 362,-90.5 362,-199.5 362,-199.5 362,-205.5 356,-211.5 350,-211.5 350,-211.5 229,-211.5 229,-211.5 223,-211.5 217,-205.5 217,-199.5 217,-199.5 217,-90.5 217,-90.5 217,-84.5 223,-78.5 229,-78.5"/>
 </g>
 <g id="edge1" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M160.24,-158C178.05,-158 187.12,-158 203,-158"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="152.8,-162 152.8,-154 154.4,-154 154.4,-162 152.8,-162"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="152,-158 156,-158 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="156.8,-162 156.8,-154 158.4,-154 158.4,-162 156.8,-162"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="156,-158 160,-158 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="209.5,-158 217.5,-161.6 213.5,-158 217.5,-158 217.5,-158 217.5,-158 213.5,-158 217.5,-154.4 209.5,-158 209.5,-158"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="206.3" cy="-158" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M160.24,-158C178.05,-158 187.12,-158 203,-158"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="152.8,-162 152.8,-154 154.4,-154 154.4,-162 152.8,-162"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="152,-158 156,-158 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="156.8,-162 156.8,-154 158.4,-154 158.4,-162 156.8,-162"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="156,-158 160,-158 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="209.5,-158 217.5,-161.6 213.5,-158 217.5,-158 217.5,-158 217.5,-158 213.5,-158 217.5,-154.4 209.5,-158 209.5,-158"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="206.3" cy="-158" rx="3.2" ry="3.2"/>
 </g>
 <g id="node3" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M439,-22.5C439,-22.5 623,-22.5 623,-22.5 629,-22.5 635,-28.5 635,-34.5 635,-34.5 635,-217.5 635,-217.5 635,-223.5 629,-229.5 623,-229.5 623,-229.5 439,-229.5 439,-229.5 433,-229.5 427,-223.5 427,-217.5 427,-217.5 427,-34.5 427,-34.5 427,-28.5 433,-22.5 439,-22.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="428,-203 428,-228 634,-228 634,-203 428,-203"/>
-<text text-anchor="start" x="434" y="-213.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">law_chunks</text>
-<text text-anchor="start" x="431" y="-191.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="618" y="-192.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="431" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">article_id   </text>
-<text text-anchor="start" x="618" y="-174.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="431" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">chunk_no   </text>
+<path fill="#fdfeff" stroke="transparent" d="M439,-22.5C439,-22.5 623,-22.5 623,-22.5 629,-22.5 635,-28.5 635,-34.5 635,-34.5 635,-217.5 635,-217.5 635,-223.5 629,-229.5 623,-229.5 623,-229.5 439,-229.5 439,-229.5 433,-229.5 427,-223.5 427,-217.5 427,-217.5 427,-34.5 427,-34.5 427,-28.5 433,-22.5 439,-22.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="428,-203 428,-228 634,-228 634,-203 428,-203"/>
+<text text-anchor="start" x="434" y="-213.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">law_chunks</text>
+<text text-anchor="start" x="431" y="-191.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="618" y="-192.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="431" y="-173.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">article_id   </text>
+<text text-anchor="start" x="618" y="-174.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="431" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">chunk_no   </text>
 <text text-anchor="start" x="624" y="-155.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">content   </text>
+<text text-anchor="start" x="431" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">content   </text>
 <text text-anchor="start" x="624" y="-137.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding   </text>
-<text text-anchor="start" x="558" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">vector(1536)</text>
-<text text-anchor="start" x="431" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">model   </text>
+<text text-anchor="start" x="431" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding   </text>
+<text text-anchor="start" x="558" y="-119.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">vector(1536)</text>
+<text text-anchor="start" x="431" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">model   </text>
 <text text-anchor="start" x="624" y="-101.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedded_at   </text>
+<text text-anchor="start" x="431" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedded_at   </text>
 <text text-anchor="start" x="624" y="-83.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedding_local   </text>
+<text text-anchor="start" x="431" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedding_local   </text>
 <text text-anchor="start" x="624" y="-65.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">model_local   </text>
+<text text-anchor="start" x="431" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">model_local   </text>
 <text text-anchor="start" x="624" y="-47.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="431" y="-29.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">embedded_local_at   </text>
+<text text-anchor="start" x="431" y="-29.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">embedded_local_at   </text>
 <text text-anchor="start" x="624" y="-29.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M439,-22.5C439,-22.5 623,-22.5 623,-22.5 629,-22.5 635,-28.5 635,-34.5 635,-34.5 635,-217.5 635,-217.5 635,-223.5 629,-229.5 623,-229.5 623,-229.5 439,-229.5 439,-229.5 433,-229.5 427,-223.5 427,-217.5 427,-217.5 427,-34.5 427,-34.5 427,-28.5 433,-22.5 439,-22.5"/>
+<path fill="none" stroke="#c5d9f5" d="M439,-22.5C439,-22.5 623,-22.5 623,-22.5 629,-22.5 635,-28.5 635,-34.5 635,-34.5 635,-217.5 635,-217.5 635,-223.5 629,-229.5 623,-229.5 623,-229.5 439,-229.5 439,-229.5 433,-229.5 427,-223.5 427,-217.5 427,-217.5 427,-34.5 427,-34.5 427,-28.5 433,-22.5 439,-22.5"/>
 </g>
 <g id="edge2" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M370.18,-176C387.68,-176 396.67,-176 412.15,-176"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="362.8,-180 362.8,-172 364.4,-172 364.4,-180 362.8,-180"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="362,-176 366,-176 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="366.8,-180 366.8,-172 368.4,-172 368.4,-180 366.8,-180"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="366,-176 370,-176 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="419,-176 427,-179.6 423,-176 427,-176 427,-176 427,-176 423,-176 427,-172.4 419,-176 419,-176"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="415.8" cy="-176" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M370.18,-176C387.68,-176 396.67,-176 412.15,-176"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="362.8,-180 362.8,-172 364.4,-172 364.4,-180 362.8,-180"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="362,-176 366,-176 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="366.8,-180 366.8,-172 368.4,-172 368.4,-180 366.8,-180"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="366,-176 370,-176 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="419,-176 427,-179.6 423,-176 427,-176 427,-176 427,-176 423,-176 427,-172.4 419,-176 419,-176"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="415.8" cy="-176" rx="3.2" ry="3.2"/>
 </g>
 <g id="node4" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M481,-2562.5C481,-2562.5 581,-2562.5 581,-2562.5 587,-2562.5 593,-2568.5 593,-2574.5 593,-2574.5 593,-2667.5 593,-2667.5 593,-2673.5 587,-2679.5 581,-2679.5 581,-2679.5 481,-2679.5 481,-2679.5 475,-2679.5 469,-2673.5 469,-2667.5 469,-2667.5 469,-2574.5 469,-2574.5 469,-2568.5 475,-2562.5 481,-2562.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="470,-2653 470,-2678 592,-2678 592,-2653 470,-2653"/>
-<text text-anchor="start" x="476" y="-2663.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">player</text>
-<text text-anchor="start" x="473" y="-2641.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="576" y="-2642.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="473" y="-2623.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">username   </text>
-<text text-anchor="start" x="576" y="-2623.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="473" y="-2605.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">password_hash   </text>
+<path fill="#fdfeff" stroke="transparent" d="M481,-2562.5C481,-2562.5 581,-2562.5 581,-2562.5 587,-2562.5 593,-2568.5 593,-2574.5 593,-2574.5 593,-2667.5 593,-2667.5 593,-2673.5 587,-2679.5 581,-2679.5 581,-2679.5 481,-2679.5 481,-2679.5 475,-2679.5 469,-2673.5 469,-2667.5 469,-2667.5 469,-2574.5 469,-2574.5 469,-2568.5 475,-2562.5 481,-2562.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="470,-2653 470,-2678 592,-2678 592,-2653 470,-2653"/>
+<text text-anchor="start" x="476" y="-2663.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">player</text>
+<text text-anchor="start" x="473" y="-2641.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="576" y="-2642.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="473" y="-2623.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">username   </text>
+<text text-anchor="start" x="576" y="-2623.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="473" y="-2605.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">password_hash   </text>
 <text text-anchor="start" x="582" y="-2605.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="473" y="-2587.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">birth_year   </text>
+<text text-anchor="start" x="473" y="-2587.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">birth_year   </text>
 <text text-anchor="start" x="582" y="-2587.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="473" y="-2569.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="473" y="-2569.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="582" y="-2569.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M481,-2562.5C481,-2562.5 581,-2562.5 581,-2562.5 587,-2562.5 593,-2568.5 593,-2574.5 593,-2574.5 593,-2667.5 593,-2667.5 593,-2673.5 587,-2679.5 581,-2679.5 581,-2679.5 481,-2679.5 481,-2679.5 475,-2679.5 469,-2673.5 469,-2667.5 469,-2667.5 469,-2574.5 469,-2574.5 469,-2568.5 475,-2562.5 481,-2562.5"/>
+<path fill="none" stroke="#c5d9f5" d="M481,-2562.5C481,-2562.5 581,-2562.5 581,-2562.5 587,-2562.5 593,-2568.5 593,-2574.5 593,-2574.5 593,-2667.5 593,-2667.5 593,-2673.5 587,-2679.5 581,-2679.5 581,-2679.5 481,-2679.5 481,-2679.5 475,-2679.5 469,-2673.5 469,-2667.5 469,-2667.5 469,-2574.5 469,-2574.5 469,-2568.5 475,-2562.5 481,-2562.5"/>
 </g>
 <g id="node5" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M719.5,-2562.5C719.5,-2562.5 882.5,-2562.5 882.5,-2562.5 888.5,-2562.5 894.5,-2568.5 894.5,-2574.5 894.5,-2574.5 894.5,-2665.5 894.5,-2665.5 894.5,-2671.5 888.5,-2677.5 882.5,-2677.5 882.5,-2677.5 719.5,-2677.5 719.5,-2677.5 713.5,-2677.5 707.5,-2671.5 707.5,-2665.5 707.5,-2665.5 707.5,-2574.5 707.5,-2574.5 707.5,-2568.5 713.5,-2562.5 719.5,-2562.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="709,-2651 709,-2676 894,-2676 894,-2651 709,-2651"/>
-<text text-anchor="start" x="715" y="-2661.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">player_oauth</text>
-<text text-anchor="start" x="712" y="-2639.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="878" y="-2640.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="712" y="-2621.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="878" y="-2622.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="712" y="-2603.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">provider   </text>
+<path fill="#fdfeff" stroke="transparent" d="M719.5,-2562.5C719.5,-2562.5 882.5,-2562.5 882.5,-2562.5 888.5,-2562.5 894.5,-2568.5 894.5,-2574.5 894.5,-2574.5 894.5,-2665.5 894.5,-2665.5 894.5,-2671.5 888.5,-2677.5 882.5,-2677.5 882.5,-2677.5 719.5,-2677.5 719.5,-2677.5 713.5,-2677.5 707.5,-2671.5 707.5,-2665.5 707.5,-2665.5 707.5,-2574.5 707.5,-2574.5 707.5,-2568.5 713.5,-2562.5 719.5,-2562.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="709,-2651 709,-2676 894,-2676 894,-2651 709,-2651"/>
+<text text-anchor="start" x="715" y="-2661.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">player_oauth</text>
+<text text-anchor="start" x="712" y="-2639.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="878" y="-2640.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="712" y="-2621.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="878" y="-2622.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="712" y="-2603.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">provider   </text>
 <text text-anchor="start" x="884" y="-2603.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="712" y="-2585.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">provider_subject   </text>
+<text text-anchor="start" x="712" y="-2585.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">provider_subject   </text>
 <text text-anchor="start" x="884" y="-2585.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="712" y="-2568.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(provider, provider_subject)    </text>
-<path fill="none" stroke="#b9d9cf" d="M719.5,-2562.5C719.5,-2562.5 882.5,-2562.5 882.5,-2562.5 888.5,-2562.5 894.5,-2568.5 894.5,-2574.5 894.5,-2574.5 894.5,-2665.5 894.5,-2665.5 894.5,-2671.5 888.5,-2677.5 882.5,-2677.5 882.5,-2677.5 719.5,-2677.5 719.5,-2677.5 713.5,-2677.5 707.5,-2671.5 707.5,-2665.5 707.5,-2665.5 707.5,-2574.5 707.5,-2574.5 707.5,-2568.5 713.5,-2562.5 719.5,-2562.5"/>
+<text text-anchor="start" x="712" y="-2568.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">UQ(provider, provider_subject)    </text>
+<path fill="none" stroke="#c5d9f5" d="M719.5,-2562.5C719.5,-2562.5 882.5,-2562.5 882.5,-2562.5 888.5,-2562.5 894.5,-2568.5 894.5,-2574.5 894.5,-2574.5 894.5,-2665.5 894.5,-2665.5 894.5,-2671.5 888.5,-2677.5 882.5,-2677.5 882.5,-2677.5 719.5,-2677.5 719.5,-2677.5 713.5,-2677.5 707.5,-2671.5 707.5,-2665.5 707.5,-2665.5 707.5,-2574.5 707.5,-2574.5 707.5,-2568.5 713.5,-2562.5 719.5,-2562.5"/>
 </g>
 <g id="edge3" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.16,-2643.83C641.3,-2642.09 655.79,-2627.72 693.12,-2624.6"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="593.88,-2647.98 593.72,-2639.98 595.31,-2639.95 595.48,-2647.95 593.88,-2647.98"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 597,-2643.92 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="597.88,-2647.9 597.71,-2639.9 599.31,-2639.87 599.48,-2647.86 597.88,-2647.9"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="597,-2643.92 601,-2643.83 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="700.01,-2624.32 708.14,-2627.6 704,-2624.16 708,-2624 708,-2624 708,-2624 704,-2624.16 707.86,-2620.4 700.01,-2624.32 700.01,-2624.32"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="696.81" cy="-2624.45" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.16,-2643.83C641.3,-2642.09 655.79,-2627.72 693.12,-2624.6"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="593.88,-2647.98 593.72,-2639.98 595.31,-2639.95 595.48,-2647.95 593.88,-2647.98"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 597,-2643.92 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="597.88,-2647.9 597.71,-2639.9 599.31,-2639.87 599.48,-2647.86 597.88,-2647.9"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="597,-2643.92 601,-2643.83 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="700.01,-2624.32 708.14,-2627.6 704,-2624.16 708,-2624 708,-2624 708,-2624 704,-2624.16 707.86,-2620.4 700.01,-2624.32 700.01,-2624.32"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="696.81" cy="-2624.45" rx="3.2" ry="3.2"/>
 </g>
 <g id="node6" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M757,-2702.5C757,-2702.5 845,-2702.5 845,-2702.5 851,-2702.5 857,-2708.5 857,-2714.5 857,-2714.5 857,-2825.5 857,-2825.5 857,-2831.5 851,-2837.5 845,-2837.5 845,-2837.5 757,-2837.5 757,-2837.5 751,-2837.5 745,-2831.5 745,-2825.5 745,-2825.5 745,-2714.5 745,-2714.5 745,-2708.5 751,-2702.5 757,-2702.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="746,-2811 746,-2836 856,-2836 856,-2811 746,-2811"/>
-<text text-anchor="start" x="752" y="-2821.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">refresh_token</text>
-<text text-anchor="start" x="749" y="-2799.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="840" y="-2800.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="749" y="-2781.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="840" y="-2782.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="749" y="-2763.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">token_hash   </text>
-<text text-anchor="start" x="840" y="-2763.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="749" y="-2745.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">expires_at   </text>
+<path fill="#fdfeff" stroke="transparent" d="M757,-2702.5C757,-2702.5 845,-2702.5 845,-2702.5 851,-2702.5 857,-2708.5 857,-2714.5 857,-2714.5 857,-2825.5 857,-2825.5 857,-2831.5 851,-2837.5 845,-2837.5 845,-2837.5 757,-2837.5 757,-2837.5 751,-2837.5 745,-2831.5 745,-2825.5 745,-2825.5 745,-2714.5 745,-2714.5 745,-2708.5 751,-2702.5 757,-2702.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="746,-2811 746,-2836 856,-2836 856,-2811 746,-2811"/>
+<text text-anchor="start" x="752" y="-2821.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">refresh_token</text>
+<text text-anchor="start" x="749" y="-2799.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="840" y="-2800.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="749" y="-2781.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="840" y="-2782.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="749" y="-2763.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">token_hash   </text>
+<text text-anchor="start" x="840" y="-2763.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="749" y="-2745.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">expires_at   </text>
 <text text-anchor="start" x="846" y="-2745.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="749" y="-2727.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">revoked_at   </text>
+<text text-anchor="start" x="749" y="-2727.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">revoked_at   </text>
 <text text-anchor="start" x="846" y="-2727.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="749" y="-2709.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="749" y="-2709.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="846" y="-2709.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M757,-2702.5C757,-2702.5 845,-2702.5 845,-2702.5 851,-2702.5 857,-2708.5 857,-2714.5 857,-2714.5 857,-2825.5 857,-2825.5 857,-2831.5 851,-2837.5 845,-2837.5 845,-2837.5 757,-2837.5 757,-2837.5 751,-2837.5 745,-2831.5 745,-2825.5 745,-2825.5 745,-2714.5 745,-2714.5 745,-2708.5 751,-2702.5 757,-2702.5"/>
+<path fill="none" stroke="#c5d9f5" d="M757,-2702.5C757,-2702.5 845,-2702.5 845,-2702.5 851,-2702.5 857,-2708.5 857,-2714.5 857,-2714.5 857,-2825.5 857,-2825.5 857,-2831.5 851,-2837.5 845,-2837.5 845,-2837.5 757,-2837.5 757,-2837.5 751,-2837.5 745,-2831.5 745,-2825.5 745,-2825.5 745,-2714.5 745,-2714.5 745,-2708.5 751,-2702.5 757,-2702.5"/>
 </g>
 <g id="edge4" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.26,-2644.4C678.2,-2652.13 658.81,-2769.03 730.51,-2782.7"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="593.6,-2648.03 593.99,-2640.04 595.59,-2640.12 595.2,-2648.11 593.6,-2648.03"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 597,-2644.19 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="597.6,-2648.23 597.99,-2640.24 599.59,-2640.32 599.2,-2648.31 597.6,-2648.23"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="597,-2644.19 600.99,-2644.39 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="737.03,-2783.28 744.68,-2787.59 741.02,-2783.64 745,-2784 745,-2784 745,-2784 741.02,-2783.64 745.32,-2780.41 737.03,-2783.28 737.03,-2783.28"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="733.84" cy="-2783" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.26,-2644.4C678.2,-2652.13 658.81,-2769.03 730.51,-2782.7"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="593.6,-2648.03 593.99,-2640.04 595.59,-2640.12 595.2,-2648.11 593.6,-2648.03"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 597,-2644.19 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="597.6,-2648.23 597.99,-2640.24 599.59,-2640.32 599.2,-2648.31 597.6,-2648.23"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="597,-2644.19 600.99,-2644.39 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="737.03,-2783.28 744.68,-2787.59 741.02,-2783.64 745,-2784 745,-2784 745,-2784 741.02,-2783.64 745.32,-2780.41 737.03,-2783.28 737.03,-2783.28"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="733.84" cy="-2783" rx="3.2" ry="3.2"/>
 </g>
 <g id="node12" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M742,-1390.5C742,-1390.5 860,-1390.5 860,-1390.5 866,-1390.5 872,-1396.5 872,-1402.5 872,-1402.5 872,-1621.5 872,-1621.5 872,-1627.5 866,-1633.5 860,-1633.5 860,-1633.5 742,-1633.5 742,-1633.5 736,-1633.5 730,-1627.5 730,-1621.5 730,-1621.5 730,-1402.5 730,-1402.5 730,-1396.5 736,-1390.5 742,-1390.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="731,-1607 731,-1632 871,-1632 871,-1607 731,-1607"/>
-<text text-anchor="start" x="737" y="-1617.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">quest_session</text>
-<text text-anchor="start" x="734" y="-1595.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="855" y="-1596.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="734" y="-1577.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="855" y="-1578.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="734" y="-1559.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">quest_id   </text>
-<text text-anchor="start" x="855" y="-1560.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="734" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">status   </text>
+<path fill="#fdfeff" stroke="transparent" d="M742,-1390.5C742,-1390.5 860,-1390.5 860,-1390.5 866,-1390.5 872,-1396.5 872,-1402.5 872,-1402.5 872,-1621.5 872,-1621.5 872,-1627.5 866,-1633.5 860,-1633.5 860,-1633.5 742,-1633.5 742,-1633.5 736,-1633.5 730,-1627.5 730,-1621.5 730,-1621.5 730,-1402.5 730,-1402.5 730,-1396.5 736,-1390.5 742,-1390.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="731,-1607 731,-1632 871,-1632 871,-1607 731,-1607"/>
+<text text-anchor="start" x="737" y="-1617.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">quest_session</text>
+<text text-anchor="start" x="734" y="-1595.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="855" y="-1596.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="734" y="-1577.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="855" y="-1578.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="734" y="-1559.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">quest_id   </text>
+<text text-anchor="start" x="855" y="-1560.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="734" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">status   </text>
 <text text-anchor="start" x="861" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">checkpoint   </text>
+<text text-anchor="start" x="734" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">checkpoint   </text>
 <text text-anchor="start" x="861" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">turn_in_level   </text>
+<text text-anchor="start" x="734" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">turn_in_level   </text>
 <text text-anchor="start" x="861" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1487.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ongoing_index   </text>
+<text text-anchor="start" x="734" y="-1487.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ongoing_index   </text>
 <text text-anchor="start" x="861" y="-1487.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1469.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">total_turns   </text>
+<text text-anchor="start" x="734" y="-1469.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">total_turns   </text>
 <text text-anchor="start" x="861" y="-1469.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1451.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">hints_used   </text>
+<text text-anchor="start" x="734" y="-1451.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">hints_used   </text>
 <text text-anchor="start" x="861" y="-1451.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1433.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">calc_progress   </text>
-<text text-anchor="start" x="837" y="-1433.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="734" y="-1415.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">started_at   </text>
+<text text-anchor="start" x="734" y="-1433.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">calc_progress   </text>
+<text text-anchor="start" x="837" y="-1433.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="734" y="-1415.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">started_at   </text>
 <text text-anchor="start" x="861" y="-1415.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-1397.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">cleared_at   </text>
+<text text-anchor="start" x="734" y="-1397.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">cleared_at   </text>
 <text text-anchor="start" x="861" y="-1397.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M742,-1390.5C742,-1390.5 860,-1390.5 860,-1390.5 866,-1390.5 872,-1396.5 872,-1402.5 872,-1402.5 872,-1621.5 872,-1621.5 872,-1627.5 866,-1633.5 860,-1633.5 860,-1633.5 742,-1633.5 742,-1633.5 736,-1633.5 730,-1627.5 730,-1621.5 730,-1621.5 730,-1402.5 730,-1402.5 730,-1396.5 736,-1390.5 742,-1390.5"/>
+<path fill="none" stroke="#c5d9f5" d="M742,-1390.5C742,-1390.5 860,-1390.5 860,-1390.5 866,-1390.5 872,-1396.5 872,-1402.5 872,-1402.5 872,-1621.5 872,-1621.5 872,-1627.5 866,-1633.5 860,-1633.5 860,-1633.5 742,-1633.5 742,-1633.5 736,-1633.5 730,-1627.5 730,-1621.5 730,-1621.5 730,-1402.5 730,-1402.5 730,-1396.5 736,-1390.5 742,-1390.5"/>
 </g>
 <g id="edge9" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.02,-2642.27C703.09,-2596.71 621.13,-1663.51 716.42,-1585.22"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.62,-2647.74 592.94,-2639.92 594.51,-2639.58 596.19,-2647.41 594.62,-2647.74"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.91,-2643.16 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598.53,-2646.9 596.85,-2639.08 598.42,-2638.74 600.1,-2646.56 598.53,-2646.9"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.91,-2643.16 600.82,-2642.32 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="722.53,-1582.87 731.29,-1583.36 726.27,-1581.44 730,-1580 730,-1580 730,-1580 726.27,-1581.44 728.71,-1576.64 722.53,-1582.87 722.53,-1582.87"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="719.55" cy="-1584.02" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.02,-2642.27C703.09,-2596.71 621.13,-1663.51 716.42,-1585.22"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.62,-2647.74 592.94,-2639.92 594.51,-2639.58 596.19,-2647.41 594.62,-2647.74"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.91,-2643.16 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598.53,-2646.9 596.85,-2639.08 598.42,-2638.74 600.1,-2646.56 598.53,-2646.9"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.91,-2643.16 600.82,-2642.32 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="722.53,-1582.87 731.29,-1583.36 726.27,-1581.44 730,-1580 730,-1580 730,-1580 726.27,-1581.44 728.71,-1576.64 722.53,-1582.87 722.53,-1582.87"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="719.55" cy="-1584.02" rx="3.2" ry="3.2"/>
 </g>
 <g id="node14" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M753,-1960.5C753,-1960.5 849,-1960.5 849,-1960.5 855,-1960.5 861,-1966.5 861,-1972.5 861,-1972.5 861,-2029.5 861,-2029.5 861,-2035.5 855,-2041.5 849,-2041.5 849,-2041.5 753,-2041.5 753,-2041.5 747,-2041.5 741,-2035.5 741,-2029.5 741,-2029.5 741,-1972.5 741,-1972.5 741,-1966.5 747,-1960.5 753,-1960.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="742,-2015 742,-2040 860,-2040 860,-2015 742,-2015"/>
-<text text-anchor="start" x="748" y="-2025.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">player_stat</text>
-<text text-anchor="start" x="745" y="-2003.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="824" y="-2004.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<path fill="#fdfeff" stroke="transparent" d="M753,-1960.5C753,-1960.5 849,-1960.5 849,-1960.5 855,-1960.5 861,-1966.5 861,-1972.5 861,-1972.5 861,-2029.5 861,-2029.5 861,-2035.5 855,-2041.5 849,-2041.5 849,-2041.5 753,-2041.5 753,-2041.5 747,-2041.5 741,-2035.5 741,-2029.5 741,-2029.5 741,-1972.5 741,-1972.5 741,-1966.5 747,-1960.5 753,-1960.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="742,-2015 742,-2040 860,-2040 860,-2015 742,-2015"/>
+<text text-anchor="start" x="748" y="-2025.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">player_stat</text>
+<text text-anchor="start" x="745" y="-2003.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="824" y="-2004.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
 <text text-anchor="start" x="837" y="-2004.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="844" y="-2004.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="745" y="-1985.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">stat_code   </text>
-<text text-anchor="start" x="844" y="-1986.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="745" y="-1967.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">value   </text>
+<text text-anchor="start" x="844" y="-2004.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="745" y="-1985.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">stat_code   </text>
+<text text-anchor="start" x="844" y="-1986.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="745" y="-1967.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">value   </text>
 <text text-anchor="start" x="850" y="-1967.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M753,-1960.5C753,-1960.5 849,-1960.5 849,-1960.5 855,-1960.5 861,-1966.5 861,-1972.5 861,-1972.5 861,-2029.5 861,-2029.5 861,-2035.5 855,-2041.5 849,-2041.5 849,-2041.5 753,-2041.5 753,-2041.5 747,-2041.5 741,-2035.5 741,-2029.5 741,-2029.5 741,-1972.5 741,-1972.5 741,-1966.5 747,-1960.5 753,-1960.5"/>
+<path fill="none" stroke="#c5d9f5" d="M753,-1960.5C753,-1960.5 849,-1960.5 849,-1960.5 855,-1960.5 861,-1966.5 861,-1972.5 861,-1972.5 861,-2029.5 861,-2029.5 861,-2035.5 855,-2041.5 849,-2041.5 849,-2041.5 753,-2041.5 753,-2041.5 747,-2041.5 741,-2035.5 741,-2029.5 741,-2029.5 741,-1972.5 741,-1972.5 741,-1966.5 747,-1960.5 753,-1960.5"/>
 </g>
 <g id="edge12" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.2,-2643.28C728.3,-2620.19 607.69,-2049.55 726.59,-2008.35"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.15,-2647.91 593.45,-2639.95 595.04,-2639.81 595.74,-2647.77 594.15,-2647.91"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.98,-2643.65 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598.13,-2647.56 597.43,-2639.6 599.03,-2639.46 599.73,-2647.42 598.13,-2647.56"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.98,-2643.65 600.97,-2643.3 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="733.1,-2007.29 741.58,-2009.55 737.05,-2006.64 741,-2006 741,-2006 741,-2006 737.05,-2006.64 740.42,-2002.45 733.1,-2007.29 733.1,-2007.29"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="729.95" cy="-2007.8" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.2,-2643.28C728.3,-2620.19 607.69,-2049.55 726.59,-2008.35"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.15,-2647.91 593.45,-2639.95 595.04,-2639.81 595.74,-2647.77 594.15,-2647.91"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.98,-2643.65 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598.13,-2647.56 597.43,-2639.6 599.03,-2639.46 599.73,-2647.42 598.13,-2647.56"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.98,-2643.65 600.97,-2643.3 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="733.1,-2007.29 741.58,-2009.55 737.05,-2006.64 741,-2006 741,-2006 741,-2006 737.05,-2006.64 740.42,-2002.45 733.1,-2007.29 733.1,-2007.29"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="729.95" cy="-2007.8" rx="3.2" ry="3.2"/>
 </g>
 <g id="node15" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M738,-1658.5C738,-1658.5 864,-1658.5 864,-1658.5 870,-1658.5 876,-1664.5 876,-1670.5 876,-1670.5 876,-1781.5 876,-1781.5 876,-1787.5 870,-1793.5 864,-1793.5 864,-1793.5 738,-1793.5 738,-1793.5 732,-1793.5 726,-1787.5 726,-1781.5 726,-1781.5 726,-1670.5 726,-1670.5 726,-1664.5 732,-1658.5 738,-1658.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="727,-1767 727,-1792 875,-1792 875,-1767 727,-1767"/>
-<text text-anchor="start" x="733" y="-1777.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">quest_clear_score</text>
-<text text-anchor="start" x="730" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="839" y="-1756.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<path fill="#fdfeff" stroke="transparent" d="M738,-1658.5C738,-1658.5 864,-1658.5 864,-1658.5 870,-1658.5 876,-1664.5 876,-1670.5 876,-1670.5 876,-1781.5 876,-1781.5 876,-1787.5 870,-1793.5 864,-1793.5 864,-1793.5 738,-1793.5 738,-1793.5 732,-1793.5 726,-1787.5 726,-1781.5 726,-1781.5 726,-1670.5 726,-1670.5 726,-1664.5 732,-1658.5 738,-1658.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="727,-1767 727,-1792 875,-1792 875,-1767 727,-1767"/>
+<text text-anchor="start" x="733" y="-1777.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">quest_clear_score</text>
+<text text-anchor="start" x="730" y="-1755.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="839" y="-1756.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
 <text text-anchor="start" x="852" y="-1756.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="859" y="-1756.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="730" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">quest_id   </text>
-<text text-anchor="start" x="839" y="-1738.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
+<text text-anchor="start" x="859" y="-1756.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="730" y="-1737.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">quest_id   </text>
+<text text-anchor="start" x="839" y="-1738.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
 <text text-anchor="start" x="852" y="-1738.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="859" y="-1738.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="730" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">clear_count   </text>
+<text text-anchor="start" x="859" y="-1738.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="730" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">clear_count   </text>
 <text text-anchor="start" x="865" y="-1719.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="730" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">initial_reward   </text>
-<text text-anchor="start" x="841" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="730" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">recent_reward   </text>
-<text text-anchor="start" x="841" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="730" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">updated_at   </text>
+<text text-anchor="start" x="730" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">initial_reward   </text>
+<text text-anchor="start" x="841" y="-1701.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="730" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">recent_reward   </text>
+<text text-anchor="start" x="841" y="-1683.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="730" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">updated_at   </text>
 <text text-anchor="start" x="865" y="-1665.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M738,-1658.5C738,-1658.5 864,-1658.5 864,-1658.5 870,-1658.5 876,-1664.5 876,-1670.5 876,-1670.5 876,-1781.5 876,-1781.5 876,-1787.5 870,-1793.5 864,-1793.5 864,-1793.5 738,-1793.5 738,-1793.5 732,-1793.5 726,-1787.5 726,-1781.5 726,-1781.5 726,-1670.5 726,-1670.5 726,-1664.5 732,-1658.5 738,-1658.5"/>
+<path fill="none" stroke="#c5d9f5" d="M738,-1658.5C738,-1658.5 864,-1658.5 864,-1658.5 870,-1658.5 876,-1664.5 876,-1670.5 876,-1670.5 876,-1781.5 876,-1781.5 876,-1787.5 870,-1793.5 864,-1793.5 864,-1793.5 738,-1793.5 738,-1793.5 732,-1793.5 726,-1787.5 726,-1781.5 726,-1781.5 726,-1670.5 726,-1670.5 726,-1664.5 732,-1658.5 738,-1658.5"/>
 </g>
 <g id="edge14" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M600.8,-2642.05C684.57,-2598.54 634.87,-1841.09 712.42,-1764.27"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.75,-2647.69 592.81,-2639.93 594.36,-2639.54 596.3,-2647.3 594.75,-2647.69"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.88,-2643.03 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598.63,-2646.72 596.69,-2638.95 598.24,-2638.57 600.18,-2646.33 598.63,-2646.72"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.88,-2643.03 600.76,-2642.06 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="718.74,-1761.35 727.51,-1761.27 722.37,-1759.68 726,-1758 726,-1758 726,-1758 722.37,-1759.68 724.49,-1754.73 718.74,-1761.35 718.74,-1761.35"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="715.83" cy="-1762.7" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M600.8,-2642.05C684.57,-2598.54 634.87,-1841.09 712.42,-1764.27"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.75,-2647.69 592.81,-2639.93 594.36,-2639.54 596.3,-2647.3 594.75,-2647.69"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.88,-2643.03 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598.63,-2646.72 596.69,-2638.95 598.24,-2638.57 600.18,-2646.33 598.63,-2646.72"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.88,-2643.03 600.76,-2642.06 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="718.74,-1761.35 727.51,-1761.27 722.37,-1759.68 726,-1758 726,-1758 726,-1758 722.37,-1759.68 724.49,-1754.73 718.74,-1761.35 718.74,-1761.35"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="715.83" cy="-1762.7" rx="3.2" ry="3.2"/>
 </g>
 <g id="node16" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M751,-1818.5C751,-1818.5 851,-1818.5 851,-1818.5 857,-1818.5 863,-1824.5 863,-1830.5 863,-1830.5 863,-1923.5 863,-1923.5 863,-1929.5 857,-1935.5 851,-1935.5 851,-1935.5 751,-1935.5 751,-1935.5 745,-1935.5 739,-1929.5 739,-1923.5 739,-1923.5 739,-1830.5 739,-1830.5 739,-1824.5 745,-1818.5 751,-1818.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="740,-1909 740,-1934 862,-1934 862,-1909 740,-1909"/>
-<text text-anchor="start" x="746" y="-1919.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">learning_event</text>
-<text text-anchor="start" x="743" y="-1897.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="846" y="-1898.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="743" y="-1879.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="846" y="-1880.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="743" y="-1861.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">event_type   </text>
+<path fill="#fdfeff" stroke="transparent" d="M751,-1818.5C751,-1818.5 851,-1818.5 851,-1818.5 857,-1818.5 863,-1824.5 863,-1830.5 863,-1830.5 863,-1923.5 863,-1923.5 863,-1929.5 857,-1935.5 851,-1935.5 851,-1935.5 751,-1935.5 751,-1935.5 745,-1935.5 739,-1929.5 739,-1923.5 739,-1923.5 739,-1830.5 739,-1830.5 739,-1824.5 745,-1818.5 751,-1818.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="740,-1909 740,-1934 862,-1934 862,-1909 740,-1909"/>
+<text text-anchor="start" x="746" y="-1919.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">learning_event</text>
+<text text-anchor="start" x="743" y="-1897.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="846" y="-1898.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="743" y="-1879.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="846" y="-1880.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="743" y="-1861.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">event_type   </text>
 <text text-anchor="start" x="852" y="-1861.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="743" y="-1843.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">payload   </text>
-<text text-anchor="start" x="828" y="-1843.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="743" y="-1825.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="743" y="-1843.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">payload   </text>
+<text text-anchor="start" x="828" y="-1843.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="743" y="-1825.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="852" y="-1825.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M751,-1818.5C751,-1818.5 851,-1818.5 851,-1818.5 857,-1818.5 863,-1824.5 863,-1830.5 863,-1830.5 863,-1923.5 863,-1923.5 863,-1929.5 857,-1935.5 851,-1935.5 851,-1935.5 751,-1935.5 751,-1935.5 745,-1935.5 739,-1929.5 739,-1923.5 739,-1923.5 739,-1830.5 739,-1830.5 739,-1824.5 745,-1818.5 751,-1818.5"/>
+<path fill="none" stroke="#c5d9f5" d="M751,-1818.5C751,-1818.5 851,-1818.5 851,-1818.5 857,-1818.5 863,-1824.5 863,-1830.5 863,-1830.5 863,-1923.5 863,-1923.5 863,-1929.5 857,-1935.5 851,-1935.5 851,-1935.5 751,-1935.5 751,-1935.5 745,-1935.5 739,-1929.5 739,-1923.5 739,-1923.5 739,-1830.5 739,-1830.5 739,-1824.5 745,-1818.5 751,-1818.5"/>
 </g>
 <g id="edge13" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.28,-2643.38C754.14,-2619.65 580.6,-1925.96 724.57,-1883.99"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.1,-2647.93 593.5,-2639.95 595.09,-2639.83 595.69,-2647.81 594.1,-2647.93"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.99,-2643.7 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598.09,-2647.63 597.49,-2639.65 599.08,-2639.53 599.68,-2647.51 598.09,-2647.63"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.99,-2643.7 600.98,-2643.4 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="731.07,-1883.09 739.49,-1885.57 735.04,-1882.55 739,-1882 739,-1882 739,-1882 735.04,-1882.55 738.51,-1878.43 731.07,-1883.09 731.07,-1883.09"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="727.9" cy="-1883.53" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.28,-2643.38C754.14,-2619.65 580.6,-1925.96 724.57,-1883.99"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.1,-2647.93 593.5,-2639.95 595.09,-2639.83 595.69,-2647.81 594.1,-2647.93"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.99,-2643.7 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598.09,-2647.63 597.49,-2639.65 599.08,-2639.53 599.68,-2647.51 598.09,-2647.63"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.99,-2643.7 600.98,-2643.4 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="731.07,-1883.09 739.49,-1885.57 735.04,-1882.55 739,-1882 739,-1882 739,-1882 735.04,-1882.55 738.51,-1878.43 731.07,-1883.09 731.07,-1883.09"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="727.9" cy="-1883.53" rx="3.2" ry="3.2"/>
 </g>
 <g id="node17" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M733,-2314.5C733,-2314.5 869,-2314.5 869,-2314.5 875,-2314.5 881,-2320.5 881,-2326.5 881,-2326.5 881,-2491.5 881,-2491.5 881,-2497.5 875,-2503.5 869,-2503.5 869,-2503.5 733,-2503.5 733,-2503.5 727,-2503.5 721,-2497.5 721,-2491.5 721,-2491.5 721,-2326.5 721,-2326.5 721,-2320.5 727,-2314.5 733,-2314.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="722,-2477 722,-2502 880,-2502 880,-2477 722,-2477"/>
-<text text-anchor="start" x="728" y="-2487.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">contract_scan</text>
-<text text-anchor="start" x="725" y="-2465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="864" y="-2466.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="725" y="-2447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="864" y="-2448.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="725" y="-2429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">doc_type   </text>
+<path fill="#fdfeff" stroke="transparent" d="M733,-2314.5C733,-2314.5 869,-2314.5 869,-2314.5 875,-2314.5 881,-2320.5 881,-2326.5 881,-2326.5 881,-2491.5 881,-2491.5 881,-2497.5 875,-2503.5 869,-2503.5 869,-2503.5 733,-2503.5 733,-2503.5 727,-2503.5 721,-2497.5 721,-2491.5 721,-2491.5 721,-2326.5 721,-2326.5 721,-2320.5 727,-2314.5 733,-2314.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="722,-2477 722,-2502 880,-2502 880,-2477 722,-2477"/>
+<text text-anchor="start" x="728" y="-2487.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">contract_scan</text>
+<text text-anchor="start" x="725" y="-2465.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="864" y="-2466.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="725" y="-2447.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="864" y="-2448.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="725" y="-2429.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">doc_type   </text>
 <text text-anchor="start" x="870" y="-2429.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">status   </text>
+<text text-anchor="start" x="725" y="-2411.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">status   </text>
 <text text-anchor="start" x="870" y="-2411.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">template_matched   </text>
+<text text-anchor="start" x="725" y="-2393.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">template_matched   </text>
 <text text-anchor="start" x="870" y="-2393.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scanned_at   </text>
+<text text-anchor="start" x="725" y="-2375.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">scanned_at   </text>
 <text text-anchor="start" x="870" y="-2375.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">image_purged_at   </text>
+<text text-anchor="start" x="725" y="-2357.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">image_purged_at   </text>
 <text text-anchor="start" x="870" y="-2357.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2339.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">fields_purged_at   </text>
+<text text-anchor="start" x="725" y="-2339.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">fields_purged_at   </text>
 <text text-anchor="start" x="870" y="-2339.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="725" y="-2321.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">confirmed_fields   </text>
-<text text-anchor="start" x="846" y="-2321.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<path fill="none" stroke="#b9d9cf" d="M733,-2314.5C733,-2314.5 869,-2314.5 869,-2314.5 875,-2314.5 881,-2320.5 881,-2326.5 881,-2326.5 881,-2491.5 881,-2491.5 881,-2497.5 875,-2503.5 869,-2503.5 869,-2503.5 733,-2503.5 733,-2503.5 727,-2503.5 721,-2497.5 721,-2491.5 721,-2491.5 721,-2326.5 721,-2326.5 721,-2320.5 727,-2314.5 733,-2314.5"/>
+<text text-anchor="start" x="725" y="-2321.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">confirmed_fields   </text>
+<text text-anchor="start" x="846" y="-2321.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<path fill="none" stroke="#c5d9f5" d="M733,-2314.5C733,-2314.5 869,-2314.5 869,-2314.5 875,-2314.5 881,-2320.5 881,-2326.5 881,-2326.5 881,-2491.5 881,-2491.5 881,-2497.5 875,-2503.5 869,-2503.5 869,-2503.5 733,-2503.5 733,-2503.5 727,-2503.5 721,-2497.5 721,-2491.5 721,-2491.5 721,-2326.5 721,-2326.5 721,-2320.5 727,-2314.5 733,-2314.5"/>
 </g>
 <g id="edge16" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.07,-2643.57C687.33,-2634.06 627.63,-2468.87 706.49,-2451.48"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.01,-2647.95 593.59,-2639.96 595.19,-2639.88 595.61,-2647.87 594.01,-2647.95"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.99,-2643.79 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598,-2647.74 597.58,-2639.75 599.18,-2639.67 599.6,-2647.66 598,-2647.74"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.99,-2643.79 600.99,-2643.58 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="713.04,-2450.81 721.37,-2453.58 717.02,-2450.41 721,-2450 721,-2450 721,-2450 717.02,-2450.41 720.63,-2446.42 713.04,-2450.81 713.04,-2450.81"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="709.86" cy="-2451.14" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.07,-2643.57C687.33,-2634.06 627.63,-2468.87 706.49,-2451.48"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.01,-2647.95 593.59,-2639.96 595.19,-2639.88 595.61,-2647.87 594.01,-2647.95"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.99,-2643.79 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598,-2647.74 597.58,-2639.75 599.18,-2639.67 599.6,-2647.66 598,-2647.74"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.99,-2643.79 600.99,-2643.58 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="713.04,-2450.81 721.37,-2453.58 717.02,-2450.41 721,-2450 721,-2450 721,-2450 717.02,-2450.41 720.63,-2446.42 713.04,-2450.81 713.04,-2450.81"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="709.86" cy="-2451.14" rx="3.2" ry="3.2"/>
 </g>
 <g id="node22" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M724,-574.5C724,-574.5 878,-574.5 878,-574.5 884,-574.5 890,-580.5 890,-586.5 890,-586.5 890,-805.5 890,-805.5 890,-811.5 884,-817.5 878,-817.5 878,-817.5 724,-817.5 724,-817.5 718,-817.5 712,-811.5 712,-805.5 712,-805.5 712,-586.5 712,-586.5 712,-580.5 718,-574.5 724,-574.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="713,-791 713,-816 889,-816 889,-791 713,-791"/>
-<text text-anchor="start" x="719" y="-801.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">report_session</text>
-<text text-anchor="start" x="716" y="-779.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="873" y="-780.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="716" y="-761.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">player_id   </text>
-<text text-anchor="start" x="873" y="-762.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="716" y="-743.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">pack_id   </text>
-<text text-anchor="start" x="873" y="-744.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="716" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">status   </text>
-<text text-anchor="start" x="861" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">enum</text>
-<text text-anchor="start" x="716" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">narrative   </text>
+<path fill="#fdfeff" stroke="transparent" d="M724,-574.5C724,-574.5 878,-574.5 878,-574.5 884,-574.5 890,-580.5 890,-586.5 890,-586.5 890,-805.5 890,-805.5 890,-811.5 884,-817.5 878,-817.5 878,-817.5 724,-817.5 724,-817.5 718,-817.5 712,-811.5 712,-805.5 712,-805.5 712,-586.5 712,-586.5 712,-580.5 718,-574.5 724,-574.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="713,-791 713,-816 889,-816 889,-791 713,-791"/>
+<text text-anchor="start" x="719" y="-801.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">report_session</text>
+<text text-anchor="start" x="716" y="-779.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="873" y="-780.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="716" y="-761.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">player_id   </text>
+<text text-anchor="start" x="873" y="-762.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="716" y="-743.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">pack_id   </text>
+<text text-anchor="start" x="873" y="-744.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="716" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">status   </text>
+<text text-anchor="start" x="861" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">enum</text>
+<text text-anchor="start" x="716" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">narrative   </text>
 <text text-anchor="start" x="879" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">current_slot_id   </text>
+<text text-anchor="start" x="716" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">current_slot_id   </text>
 <text text-anchor="start" x="879" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">reask_used   </text>
+<text text-anchor="start" x="716" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">reask_used   </text>
 <text text-anchor="start" x="879" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-653.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">confirmed_at   </text>
+<text text-anchor="start" x="716" y="-653.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">confirmed_at   </text>
 <text text-anchor="start" x="879" y="-653.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-635.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">retention_expires_at   </text>
+<text text-anchor="start" x="716" y="-635.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">retention_expires_at   </text>
 <text text-anchor="start" x="879" y="-635.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-617.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">extension_count   </text>
+<text text-anchor="start" x="716" y="-617.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">extension_count   </text>
 <text text-anchor="start" x="879" y="-617.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-599.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="716" y="-599.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="879" y="-599.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-581.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">purged_at   </text>
+<text text-anchor="start" x="716" y="-581.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">purged_at   </text>
 <text text-anchor="start" x="879" y="-581.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M724,-574.5C724,-574.5 878,-574.5 878,-574.5 884,-574.5 890,-580.5 890,-586.5 890,-586.5 890,-805.5 890,-805.5 890,-811.5 884,-817.5 878,-817.5 878,-817.5 724,-817.5 724,-817.5 718,-817.5 712,-811.5 712,-805.5 712,-805.5 712,-586.5 712,-586.5 712,-580.5 718,-574.5 724,-574.5"/>
+<path fill="none" stroke="#c5d9f5" d="M724,-574.5C724,-574.5 878,-574.5 878,-574.5 884,-574.5 890,-580.5 890,-586.5 890,-586.5 890,-805.5 890,-805.5 890,-811.5 884,-817.5 878,-817.5 878,-817.5 724,-817.5 724,-817.5 718,-817.5 712,-811.5 712,-805.5 712,-805.5 712,-586.5 712,-586.5 712,-580.5 718,-574.5 724,-574.5"/>
 </g>
 <g id="edge20" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M601.12,-2643.35C714.61,-2624.6 640.48,-2205.96 649,-2084 653.85,-2014.55 640.14,-889.92 701.3,-773.68"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="594.12,-2647.92 593.48,-2639.95 595.07,-2639.82 595.71,-2647.8 594.12,-2647.92"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="593,-2644 596.99,-2643.68 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="598.1,-2647.6 597.47,-2639.63 599.06,-2639.5 599.7,-2647.48 598.1,-2647.6"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="596.99,-2643.68 600.97,-2643.36 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="706.07,-769.37 714.42,-766.67 709.03,-766.68 712,-764 712,-764 712,-764 709.03,-766.68 709.58,-761.33 706.07,-769.37 706.07,-769.37"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="703.7" cy="-771.52" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M601.12,-2643.35C714.61,-2624.6 640.48,-2205.96 649,-2084 653.85,-2014.55 640.14,-889.92 701.3,-773.68"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="594.12,-2647.92 593.48,-2639.95 595.07,-2639.82 595.71,-2647.8 594.12,-2647.92"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="593,-2644 596.99,-2643.68 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="598.1,-2647.6 597.47,-2639.63 599.06,-2639.5 599.7,-2647.48 598.1,-2647.6"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="596.99,-2643.68 600.97,-2643.36 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="706.07,-769.37 714.42,-766.67 709.03,-766.68 712,-764 712,-764 712,-764 709.03,-766.68 709.58,-761.33 706.07,-769.37 706.07,-769.37"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="703.7" cy="-771.52" rx="3.2" ry="3.2"/>
 </g>
 <g id="node7" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M61.5,-1373.5C61.5,-1373.5 112.5,-1373.5 112.5,-1373.5 118.5,-1373.5 124.5,-1379.5 124.5,-1385.5 124.5,-1385.5 124.5,-1424.5 124.5,-1424.5 124.5,-1430.5 118.5,-1436.5 112.5,-1436.5 112.5,-1436.5 61.5,-1436.5 61.5,-1436.5 55.5,-1436.5 49.5,-1430.5 49.5,-1424.5 49.5,-1424.5 49.5,-1385.5 49.5,-1385.5 49.5,-1379.5 55.5,-1373.5 61.5,-1373.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="51,-1410 51,-1435 124,-1435 124,-1410 51,-1410"/>
-<text text-anchor="start" x="57" y="-1420.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">category</text>
-<text text-anchor="start" x="54" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="108" y="-1399.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="54" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">name   </text>
+<path fill="#fdfeff" stroke="transparent" d="M61.5,-1373.5C61.5,-1373.5 112.5,-1373.5 112.5,-1373.5 118.5,-1373.5 124.5,-1379.5 124.5,-1385.5 124.5,-1385.5 124.5,-1424.5 124.5,-1424.5 124.5,-1430.5 118.5,-1436.5 112.5,-1436.5 112.5,-1436.5 61.5,-1436.5 61.5,-1436.5 55.5,-1436.5 49.5,-1430.5 49.5,-1424.5 49.5,-1424.5 49.5,-1385.5 49.5,-1385.5 49.5,-1379.5 55.5,-1373.5 61.5,-1373.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="51,-1410 51,-1435 124,-1435 124,-1410 51,-1410"/>
+<text text-anchor="start" x="57" y="-1420.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">category</text>
+<text text-anchor="start" x="54" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="108" y="-1399.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="54" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">name   </text>
 <text text-anchor="start" x="114" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M61.5,-1373.5C61.5,-1373.5 112.5,-1373.5 112.5,-1373.5 118.5,-1373.5 124.5,-1379.5 124.5,-1385.5 124.5,-1385.5 124.5,-1424.5 124.5,-1424.5 124.5,-1430.5 118.5,-1436.5 112.5,-1436.5 112.5,-1436.5 61.5,-1436.5 61.5,-1436.5 55.5,-1436.5 49.5,-1430.5 49.5,-1424.5 49.5,-1424.5 49.5,-1385.5 49.5,-1385.5 49.5,-1379.5 55.5,-1373.5 61.5,-1373.5"/>
+<path fill="none" stroke="#c5d9f5" d="M61.5,-1373.5C61.5,-1373.5 112.5,-1373.5 112.5,-1373.5 118.5,-1373.5 124.5,-1379.5 124.5,-1385.5 124.5,-1385.5 124.5,-1424.5 124.5,-1424.5 124.5,-1430.5 118.5,-1436.5 112.5,-1436.5 112.5,-1436.5 61.5,-1436.5 61.5,-1436.5 55.5,-1436.5 49.5,-1430.5 49.5,-1424.5 49.5,-1424.5 49.5,-1385.5 49.5,-1385.5 49.5,-1379.5 55.5,-1373.5 61.5,-1373.5"/>
 </g>
 <g id="node8" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M239.5,-1355.5C239.5,-1355.5 339.5,-1355.5 339.5,-1355.5 345.5,-1355.5 351.5,-1361.5 351.5,-1367.5 351.5,-1367.5 351.5,-1442.5 351.5,-1442.5 351.5,-1448.5 345.5,-1454.5 339.5,-1454.5 339.5,-1454.5 239.5,-1454.5 239.5,-1454.5 233.5,-1454.5 227.5,-1448.5 227.5,-1442.5 227.5,-1442.5 227.5,-1367.5 227.5,-1367.5 227.5,-1361.5 233.5,-1355.5 239.5,-1355.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="228.5,-1428 228.5,-1453 350.5,-1453 350.5,-1428 228.5,-1428"/>
-<text text-anchor="start" x="234.5" y="-1438.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">chapter</text>
-<text text-anchor="start" x="231.5" y="-1416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="334.5" y="-1417.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="231.5" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">category_id   </text>
-<text text-anchor="start" x="334.5" y="-1399.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="231.5" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">title   </text>
+<path fill="#fdfeff" stroke="transparent" d="M239.5,-1355.5C239.5,-1355.5 339.5,-1355.5 339.5,-1355.5 345.5,-1355.5 351.5,-1361.5 351.5,-1367.5 351.5,-1367.5 351.5,-1442.5 351.5,-1442.5 351.5,-1448.5 345.5,-1454.5 339.5,-1454.5 339.5,-1454.5 239.5,-1454.5 239.5,-1454.5 233.5,-1454.5 227.5,-1448.5 227.5,-1442.5 227.5,-1442.5 227.5,-1367.5 227.5,-1367.5 227.5,-1361.5 233.5,-1355.5 239.5,-1355.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="228.5,-1428 228.5,-1453 350.5,-1453 350.5,-1428 228.5,-1428"/>
+<text text-anchor="start" x="234.5" y="-1438.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">chapter</text>
+<text text-anchor="start" x="231.5" y="-1416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="334.5" y="-1417.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="231.5" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">category_id   </text>
+<text text-anchor="start" x="334.5" y="-1399.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="231.5" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">title   </text>
 <text text-anchor="start" x="340.5" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="231.5" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">display_order   </text>
+<text text-anchor="start" x="231.5" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">display_order   </text>
 <text text-anchor="start" x="340.5" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M239.5,-1355.5C239.5,-1355.5 339.5,-1355.5 339.5,-1355.5 345.5,-1355.5 351.5,-1361.5 351.5,-1367.5 351.5,-1367.5 351.5,-1442.5 351.5,-1442.5 351.5,-1448.5 345.5,-1454.5 339.5,-1454.5 339.5,-1454.5 239.5,-1454.5 239.5,-1454.5 233.5,-1454.5 227.5,-1448.5 227.5,-1442.5 227.5,-1442.5 227.5,-1367.5 227.5,-1367.5 227.5,-1361.5 233.5,-1355.5 239.5,-1355.5"/>
+<path fill="none" stroke="#c5d9f5" d="M239.5,-1355.5C239.5,-1355.5 339.5,-1355.5 339.5,-1355.5 345.5,-1355.5 351.5,-1361.5 351.5,-1367.5 351.5,-1367.5 351.5,-1442.5 351.5,-1442.5 351.5,-1448.5 345.5,-1454.5 339.5,-1454.5 339.5,-1454.5 239.5,-1454.5 239.5,-1454.5 233.5,-1454.5 227.5,-1448.5 227.5,-1442.5 227.5,-1442.5 227.5,-1367.5 227.5,-1367.5 227.5,-1361.5 233.5,-1355.5 239.5,-1355.5"/>
 </g>
 <g id="edge5" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M133.16,-1401C167.24,-1401 181.21,-1401 212.78,-1401"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="125.8,-1405 125.8,-1397 127.4,-1397 127.4,-1405 125.8,-1405"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="125,-1401 129,-1401 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="129.8,-1405 129.8,-1397 131.4,-1397 131.4,-1405 129.8,-1405"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="129,-1401 133,-1401 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="219.5,-1401 227.5,-1404.6 223.5,-1401 227.5,-1401 227.5,-1401 227.5,-1401 223.5,-1401 227.5,-1397.4 219.5,-1401 219.5,-1401"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="216.3" cy="-1401" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M133.16,-1401C167.24,-1401 181.21,-1401 212.78,-1401"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="125.8,-1405 125.8,-1397 127.4,-1397 127.4,-1405 125.8,-1405"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="125,-1401 129,-1401 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="129.8,-1405 129.8,-1397 131.4,-1397 131.4,-1405 129.8,-1405"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="129,-1401 133,-1401 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="219.5,-1401 227.5,-1404.6 223.5,-1401 227.5,-1401 227.5,-1401 227.5,-1401 223.5,-1401 227.5,-1397.4 219.5,-1401 219.5,-1401"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="216.3" cy="-1401" rx="3.2" ry="3.2"/>
 </g>
 <g id="node9" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M469,-1319.5C469,-1319.5 593,-1319.5 593,-1319.5 599,-1319.5 605,-1325.5 605,-1331.5 605,-1331.5 605,-1460.5 605,-1460.5 605,-1466.5 599,-1472.5 593,-1472.5 593,-1472.5 469,-1472.5 469,-1472.5 463,-1472.5 457,-1466.5 457,-1460.5 457,-1460.5 457,-1331.5 457,-1331.5 457,-1325.5 463,-1319.5 469,-1319.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="458,-1446 458,-1471 604,-1471 604,-1446 458,-1446"/>
-<text text-anchor="start" x="464" y="-1456.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">quest</text>
-<text text-anchor="start" x="461" y="-1434.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="588" y="-1435.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="461" y="-1416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">chapter_id   </text>
-<text text-anchor="start" x="588" y="-1417.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="461" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">title   </text>
+<path fill="#fdfeff" stroke="transparent" d="M469,-1319.5C469,-1319.5 593,-1319.5 593,-1319.5 599,-1319.5 605,-1325.5 605,-1331.5 605,-1331.5 605,-1460.5 605,-1460.5 605,-1466.5 599,-1472.5 593,-1472.5 593,-1472.5 469,-1472.5 469,-1472.5 463,-1472.5 457,-1466.5 457,-1460.5 457,-1460.5 457,-1331.5 457,-1331.5 457,-1325.5 463,-1319.5 469,-1319.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="458,-1446 458,-1471 604,-1471 604,-1446 458,-1446"/>
+<text text-anchor="start" x="464" y="-1456.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">quest</text>
+<text text-anchor="start" x="461" y="-1434.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="588" y="-1435.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="461" y="-1416.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">chapter_id   </text>
+<text text-anchor="start" x="588" y="-1417.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="461" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">title   </text>
 <text text-anchor="start" x="594" y="-1398.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="461" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">mechanism   </text>
+<text text-anchor="start" x="461" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">mechanism   </text>
 <text text-anchor="start" x="594" y="-1380.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="461" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">display_order   </text>
+<text text-anchor="start" x="461" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">display_order   </text>
 <text text-anchor="start" x="594" y="-1362.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="461" y="-1344.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">money_defended   </text>
+<text text-anchor="start" x="461" y="-1344.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">money_defended   </text>
 <text text-anchor="start" x="594" y="-1344.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="461" y="-1326.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">clear_reward   </text>
-<text text-anchor="start" x="570" y="-1326.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<path fill="none" stroke="#b9d9cf" d="M469,-1319.5C469,-1319.5 593,-1319.5 593,-1319.5 599,-1319.5 605,-1325.5 605,-1331.5 605,-1331.5 605,-1460.5 605,-1460.5 605,-1466.5 599,-1472.5 593,-1472.5 593,-1472.5 469,-1472.5 469,-1472.5 463,-1472.5 457,-1466.5 457,-1460.5 457,-1460.5 457,-1331.5 457,-1331.5 457,-1325.5 463,-1319.5 469,-1319.5"/>
+<text text-anchor="start" x="461" y="-1326.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">clear_reward   </text>
+<text text-anchor="start" x="570" y="-1326.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<path fill="none" stroke="#c5d9f5" d="M469,-1319.5C469,-1319.5 593,-1319.5 593,-1319.5 599,-1319.5 605,-1325.5 605,-1331.5 605,-1331.5 605,-1460.5 605,-1460.5 605,-1466.5 599,-1472.5 593,-1472.5 593,-1472.5 469,-1472.5 469,-1472.5 463,-1472.5 457,-1466.5 457,-1460.5 457,-1460.5 457,-1331.5 457,-1331.5 457,-1325.5 463,-1319.5 469,-1319.5"/>
 </g>
 <g id="edge6" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M359.65,-1419C395.06,-1419 409.4,-1419 442.26,-1419"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="352.3,-1423 352.3,-1415 353.9,-1415 353.9,-1423 352.3,-1423"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="351.5,-1419 355.5,-1419 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="356.3,-1423 356.3,-1415 357.9,-1415 357.9,-1423 356.3,-1423"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="355.5,-1419 359.5,-1419 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="449,-1419 457,-1422.6 453,-1419 457,-1419 457,-1419 457,-1419 453,-1419 457,-1415.4 449,-1419 449,-1419"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="445.8" cy="-1419" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M359.65,-1419C395.06,-1419 409.4,-1419 442.26,-1419"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="352.3,-1423 352.3,-1415 353.9,-1415 353.9,-1423 352.3,-1423"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="351.5,-1419 355.5,-1419 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="356.3,-1423 356.3,-1415 357.9,-1415 357.9,-1423 356.3,-1423"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="355.5,-1419 359.5,-1419 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="449,-1419 457,-1422.6 453,-1419 457,-1419 457,-1419 457,-1419 453,-1419 457,-1415.4 449,-1419 449,-1419"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="445.8" cy="-1419" rx="3.2" ry="3.2"/>
 </g>
 <g id="node10" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M712,-876.5C712,-876.5 890,-876.5 890,-876.5 896,-876.5 902,-882.5 902,-888.5 902,-888.5 902,-1123.5 902,-1123.5 902,-1129.5 896,-1135.5 890,-1135.5 890,-1135.5 712,-1135.5 712,-1135.5 706,-1135.5 700,-1129.5 700,-1123.5 700,-1123.5 700,-888.5 700,-888.5 700,-882.5 706,-876.5 712,-876.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="701,-1109 701,-1134 901,-1134 901,-1109 701,-1109"/>
-<text text-anchor="start" x="707" y="-1119.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">defense_line</text>
-<text text-anchor="start" x="704" y="-1097.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="885" y="-1098.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="704" y="-1079.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">quest_id   </text>
-<text text-anchor="start" x="885" y="-1080.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="704" y="-1061.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">level   </text>
+<path fill="#fdfeff" stroke="transparent" d="M712,-876.5C712,-876.5 890,-876.5 890,-876.5 896,-876.5 902,-882.5 902,-888.5 902,-888.5 902,-1123.5 902,-1123.5 902,-1129.5 896,-1135.5 890,-1135.5 890,-1135.5 712,-1135.5 712,-1135.5 706,-1135.5 700,-1129.5 700,-1123.5 700,-1123.5 700,-888.5 700,-888.5 700,-882.5 706,-876.5 712,-876.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="701,-1109 701,-1134 901,-1134 901,-1109 701,-1109"/>
+<text text-anchor="start" x="707" y="-1119.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">defense_line</text>
+<text text-anchor="start" x="704" y="-1097.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="885" y="-1098.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="704" y="-1079.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">quest_id   </text>
+<text text-anchor="start" x="885" y="-1080.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="704" y="-1061.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">level   </text>
 <text text-anchor="start" x="891" y="-1061.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="704" y="-1043.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">npc_opening   </text>
+<text text-anchor="start" x="704" y="-1043.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">npc_opening   </text>
 <text text-anchor="start" x="891" y="-1043.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="704" y="-1025.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">npc_clear   </text>
+<text text-anchor="start" x="704" y="-1025.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">npc_clear   </text>
 <text text-anchor="start" x="891" y="-1025.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="704" y="-1007.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">ongoing_lines   </text>
-<text text-anchor="start" x="867" y="-1007.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="704" y="-989.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">hint1   </text>
+<text text-anchor="start" x="704" y="-1007.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">ongoing_lines   </text>
+<text text-anchor="start" x="867" y="-1007.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="704" y="-989.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">hint1   </text>
 <text text-anchor="start" x="891" y="-989.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="704" y="-971.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">hint2   </text>
+<text text-anchor="start" x="704" y="-971.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">hint2   </text>
 <text text-anchor="start" x="891" y="-971.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="704" y="-953.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">keywords_clear   </text>
-<text text-anchor="start" x="867" y="-953.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="704" y="-935.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">keywords_ambig   </text>
-<text text-anchor="start" x="867" y="-935.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="704" y="-917.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">keywords_ambig_priority   </text>
-<text text-anchor="start" x="867" y="-917.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="704" y="-899.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">evidence   </text>
-<text text-anchor="start" x="867" y="-899.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="704" y="-882.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(quest_id, level)    </text>
-<path fill="none" stroke="#b9d9cf" d="M712,-876.5C712,-876.5 890,-876.5 890,-876.5 896,-876.5 902,-882.5 902,-888.5 902,-888.5 902,-1123.5 902,-1123.5 902,-1129.5 896,-1135.5 890,-1135.5 890,-1135.5 712,-1135.5 712,-1135.5 706,-1135.5 700,-1129.5 700,-1123.5 700,-1123.5 700,-888.5 700,-888.5 700,-882.5 706,-876.5 712,-876.5"/>
+<text text-anchor="start" x="704" y="-953.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">keywords_clear   </text>
+<text text-anchor="start" x="867" y="-953.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="704" y="-935.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">keywords_ambig   </text>
+<text text-anchor="start" x="867" y="-935.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="704" y="-917.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">keywords_ambig_priority   </text>
+<text text-anchor="start" x="867" y="-917.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="704" y="-899.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">evidence   </text>
+<text text-anchor="start" x="867" y="-899.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="704" y="-882.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">UQ(quest_id, level)    </text>
+<path fill="none" stroke="#c5d9f5" d="M712,-876.5C712,-876.5 890,-876.5 890,-876.5 896,-876.5 902,-882.5 902,-888.5 902,-888.5 902,-1123.5 902,-1123.5 902,-1129.5 896,-1135.5 890,-1135.5 890,-1135.5 712,-1135.5 712,-1135.5 706,-1135.5 700,-1129.5 700,-1123.5 700,-1123.5 700,-888.5 700,-888.5 700,-882.5 706,-876.5 712,-876.5"/>
 </g>
 <g id="edge7" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M613.25,-1436.67C755.42,-1425.03 553.8,-1104.39 685.25,-1083.11"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="605.96,-1440.97 605.64,-1432.97 607.24,-1432.91 607.56,-1440.9 605.96,-1440.97"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="605,-1437 609,-1436.84 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="609.95,-1440.81 609.64,-1432.81 611.24,-1432.75 611.55,-1440.74 609.95,-1440.81"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="609,-1436.84 612.99,-1436.68 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="692.02,-1082.6 700.27,-1085.59 696.01,-1082.3 700,-1082 700,-1082 700,-1082 696.01,-1082.3 699.73,-1078.41 692.02,-1082.6 692.02,-1082.6"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="688.83" cy="-1082.84" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M613.25,-1436.67C755.42,-1425.03 553.8,-1104.39 685.25,-1083.11"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="605.96,-1440.97 605.64,-1432.97 607.24,-1432.91 607.56,-1440.9 605.96,-1440.97"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="605,-1437 609,-1436.84 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="609.95,-1440.81 609.64,-1432.81 611.24,-1432.75 611.55,-1440.74 609.95,-1440.81"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="609,-1436.84 612.99,-1436.68 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="692.02,-1082.6 700.27,-1085.59 696.01,-1082.3 700,-1082 700,-1082 700,-1082 696.01,-1082.3 699.73,-1078.41 692.02,-1082.6 692.02,-1082.6"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="688.83" cy="-1082.84" rx="3.2" ry="3.2"/>
 </g>
 <g id="node11" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M721,-1160.5C721,-1160.5 881,-1160.5 881,-1160.5 887,-1160.5 893,-1166.5 893,-1172.5 893,-1172.5 893,-1353.5 893,-1353.5 893,-1359.5 887,-1365.5 881,-1365.5 881,-1365.5 721,-1365.5 721,-1365.5 715,-1365.5 709,-1359.5 709,-1353.5 709,-1353.5 709,-1172.5 709,-1172.5 709,-1166.5 715,-1160.5 721,-1160.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="710,-1339 710,-1364 892,-1364 892,-1339 710,-1339"/>
-<text text-anchor="start" x="716" y="-1349.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">calc_problem</text>
-<text text-anchor="start" x="713" y="-1327.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="876" y="-1328.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="713" y="-1309.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">quest_id   </text>
-<text text-anchor="start" x="876" y="-1310.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="713" y="-1291.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<path fill="#fdfeff" stroke="transparent" d="M721,-1160.5C721,-1160.5 881,-1160.5 881,-1160.5 887,-1160.5 893,-1166.5 893,-1172.5 893,-1172.5 893,-1353.5 893,-1353.5 893,-1359.5 887,-1365.5 881,-1365.5 881,-1365.5 721,-1365.5 721,-1365.5 715,-1365.5 709,-1359.5 709,-1353.5 709,-1353.5 709,-1172.5 709,-1172.5 709,-1166.5 715,-1160.5 721,-1160.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="710,-1339 710,-1364 892,-1364 892,-1339 710,-1339"/>
+<text text-anchor="start" x="716" y="-1349.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">calc_problem</text>
+<text text-anchor="start" x="713" y="-1327.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="876" y="-1328.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="713" y="-1309.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">quest_id   </text>
+<text text-anchor="start" x="876" y="-1310.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="713" y="-1291.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">code   </text>
 <text text-anchor="start" x="882" y="-1291.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1273.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">display_order   </text>
+<text text-anchor="start" x="713" y="-1273.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">display_order   </text>
 <text text-anchor="start" x="882" y="-1273.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1255.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">prompt_template   </text>
+<text text-anchor="start" x="713" y="-1255.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">prompt_template   </text>
 <text text-anchor="start" x="882" y="-1255.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1237.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">given_params   </text>
-<text text-anchor="start" x="858" y="-1237.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="713" y="-1219.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">answer_kind   </text>
+<text text-anchor="start" x="713" y="-1237.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">given_params   </text>
+<text text-anchor="start" x="858" y="-1237.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="713" y="-1219.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">answer_kind   </text>
 <text text-anchor="start" x="882" y="-1219.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1201.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">explanation_template   </text>
+<text text-anchor="start" x="713" y="-1201.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">explanation_template   </text>
 <text text-anchor="start" x="882" y="-1201.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1183.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">is_trap   </text>
+<text text-anchor="start" x="713" y="-1183.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">is_trap   </text>
 <text text-anchor="start" x="882" y="-1183.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="713" y="-1166.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#61766f">UQ(quest_id, code)    </text>
-<path fill="none" stroke="#b9d9cf" d="M721,-1160.5C721,-1160.5 881,-1160.5 881,-1160.5 887,-1160.5 893,-1166.5 893,-1172.5 893,-1172.5 893,-1353.5 893,-1353.5 893,-1359.5 887,-1365.5 881,-1365.5 881,-1365.5 721,-1365.5 721,-1365.5 715,-1365.5 709,-1359.5 709,-1353.5 709,-1353.5 709,-1172.5 709,-1172.5 709,-1166.5 715,-1160.5 721,-1160.5"/>
+<text text-anchor="start" x="713" y="-1166.8" font-family="DejaVu Sans Mono" font-size="9.00" fill="#6b7684">UQ(quest_id, code)    </text>
+<path fill="none" stroke="#c5d9f5" d="M721,-1160.5C721,-1160.5 881,-1160.5 881,-1160.5 887,-1160.5 893,-1166.5 893,-1172.5 893,-1172.5 893,-1353.5 893,-1353.5 893,-1359.5 887,-1365.5 881,-1365.5 881,-1365.5 721,-1365.5 721,-1365.5 715,-1365.5 709,-1359.5 709,-1353.5 709,-1353.5 709,-1172.5 709,-1172.5 709,-1166.5 715,-1160.5 721,-1160.5"/>
 </g>
 <g id="edge8" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M613.34,-1436.39C669.38,-1427.69 644.49,-1329.32 694.56,-1314"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="606.09,-1440.93 605.5,-1432.95 607.1,-1432.83 607.69,-1440.81 606.09,-1440.93"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="605,-1437 608.99,-1436.71 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="610.08,-1440.64 609.49,-1432.66 611.09,-1432.54 611.68,-1440.52 610.08,-1440.64"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="608.99,-1436.71 612.98,-1436.41 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="701.08,-1313.1 709.49,-1315.57 705.04,-1312.55 709,-1312 709,-1312 709,-1312 705.04,-1312.55 708.51,-1308.43 701.08,-1313.1 701.08,-1313.1"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="697.91" cy="-1313.54" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M613.34,-1436.39C669.38,-1427.69 644.49,-1329.32 694.56,-1314"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="606.09,-1440.93 605.5,-1432.95 607.1,-1432.83 607.69,-1440.81 606.09,-1440.93"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="605,-1437 608.99,-1436.71 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="610.08,-1440.64 609.49,-1432.66 611.09,-1432.54 611.68,-1440.52 610.08,-1440.64"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="608.99,-1436.71 612.98,-1436.41 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="701.08,-1313.1 709.49,-1315.57 705.04,-1312.55 709,-1312 709,-1312 709,-1312 705.04,-1312.55 708.51,-1308.43 701.08,-1313.1 701.08,-1313.1"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="697.91" cy="-1313.54" rx="3.2" ry="3.2"/>
 </g>
 <g id="edge10" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M613.3,-1437.5C676.55,-1445.5 657.67,-1546.23 715.5,-1560.36"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="605.56,-1441.04 606.04,-1433.06 607.64,-1433.15 607.15,-1441.14 605.56,-1441.04"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="605,-1437 608.99,-1437.24 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="609.55,-1441.28 610.03,-1433.3 611.63,-1433.4 611.15,-1441.38 609.55,-1441.28"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="608.99,-1437.24 612.99,-1437.48 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="722.05,-1561.1 729.6,-1565.58 726.03,-1561.55 730,-1562 730,-1562 730,-1562 726.03,-1561.55 730.4,-1558.42 722.05,-1561.1 722.05,-1561.1"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="718.87" cy="-1560.74" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M613.3,-1437.5C676.55,-1445.5 657.67,-1546.23 715.5,-1560.36"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="605.56,-1441.04 606.04,-1433.06 607.64,-1433.15 607.15,-1441.14 605.56,-1441.04"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="605,-1437 608.99,-1437.24 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="609.55,-1441.28 610.03,-1433.3 611.63,-1433.4 611.15,-1441.38 609.55,-1441.28"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="608.99,-1437.24 612.99,-1437.48 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="722.05,-1561.1 729.6,-1565.58 726.03,-1561.55 730,-1562 730,-1562 730,-1562 726.03,-1561.55 730.4,-1558.42 722.05,-1561.1 722.05,-1561.1"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="718.87" cy="-1560.74" rx="3.2" ry="3.2"/>
 </g>
 <g id="edge15" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M613.14,-1437.34C738.69,-1448.3 595.28,-1718.77 711.39,-1738.83"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="605.63,-1441.03 605.97,-1433.04 607.57,-1433.1 607.23,-1441.1 605.63,-1441.03"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="605,-1437 609,-1437.17 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="609.63,-1441.2 609.96,-1433.21 611.56,-1433.27 611.23,-1441.27 609.63,-1441.2"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="609,-1437.17 612.99,-1437.34 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="718.03,-1739.36 725.71,-1743.59 722.01,-1739.68 726,-1740 726,-1740 726,-1740 722.01,-1739.68 726.29,-1736.41 718.03,-1739.36 718.03,-1739.36"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="714.84" cy="-1739.1" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M613.14,-1437.34C738.69,-1448.3 595.28,-1718.77 711.39,-1738.83"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="605.63,-1441.03 605.97,-1433.04 607.57,-1433.1 607.23,-1441.1 605.63,-1441.03"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="605,-1437 609,-1437.17 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="609.63,-1441.2 609.96,-1433.21 611.56,-1433.27 611.23,-1441.27 609.63,-1441.2"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="609,-1437.17 612.99,-1437.34 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="718.03,-1739.36 725.71,-1743.59 722.01,-1739.68 726,-1740 726,-1740 726,-1740 722.01,-1739.68 726.29,-1736.41 718.03,-1739.36 718.03,-1739.36"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="714.84" cy="-1739.1" rx="3.2" ry="3.2"/>
 </g>
 <g id="node13" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M988,-1498.5C988,-1498.5 1088,-1498.5 1088,-1498.5 1094,-1498.5 1100,-1504.5 1100,-1510.5 1100,-1510.5 1100,-1639.5 1100,-1639.5 1100,-1645.5 1094,-1651.5 1088,-1651.5 1088,-1651.5 988,-1651.5 988,-1651.5 982,-1651.5 976,-1645.5 976,-1639.5 976,-1639.5 976,-1510.5 976,-1510.5 976,-1504.5 982,-1498.5 988,-1498.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="977,-1625 977,-1650 1099,-1650 1099,-1625 977,-1625"/>
-<text text-anchor="start" x="983" y="-1635.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">dialogue_turn</text>
-<text text-anchor="start" x="980" y="-1613.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="1083" y="-1614.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="980" y="-1595.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">session_id   </text>
-<text text-anchor="start" x="1083" y="-1596.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="980" y="-1577.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">role   </text>
+<path fill="#fdfeff" stroke="transparent" d="M988,-1498.5C988,-1498.5 1088,-1498.5 1088,-1498.5 1094,-1498.5 1100,-1504.5 1100,-1510.5 1100,-1510.5 1100,-1639.5 1100,-1639.5 1100,-1645.5 1094,-1651.5 1088,-1651.5 1088,-1651.5 988,-1651.5 988,-1651.5 982,-1651.5 976,-1645.5 976,-1639.5 976,-1639.5 976,-1510.5 976,-1510.5 976,-1504.5 982,-1498.5 988,-1498.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="977,-1625 977,-1650 1099,-1650 1099,-1625 977,-1625"/>
+<text text-anchor="start" x="983" y="-1635.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">dialogue_turn</text>
+<text text-anchor="start" x="980" y="-1613.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="1083" y="-1614.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="980" y="-1595.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">session_id   </text>
+<text text-anchor="start" x="1083" y="-1596.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="980" y="-1577.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">role   </text>
 <text text-anchor="start" x="1089" y="-1577.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="980" y="-1559.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="980" y="-1559.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">text   </text>
 <text text-anchor="start" x="1089" y="-1559.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="980" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">defense_level   </text>
+<text text-anchor="start" x="980" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">defense_level   </text>
 <text text-anchor="start" x="1089" y="-1541.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="980" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">judgement   </text>
+<text text-anchor="start" x="980" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">judgement   </text>
 <text text-anchor="start" x="1089" y="-1523.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="980" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="980" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="1089" y="-1505.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M988,-1498.5C988,-1498.5 1088,-1498.5 1088,-1498.5 1094,-1498.5 1100,-1504.5 1100,-1510.5 1100,-1510.5 1100,-1639.5 1100,-1639.5 1100,-1645.5 1094,-1651.5 1088,-1651.5 1088,-1651.5 988,-1651.5 988,-1651.5 982,-1651.5 976,-1645.5 976,-1639.5 976,-1639.5 976,-1510.5 976,-1510.5 976,-1504.5 982,-1498.5 988,-1498.5"/>
+<path fill="none" stroke="#c5d9f5" d="M988,-1498.5C988,-1498.5 1088,-1498.5 1088,-1498.5 1094,-1498.5 1100,-1504.5 1100,-1510.5 1100,-1510.5 1100,-1639.5 1100,-1639.5 1100,-1645.5 1094,-1651.5 1088,-1651.5 1088,-1651.5 988,-1651.5 988,-1651.5 982,-1651.5 976,-1645.5 976,-1639.5 976,-1639.5 976,-1510.5 976,-1510.5 976,-1504.5 982,-1498.5 988,-1498.5"/>
 </g>
 <g id="edge11" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M880.28,-1598C915.02,-1598 929.16,-1598 961.5,-1598"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="872.8,-1602 872.8,-1594 874.4,-1594 874.4,-1602 872.8,-1602"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="872,-1598 876,-1598 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="876.8,-1602 876.8,-1594 878.4,-1594 878.4,-1602 876.8,-1602"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="876,-1598 880,-1598 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="968,-1598 976,-1601.6 972,-1598 976,-1598 976,-1598 976,-1598 972,-1598 976,-1594.4 968,-1598 968,-1598"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="964.8" cy="-1598" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M880.28,-1598C915.02,-1598 929.16,-1598 961.5,-1598"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="872.8,-1602 872.8,-1594 874.4,-1594 874.4,-1602 872.8,-1602"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="872,-1598 876,-1598 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="876.8,-1602 876.8,-1594 878.4,-1594 878.4,-1602 876.8,-1602"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="876,-1598 880,-1598 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="968,-1598 976,-1601.6 972,-1598 976,-1598 976,-1598 976,-1598 972,-1598 976,-1594.4 968,-1598 968,-1598"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="964.8" cy="-1598" rx="3.2" ry="3.2"/>
 </g>
 <g id="node19" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M991,-2297.5C991,-2297.5 1085,-2297.5 1085,-2297.5 1091,-2297.5 1097,-2303.5 1097,-2309.5 1097,-2309.5 1097,-2402.5 1097,-2402.5 1097,-2408.5 1091,-2414.5 1085,-2414.5 1085,-2414.5 991,-2414.5 991,-2414.5 985,-2414.5 979,-2408.5 979,-2402.5 979,-2402.5 979,-2309.5 979,-2309.5 979,-2303.5 985,-2297.5 991,-2297.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="980,-2388 980,-2413 1096,-2413 1096,-2388 980,-2388"/>
-<text text-anchor="start" x="986" y="-2398.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">guard_finding</text>
-<text text-anchor="start" x="983" y="-2376.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="1080" y="-2377.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="983" y="-2358.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">scan_id   </text>
-<text text-anchor="start" x="1080" y="-2359.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="983" y="-2340.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">rule_id   </text>
-<text text-anchor="start" x="1080" y="-2341.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="983" y="-2322.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">rule_version   </text>
+<path fill="#fdfeff" stroke="transparent" d="M991,-2297.5C991,-2297.5 1085,-2297.5 1085,-2297.5 1091,-2297.5 1097,-2303.5 1097,-2309.5 1097,-2309.5 1097,-2402.5 1097,-2402.5 1097,-2408.5 1091,-2414.5 1085,-2414.5 1085,-2414.5 991,-2414.5 991,-2414.5 985,-2414.5 979,-2408.5 979,-2402.5 979,-2402.5 979,-2309.5 979,-2309.5 979,-2303.5 985,-2297.5 991,-2297.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="980,-2388 980,-2413 1096,-2413 1096,-2388 980,-2388"/>
+<text text-anchor="start" x="986" y="-2398.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">guard_finding</text>
+<text text-anchor="start" x="983" y="-2376.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="1080" y="-2377.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="983" y="-2358.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">scan_id   </text>
+<text text-anchor="start" x="1080" y="-2359.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="983" y="-2340.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">rule_id   </text>
+<text text-anchor="start" x="1080" y="-2341.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="983" y="-2322.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">rule_version   </text>
 <text text-anchor="start" x="1086" y="-2322.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="983" y="-2304.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">created_at   </text>
+<text text-anchor="start" x="983" y="-2304.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">created_at   </text>
 <text text-anchor="start" x="1086" y="-2304.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M991,-2297.5C991,-2297.5 1085,-2297.5 1085,-2297.5 1091,-2297.5 1097,-2303.5 1097,-2309.5 1097,-2309.5 1097,-2402.5 1097,-2402.5 1097,-2408.5 1091,-2414.5 1085,-2414.5 1085,-2414.5 991,-2414.5 991,-2414.5 985,-2414.5 979,-2408.5 979,-2402.5 979,-2402.5 979,-2309.5 979,-2309.5 979,-2303.5 985,-2297.5 991,-2297.5"/>
+<path fill="none" stroke="#c5d9f5" d="M991,-2297.5C991,-2297.5 1085,-2297.5 1085,-2297.5 1091,-2297.5 1097,-2303.5 1097,-2309.5 1097,-2309.5 1097,-2402.5 1097,-2402.5 1097,-2408.5 1091,-2414.5 1085,-2414.5 1085,-2414.5 991,-2414.5 991,-2414.5 985,-2414.5 979,-2408.5 979,-2402.5 979,-2402.5 979,-2309.5 979,-2309.5 979,-2303.5 985,-2297.5 991,-2297.5"/>
 </g>
 <g id="edge17" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M889.13,-2467.37C938.17,-2459.37 921.28,-2377.47 964.67,-2363.14"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="882.11,-2471.93 881.49,-2463.95 883.08,-2463.83 883.7,-2471.8 882.11,-2471.93"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="881,-2468 884.99,-2467.69 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="886.09,-2471.62 885.48,-2463.64 887.07,-2463.52 887.69,-2471.49 886.09,-2471.62"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="884.99,-2467.69 888.98,-2467.38 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="971.09,-2362.18 979.53,-2364.56 975.04,-2361.59 979,-2361 979,-2361 979,-2361 975.04,-2361.59 978.47,-2357.44 971.09,-2362.18 971.09,-2362.18"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="967.92" cy="-2362.65" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M889.13,-2467.37C938.17,-2459.37 921.28,-2377.47 964.67,-2363.14"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="882.11,-2471.93 881.49,-2463.95 883.08,-2463.83 883.7,-2471.8 882.11,-2471.93"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="881,-2468 884.99,-2467.69 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="886.09,-2471.62 885.48,-2463.64 887.07,-2463.52 887.69,-2471.49 886.09,-2471.62"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="884.99,-2467.69 888.98,-2467.38 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="971.09,-2362.18 979.53,-2364.56 975.04,-2361.59 979,-2361 979,-2361 979,-2361 975.04,-2361.59 978.47,-2357.44 971.09,-2362.18 971.09,-2362.18"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="967.92" cy="-2362.65" rx="3.2" ry="3.2"/>
 </g>
 <g id="node18" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M724,-2100.5C724,-2100.5 878,-2100.5 878,-2100.5 884,-2100.5 890,-2106.5 890,-2112.5 890,-2112.5 890,-2277.5 890,-2277.5 890,-2283.5 884,-2289.5 878,-2289.5 878,-2289.5 724,-2289.5 724,-2289.5 718,-2289.5 712,-2283.5 712,-2277.5 712,-2277.5 712,-2112.5 712,-2112.5 712,-2106.5 718,-2100.5 724,-2100.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="713,-2263 713,-2288 889,-2288 889,-2263 713,-2263"/>
-<text text-anchor="start" x="719" y="-2273.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">guard_rule</text>
-<text text-anchor="start" x="716" y="-2251.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="873" y="-2252.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="716" y="-2233.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">code   </text>
+<path fill="#fdfeff" stroke="transparent" d="M724,-2100.5C724,-2100.5 878,-2100.5 878,-2100.5 884,-2100.5 890,-2106.5 890,-2112.5 890,-2112.5 890,-2277.5 890,-2277.5 890,-2283.5 884,-2289.5 878,-2289.5 878,-2289.5 724,-2289.5 724,-2289.5 718,-2289.5 712,-2283.5 712,-2277.5 712,-2277.5 712,-2112.5 712,-2112.5 712,-2106.5 718,-2100.5 724,-2100.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="713,-2263 713,-2288 889,-2288 889,-2263 713,-2263"/>
+<text text-anchor="start" x="719" y="-2273.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">guard_rule</text>
+<text text-anchor="start" x="716" y="-2251.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="873" y="-2252.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="716" y="-2233.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">code   </text>
 <text text-anchor="start" x="879" y="-2233.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2215.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">version   </text>
+<text text-anchor="start" x="716" y="-2215.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">version   </text>
 <text text-anchor="start" x="879" y="-2215.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2197.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">doc_type   </text>
+<text text-anchor="start" x="716" y="-2197.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">doc_type   </text>
 <text text-anchor="start" x="879" y="-2197.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2179.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">violation_type_code   </text>
+<text text-anchor="start" x="716" y="-2179.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">violation_type_code   </text>
 <text text-anchor="start" x="879" y="-2179.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2161.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">severity   </text>
+<text text-anchor="start" x="716" y="-2161.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">severity   </text>
 <text text-anchor="start" x="879" y="-2161.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">condition_spec   </text>
-<text text-anchor="start" x="855" y="-2143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">jsonb</text>
-<text text-anchor="start" x="716" y="-2125.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">verified_by   </text>
+<text text-anchor="start" x="716" y="-2143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">condition_spec   </text>
+<text text-anchor="start" x="855" y="-2143.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">jsonb</text>
+<text text-anchor="start" x="716" y="-2125.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">verified_by   </text>
 <text text-anchor="start" x="879" y="-2125.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="716" y="-2107.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">verified_at   </text>
+<text text-anchor="start" x="716" y="-2107.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">verified_at   </text>
 <text text-anchor="start" x="879" y="-2107.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M724,-2100.5C724,-2100.5 878,-2100.5 878,-2100.5 884,-2100.5 890,-2106.5 890,-2112.5 890,-2112.5 890,-2277.5 890,-2277.5 890,-2283.5 884,-2289.5 878,-2289.5 878,-2289.5 724,-2289.5 724,-2289.5 718,-2289.5 712,-2283.5 712,-2277.5 712,-2277.5 712,-2112.5 712,-2112.5 712,-2106.5 718,-2100.5 724,-2100.5"/>
+<path fill="none" stroke="#c5d9f5" d="M724,-2100.5C724,-2100.5 878,-2100.5 878,-2100.5 884,-2100.5 890,-2106.5 890,-2112.5 890,-2112.5 890,-2277.5 890,-2277.5 890,-2283.5 884,-2289.5 878,-2289.5 878,-2289.5 724,-2289.5 724,-2289.5 718,-2289.5 712,-2283.5 712,-2277.5 712,-2277.5 712,-2112.5 712,-2112.5 712,-2106.5 718,-2100.5 724,-2100.5"/>
 </g>
 <g id="edge18" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M898.22,-2254.72C938.94,-2262.25 929.05,-2326.95 964.44,-2340.51"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="890.45,-2258.05 891.14,-2250.08 892.74,-2250.22 892.04,-2258.19 890.45,-2258.05"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="890,-2254 893.98,-2254.35 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="894.43,-2258.4 895.13,-2250.43 896.72,-2250.57 896.03,-2258.54 894.43,-2258.4"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="893.98,-2254.35 897.97,-2254.7 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="971.11,-2341.65 978.39,-2346.55 975.06,-2342.33 979,-2343 979,-2343 979,-2343 975.06,-2342.33 979.61,-2339.45 971.11,-2341.65 971.11,-2341.65"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="967.96" cy="-2341.11" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M898.22,-2254.72C938.94,-2262.25 929.05,-2326.95 964.44,-2340.51"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="890.45,-2258.05 891.14,-2250.08 892.74,-2250.22 892.04,-2258.19 890.45,-2258.05"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="890,-2254 893.98,-2254.35 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="894.43,-2258.4 895.13,-2250.43 896.72,-2250.57 896.03,-2258.54 894.43,-2258.4"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="893.98,-2254.35 897.97,-2254.7 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="971.11,-2341.65 978.39,-2346.55 975.06,-2342.33 979,-2343 979,-2343 979,-2343 975.06,-2342.33 979.61,-2339.45 971.11,-2341.65 971.11,-2341.65"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="967.96" cy="-2341.11" rx="3.2" ry="3.2"/>
 </g>
 <g id="node20" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M475,-467.5C475,-467.5 587,-467.5 587,-467.5 593,-467.5 599,-473.5 599,-479.5 599,-479.5 599,-644.5 599,-644.5 599,-650.5 593,-656.5 587,-656.5 587,-656.5 475,-656.5 475,-656.5 469,-656.5 463,-650.5 463,-644.5 463,-644.5 463,-479.5 463,-479.5 463,-473.5 469,-467.5 475,-467.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="464,-630 464,-655 598,-655 598,-630 464,-630"/>
-<text text-anchor="start" x="470" y="-640.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">insight_pack</text>
-<text text-anchor="start" x="467" y="-618.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="582" y="-619.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="467" y="-600.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">category   </text>
-<text text-anchor="start" x="582" y="-600.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">UQ</text>
-<text text-anchor="start" x="467" y="-582.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">track   </text>
+<path fill="#fdfeff" stroke="transparent" d="M475,-467.5C475,-467.5 587,-467.5 587,-467.5 593,-467.5 599,-473.5 599,-479.5 599,-479.5 599,-644.5 599,-644.5 599,-650.5 593,-656.5 587,-656.5 587,-656.5 475,-656.5 475,-656.5 469,-656.5 463,-650.5 463,-644.5 463,-644.5 463,-479.5 463,-479.5 463,-473.5 469,-467.5 475,-467.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="464,-630 464,-655 598,-655 598,-630 464,-630"/>
+<text text-anchor="start" x="470" y="-640.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">insight_pack</text>
+<text text-anchor="start" x="467" y="-618.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="582" y="-619.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="467" y="-600.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">category   </text>
+<text text-anchor="start" x="582" y="-600.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">UQ</text>
+<text text-anchor="start" x="467" y="-582.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">track   </text>
 <text text-anchor="start" x="588" y="-582.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-564.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">secondary_track   </text>
+<text text-anchor="start" x="467" y="-564.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">secondary_track   </text>
 <text text-anchor="start" x="588" y="-564.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-546.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">urgent   </text>
+<text text-anchor="start" x="467" y="-546.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">urgent   </text>
 <text text-anchor="start" x="588" y="-546.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-528.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">implemented   </text>
+<text text-anchor="start" x="467" y="-528.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">implemented   </text>
 <text text-anchor="start" x="588" y="-528.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-510.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">urgent_notice   </text>
+<text text-anchor="start" x="467" y="-510.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">urgent_notice   </text>
 <text text-anchor="start" x="588" y="-510.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-492.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">evidence_notice   </text>
+<text text-anchor="start" x="467" y="-492.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">evidence_notice   </text>
 <text text-anchor="start" x="588" y="-492.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="467" y="-474.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">law_query   </text>
+<text text-anchor="start" x="467" y="-474.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">law_query   </text>
 <text text-anchor="start" x="588" y="-474.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M475,-467.5C475,-467.5 587,-467.5 587,-467.5 593,-467.5 599,-473.5 599,-479.5 599,-479.5 599,-644.5 599,-644.5 599,-650.5 593,-656.5 587,-656.5 587,-656.5 475,-656.5 475,-656.5 469,-656.5 463,-650.5 463,-644.5 463,-644.5 463,-479.5 463,-479.5 463,-473.5 469,-467.5 475,-467.5"/>
+<path fill="none" stroke="#c5d9f5" d="M475,-467.5C475,-467.5 587,-467.5 587,-467.5 593,-467.5 599,-473.5 599,-479.5 599,-479.5 599,-644.5 599,-644.5 599,-650.5 593,-656.5 587,-656.5 587,-656.5 475,-656.5 475,-656.5 469,-656.5 463,-650.5 463,-644.5 463,-644.5 463,-479.5 463,-479.5 463,-473.5 469,-467.5 475,-467.5"/>
 </g>
 <g id="node21" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M742,-288.5C742,-288.5 860,-288.5 860,-288.5 866,-288.5 872,-294.5 872,-300.5 872,-300.5 872,-537.5 872,-537.5 872,-543.5 866,-549.5 860,-549.5 860,-549.5 742,-549.5 742,-549.5 736,-549.5 730,-543.5 730,-537.5 730,-537.5 730,-300.5 730,-300.5 730,-294.5 736,-288.5 742,-288.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="731,-523 731,-548 871,-548 871,-523 731,-523"/>
-<text text-anchor="start" x="737" y="-533.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">insight_pack_item</text>
-<text text-anchor="start" x="734" y="-511.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="855" y="-512.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="734" y="-493.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">pack_id   </text>
-<text text-anchor="start" x="855" y="-494.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="734" y="-475.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">kind   </text>
-<text text-anchor="start" x="843" y="-475.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">enum</text>
-<text text-anchor="start" x="734" y="-457.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">slot_id   </text>
+<path fill="#fdfeff" stroke="transparent" d="M742,-288.5C742,-288.5 860,-288.5 860,-288.5 866,-288.5 872,-294.5 872,-300.5 872,-300.5 872,-537.5 872,-537.5 872,-543.5 866,-549.5 860,-549.5 860,-549.5 742,-549.5 742,-549.5 736,-549.5 730,-543.5 730,-537.5 730,-537.5 730,-300.5 730,-300.5 730,-294.5 736,-288.5 742,-288.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="731,-523 731,-548 871,-548 871,-523 731,-523"/>
+<text text-anchor="start" x="737" y="-533.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">insight_pack_item</text>
+<text text-anchor="start" x="734" y="-511.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="855" y="-512.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="734" y="-493.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">pack_id   </text>
+<text text-anchor="start" x="855" y="-494.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="734" y="-475.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">kind   </text>
+<text text-anchor="start" x="843" y="-475.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">enum</text>
+<text text-anchor="start" x="734" y="-457.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">slot_id   </text>
 <text text-anchor="start" x="861" y="-457.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-439.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">order_no   </text>
+<text text-anchor="start" x="734" y="-439.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">order_no   </text>
 <text text-anchor="start" x="861" y="-439.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-421.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">required   </text>
+<text text-anchor="start" x="734" y="-421.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">required   </text>
 <text text-anchor="start" x="861" y="-421.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-403.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">value_type   </text>
-<text text-anchor="start" x="843" y="-403.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">enum</text>
-<text text-anchor="start" x="734" y="-385.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">label   </text>
+<text text-anchor="start" x="734" y="-403.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">value_type   </text>
+<text text-anchor="start" x="843" y="-403.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">enum</text>
+<text text-anchor="start" x="734" y="-385.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">label   </text>
 <text text-anchor="start" x="861" y="-385.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-367.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">question   </text>
+<text text-anchor="start" x="734" y="-367.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">question   </text>
 <text text-anchor="start" x="861" y="-367.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-349.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">text   </text>
+<text text-anchor="start" x="734" y="-349.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">text   </text>
 <text text-anchor="start" x="861" y="-349.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-331.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">reason   </text>
+<text text-anchor="start" x="734" y="-331.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">reason   </text>
 <text text-anchor="start" x="861" y="-331.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-313.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">contact   </text>
+<text text-anchor="start" x="734" y="-313.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">contact   </text>
 <text text-anchor="start" x="861" y="-313.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="734" y="-295.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">expert   </text>
+<text text-anchor="start" x="734" y="-295.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">expert   </text>
 <text text-anchor="start" x="861" y="-295.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M742,-288.5C742,-288.5 860,-288.5 860,-288.5 866,-288.5 872,-294.5 872,-300.5 872,-300.5 872,-537.5 872,-537.5 872,-543.5 866,-549.5 860,-549.5 860,-549.5 742,-549.5 742,-549.5 736,-549.5 730,-543.5 730,-537.5 730,-537.5 730,-300.5 730,-300.5 730,-294.5 736,-288.5 742,-288.5"/>
+<path fill="none" stroke="#c5d9f5" d="M742,-288.5C742,-288.5 860,-288.5 860,-288.5 866,-288.5 872,-294.5 872,-300.5 872,-300.5 872,-537.5 872,-537.5 872,-543.5 866,-549.5 860,-549.5 860,-549.5 742,-549.5 742,-549.5 736,-549.5 730,-543.5 730,-537.5 730,-537.5 730,-300.5 730,-300.5 730,-294.5 736,-288.5 742,-288.5"/>
 </g>
 <g id="edge19" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M607.09,-620.55C672.69,-612.92 655.35,-511.4 715.45,-497.56"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="600.02,-624.95 599.58,-616.96 601.17,-616.87 601.62,-624.86 600.02,-624.95"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="599,-621 602.99,-620.78 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="604.02,-624.73 603.57,-616.74 605.17,-616.65 605.61,-624.64 604.02,-624.73"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="602.99,-620.78 606.99,-620.55 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="722.05,-496.85 730.38,-499.58 726.02,-496.43 730,-496 730,-496 730,-496 726.02,-496.43 729.62,-492.42 722.05,-496.85 722.05,-496.85"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="718.86" cy="-497.19" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M607.09,-620.55C672.69,-612.92 655.35,-511.4 715.45,-497.56"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="600.02,-624.95 599.58,-616.96 601.17,-616.87 601.62,-624.86 600.02,-624.95"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="599,-621 602.99,-620.78 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="604.02,-624.73 603.57,-616.74 605.17,-616.65 605.61,-624.64 604.02,-624.73"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="602.99,-620.78 606.99,-620.55 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="722.05,-496.85 730.38,-499.58 726.02,-496.43 730,-496 730,-496 730,-496 726.02,-496.43 729.62,-492.42 722.05,-496.85 722.05,-496.85"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="718.86" cy="-497.19" rx="3.2" ry="3.2"/>
 </g>
 <g id="edge21" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M607.28,-621.56C666.44,-629.91 644.13,-729.45 697.6,-744.18"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="599.53,-625.04 600.07,-617.06 601.66,-617.17 601.13,-625.15 599.53,-625.04"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="599,-621 602.99,-621.27 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="603.52,-625.31 604.06,-617.33 605.65,-617.44 605.12,-625.42 603.52,-625.31"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="602.99,-621.27 606.98,-621.54 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="704.06,-745 711.55,-749.57 708.03,-745.5 712,-746 712,-746 712,-746 708.03,-745.5 712.45,-742.43 704.06,-745 704.06,-745"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="700.89" cy="-744.6" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M607.28,-621.56C666.44,-629.91 644.13,-729.45 697.6,-744.18"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="599.53,-625.04 600.07,-617.06 601.66,-617.17 601.13,-625.15 599.53,-625.04"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="599,-621 602.99,-621.27 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="603.52,-625.31 604.06,-617.33 605.65,-617.44 605.12,-625.42 603.52,-625.31"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="602.99,-621.27 606.98,-621.54 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="704.06,-745 711.55,-749.57 708.03,-745.5 712,-746 712,-746 712,-746 708.03,-745.5 712.45,-742.43 704.06,-745 704.06,-745"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="700.89" cy="-744.6" rx="3.2" ry="3.2"/>
 </g>
 <g id="node23" class="node">
-<path fill="#fcfefd" stroke="transparent" d="M979,-664.5C979,-664.5 1097,-664.5 1097,-664.5 1103,-664.5 1109,-670.5 1109,-676.5 1109,-676.5 1109,-805.5 1109,-805.5 1109,-811.5 1103,-817.5 1097,-817.5 1097,-817.5 979,-817.5 979,-817.5 973,-817.5 967,-811.5 967,-805.5 967,-805.5 967,-676.5 967,-676.5 967,-670.5 973,-664.5 979,-664.5"/>
-<polygon fill="#e3f3ed" stroke="transparent" points="968,-791 968,-816 1108,-816 1108,-791 968,-791"/>
-<text text-anchor="start" x="974" y="-801.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#14806a">report_slot_value</text>
-<text text-anchor="start" x="971" y="-779.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">id   </text>
-<text text-anchor="start" x="1092" y="-780.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#127663">PK</text>
-<text text-anchor="start" x="971" y="-761.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">session_id   </text>
-<text text-anchor="start" x="1092" y="-762.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#2fa086">FK</text>
-<text text-anchor="start" x="971" y="-743.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">slot_id   </text>
+<path fill="#fdfeff" stroke="transparent" d="M979,-664.5C979,-664.5 1097,-664.5 1097,-664.5 1103,-664.5 1109,-670.5 1109,-676.5 1109,-676.5 1109,-805.5 1109,-805.5 1109,-811.5 1103,-817.5 1097,-817.5 1097,-817.5 979,-817.5 979,-817.5 973,-817.5 967,-811.5 967,-805.5 967,-805.5 967,-676.5 967,-676.5 967,-670.5 973,-664.5 979,-664.5"/>
+<polygon fill="#e8f3ff" stroke="transparent" points="968,-791 968,-816 1108,-816 1108,-791 968,-791"/>
+<text text-anchor="start" x="974" y="-801.4" font-family="DejaVu Sans Mono" font-weight="bold" font-size="12.00" fill="#2272eb">report_slot_value</text>
+<text text-anchor="start" x="971" y="-779.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">id   </text>
+<text text-anchor="start" x="1092" y="-780.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#1b64da">PK</text>
+<text text-anchor="start" x="971" y="-761.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">session_id   </text>
+<text text-anchor="start" x="1092" y="-762.6" font-family="DejaVu Sans Mono" font-weight="bold" font-size="10.50" fill="#3182f6">FK</text>
+<text text-anchor="start" x="971" y="-743.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">slot_id   </text>
 <text text-anchor="start" x="1098" y="-743.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="971" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">value   </text>
+<text text-anchor="start" x="971" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">value   </text>
 <text text-anchor="start" x="1098" y="-725.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="971" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">precision   </text>
-<text text-anchor="start" x="1080" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#61766f">enum</text>
-<text text-anchor="start" x="971" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">raw_quote   </text>
+<text text-anchor="start" x="971" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">precision   </text>
+<text text-anchor="start" x="1080" y="-707.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#6b7684">enum</text>
+<text text-anchor="start" x="971" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">raw_quote   </text>
 <text text-anchor="start" x="1098" y="-689.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<text text-anchor="start" x="971" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#12241f">source   </text>
+<text text-anchor="start" x="971" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50" fill="#191f28">source   </text>
 <text text-anchor="start" x="1098" y="-671.6" font-family="DejaVu Sans Mono" font-size="10.50"> </text>
-<path fill="none" stroke="#b9d9cf" d="M979,-664.5C979,-664.5 1097,-664.5 1097,-664.5 1103,-664.5 1109,-670.5 1109,-676.5 1109,-676.5 1109,-805.5 1109,-805.5 1109,-811.5 1103,-817.5 1097,-817.5 1097,-817.5 979,-817.5 979,-817.5 973,-817.5 967,-811.5 967,-805.5 967,-805.5 967,-676.5 967,-676.5 967,-670.5 973,-664.5 979,-664.5"/>
+<path fill="none" stroke="#c5d9f5" d="M979,-664.5C979,-664.5 1097,-664.5 1097,-664.5 1103,-664.5 1109,-670.5 1109,-676.5 1109,-676.5 1109,-805.5 1109,-805.5 1109,-811.5 1103,-817.5 1097,-817.5 1097,-817.5 979,-817.5 979,-817.5 973,-817.5 967,-811.5 967,-805.5 967,-805.5 967,-676.5 967,-676.5 967,-670.5 973,-664.5 979,-664.5"/>
 </g>
 <g id="edge22" class="edge">
-<path fill="none" stroke="#5fae99" stroke-width="1.3" d="M898.11,-781.66C921.68,-779.59 931.38,-768.74 952.56,-765.15"/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="890.97,-785.96 890.63,-777.97 892.23,-777.9 892.57,-785.89 890.97,-785.96"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="890,-782 894,-781.83 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="894.97,-785.79 894.63,-777.8 896.22,-777.73 896.56,-785.73 894.97,-785.79"/>
-<polyline fill="none" stroke="#5fae99" stroke-width="1.3" points="894,-781.83 897.99,-781.66 "/>
-<polygon fill="#5fae99" stroke="#5fae99" stroke-width="1.3" points="959.03,-764.64 967.29,-767.59 963.01,-764.32 967,-764 967,-764 967,-764 963.01,-764.32 966.71,-760.41 959.03,-764.64 959.03,-764.64"/>
-<ellipse fill="none" stroke="#5fae99" stroke-width="1.3" cx="955.84" cy="-764.89" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#7fb2f5" stroke-width="1.3" d="M898.11,-781.66C921.68,-779.59 931.38,-768.74 952.56,-765.15"/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="890.97,-785.96 890.63,-777.97 892.23,-777.9 892.57,-785.89 890.97,-785.96"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="890,-782 894,-781.83 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="894.97,-785.79 894.63,-777.8 896.22,-777.73 896.56,-785.73 894.97,-785.79"/>
+<polyline fill="none" stroke="#7fb2f5" stroke-width="1.3" points="894,-781.83 897.99,-781.66 "/>
+<polygon fill="#7fb2f5" stroke="#7fb2f5" stroke-width="1.3" points="959.03,-764.64 967.29,-767.59 963.01,-764.32 967,-764 967,-764 967,-764 963.01,-764.32 966.71,-760.41 959.03,-764.64 959.03,-764.64"/>
+<ellipse fill="none" stroke="#7fb2f5" stroke-width="1.3" cx="955.84" cy="-764.89" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>

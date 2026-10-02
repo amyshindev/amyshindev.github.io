@@ -10,47 +10,47 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amyshindev.github.io/">
   <meta name="color-scheme" content="light dark">
-  <link rel="icon" href="/favicon.ico?v=5" sizes="48x48">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=5">
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=5">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5">
+  <link rel="icon" href="/favicon.ico?v=6" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=6">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=6">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=6">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <style>
     :root {
       --bg: #ffffff;
       --card: #ffffff;
-      --tint: #e3f3ed;
+      --tint: #e8f3ff;
       --ink: #000000;
       --ink-head: #000000;
-      --ink-2: #43564f;
-      --ink-3: #61766f;
-      --muted-head: #6f998c;
-      --line: #d3e6df;
-      --chip: #fcfefd;
-      --accent: #2fb093;
-      --accent-ink: #14806a;
-      --btn: #127663;
+      --ink-2: #4e5968;
+      --ink-3: #606b78;
+      --muted-head: #8b95a1;
+      --line: #dfe6ee;
+      --chip: #ffffff;
+      --accent: #3182f6;
+      --accent-ink: #1b64da;
+      --btn: #1f6ee8;
       --btn-ink: #ffffff;
-      --btn-soft: #7cc3b1;
-      --shadow: 0 1px 2px rgba(18,70,58,.05), 0 8px 24px rgba(18,70,58,.08);
+      --btn-soft: #90c2ff;
+      --shadow: 0 1px 2px rgba(0,27,55,.05), 0 8px 24px rgba(0,27,55,.08);
       --art-filter: none;
-      --erd-cluster: #eef6f3;
-      --erd-border: #b9d9cf;
+      --erd-cluster: #f2f7ff;
+      --erd-border: #c5d9f5;
       --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", sans-serif;
       --max: 1320px;
       --gutter: clamp(16px, 6vw, 96px);
     }
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --bg: #0d1614; --card: #142320; --tint: #1a2e29; --ink: #e4f2ed; --ink-head: #e4f2ed; --ink-2: #a9c2ba; --ink-3: #7f9a92;
-        --muted-head: #5f8a7e; --line: #24372f; --chip: #142320; --accent: #5fd0b4; --accent-ink: #6fd8bd; --btn: #5fd0b4; --btn-ink: #08201a; --btn-soft: #2c6b5c;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #11201c; --erd-border: #2f4d44;
+        --bg: #0f1319; --card: #171c24; --tint: #1c2a40; --ink: #e8eef6; --ink-head: #e8eef6; --ink-2: #a8b3c2; --ink-3: #8793a3;
+        --muted-head: #5f7186; --line: #262f3b; --chip: #171c24; --accent: #4f9bff; --accent-ink: #7fb0ff; --btn: #4f9bff; --btn-ink: #08172e; --btn-soft: #2c4f85;
+        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #121a26; --erd-border: #2f4563;
       }
     }
     :root[data-theme="dark"] {
-      --bg: #0d1614; --card: #142320; --tint: #1a2e29; --ink: #e4f2ed; --ink-head: #e4f2ed; --ink-2: #a9c2ba; --ink-3: #7f9a92;
-        --muted-head: #5f8a7e; --line: #24372f; --chip: #142320; --accent: #5fd0b4; --accent-ink: #6fd8bd; --btn: #5fd0b4; --btn-ink: #08201a; --btn-soft: #2c6b5c;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #11201c; --erd-border: #2f4d44;
+      --bg: #0f1319; --card: #171c24; --tint: #1c2a40; --ink: #e8eef6; --ink-head: #e8eef6; --ink-2: #a8b3c2; --ink-3: #8793a3;
+        --muted-head: #5f7186; --line: #262f3b; --chip: #171c24; --accent: #4f9bff; --accent-ink: #7fb0ff; --btn: #4f9bff; --btn-ink: #08172e; --btn-soft: #2c4f85;
+        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35); --art-filter: brightness(.82) contrast(1.05); --erd-cluster: #121a26; --erd-border: #2f4563;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -62,7 +62,7 @@
     }
     a { color: inherit; text-decoration: none; }
     button, input { font: inherit; color: inherit; }
-    ::selection { background: var(--accent); color: #08201a; }
+    ::selection { background: var(--accent); color: #ffffff; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
     .eyebrow {
       display: inline-flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700;
@@ -180,8 +180,8 @@
     .proj-head { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 40px; }
     .filter-state { font-size: 14px; font-weight: 600; color: var(--accent-ink); background: var(--tint); border-radius: 999px; padding: 6px 6px 6px 16px; display: none; align-items: center; gap: 12px; }
     .filter-state.show { display: inline-flex; }
-    .filter-state button { border: 0; background: var(--btn); color: var(--btn-ink); border-radius: 999px; padding: 6px 15px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px rgba(18,118,99,.28); transition: transform .2s, box-shadow .2s, filter .2s; }
-    .filter-state button:hover { transform: translateY(-1px); filter: brightness(1.1); box-shadow: 0 4px 12px rgba(18,118,99,.34); }
+    .filter-state button { border: 0; background: var(--btn); color: var(--btn-ink); border-radius: 999px; padding: 6px 15px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px rgba(31,110,232,.28); transition: transform .2s, box-shadow .2s, filter .2s; }
+    .filter-state button:hover { transform: translateY(-1px); filter: brightness(1.1); box-shadow: 0 4px 12px rgba(31,110,232,.34); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
     .card {
       background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: clamp(24px, 3vw, 36px);
@@ -290,7 +290,7 @@
     .erd-panel {
       position: absolute; top: calc(100% + 10px); left: 0; z-index: 30; width: min(1140px, calc(100vw - 2 * var(--gutter) - 72px));
       background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 20px;
-      box-shadow: 0 18px 48px rgba(10, 40, 34, .18), 0 2px 6px rgba(10, 40, 34, .08);
+      box-shadow: 0 18px 48px rgba(0, 27, 55, .18), 0 2px 6px rgba(0, 27, 55, .08);
       animation: erdIn .22s ease;
     }
     @keyframes erdIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
@@ -309,20 +309,20 @@
     .erd-svg text { font-family: "DejaVu Sans Mono", Menlo, "SFMono-Regular", Consolas, monospace; }
     .erd-svg text[font-family^="Noto"] { font-family: var(--sans); }
     /* theme the diagram: Graphviz colours are remapped to the site's variables */
-    .erd-svg [fill="#fcfefd"] { fill: var(--card); }
-    .erd-svg [fill="#e3f3ed"] { fill: var(--tint); }
-    .erd-svg [fill="#eef6f3"] { fill: var(--erd-cluster); }
-    .erd-svg [stroke="#d3e6df"] { stroke: var(--line); }
-    .erd-svg [stroke="#b9d9cf"] { stroke: var(--erd-border); }
-    .erd-svg [fill="#12241f"] { fill: var(--ink); }
-    .erd-svg [fill="#14806a"] { fill: var(--accent-ink); }
-    .erd-svg [fill="#61766f"] { fill: var(--ink-3); }
-    .erd-svg [fill="#127663"] { fill: var(--btn); }
+    .erd-svg [fill="#fdfeff"] { fill: var(--card); }
+    .erd-svg [fill="#e8f3ff"] { fill: var(--tint); }
+    .erd-svg [fill="#f2f7ff"] { fill: var(--erd-cluster); }
+    .erd-svg [stroke="#dbe7f7"] { stroke: var(--line); }
+    .erd-svg [stroke="#c5d9f5"] { stroke: var(--erd-border); }
+    .erd-svg [fill="#191f28"] { fill: var(--ink); }
+    .erd-svg [fill="#2272eb"] { fill: var(--accent-ink); }
+    .erd-svg [fill="#6b7684"] { fill: var(--ink-3); }
+    .erd-svg [fill="#1b64da"] { fill: var(--btn); }
     .erd-svg [fill="#ffffff"] { fill: var(--btn-ink); }
-    .erd-svg [stroke="#127663"] { stroke: var(--btn); }
-    .erd-svg [fill="#2fa086"] { fill: var(--accent); }
-    .erd-svg [stroke="#5fae99"] { stroke: var(--accent); }
-    .erd-svg [fill="#5fae99"] { fill: var(--accent); }
+    .erd-svg [stroke="#1b64da"] { stroke: var(--btn); }
+    .erd-svg [fill="#3182f6"] { fill: var(--accent); }
+    .erd-svg [stroke="#7fb2f5"] { stroke: var(--accent); }
+    .erd-svg [fill="#7fb2f5"] { fill: var(--accent); }
 
     /* ---------- Profile ---------- */
     .profile { padding: clamp(56px, 8vh, 88px) 0 clamp(64px, 9vh, 104px); }
@@ -399,7 +399,7 @@
 <header class="top">
   <div class="wrap">
     <a href="#top" class="logo" aria-label="맨 위로">
-      <img class="logo-mark" src="/favicon-192.png?v=5" width="44" height="44" alt="" aria-hidden="true">
+      <img class="logo-mark" src="/favicon-192.png?v=6" width="44" height="44" alt="" aria-hidden="true">
       <span class="logo-name">신채연<span class="logo-sub">Software Developer</span></span>
     </a>
     <nav class="nav">
@@ -488,8 +488,8 @@
             </ul>
             <div class="card-foot">
               <div class="tags"><span>Next.js 15</span><span>React 19</span><span>FastAPI</span><span>Hexagonal · DDD</span><span>PostgreSQL · pgvector</span><span>Neo4j</span><span>Docker</span><span>Cloudflare Tunnel</span><span>AWS</span><span>Ollama</span><span>LangChain</span><span>PyTorch</span><span>pytest</span><span>k6</span></div>
-              <details class="erd" id="sh-erd" data-src="assets/shylock-erd.svg">
-              <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 10개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+              <details class="erd" id="sh-erd" data-src="assets/shylock-erd.svg?v=3">
+              <summary><img class="erd-ico" src="assets/erd-icon.png?v=2" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 10개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
               <div class="erd-panel" role="region" aria-label="샤일록의 법정 ERD">
                 <div class="erd-head">
                   <b>Shylock ERD</b>
@@ -497,7 +497,7 @@
                     <button type="button" data-zoom="-1" aria-label="축소">−</button>
                     <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
                     <button type="button" data-zoom="1" aria-label="확대">+</button>
-                    <a href="assets/shylock-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                    <a href="assets/shylock-erd.svg?v=3" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
                   </div>
                 </div>
                 <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 실선 = DB 외래 키, 점선 = 원문 줄 번호(ftln) 범위를 가리키는 soft ref · alembic 033 기준</p>
@@ -549,8 +549,8 @@
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Phaser 4</span><span>FastAPI</span><span>PostgreSQL · pgvector</span><span>PaddleOCR</span><span>Ollama</span><span>EXAONE</span><span>Gemma</span><span>Gemini</span><span>Docker</span></div>
-            <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg">
-            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <details class="erd" id="lt-erd" data-src="assets/lifetutorial-erd.svg?v=3">
+            <summary><img class="erd-ico" src="assets/erd-icon.png?v=2" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 23개 · Bounded Context 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="라이프 튜토리얼 ERD">
               <div class="erd-head">
                 <b>Life Tutorial ERD</b>
@@ -558,7 +558,7 @@
                   <button type="button" data-zoom="-1" aria-label="축소">−</button>
                   <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
                   <button type="button" data-zoom="1" aria-label="확대">+</button>
-                  <a href="assets/lifetutorial-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="assets/lifetutorial-erd.svg?v=3" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
                   <a href="https://lifetutorial.beyondfacade.cloud/docs/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a>
                 </div>
               </div>
@@ -596,8 +596,8 @@
           </ul>
           <div class="card-foot">
             <div class="tags"><span>FastAPI</span><span>Next.js</span><span>EXAONE</span><span>pgvector HNSW</span><span>Redis</span><span>Cloudflare R2</span><span>Docker</span></div>
-            <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg">
-            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <details class="erd" id="sb-erd" data-src="assets/soundbridge-erd.svg?v=3">
+            <summary><img class="erd-ico" src="assets/erd-icon.png?v=2" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 4개 · PostgreSQL + pgvector</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="SoundBridge ERD">
               <div class="erd-head">
                 <b>SoundBridge ERD</b>
@@ -605,7 +605,7 @@
                   <button type="button" data-zoom="-1" aria-label="축소">−</button>
                   <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
                   <button type="button" data-zoom="1" aria-label="확대">+</button>
-                  <a href="assets/soundbridge-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="assets/soundbridge-erd.svg?v=3" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
                   <a href="https://soundbridge.beyondfacade.cloud/docs/system/erd.html" target="_blank" rel="noopener">원본 문서 ↗</a>
                 </div>
               </div>
@@ -643,8 +643,8 @@
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Hexagonal</span><span>Claude Sonnet · Haiku</span><span>Gemma · Gemini</span><span>LLM 채점</span><span>Human-in-the-Loop</span><span>Docker</span></div>
-            <details class="erd" id="rd-erd" data-src="assets/remakeday-erd.svg">
-            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 15개 · 외래 키 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <details class="erd" id="rd-erd" data-src="assets/remakeday-erd.svg?v=3">
+            <summary><img class="erd-ico" src="assets/erd-icon.png?v=2" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 15개 · 외래 키 5개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="REMAKE DAY ERD">
               <div class="erd-head">
                 <b>REMAKE DAY ERD</b>
@@ -652,7 +652,7 @@
                   <button type="button" data-zoom="-1" aria-label="축소">−</button>
                   <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
                   <button type="button" data-zoom="1" aria-label="확대">+</button>
-                  <a href="assets/remakeday-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="assets/remakeday-erd.svg?v=3" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
                 </div>
               </div>
               <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 실선 = DB 외래 키, 점선 = 코드로만 지키는 관계 · <i>ref</i> = 외래 키 없는 참조</p>
@@ -683,8 +683,8 @@
           </ul>
           <div class="card-foot">
             <div class="tags"><span>Hexagonal · DDD</span><span>FastAPI</span><span>Next.js 16</span><span>pgvector · Neo4j</span><span>Hybrid RAG</span><span>TDD</span><span>Docker</span></div>
-            <details class="erd" id="mb-erd" data-src="assets/metabole-erd.svg">
-            <summary><img class="erd-ico" src="assets/erd-icon.png" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 47개 · 외래 키 49개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
+            <details class="erd" id="mb-erd" data-src="assets/metabole-erd.svg?v=3">
+            <summary><img class="erd-ico" src="assets/erd-icon.png?v=2" alt="" width="288" height="202">ERD<span class="erd-meta">테이블 47개 · 외래 키 49개</span><svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary>
             <div class="erd-panel" role="region" aria-label="Metabole ERD">
               <div class="erd-head">
                 <b>Metabole ERD</b>
@@ -692,7 +692,7 @@
                   <button type="button" data-zoom="-1" aria-label="축소">−</button>
                   <button type="button" data-zoom="0" aria-label="패널 너비에 맞추기">맞춤</button>
                   <button type="button" data-zoom="1" aria-label="확대">+</button>
-                  <a href="assets/metabole-erd.svg" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
+                  <a href="assets/metabole-erd.svg?v=3" target="_blank" rel="noopener">새 탭에서 크게 ↗</a>
                 </div>
               </div>
               <p class="erd-legend"><span class="lg one">‖</span> 정확히 하나 <span class="lg many">○&lt;</span> 0개 이상 · 실선 = DB 외래 키, 점선 = 애플리케이션 레벨 관계 · 키 컬럼만 표시, 이름 옆 숫자는 실제 적재 행 수(2026-10-01)</p>
