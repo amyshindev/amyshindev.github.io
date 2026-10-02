@@ -14,7 +14,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=5">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png?v=5">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&amp;text=%EC%8B%A0&amp;display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <style>
     :root {
@@ -76,10 +75,7 @@
     header.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
     header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 84px; }
     .logo { display: flex; align-items: center; gap: 12px; }
-    .logo-mark {
-      width: 44px; height: 44px; border-radius: 11px; background: var(--btn); color: var(--btn-ink);
-      display: grid; place-items: center; font-family: "Noto Serif KR", AppleMyungjo, Batang, serif; font-weight: 700; font-size: 24px; line-height: 1;
-    }
+    .logo-mark { width: 44px; height: 44px; display: block; flex: none; }
     .logo-name { font-weight: 800; font-size: 22px; letter-spacing: -0.03em; line-height: 1.1; }
     .logo-sub { display: block; font-size: 12px; font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-top: 2px; }
     .nav { display: flex; align-items: center; gap: clamp(12px, 2.4vw, 36px); font-size: 15px; font-weight: 500; }
@@ -355,7 +351,7 @@
     }
     @media (max-width: 760px) {
       header.top .wrap { height: 68px; }
-      .logo-mark { width: 38px; height: 38px; font-size: 21px; }
+      .logo-mark { width: 38px; height: 38px; }
       .logo-name { font-size: 19px; }
       .nav .plain { display: none; }
       .nav .ext { margin-top: 4px; padding-bottom: 4px; gap: 8px; }
@@ -391,7 +387,7 @@
 <header class="top">
   <div class="wrap">
     <a href="#top" class="logo" aria-label="맨 위로">
-      <span class="logo-mark" aria-hidden="true">신</span>
+      <img class="logo-mark" src="/favicon-192.png?v=5" width="44" height="44" alt="" aria-hidden="true">
       <span class="logo-name">신채연<span class="logo-sub">Software Developer</span></span>
     </a>
     <nav class="nav">
